@@ -2,7 +2,7 @@
    全局变量与基础设定
    ========================================= */
 :root {
-    --bg-parchment: #e8dfd5; /* 羊皮纸底色 */
+    --bg-parchment: #e8dfd5; /* 核心：复古牛皮纸底色 */
     --text-ink: #2b1c11;     /* 深墨褐色 */
     --accent-fade: #8a7360;  /* 褪色墨水 */
     --border-sketch: 2px solid #2b1c11; /* 手绘风格边框 */
@@ -12,18 +12,17 @@
     --font-handwriting: 'Caveat', cursive; /* 手写体 */
 }
 
-/* 核心修复 1：让你的 background.png 完美铺满全屏，并且固定不动 */
+/* 恢复纯净的牛皮纸底色，不再需要加载图片 */
 body {
     font-family: var(--font-body);
+    background-color: var(--bg-parchment); 
     color: var(--text-ink);
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: url('background.png') no-repeat center center fixed;
-    background-size: cover;
 }
 
-/* 滤镜：在背景图上方叠加极其轻微的噪点，模拟复古素描纸张质感 */
+/* SVG 噪点滤镜：为纯色增加“粗糙的纸张物理质感” */
 body::before {
     content: '';
     position: fixed;
@@ -31,9 +30,9 @@ body::before {
     left: 0; 
     width: 100%; 
     height: 100%;
-    background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.04"/%3E%3C/svg%3E');
-    pointer-events: none; /* 确保噪点不会阻挡鼠标点击 */
-    z-index: -1; /* 放在所有内容的底层，但背景图的上方 */
+    background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.05"/%3E%3C/svg%3E');
+    pointer-events: none; 
+    z-index: -1; 
 }
 
 h1, h2, h3, .logo {
@@ -50,7 +49,7 @@ h1, h2, h3, .logo {
     padding: 0 20px;
 }
 
-/* 手写体特殊样式，稍微倾斜制造真实感 */
+/* 手写体特殊样式 */
 .handwritten {
     font-family: var(--font-handwriting);
     font-size: 1.8rem;
@@ -89,7 +88,6 @@ h1, h2, h3, .logo {
    模块布局与细节样式
    ========================================= */
 
-/* Header 导航 */
 header {
     padding: 20px 0;
     border-bottom: var(--border-sketch);
@@ -114,7 +112,6 @@ nav a:hover {
     color: var(--accent-fade);
 }
 
-/* Section 通用设定 */
 section { 
     padding: 80px 0; 
     border-bottom: 1px dashed var(--accent-fade); 
@@ -128,7 +125,6 @@ section:last-of-type {
     margin-bottom: 50px; 
 }
 
-/* Hero 首屏 */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -151,7 +147,6 @@ section:last-of-type {
     opacity: 0.8; 
 }
 
-/* 布局网格 */
 .grid-3 { 
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -164,16 +159,16 @@ section:last-of-type {
     align-items: center; 
 }
 
-/* 核心修复 2：手绘素描风毛玻璃卡片 */
+/* 手绘卡片：配合纯色牛皮纸背景，采用提亮泛白效果 */
 .sketch-card {
     border: var(--border-sketch);
     padding: 30px;
-    /* 使用带透明度的羊皮纸色，完美契合你的背景图片 */
-    background: rgba(232, 223, 213, 0.65); 
-    /* 找回毛玻璃虚化效果 */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px); /* 兼容苹果 iPhone/Mac 设备 */
-    box-shadow: 6px 6px 0px rgba(43, 28, 17, 0.2);
+    background: rgba(255, 255, 255, 0.3); /* 轻微的白色提亮，区分层级 */
+    box-shadow: 6px 6px 0px rgba(43, 28, 17, 0.1); /* 墨水投影 */
+    transition: transform 0.2s ease;
+}
+.sketch-card:hover {
+    transform: translateY(-5px);
 }
 .sketch-card h3 { 
     font-size: 1.5rem; 
@@ -182,7 +177,6 @@ section:last-of-type {
     margin-bottom: 15px; 
 }
 
-/* 游戏操作列表样式 */
 .control-list {
     list-style-type: none;
     padding-left: 0;
@@ -198,7 +192,6 @@ section:last-of-type {
     border-bottom: none;
 }
 
-/* FAQ 问答模块 */
 .faq-item { 
     margin-bottom: 30px; 
 }
@@ -214,7 +207,6 @@ section:last-of-type {
     opacity: 0.9; 
 }
 
-/* Footer 页脚 */
 footer {
     background: var(--text-ink);
     color: var(--bg-parchment);
@@ -228,7 +220,6 @@ footer p {
     opacity: 0.8; 
 }
 
-/* 移动端响应式适配 */
 @media (max-width: 768px) {
     .hero h1 { 
         font-size: 2.8rem; 
