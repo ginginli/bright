@@ -5,22 +5,35 @@
     --bg-parchment: #e8dfd5; /* 羊皮纸底色 */
     --text-ink: #2b1c11;     /* 深墨褐色 */
     --accent-fade: #8a7360;  /* 褪色墨水 */
-    --border-sketch: 2px solid #2b1c11;
+    --border-sketch: 2px solid #2b1c11; /* 手绘风格边框 */
     
     --font-heading: 'Rye', cursive; /* 西部风格标题 */
     --font-body: 'Lora', serif;     /* 优雅易读的衬线正文 */
     --font-handwriting: 'Caveat', cursive; /* 手写体 */
 }
 
+/* 核心修复 1：让你的 background.png 完美铺满全屏，并且固定不动 */
 body {
     font-family: var(--font-body);
-    background-color: var(--bg-parchment);
     color: var(--text-ink);
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    /* 轻微的噪点背景模拟纸张质感 */
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* 滤镜：在背景图上方叠加极其轻微的噪点，模拟复古素描纸张质感 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
     background-image: url('data:image/svg+xml;utf8,%3Csvg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="noiseFilter"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="100%25" height="100%25" filter="url(%23noiseFilter)" opacity="0.04"/%3E%3C/svg%3E');
+    pointer-events: none; /* 确保噪点不会阻挡鼠标点击 */
+    z-index: -1; /* 放在所有内容的底层，但背景图的上方 */
 }
 
 h1, h2, h3, .logo {
@@ -37,6 +50,7 @@ h1, h2, h3, .logo {
     padding: 0 20px;
 }
 
+/* 手写体特殊样式，稍微倾斜制造真实感 */
 .handwritten {
     font-family: var(--font-handwriting);
     font-size: 1.8rem;
@@ -47,7 +61,7 @@ h1, h2, h3, .logo {
     display: inline-block;
 }
 
-/* 交互按钮 */
+/* 交互按钮（墨水风格） */
 .btn {
     display: inline-block;
     background: transparent;
@@ -61,6 +75,7 @@ h1, h2, h3, .logo {
     transition: all 0.3s ease;
     box-shadow: 4px 4px 0px var(--text-ink);
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .btn:hover {
@@ -71,9 +86,10 @@ h1, h2, h3, .logo {
 }
 
 /* =========================================
-   模块样式
+   模块布局与细节样式
    ========================================= */
-/* Header */
+
+/* Header 导航 */
 header {
     padding: 20px 0;
     border-bottom: var(--border-sketch);
@@ -83,46 +99,90 @@ header .container {
     justify-content: space-between;
     align-items: center;
 }
-.logo { font-size: 2rem; margin: 0; }
+.logo { 
+    font-size: 2rem; 
+    margin: 0; 
+}
 nav a {
     color: var(--text-ink);
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
+    transition: color 0.2s;
 }
 nav a:hover {
     color: var(--accent-fade);
 }
 
 /* Section 通用设定 */
-section { padding: 80px 0; border-bottom: 1px dashed var(--accent-fade); }
-section:last-of-type { border-bottom: none; }
-.section-title { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
+section { 
+    padding: 80px 0; 
+    border-bottom: 1px dashed var(--accent-fade); 
+}
+section:last-of-type { 
+    border-bottom: none; 
+}
+.section-title { 
+    font-size: 2.5rem; 
+    text-align: center; 
+    margin-bottom: 50px; 
+}
 
-/* Hero */
+/* Hero 首屏 */
 .hero {
     text-align: center;
     padding: 100px 20px;
     position: relative;
 }
-.hero h1 { font-size: 4.5rem; margin-bottom: 10px; line-height: 1.2; }
-.hero p.subtitle { font-size: 1.3rem; margin-bottom: 30px; }
-.hero .handwritten-note { position: absolute; top: 15%; right: 15%; opacity: 0.8; }
+.hero h1 { 
+    font-size: 4.5rem; 
+    margin-bottom: 10px; 
+    line-height: 1.2; 
+    text-shadow: 2px 2px 0px rgba(255,255,255,0.4); 
+}
+.hero p.subtitle { 
+    font-size: 1.3rem; 
+    margin-bottom: 30px; 
+}
+.hero .handwritten-note { 
+    position: absolute; 
+    top: 15%; 
+    right: 15%; 
+    opacity: 0.8; 
+}
 
 /* 布局网格 */
-.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 50px; align-items: center; }
+.grid-3 { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 40px; 
+}
+.grid-2 { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); 
+    gap: 50px; 
+    align-items: center; 
+}
 
-/* 手绘素描风卡片 */
+/* 核心修复 2：手绘素描风毛玻璃卡片 */
 .sketch-card {
     border: var(--border-sketch);
     padding: 30px;
-    background: rgba(255, 255, 255, 0.2);
-    box-shadow: 6px 6px 0px rgba(43, 28, 17, 0.1);
+    /* 使用带透明度的羊皮纸色，完美契合你的背景图片 */
+    background: rgba(232, 223, 213, 0.65); 
+    /* 找回毛玻璃虚化效果 */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px); /* 兼容苹果 iPhone/Mac 设备 */
+    box-shadow: 6px 6px 0px rgba(43, 28, 17, 0.2);
 }
-.sketch-card h3 { font-size: 1.5rem; border-bottom: 1px solid var(--text-ink); padding-bottom: 10px; margin-bottom: 15px; }
+.sketch-card h3 { 
+    font-size: 1.5rem; 
+    border-bottom: 1px solid var(--text-ink); 
+    padding-bottom: 10px; 
+    margin-bottom: 15px; 
+}
 
-/* 操作列表样式 */
+/* 游戏操作列表样式 */
 .control-list {
     list-style-type: none;
     padding-left: 0;
@@ -138,12 +198,23 @@ section:last-of-type { border-bottom: none; }
     border-bottom: none;
 }
 
-/* FAQ */
-.faq-item { margin-bottom: 30px; }
-.faq-item h4 { font-family: var(--font-body); font-weight: bold; font-size: 1.2rem; margin-bottom: 10px; }
-.faq-item p { margin-top: 0; color: var(--text-ink); opacity: 0.9; }
+/* FAQ 问答模块 */
+.faq-item { 
+    margin-bottom: 30px; 
+}
+.faq-item h4 { 
+    font-family: var(--font-body); 
+    font-weight: bold; 
+    font-size: 1.2rem; 
+    margin-bottom: 10px; 
+}
+.faq-item p { 
+    margin-top: 0; 
+    color: var(--text-ink); 
+    opacity: 0.9; 
+}
 
-/* Footer */
+/* Footer 页脚 */
 footer {
     background: var(--text-ink);
     color: var(--bg-parchment);
@@ -151,12 +222,28 @@ footer {
     padding: 40px 0;
     border-top: var(--border-sketch);
 }
-footer p { margin: 5px 0; font-size: 0.9rem; opacity: 0.8; }
+footer p { 
+    margin: 5px 0; 
+    font-size: 0.9rem; 
+    opacity: 0.8; 
+}
 
-/* 移动端适配 */
+/* 移动端响应式适配 */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.8rem; }
-    .hero .handwritten-note { display: none; }
-    header .container { flex-direction: column; gap: 15px; }
-    nav a { margin: 0 10px; }
+    .hero h1 { 
+        font-size: 2.8rem; 
+    }
+    .hero .handwritten-note { 
+        display: none; 
+    }
+    header .container { 
+        flex-direction: column; 
+        gap: 15px; 
+    }
+    nav a { 
+        margin: 0 10px; 
+    }
+    .section-title { 
+        font-size: 2rem; 
+    }
 }
