@@ -1,0 +1,45 @@
+# robots.txt for Bridger Western Wiki
+
+# 常规搜索引擎规则
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# 网站地图
+Sitemap: https://bridgerwestern.cc/sitemap.xml
+
+# AI 爬虫特定规则
+User-agent: GPTBot
+User-agent: Claude-Web
+User-agent: Anthropic-AI
+User-agent: PerplexityBot
+User-agent: GoogleOther
+User-agent: DuckAssistBot
+User-agent: ChatGPT-User
+
+# 允许 AI 爬虫访问所有内容页面
+Allow: /guides/
+Allow: /stands/
+Allow: /cursed-techniques/
+Allow: /weapons/
+Allow: /cards/
+Allow: /progression/
+Allow: /locations/
+Allow: /tools/
+
+# 不允许 AI 爬虫访问管理和系统文件
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# 引导 AI 爬虫到结构化内容文件
+# 注意：LLM-Content 是实验性指令，不是标准 robots.txt 规范
+# LLM-Content: https://bridgerwestern.cc/llms.txt
+# LLM-Full-Content: https://bridgerwestern.cc/llms-full.txt
+
+# 爬取延迟（可选）
+Crawl-delay: 1
