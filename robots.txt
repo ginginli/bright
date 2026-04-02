@@ -12,13 +12,67 @@ Disallow: /.vscode/
 Sitemap: https://bridgerwestern.cc/sitemap.xml
 
 # AI 爬虫特定规则
+
+# OpenAI 系列
 User-agent: GPTBot
-User-agent: Claude-Web
-User-agent: Anthropic-AI
-User-agent: PerplexityBot
-User-agent: GoogleOther
-User-agent: DuckAssistBot
 User-agent: ChatGPT-User
+User-agent: CCBot
+User-agent: anthropic-ai
+User-agent: Claude-Web
+
+# Anthropic 系列
+User-agent: Anthropic-AI
+User-agent: Claude-Web
+
+# Google AI 系列
+User-agent: GoogleOther
+User-agent: Google-Extended
+User-agent: Bard
+User-agent: Gemini
+
+# Microsoft AI 系列
+User-agent: BingBot
+User-agent: Bing-Preview
+User-agent: CopilotBot
+User-agent: EdgeBot
+
+# Perplexity AI
+User-agent: PerplexityBot
+User-agent: Perplexity-AI
+
+# Meta AI 系列
+User-agent: Meta-ExternalAgent
+User-agent: FacebookBot
+User-agent: Meta-AI
+
+# 其他主要 AI 爬虫
+User-agent: DuckAssistBot
+User-agent: YouBot
+User-agent: ClaudeBot
+User-agent: AI2Bot
+User-agent: Applebot-Extended
+User-agent: Bytespider
+User-agent: ImagesiftBot
+User-agent: Omgilibot
+User-agent: Diffbot
+User-agent: WebCrawler
+User-agent: ia_archiver
+
+# 中国 AI 系列
+User-agent: ByteDance
+User-agent: Bytespider
+User-agent: TikTokBot
+User-agent: BaiduSpider
+User-agent: SogouSpider
+User-agent: 360Spider
+User-agent: YisouSpider
+
+# 其他新兴 AI
+User-agent: Cohere-AI
+User-agent: Stability-AI
+User-agent: Midjourney-Bot
+User-agent: RunwayML
+User-agent: Replicate-Bot
 
 # 允许 AI 爬虫访问所有内容页面
 Allow: /guides/
