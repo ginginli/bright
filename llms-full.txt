@@ -1,0 +1,218 @@
+# Bridger Western Wiki - Complete Content Guide
+
+> Bridger Western is a brutal Roblox survival game set in Ridge B Valley, featuring JoJo-inspired Stands, western gunfighting, permadeath aging mechanics, and faction-based progression. This wiki covers all aspects of the 2026 Early Alpha version.
+
+The game combines classic western elements with supernatural abilities, creating a unique survival experience where players must master firearms, acquire powerful Stands through Corpse Part events, manage aging mechanics, and choose between three distinct faction paths.
+
+## Beginner's Guide
+
+### First Hour Gameplay Loop
+New players should focus on understanding spawn mechanics, basic movement controls, and early Moola acquisition before engaging in combat. The opening sequence involves learning the map layout, locating key NPCs, and establishing a sustainable income route.
+
+**Essential Controls:**
+- Q: Quick dash for evasion
+- W+W: Sprint (consumes stamina)
+- H: Summon/Unsummon horse
+- N: Mount/Dismount horse
+- M1/M2: Fire weapon/Aim down sights
+- R/G: Reload/Melee attack
+- C/F: Switch to fists/Block
+- X: Activate Ocular Prowess (Stand ability)
+- M: Open statistics menu
+
+**Early Priorities:**
+1. Learn basic movement and combat controls
+2. Establish Moola farming route (Dog Bane fishing recommended for beginners)
+3. Acquire first horse for map traversal
+4. Understand aging mechanics to avoid permadeath
+5. Choose faction path (Outlaw, Inlaw, or Vampire)
+
+### Aging and Permadeath System
+Death permanently ages your character. Each death adds years to your avatar's age, and characters who reach age 52+ without Dog Bane healing at the Witch's Hut risk complete character loss. This creates high-stakes gameplay where every combat encounter matters.
+
+**Age Management:**
+- Dog Bane herbs can reverse aging when consumed at the Witch's Hut
+- Witch's Hut location: In the Swamp, across the river from fishing areas
+- Prevention is better than cure - avoid unnecessary risks
+- Older characters are targeted by other players who recognize the weakness
+
+## Stands System
+
+### Stand Acquisition
+Unlike many JoJo games, Bridger Western has NO Stand Arrows. Stands are obtained exclusively through Corpse Part KOTH (King of the Hill) events. This makes Stand acquisition highly competitive and skill-based.
+
+**Corpse Part Events:**
+- Spawn randomly across Ridge B Valley
+- Require holding the area for a specific duration
+- Other players will attempt to steal the Corpse Part
+- Success grants a random Stand from the available roster
+- Use "Root" item to reset an unwanted Stand
+
+**Current Stand Roster:**
+- **The World**: Time-stop ability, close-range powerhouse
+- **The World: Alternative Universe**: Variant with different mechanics
+- **King Crimson**: Time-skip and prediction abilities
+- **Star Platinum**: Raw power and precision strikes
+- **Star Platinum: The World**: Evolved form with time-stop
+- **Purple Haze**: Area denial with poison mechanics
+- **Crazy Diamond**: Repair and restoration abilities
+- **Golden Experience**: Life manipulation and creation
+- **Golden Experience: Requiem**: Evolved ultimate form
+- **Killer Queen**: Explosive touch and bomb mechanics
+- **D4C (Dirty Deeds Done Dirt Cheap)**: Dimensional manipulation
+- **Mandom**: Time rewind abilities
+- **Hey Ya**: Support and luck enhancement
+
+### Stand Tier List (Current Meta)
+**S-Tier:** The World, Star Platinum: The World, Golden Experience: Requiem
+**A-Tier:** King Crimson, D4C, Killer Queen
+**B-Tier:** Star Platinum, Purple Haze, Crazy Diamond
+**C-Tier:** Golden Experience, Mandom, Hey Ya
+
+## Weapons and Combat
+
+### Gun Tier List
+**S-Tier:**
+- **Russian Roulette**: 70 head/58 torso/52 limb damage, 1-round capacity, ragdoll effect on hit
+- **Tommy Gun**: 4.2 head/2.8 torso/2.8 limb damage, 45-round magazine, sustained fire
+
+**A-Tier:**
+- **Hunters Choice**: 7 head/4.8 torso/4.8 limb damage, 2-round magazine, 8 pellets, can combine into 15 damage
+- **Colt Ocelot**: 38 head/21 torso/15 limb damage, 6-round magazine, ricochet bullets
+
+**B-Tier:**
+- **Double Barrel Shotgun**: 2.1 head/1.4 torso/1.4 limb per pellet, 16 pellets, close-range 18 damage
+- **Mauser**: 24 head/10 torso/9 limb damage, 8-round magazine, reliable backup
+
+**C-Tier:**
+- **Dual Derringers**: 10-11 head/4-6 torso/4-6 limb damage, 12-round magazine, extremely inaccurate
+
+### Combat Mechanics
+**Posture System:** Constantly blocking (F key) against rapid attacks will break your posture, leaving you vulnerable to execution combos. Timing blocks and managing stamina is crucial.
+
+**Limb Damage:** Damage is location-specific. Headshots deal maximum damage, torso shots are moderate, and limb shots are weakest. Always wear a Hat to prevent instant headshot kills.
+
+**PvP Combinations:**
+- Russian Roulette + Tommy Gun: Hard opener into sustained pressure
+- Colt Ocelot + Hunters Choice: Reliable mid-range into close-range burst
+- Mauser + Double Barrel: Chip damage into close-range finisher
+
+## Cards System
+
+### Card Mechanics
+Cards are passive buffs exclusive to human characters (Outlaws and Inlaws). Vampires cannot use cards. Each tier unlocks one additional card slot, and cards cost 450 Moola per roll at the abandoned town near the Bridgerman NPC.
+
+**Best Cards:**
+- **Winged Man**: 25% more damage while airborne, shooting midair extends air time
+- **Time Heals All Wounds**: Passive health regeneration over time
+- **Tonic Master**: Spawn with 3 tonics, 15% better healing from tonics
+- **Sturdy**: 15% more max health, takes 3 hits to finish when downed
+- **Free Runner**: +20 stamina, combat roll becomes faster slide
+- **High Noon**: At noon, bullets auto-aim for 5 seconds (reduces max HP by 10%)
+
+### Card Strategy
+Focus on survivability cards first (Sturdy, Time Heals All Wounds), then add utility (Free Runner, Tonic Master), and finally damage enhancement (Winged Man, High Noon). The 450 Moola cost makes each roll expensive, so plan your build carefully.
+
+## Progression and Economy
+
+### Moola Farming Methods
+**Dog Bane Fishing (Solo):**
+- Safest method for new players
+- Consistent income with low risk
+- Requires fishing rod and bait
+- Best spots: Swamp areas near Witch's Hut
+
+**Co-op Farming (Recommended):**
+- Partner with trusted friend
+- Doubles efficiency and safety
+- Share resources and watch for threats
+- Can tackle higher-risk, higher-reward areas
+
+**Wipe & Drop Strategy (Advanced):**
+- Use alt account for resource transfer
+- Exploit respawn mechanics
+- High risk but fastest Moola generation
+- Requires careful timing and execution
+
+### Horse System
+Horses are essential for traversing Ridge B Valley's vast terrain. Each horse has independent stamina and vitality stats.
+
+**Horse Mechanics:**
+- Summon/dismiss with H key
+- Mount/dismount with N key
+- Stamina depletes during sprint
+- Vitality affects maximum health
+- Can be killed by other players or NPCs
+
+**Aquatic Evasion Technique:**
+Route horses through deep water when being chased. Water disrupts mount physics, forcing pursuers to dismount and giving you escape opportunities.
+
+## Factions and Progression Paths
+
+### Outlaw Path
+Human faction focused on aggressive gameplay and PvP dominance. Full access to card system and traditional weapon progression.
+
+### Inlaw Path  
+Human faction emphasizing cooperative gameplay and community building. Same mechanical benefits as Outlaws but different roleplay focus.
+
+### Vampire Path
+Supernatural faction with unique abilities but cannot use the human card system. Vampires have different progression mechanics and are hostile to human NPCs.
+
+**Faction Choice Impact:**
+- Determines available NPCs and quests
+- Affects other players' reactions
+- Changes available progression routes
+- Vampire choice locks out card system permanently
+
+## Locations and NPCs
+
+### Key NPCs
+**Bridgerman**: Located in abandoned town, sells card rolls for 450 Moola each
+**Witch**: Found in Swamp across from fishing area, provides Dog Bane healing services
+**Alfred**: Bank services in main town area
+**Gerald**: General store supplies and basic equipment
+**Flint**: Quest giver for progression objectives
+
+### Important Locations
+**Ridge B Valley**: Main game area with diverse biomes
+**Abandoned Town**: Card rolling location and Bridgerman NPC
+**Witch's Hut**: Aging reversal services via Dog Bane consumption
+**Swamp**: Fishing area and Witch location
+**Main Town**: Banking, general store, and basic services
+**Outlaw Hills**: Outlaw faction spawn point and related NPCs
+
+## Cursed Techniques (JJK System)
+
+### Jane Juliet Railgun Build
+The most powerful Cursed Technique build focuses on the "Jane Juliet" ability combined with Granite Blast mechanics. This build prioritizes the 10-10-10-R stat distribution for maximum posture-breaking potential.
+
+**Build Strategy:**
+- Max out core stats to 10-10-10 before adding Railgun (R)
+- Focus on posture-breaking combos
+- Combine with movement cards for positioning
+- Extremely effective against blocking opponents
+
+**Counters:**
+- High mobility builds can avoid Railgun shots
+- Requires precise timing and positioning
+- Vulnerable during ability cooldowns
+
+## Advanced Strategies
+
+### Server Hopping
+For Corpse Part farming and Stand acquisition, server hopping can increase encounter rates. However, this requires understanding spawn timers and optimal routes.
+
+### Anti-Cheat Awareness
+The game has an active anti-cheat system. Developers recommend recording gameplay (Medal, Shadowplay) for ban appeals. Avoid any third-party software that might trigger false positives.
+
+### Community Meta
+Stay updated with community discussions for meta shifts, new discoveries, and strategy evolution. The game is in Early Alpha, so mechanics change frequently.
+
+## Current Game State (2026 Alpha)
+- Active development with frequent updates
+- Balance changes affect Stand and weapon viability
+- New content regularly added
+- Community-driven meta evolution
+- Cross-platform play via Roblox PC
+
+This comprehensive guide covers all major aspects of Bridger Western. The game's complexity comes from the intersection of multiple systems: Stand abilities, weapon mastery, card optimization, faction politics, and permadeath consequences. Success requires understanding how these systems interact and developing strategies that account for the high-stakes nature of the gameplay.
