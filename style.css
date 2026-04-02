@@ -558,3 +558,170 @@ a.logo {
 
     .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
+/* =========================================
+   Stands Database 专用样式
+   ========================================= */
+
+/* Breadcrumb */
+.breadcrumb {
+    background: rgba(43,28,17,0.06);
+    padding: 12px 0;
+    border-bottom: 1px dashed var(--accent-fade);
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--text-ink);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--accent-fade);
+}
+
+/* Tier Sections */
+.tier-section {
+    margin-bottom: 50px;
+}
+
+.tier-title {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: var(--font-heading);
+    letter-spacing: 2px;
+}
+
+.tier-title.s-tier {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: var(--text-ink);
+    border: 2px solid #ffd700;
+}
+
+.tier-title.a-tier {
+    background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+    color: var(--text-ink);
+    border: 2px solid #c0c0c0;
+}
+
+.tier-title.b-tier {
+    background: linear-gradient(135deg, #cd7f32, #daa520);
+    color: var(--bg-parchment);
+    border: 2px solid #cd7f32;
+}
+
+/* Stand Cards */
+.stand-card {
+    display: block;
+    text-decoration: none;
+    color: var(--text-ink);
+    border: var(--border-sketch);
+    padding: 24px;
+    background: rgba(255,255,255,0.3);
+    box-shadow: 4px 4px 0 rgba(43,28,17,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+    position: relative;
+}
+
+.stand-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 rgba(43,28,17,0.15);
+}
+
+.stand-card.coming-soon {
+    opacity: 0.7;
+    cursor: default;
+}
+
+.stand-card.coming-soon:hover {
+    transform: none;
+    box-shadow: 4px 4px 0 rgba(43,28,17,0.1);
+}
+
+.stand-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.stand-card h4 {
+    font-size: 1.3rem;
+    margin: 0 0 8px;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.stand-ability {
+    font-size: 0.85rem;
+    color: var(--accent-fade);
+    font-style: italic;
+    margin: 0 0 12px;
+}
+
+.stand-desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0 0 16px;
+}
+
+/* Tier Badges */
+.tier-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.tier-badge.s-tier {
+    background: #ffd700;
+    color: var(--text-ink);
+}
+
+.tier-badge.a-tier {
+    background: #c0c0c0;
+    color: var(--text-ink);
+}
+
+.tier-badge.b-tier {
+    background: #cd7f32;
+    color: var(--bg-parchment);
+}
+
+.coming-soon-badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 0.65rem;
+    background: var(--accent-fade);
+    color: var(--bg-parchment);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--font-heading);
+    letter-spacing: 0.5px;
+}
+
+/* Active nav link */
+.nav-link.active {
+    color: var(--accent-fade);
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .tier-title {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+    
+    .stand-card {
+        padding: 20px;
+    }
+    
+    .stand-icon {
+        font-size: 2.5rem;
+    }
+}
