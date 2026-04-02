@@ -1,42 +1,21 @@
 # Bridger Western Wiki
 
-> Complete wiki and survival guide for Bridger Western, a Roblox survival game set in Ridge B Valley. Covers stands, guns, cards, progression, and survival mechanics for the 2026 Alpha version.
+> Complete wiki and survival guide for Bridger Western, a Roblox survival game set in Ridge B Valley. Covers Stands, acquisition methods, tier rankings, clan coordination, and survival mechanics for the 2026 Alpha version.
 
-This wiki provides comprehensive guides for Bridger Western players, including beginner tutorials, Stand acquisition methods, weapon tier lists, Moola farming strategies, and detailed game mechanics explanations.
+## Available Content
 
-## Core Content
-- [Beginner Guide](https://bridgerwestern.cc/guides/beginner-guide.html): First hour gameplay, leveling, horse acquisition, and early milestones
-- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Corpse Part locations, KOTH events, and Stand acquisition methods
-- [Gun Tier List](https://bridgerwestern.cc/weapons/gun-tier-list.html): Complete weapon rankings for PvP and PvE combat
-- [Money Farming Guide](https://bridgerwestern.cc/progression/money-farming.html): Best Moola farming routes and strategies
-- [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): Rankings of all Stands in the current meta
-
-## Game Systems
-- [Stands Database](https://bridgerwestern.cc/stands/): Complete Stand roster including The World, D4C, Killer Queen, Star Platinum
-- [Weapons Database](https://bridgerwestern.cc/weapons/): All guns, stats, and PvP combinations
-- [Cards System](https://bridgerwestern.cc/cards/): Tarot Cards mechanics, best cards, and build optimization
-- [Cursed Techniques](https://bridgerwestern.cc/cursed-techniques/): JJK-inspired abilities including Jane Juliet Railgun builds
-
-## Progression & Mechanics
-- [Horse Guide](https://bridgerwestern.cc/progression/horse-guide.html): Horse stats, stamina, vitality, and traversal mechanics
-- [Aging System](https://bridgerwestern.cc/guides/aging-system.html): Permadeath mechanics and Dog Bane healing
-- [Controls Guide](https://bridgerwestern.cc/guides/controls.html): Complete control scheme and combat mechanics
-- [Faction Choice](https://bridgerwestern.cc/guides/outlaw-or-inlaw.html): Outlaw vs Inlaw vs Vampire progression paths
-
-## Locations & NPCs
-- [Map Overview](https://bridgerwestern.cc/locations/map.html): Complete Ridge B Valley map and landmarks
-- [NPC Locations](https://bridgerwestern.cc/locations/npc-locations.html): Bridgerman, Witch, and other important NPCs
-- [Witch's Hut](https://bridgerwestern.cc/locations/witch.html): Dog Bane healing and aging reversal
-
-## Tools & Calculators
-- [DPS Calculator](https://bridgerwestern.cc/tools/dps-calculator.html): Weapon damage calculations and optimization
-- [Route Optimizer](https://bridgerwestern.cc/tools/route-optimizer.html): Efficient farming and progression routes
-- [Progression Forecaster](https://bridgerwestern.cc/tools/progression-forecaster.html): Character development planning
+- [Stands Database](https://bridgerwestern.cc/stands/): Complete Stand roster with tier rankings (S/A/B/Pending)
+- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.5% drop rate), Corpse Part KOTH events, water escape tactics, server selection
+- [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): S-tier (The World, D4C, Killer Queen), A-tier (TWAU, King Crimson, Star Platinum, SPTW), B-tier rankings
+- [Corpse Part Guide](https://bridgerwestern.cc/stands/corpse-part-guide.html): KOTH mechanics, probability system (15-20% success rate), body part types, survival tactics
+- [Discord Coordination](https://bridgerwestern.cc/stands/discord-coordination.html): Clan strategies, server flooding methods, team coordination
+- [Stands FAQ](https://bridgerwestern.cc/stands/faq.html): Common questions, troubleshooting, beginner mistakes, Tusk Acts abilities, Hey Ya buffs, PvP counters
 
 ## Key Game Mechanics
-- **Stands**: Obtained through Corpse Part KOTH events, no Stand Arrows available
-- **Cards**: Cost 450 Moola per roll at abandoned town, human characters only
-- **Aging**: Death permanently ages character, risk of permadeath after age 52
-- **Combat**: Limb-based damage system with posture mechanics and blocking
-- **Factions**: Three paths - Outlaws, Inlaws (both human), and Vampires (no cards)
-- **Economy**: Moola farming through Dog Bane fishing, co-op methods, and Wipe & Drop strategies
+
+- **Stand Acquisition**: Arrow Shard fishing (0.5%) or Corpse Part KOTH events (15-20% with holding)
+- **Tusk**: Requires Left Arm Corpse Part (10% chance), causes permanent disability (crawl only, no weapons)
+- **Tusk Acts**: Act 1 (Nail Glide + mini-gun spam), Act 2 (Homing bullets + ricochet + traps), Act 3 (Wormhole bullets + double damage)
+- **Hey Ya**: Random buff system - dodge, damage, healing, speed, accuracy buffs
+- **Water Method**: Escape tactic using water terrain to avoid players during Corpse Part events
+- **Clan Monopoly**: S-tier Stands controlled by Discord clans, solo success rate ~5% vs clan 80%+

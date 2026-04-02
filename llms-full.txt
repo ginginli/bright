@@ -1,218 +1,136 @@
-# Bridger Western Wiki - Complete Content Guide
+# Bridger Western Wiki - Full Content Index
 
-> Bridger Western is a brutal Roblox survival game set in Ridge B Valley, featuring JoJo-inspired Stands, western gunfighting, permadeath aging mechanics, and faction-based progression. This wiki covers all aspects of the 2026 Early Alpha version.
+> Complete wiki for Bridger Western, a Roblox survival game set in Ridge B Valley. 2026 Alpha version. All content is verified from user-provided gameplay data and community analysis.
 
-The game combines classic western elements with supernatural abilities, creating a unique survival experience where players must master firearms, acquire powerful Stands through Corpse Part events, manage aging mechanics, and choose between three distinct faction paths.
+## Site Structure
 
-## Beginner's Guide
+### Homepage
+URL: https://bridgerwestern.cc/
+Content: Wiki navigation hub, Stand acquisition overview, key game mechanics summary
 
-### First Hour Gameplay Loop
-New players should focus on understanding spawn mechanics, basic movement controls, and early Moola acquisition before engaging in combat. The opening sequence involves learning the map layout, locating key NPCs, and establishing a sustainable income route.
+### Stands Section
+URL: https://bridgerwestern.cc/stands/
+Content: Complete Stand database with tier classifications
 
-**Essential Controls:**
-- Q: Quick dash for evasion
-- W+W: Sprint (consumes stamina)
-- H: Summon/Unsummon horse
-- N: Mount/Dismount horse
-- M1/M2: Fire weapon/Aim down sights
-- R/G: Reload/Melee attack
-- C/F: Switch to fists/Block
-- X: Activate Ocular Prowess (Stand ability)
-- M: Open statistics menu
+**Stand Tiers (Verified):**
+- S-Tier: The World, D4C, Killer Queen
+- A-Tier: Star Platinum, TWAU, King Crimson, Star Platinum The World
+- B-Tier: Tubular Bells, 20th Century Boy, Hierophant Green, Silver Chariot, Hermit Purple, Tusk Acts 1-3
+- Tier Pending: Purple Haze, Mandom, Hey Ya
 
-**Early Priorities:**
-1. Learn basic movement and combat controls
-2. Establish Moola farming route (Dog Bane fishing recommended for beginners)
-3. Acquire first horse for map traversal
-4. Understand aging mechanics to avoid permadeath
-5. Choose faction path (Outlaw, Inlaw, or Vampire)
+---
 
-### Aging and Permadeath System
-Death permanently ages your character. Each death adds years to your avatar's age, and characters who reach age 52+ without Dog Bane healing at the Witch's Hut risk complete character loss. This creates high-stakes gameplay where every combat encounter matters.
+### How to Get a Stand
+URL: https://bridgerwestern.cc/stands/how-to-get-stand.html
 
-**Age Management:**
-- Dog Bane herbs can reverse aging when consumed at the Witch's Hut
-- Witch's Hut location: In the Swamp, across the river from fishing areas
-- Prevention is better than cure - avoid unnecessary risks
-- Older characters are targeted by other players who recognize the weakness
-
-## Stands System
-
-### Stand Acquisition
-Unlike many JoJo games, Bridger Western has NO Stand Arrows. Stands are obtained exclusively through Corpse Part KOTH (King of the Hill) events. This makes Stand acquisition highly competitive and skill-based.
-
-**Corpse Part Events:**
-- Spawn randomly across Ridge B Valley
-- Require holding the area for a specific duration
-- Other players will attempt to steal the Corpse Part
-- Success grants a random Stand from the available roster
-- Use "Root" item to reset an unwanted Stand
-
-**Current Stand Roster:**
-- **The World**: Time-stop ability, close-range powerhouse
-- **The World: Alternative Universe**: Variant with different mechanics
-- **King Crimson**: Time-skip and prediction abilities
-- **Star Platinum**: Raw power and precision strikes
-- **Star Platinum: The World**: Evolved form with time-stop
-- **Purple Haze**: Area denial with poison mechanics
-- **Crazy Diamond**: Repair and restoration abilities
-- **Golden Experience**: Life manipulation and creation
-- **Golden Experience: Requiem**: Evolved ultimate form
-- **Killer Queen**: Explosive touch and bomb mechanics
-- **D4C (Dirty Deeds Done Dirt Cheap)**: Dimensional manipulation
-- **Mandom**: Time rewind abilities
-- **Hey Ya**: Support and luck enhancement
-
-### Stand Tier List (Current Meta)
-**S-Tier:** The World, Star Platinum: The World, Golden Experience: Requiem
-**A-Tier:** King Crimson, D4C, Killer Queen
-**B-Tier:** Star Platinum, Purple Haze, Crazy Diamond
-**C-Tier:** Golden Experience, Mandom, Hey Ya
-
-## Weapons and Combat
-
-### Gun Tier List
-**S-Tier:**
-- **Russian Roulette**: 70 head/58 torso/52 limb damage, 1-round capacity, ragdoll effect on hit
-- **Tommy Gun**: 4.2 head/2.8 torso/2.8 limb damage, 45-round magazine, sustained fire
-
-**A-Tier:**
-- **Hunters Choice**: 7 head/4.8 torso/4.8 limb damage, 2-round magazine, 8 pellets, can combine into 15 damage
-- **Colt Ocelot**: 38 head/21 torso/15 limb damage, 6-round magazine, ricochet bullets
-
-**B-Tier:**
-- **Double Barrel Shotgun**: 2.1 head/1.4 torso/1.4 limb per pellet, 16 pellets, close-range 18 damage
-- **Mauser**: 24 head/10 torso/9 limb damage, 8-round magazine, reliable backup
-
-**C-Tier:**
-- **Dual Derringers**: 10-11 head/4-6 torso/4-6 limb damage, 12-round magazine, extremely inaccurate
-
-### Combat Mechanics
-**Posture System:** Constantly blocking (F key) against rapid attacks will break your posture, leaving you vulnerable to execution combos. Timing blocks and managing stamina is crucial.
-
-**Limb Damage:** Damage is location-specific. Headshots deal maximum damage, torso shots are moderate, and limb shots are weakest. Always wear a Hat to prevent instant headshot kills.
-
-**PvP Combinations:**
-- Russian Roulette + Tommy Gun: Hard opener into sustained pressure
-- Colt Ocelot + Hunters Choice: Reliable mid-range into close-range burst
-- Mauser + Double Barrel: Chip damage into close-range finisher
-
-## Cards System
-
-### Card Mechanics
-Cards are passive buffs exclusive to human characters (Outlaws and Inlaws). Vampires cannot use cards. Each tier unlocks one additional card slot, and cards cost 450 Moola per roll at the abandoned town near the Bridgerman NPC.
-
-**Best Cards:**
-- **Winged Man**: 25% more damage while airborne, shooting midair extends air time
-- **Time Heals All Wounds**: Passive health regeneration over time
-- **Tonic Master**: Spawn with 3 tonics, 15% better healing from tonics
-- **Sturdy**: 15% more max health, takes 3 hits to finish when downed
-- **Free Runner**: +20 stamina, combat roll becomes faster slide
-- **High Noon**: At noon, bullets auto-aim for 5 seconds (reduces max HP by 10%)
-
-### Card Strategy
-Focus on survivability cards first (Sturdy, Time Heals All Wounds), then add utility (Free Runner, Tonic Master), and finally damage enhancement (Winged Man, High Noon). The 450 Moola cost makes each roll expensive, so plan your build carefully.
-
-## Progression and Economy
-
-### Moola Farming Methods
-**Dog Bane Fishing (Solo):**
-- Safest method for new players
-- Consistent income with low risk
+**Method 1 - Arrow Shard Fishing:**
+- Drop rate: 0.5%
+- Guarantees a Stand when used
 - Requires fishing rod and bait
-- Best spots: Swamp areas near Witch's Hut
 
-**Co-op Farming (Recommended):**
-- Partner with trusted friend
-- Doubles efficiency and safety
-- Share resources and watch for threats
-- Can tackle higher-risk, higher-reward areas
+**Method 2 - Corpse Part KOTH:**
+- Requires 3+ players in server
+- Triggered by loud sound + yellow beam in sky
+- Success rate: 15-20% with proper holding time
+- Left Arm specifically gives Tusk (10% chance)
 
-**Wipe & Drop Strategy (Advanced):**
-- Use alt account for resource transfer
-- Exploit respawn mechanics
-- High risk but fastest Moola generation
-- Requires careful timing and execution
+**Water Method (Escape Tactic):**
+- Grab Corpse Part immediately
+- Mount horse, head to water
+- Travel across water to avoid pursuers
+- If stamina runs out, press S and move backwards at 20 speed
 
-### Horse System
-Horses are essential for traversing Ridge B Valley's vast terrain. Each horse has independent stamina and vitality stats.
+**Server Selection:**
+- Choose less populated servers for solo attempts
+- Use Discord coordination for populated server flooding
 
-**Horse Mechanics:**
-- Summon/dismiss with H key
-- Mount/dismount with N key
-- Stamina depletes during sprint
-- Vitality affects maximum health
-- Can be killed by other players or NPCs
+**Tusk Warning:**
+- Causes permanent disability
+- Cannot walk (crawl only)
+- Cannot use weapons
+- Requires legendary/mythical horse
 
-**Aquatic Evasion Technique:**
-Route horses through deep water when being chased. Water disrupts mount physics, forcing pursuers to dismount and giving you escape opportunities.
+---
 
-## Factions and Progression Paths
+### Stand Tier List
+URL: https://bridgerwestern.cc/stands/stand-tier-list.html
 
-### Outlaw Path
-Human faction focused on aggressive gameplay and PvP dominance. Full access to card system and traditional weapon progression.
+**S-Tier Stands:**
+- The World: Top-tier, clan monopolized, Meta Score 95/100
+- D4C: Advanced mechanics, clan monopolized, Meta Score 93/100
+- Killer Queen: High damage, clan monopolized, Meta Score 91/100
 
-### Inlaw Path  
-Human faction emphasizing cooperative gameplay and community building. Same mechanical benefits as Outlaws but different roleplay focus.
+**A-Tier Stands:**
+- Star Platinum: High damage output, Meta Score 82/100
+- TWAU: Versatile combat, Meta Score 80/100
+- King Crimson: High skill ceiling, Meta Score 78/100
+- Star Platinum The World: Evolution form, Meta Score 85/100
 
-### Vampire Path
-Supernatural faction with unique abilities but cannot use the human card system. Vampires have different progression mechanics and are hostile to human NPCs.
+**B-Tier Stands:**
+- Tubular Bells: Unique mechanics, Score 65/100
+- Hierophant Green: Range and trap abilities, Score 72/100
+- Silver Chariot: Fast attacks, high mobility, Score 70/100
+- Tusk Acts 1-3: Nail attacks, mobility restrictions, Score 66/100
+- 20th Century Boy: Defensive Stand, Score 64/100
+- Hermit Purple: Utility-focused, Score 63/100
 
-**Faction Choice Impact:**
-- Determines available NPCs and quests
-- Affects other players' reactions
-- Changes available progression routes
-- Vampire choice locks out card system permanently
+**Tier Pending (Unverified):**
+- Purple Haze, Mandom, Hey Ya
 
-## Locations and NPCs
+---
 
-### Key NPCs
-**Bridgerman**: Located in abandoned town, sells card rolls for 450 Moola each
-**Witch**: Found in Swamp across from fishing area, provides Dog Bane healing services
-**Alfred**: Bank services in main town area
-**Gerald**: General store supplies and basic equipment
-**Flint**: Quest giver for progression objectives
+### Corpse Part Guide
+URL: https://bridgerwestern.cc/stands/corpse-part-guide.html
 
-### Important Locations
-**Ridge B Valley**: Main game area with diverse biomes
-**Abandoned Town**: Card rolling location and Bridgerman NPC
-**Witch's Hut**: Aging reversal services via Dog Bane consumption
-**Swamp**: Fishing area and Witch location
-**Main Town**: Banking, general store, and basic services
-**Outlaw Hills**: Outlaw faction spawn point and related NPCs
+**KOTH Mechanics:**
+- Spawns randomly with 3+ players
+- Announcement: "IT APPEARS ONCE AGAIN"
+- Yellow beam visible in sky (~30 seconds)
+- Probability increases the longer you hold
 
-## Cursed Techniques (JJK System)
+**Body Part Types:**
+- Left Arm: Tusk (10% chance)
+- All other parts: Random Stand
 
-### Jane Juliet Railgun Build
-The most powerful Cursed Technique build focuses on the "Jane Juliet" ability combined with Granite Blast mechanics. This build prioritizes the 10-10-10-R stat distribution for maximum posture-breaking potential.
+**Survival Tactics:**
+- Water method for escape
+- Horse mobility essential
+- Avoid direct combat while holding
 
-**Build Strategy:**
-- Max out core stats to 10-10-10 before adding Railgun (R)
-- Focus on posture-breaking combos
-- Combine with movement cards for positioning
-- Extremely effective against blocking opponents
+---
 
-**Counters:**
-- High mobility builds can avoid Railgun shots
-- Requires precise timing and positioning
-- Vulnerable during ability cooldowns
+### Discord Coordination
+URL: https://bridgerwestern.cc/stands/discord-coordination.html
 
-## Advanced Strategies
+**Clan Strategies:**
+- Server flooding: Fill server with clan members
+- Turn-based: Clan members take turns holding Corpse Parts
+- Area control: Block Corpse Part spawn zones
+- Information sharing: Real-time spawn notifications
 
-### Server Hopping
-For Corpse Part farming and Stand acquisition, server hopping can increase encounter rates. However, this requires understanding spawn timers and optimal routes.
+**Solo vs Clan Success Rates:**
+- Solo players: ~5% success rate
+- Organized clans: 80%+ success rate
 
-### Anti-Cheat Awareness
-The game has an active anti-cheat system. Developers recommend recording gameplay (Medal, Shadowplay) for ban appeals. Avoid any third-party software that might trigger false positives.
+---
 
-### Community Meta
-Stay updated with community discussions for meta shifts, new discoveries, and strategy evolution. The game is in Early Alpha, so mechanics change frequently.
+### Stands FAQ
+URL: https://bridgerwestern.cc/stands/faq.html
 
-## Current Game State (2026 Alpha)
-- Active development with frequent updates
-- Balance changes affect Stand and weapon viability
-- New content regularly added
-- Community-driven meta evolution
-- Cross-platform play via Roblox PC
+**Key Q&A:**
+- Are there Stand Arrows? No traditional arrows. Arrow Shards exist via fishing (0.5%)
+- Fastest method? Corpse Part KOTH with Discord coordination
+- Can I change my Stand? No, Stands are permanent
+- Tusk Acts abilities:
+  - Act 1: Nail Glide + mini-gun spam
+  - Act 2: Homing bullets + ricochet + traps
+  - Act 3: Wormhole bullets + double damage
+- Hey Ya buffs: dodge, damage, healing, speed, accuracy (random activation)
+- Time Stop counters: maintain distance, use mobility, position behind cover
 
-This comprehensive guide covers all major aspects of Bridger Western. The game's complexity comes from the intersection of multiple systems: Stand abilities, weapon mastery, card optimization, faction politics, and permadeath consequences. Success requires understanding how these systems interact and developing strategies that account for the high-stakes nature of the gameplay.
+**Common Beginner Mistakes:**
+- Getting Tusk without understanding permanent disability
+- Fighting instead of escaping during Corpse Part events
+- Not using Discord coordination
+- Dropping Corpse Parts too early
+- Joining empty servers (need 3+ players)
