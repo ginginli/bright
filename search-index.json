@@ -263,6 +263,206 @@
       "keywords": ["team", "coordination", "strategy", "clan", "communication", "roles"],
       "description": "Team roles, communication protocols, and coordination strategies.",
       "icon": "🎯"
+    },
+    {
+      "title": "Weapons Database",
+      "url": "/weapons/",
+      "category": "Weapons",
+      "keywords": ["weapons", "guns", "database", "primary", "secondary", "tier 3", "dual wield", "stand penalty"],
+      "description": "Complete weapon database with primary and secondary weapons, tier 3 dual wield system, and weapon mechanics.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Tier 3 Requirement",
+      "url": "/weapons/#core-mechanics",
+      "category": "Weapons",
+      "keywords": ["tier 3", "requirement", "dual wield", "primary", "secondary", "progression"],
+      "description": "Cannot equip both primary and secondary weapons until reaching tier 3.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Stand Penalty",
+      "url": "/weapons/#core-mechanics",
+      "category": "Weapons",
+      "keywords": ["stand penalty", "gun damage", "weapon damage", "stand", "penalty"],
+      "description": "Having a Stand decreases base gun damages.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Revolver Reloads",
+      "url": "/weapons/#core-mechanics",
+      "category": "Weapons",
+      "keywords": ["revolver", "reload", "wasteful", "mechanics", "taurus", "schofield", "whitney", "colt"],
+      "description": "Revolvers have wasteful reload mechanics.",
+      "icon": "🔄"
+    },
+    {
+      "title": "Primary Weapons",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["primary weapons", "guns", "taurus", "winchester", "malcom", "bow", "mauser", "schofield", "whitney", "derringers", "bolt action"],
+      "description": "All 9 primary weapons including revolvers, pistols, rifles, and bow with complete stats.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Taurus .357",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["taurus", "357", "starting weapon", "pistol", "revolver", "mid range"],
+      "description": "Starting pistol. Mid range in all stats. Revolver with wasteful reload.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Schofield 6",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["schofield", "revolver", "average", "quick reload"],
+      "description": "Average in nearly every stat. Reloads fairly quick.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Whitney Dragoon",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["whitney", "dragoon", "revolver", "high damage", "slow reload"],
+      "description": "High damage, slow reloading revolver.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Dual Derringers",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["dual derringers", "pistol", "high fire rate", "low damage", "fast reload"],
+      "description": "Low damage, high fire rate, fast reloading pistol.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Mauser",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["mauser", "pistol", "low recoil", "high fire rate"],
+      "description": "Low recoil, low damage, fairly high fire rate pistol.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Winchester Repeater",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["winchester", "repeater", "rifle", "8 bullets", "high fire rate", "range"],
+      "description": "8 bullet rifle with more range and high fire rate. Functions like an 8-bullet revolver.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Bow",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["bow", "arrows", "silver arrows", "dynamite arrows", "mid range", "sniper"],
+      "description": "Mid-range sniper. Right click to switch between Silver Arrows and Dynamite Arrows.",
+      "icon": "🏹"
+    },
+    {
+      "title": "Malcom .70",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["malcom", "70", "sniper", "scoped", "headshot", "50 damage", "long range"],
+      "description": "4-bullet scoped rifle with long range. Headshots deal 50 damage.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Bolt Action Rifle",
+      "url": "/weapons/primary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["bolt action", "rifle", "unobtainable", "remodel"],
+      "description": "Currently unobtainable. Will be remodeled in future update.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Secondary Weapons",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["secondary weapons", "tier 3", "mare's leg", "sabre", "colt ocelot", "db shotgun", "tommy gun", "maverick"],
+      "description": "All 6 secondary weapons. Requires Tier 3 to equip alongside primary weapon.",
+      "icon": "🔪"
+    },
+    {
+      "title": "Mare's Leg",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["mare's leg", "rifle", "7 bullets", "fast", "winchester"],
+      "description": "7 bullets, lower damage, faster version of Winchester Repeater.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Sabre",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["sabre", "melee", "parry", "sword", "vampire"],
+      "description": "Melee weapon. Can parry other sabres and vampires.",
+      "icon": "⚔️"
+    },
+    {
+      "title": "Colt Ocelot",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["colt ocelot", "revolver", "ricochet", "high damage", "3 bounces"],
+      "description": "Higher damage revolver. Bullets ricochet 3 times.",
+      "icon": "🔫"
+    },
+    {
+      "title": "DB Shotgun",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["db shotgun", "double barrel", "shotgun", "wide spread", "close range"],
+      "description": "Double barrel shotgun. Shoots twice with very wide spread.",
+      "icon": "💥"
+    },
+    {
+      "title": "Tommy Gun",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["tommy gun", "smg", "25 bullets", "heavy spread", "high speed"],
+      "description": "25 bullets, shoots with heavy spread and speed.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Maverick 88",
+      "url": "/weapons/secondary-weapons.html",
+      "category": "Weapons",
+      "keywords": ["maverick", "88", "shotgun", "pump action", "low spread", "6 pellets"],
+      "description": "Low spread pump action shotgun. Shoots 6 pellets.",
+      "icon": "💥"
+    },
+    {
+      "title": "Weapon Mechanics",
+      "url": "/weapons/weapon-mechanics.html",
+      "category": "Weapons",
+      "keywords": ["weapon mechanics", "tier 3", "dual wield", "stand penalty", "revolver reload", "system"],
+      "description": "Complete weapon mechanics guide: Tier 3 dual wield, Stand penalty, revolver reloads.",
+      "icon": "⚙️"
+    },
+    {
+      "title": "Tier 3 Dual Wield System",
+      "url": "/weapons/weapon-mechanics.html",
+      "category": "Weapons",
+      "keywords": ["tier 3", "dual wield", "system", "progression", "unlock"],
+      "description": "Cannot equip both primary and secondary weapons until tier 3. Significant progression milestone.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Stand Penalty Mechanics",
+      "url": "/weapons/weapon-mechanics.html",
+      "category": "Weapons",
+      "keywords": ["stand penalty", "gun damage", "weapon damage", "trade-off"],
+      "description": "Having a Stand decreases base gun damages. Strategic trade-off between Stand abilities and weapon effectiveness.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Revolver Reload Mechanics",
+      "url": "/weapons/weapon-mechanics.html",
+      "category": "Weapons",
+      "keywords": ["revolver", "reload", "wasteful", "mechanics", "timing", "engagement"],
+      "description": "Revolvers have wasteful reloads. Affects Taurus .357, Schofield 6, Whitney Dragoon, Colt Ocelot.",
+      "icon": "🔄"
     }
   ]
 }
