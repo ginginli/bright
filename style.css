@@ -580,7 +580,7 @@ a.logo {
 /* Breadcrumb */
 .breadcrumb {
     position: sticky;
-    top: 0;
+    top: 72px; /* Header height: 20px padding-top + ~32px content + 20px padding-bottom */
     z-index: 999;
     background: rgba(232, 223, 213, 0.95);
     backdrop-filter: blur(8px);
