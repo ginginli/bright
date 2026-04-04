@@ -112,6 +112,13 @@ class WikiSearch {
 
     async loadSearchIndex() {
         try {
+            // Check if Fuse.js is loaded
+            if (typeof Fuse === 'undefined') {
+                console.error('Fuse.js is not loaded! Search will not work.');
+                alert('Search library failed to load. Please refresh the page.');
+                return;
+            }
+            
             const response = await fetch('/search-index.json');
             const data = await response.json();
             this.searchIndex = data.pages;
@@ -119,6 +126,10 @@ class WikiSearch {
             // Debug logging
             console.log('Search index loaded:', this.searchIndex.length, 'pages');
             console.log('Sample entries:', this.searchIndex.slice(0, 3).map(p => p.title));
+            
+            // Find whitesnake specifically
+            const whitesnakeEntry = this.searchIndex.find(p => p.title.toLowerCase().includes('whitesnake'));
+            console.log('Whitesnake entry found:', whitesnakeEntry);
             
             // Initialize Fuse.js
             this.fuse = new Fuse(this.searchIndex, {
@@ -135,7 +146,14 @@ class WikiSearch {
                 includeMatches: true
             });
             
-            console.log('Fuse.js initialized with threshold:', 0.0);
+            console.log('Fuse.js initialized successfully');
+            
+            // Test search immediately
+            const testResults = this.fuse.search('whitesnake');
+            console.log('Test search for "whitesnake":', testResults.length, 'results');
+            if (testResults.length > 0) {
+                console.log('First result:', testResults[0]);
+            }
         } catch (error) {
             console.error('Failed to load search index:', error);
         }
