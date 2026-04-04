@@ -441,6 +441,14 @@
       "icon": "⚙️"
     },
     {
+      "title": "Weapons FAQ",
+      "url": "/weapons/faq/",
+      "category": "Weapons",
+      "keywords": ["weapons faq", "weapon questions", "tier 3 faq", "dual wield help", "stand penalty", "best weapons faq", "weapon help"],
+      "description": "Common questions about weapons. Tier 3 dual wield, Stand penalty, best weapons, and reload mechanics FAQ.",
+      "icon": "❓"
+    },
+    {
       "title": "Tier 3 Dual Wield System",
       "url": "/weapons/weapon-mechanics/",
       "category": "Weapons",
@@ -687,6 +695,14 @@
       "keywords": ["veteran", "undocumented", "no description"],
       "description": "No description available. Card is available in-game.",
       "icon": "🎖️"
+    },
+    {
+      "title": "Cards FAQ",
+      "url": "/cards/faq/",
+      "category": "Cards",
+      "keywords": ["cards faq", "card questions", "mud witch", "150 moola", "card help", "reroll strategy", "3 card limit", "best cards faq"],
+      "description": "Common questions about cards. Mud Witch location, reroll strategy, best builds, and card mechanics FAQ.",
+      "icon": "❓"
     },
     {
       "title": "Winged Man",
