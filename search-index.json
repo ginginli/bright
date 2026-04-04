@@ -1,0 +1,196 @@
+{
+  "pages": [
+    {
+      "title": "Bridger Western Wiki Homepage",
+      "url": "/",
+      "category": "Home",
+      "keywords": ["home", "wiki", "bridger western", "stands", "guns", "guide", "roblox"],
+      "description": "The definitive Bridger Western resource for Ridge B Valley. Master Stands, guns, Moola farming, and permadeath survival.",
+      "icon": "🏠"
+    },
+    {
+      "title": "How to Get a Stand",
+      "url": "/stands/how-to-get-stand.html",
+      "category": "Stands",
+      "keywords": ["stand", "corpse part", "arrow shard", "KOTH", "fishing", "how to get"],
+      "description": "Arrow Shard fishing (0.5% drop rate), Corpse Part KOTH events, water escape tactics, and server selection strategies.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Stand Abilities & Skills",
+      "url": "/stands/stand-abilities.html",
+      "category": "Stands",
+      "keywords": ["abilities", "skills", "moveset", "keybinds", "mechanics"],
+      "description": "Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities.",
+      "icon": "⚡"
+    },
+    {
+      "title": "Stand Tier List",
+      "url": "/stands/stand-tier-list.html",
+      "category": "Stands",
+      "keywords": ["tier list", "ranking", "best stands", "pvp", "meta"],
+      "description": "Complete tier list ranking all Stands by PvP and PvE performance.",
+      "icon": "🏆"
+    },
+    {
+      "title": "Discord Coordination Guide",
+      "url": "/stands/discord-coordination.html",
+      "category": "Stands",
+      "keywords": ["discord", "clan", "coordination", "team", "strategy"],
+      "description": "Clan monopoly reality, team strategies, server flooding methods, and coordination success rates.",
+      "icon": "🤝"
+    },
+    {
+      "title": "Corpse Part Survival Guide",
+      "url": "/stands/corpse-part-guide.html",
+      "category": "Stands",
+      "keywords": ["corpse part", "KOTH", "survival", "tactics", "water escape"],
+      "description": "KOTH mechanics, water escape tactics, probability systems, body part types, and advanced survival tips.",
+      "icon": "💎"
+    },
+    {
+      "title": "Stands FAQ",
+      "url": "/stands/faq.html",
+      "category": "Stands",
+      "keywords": ["faq", "questions", "help", "troubleshooting", "common issues"],
+      "description": "Common questions, mechanism explanations, troubleshooting guide, and beginner mistake prevention.",
+      "icon": "❓"
+    },
+    {
+      "title": "Stands Database",
+      "url": "/stands/",
+      "category": "Stands",
+      "keywords": ["stands", "database", "list", "all stands", "complete"],
+      "description": "Complete database of all 18+ Stands in Bridger Western with acquisition methods and tier rankings.",
+      "icon": "🌟"
+    },
+    {
+      "title": "The World",
+      "url": "/stands/stand-abilities.html#the-world",
+      "category": "Stands",
+      "keywords": ["the world", "timestop", "dio", "combat", "s tier"],
+      "description": "Long timestop (~5 seconds). Top-tier combat Stand.",
+      "icon": "🌍"
+    },
+    {
+      "title": "D4C",
+      "url": "/stands/stand-abilities.html#d4c",
+      "category": "Stands",
+      "keywords": ["d4c", "dirty deeds", "dimension", "combat", "s tier"],
+      "description": "Special obtainment: 100 kills, 10 killstreak, Deserts area.",
+      "icon": "🇺🇸"
+    },
+    {
+      "title": "Killer Queen",
+      "url": "/stands/stand-abilities.html#killer-queen",
+      "category": "Stands",
+      "keywords": ["killer queen", "bomb", "sheer heart attack", "combat"],
+      "description": "Bomb abilities and Sheer Heart Attack. Powerful combat Stand.",
+      "icon": "💀"
+    },
+    {
+      "title": "Star Platinum",
+      "url": "/stands/stand-abilities.html#star-platinum",
+      "category": "Stands",
+      "keywords": ["star platinum", "ora", "jotaro", "combat", "sptw"],
+      "description": "Can evolve to SPTW (1% chance with timestop movement).",
+      "icon": "⭐"
+    },
+    {
+      "title": "King Crimson",
+      "url": "/stands/stand-abilities.html#king-crimson",
+      "category": "Stands",
+      "keywords": ["king crimson", "time erasure", "epitaph", "combat"],
+      "description": "Time Erasure and Epitaph auto-dodge abilities.",
+      "icon": "👑"
+    },
+    {
+      "title": "Gold Experience",
+      "url": "/stands/stand-abilities.html#gold-experience",
+      "category": "Stands",
+      "keywords": ["gold experience", "ger", "giorno", "healing", "life"],
+      "description": "Life Giver abilities and healing support.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Crazy Diamond",
+      "url": "/stands/stand-abilities.html#crazy-diamond",
+      "category": "Stands",
+      "keywords": ["crazy diamond", "josuke", "restoration", "healing"],
+      "description": "Restoration abilities and healing support.",
+      "icon": "💎"
+    },
+    {
+      "title": "Tusk Acts 1-3",
+      "url": "/stands/stand-abilities.html#tusk",
+      "category": "Stands",
+      "keywords": ["tusk", "johnny", "cripple", "left arm", "nail"],
+      "description": "Left Arm only. Cripple passive (cannot walk/use guns).",
+      "icon": "🌪️"
+    },
+    {
+      "title": "Hermit Purple",
+      "url": "/stands/stand-abilities.html#hermit-purple",
+      "category": "Stands",
+      "keywords": ["hermit purple", "joseph", "grapple", "mobility", "utility"],
+      "description": "Grapple and mobility utility Stand.",
+      "icon": "🟣"
+    },
+    {
+      "title": "Silver Chariot",
+      "url": "/stands/stand-abilities.html#silver-chariot",
+      "category": "Stands",
+      "keywords": ["silver chariot", "polnareff", "armor", "speed", "sword"],
+      "description": "Armor removal for speed boost. Fast combat Stand.",
+      "icon": "⚔️"
+    },
+    {
+      "title": "Hierophant Green",
+      "url": "/stands/stand-abilities.html#hierophant-green",
+      "category": "Stands",
+      "keywords": ["hierophant green", "kakyoin", "emerald splash", "pilot"],
+      "description": "Emerald Splash and Stand Pilot abilities.",
+      "icon": "🟢"
+    },
+    {
+      "title": "Tubular Bells",
+      "url": "/stands/stand-abilities.html#tubular-bells",
+      "category": "Stands",
+      "keywords": ["tubular bells", "balloon", "utility", "stamina"],
+      "description": "Balloon attacks with no stamina cost.",
+      "icon": "🎺"
+    },
+    {
+      "title": "20th Century Boy",
+      "url": "/stands/stand-abilities.html#20th-century-boy",
+      "category": "Stands",
+      "keywords": ["20th century boy", "defense", "reflect", "utility"],
+      "description": "Absolute Defence that reflects attacks.",
+      "icon": "🛡️"
+    },
+    {
+      "title": "Hey Ya",
+      "url": "/stands/stand-abilities.html#hey-ya",
+      "category": "Stands",
+      "keywords": ["hey ya", "buff", "support", "utility", "random"],
+      "description": "Random buff provider utility Stand.",
+      "icon": "👋"
+    },
+    {
+      "title": "Mandom",
+      "url": "/stands/stand-abilities.html#mandom",
+      "category": "Stands",
+      "keywords": ["mandom", "time rewind", "utility", "reset"],
+      "description": "Time Rewind (6 seconds) utility Stand.",
+      "icon": "⏰"
+    },
+    {
+      "title": "Purple Haze",
+      "url": "/stands/stand-abilities.html#purple-haze",
+      "category": "Stands",
+      "keywords": ["purple haze", "fugo", "virus", "poison", "combat"],
+      "description": "Poison virus combat Stand. Status pending.",
+      "icon": "🟣"
+    }
+  ]
+}

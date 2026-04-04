@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索功能测试 - Bridger Western Wiki</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Caveat:wght@600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .test-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .test-section {
+            background: rgba(255, 255, 255, 0.3);
+            border: 2px solid #2b1c11;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .test-section h2 {
+            font-family: 'Rye', cursive;
+            margin-top: 0;
+            border-bottom: 2px solid #2b1c11;
+            padding-bottom: 10px;
+        }
+        .test-button {
+            display: inline-block;
+            background: transparent;
+            color: #2b1c11;
+            font-family: 'Rye', cursive;
+            font-size: 1rem;
+            padding: 10px 20px;
+            text-decoration: none;
+            border: 2px solid #2b1c11;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+            transition: all 0.2s ease;
+        }
+        .test-button:hover {
+            background: #2b1c11;
+            color: #e8dfd5;
+        }
+        .test-list {
+            list-style: none;
+            padding: 0;
+        }
+        .test-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #8a7360;
+        }
+        .test-list li:last-child {
+            border-bottom: none;
+        }
+        .status {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-left: 10px;
+        }
+        .status.success {
+            background: #28a745;
+            color: white;
+        }
+        .status.pending {
+            background: #ffc107;
+            color: #2b1c11;
+        }
+        .code-block {
+            background: rgba(43, 28, 17, 0.05);
+            border: 1px solid #8a7360;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="/" class="logo">🤠 Bridger Wiki</a>
+            <nav class="main-nav">
+                <div class="nav-item">
+                    <a href="stands/" class="nav-link">Stands ▾</a>
+                </div>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    <!-- Test Container -->
+    <div class="test-container">
+        <div class="test-section">
+            <h2>🔍 搜索功能测试页面</h2>
+            <p>这个页面用于测试 Bridger Western Wiki 的搜索功能。</p>
+        </div>
+
+        <div class="test-section">
+            <h2>✅ 功能检查清单</h2>
+            <ul class="test-list">
+                <li>
+                    <strong>搜索框显示</strong>
+                    <span class="status success">✓ 已集成</span>
+                    <br><small>检查 header 右侧是否显示搜索按钮</small>
+                </li>
+                <li>
+                    <strong>点击打开搜索</strong>
+                    <span class="status pending">待测试</span>
+                    <br><small>点击搜索按钮应该打开搜索弹窗</small>
+                </li>
+                <li>
+                    <strong>快捷键 Ctrl+K</strong>
+                    <span class="status pending">待测试</span>
+                    <br><small>按 Ctrl+K (或 Cmd+K) 应该打开搜索</small>
+                </li>
+                <li>
+                    <strong>实时搜索</strong>
+                    <span class="status pending">待测试</span>
+                    <br><small>输入关键词应该实时显示结果</small>
+                </li>
+                <li>
+                    <strong>键盘导航</strong>
+                    <span class="status pending">待测试</span>
+                    <br><small>使用 ↑↓ 键导航，Enter 跳转</small>
+                </li>
+                <li>
+                    <strong>ESC 关闭</strong>
+                    <span class="status pending">待测试</span>
+                    <br><small>按 ESC 应该关闭搜索弹窗</small>
+                </li>
+                <li>
+                    <strong>移动端适配</strong>
+                    <span class="status pending">待测试</span>
+                    <br><small>在移动设备上测试响应式布局</small>
+                </li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h2>🧪 测试用例</h2>
+            <p>点击下面的按钮自动填充搜索词进行测试：</p>
+            <button class="test-button" onclick="testSearch('the world')">搜索: The World</button>
+            <button class="test-button" onclick="testSearch('how to get')">搜索: How to Get</button>
+            <button class="test-button" onclick="testSearch('corpse part')">搜索: Corpse Part</button>
+            <button class="test-button" onclick="testSearch('d4c')">搜索: D4C</button>
+            <button class="test-button" onclick="testSearch('killer queen')">搜索: Killer Queen</button>
+            <button class="test-button" onclick="testSearch('stand abilities')">搜索: Stand Abilities</button>
+        </div>
+
+        <div class="test-section">
+            <h2>📊 搜索索引统计</h2>
+            <div id="index-stats">
+                <p>加载中...</p>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2>🔧 快速操作</h2>
+            <button class="test-button" onclick="openSearch()">打开搜索 (Ctrl+K)</button>
+            <button class="test-button" onclick="checkFiles()">检查文件</button>
+            <button class="test-button" onclick="window.location.href='/'">返回首页</button>
+        </div>
+
+        <div class="test-section">
+            <h2>📝 使用说明</h2>
+            <div class="code-block">
+<strong>快捷键:</strong>
+Ctrl+K (Windows/Linux) 或 Cmd+K (Mac) - 打开搜索
+ESC - 关闭搜索
+↑/↓ - 导航结果
+Enter - 跳转到选中页面
+
+<strong>搜索技巧:</strong>
+- 输入至少 2 个字符开始搜索
+- 支持模糊匹配（拼写错误也能找到）
+- 搜索 Stand 名称、页面标题、关键词
+- 结果按相关度自动排序
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 测试函数
+        function testSearch(query) {
+            // 打开搜索
+            const searchBtn = document.querySelector('.search-trigger-btn');
+            if (searchBtn) {
+                searchBtn.click();
+                
+                // 等待弹窗打开后填充搜索词
+                setTimeout(() => {
+                    const searchInput = document.querySelector('.search-input');
+                    if (searchInput) {
+                        searchInput.value = query;
+                        searchInput.dispatchEvent(new Event('input'));
+                    }
+                }, 200);
+            } else {
+                alert('搜索功能未加载，请刷新页面');
+            }
+        }
+
+        function openSearch() {
+            const searchBtn = document.querySelector('.search-trigger-btn');
+            if (searchBtn) {
+                searchBtn.click();
+            } else {
+                alert('搜索功能未加载，请刷新页面');
+            }
+        }
+
+        async function checkFiles() {
+            const files = [
+                '/search-index.json',
+                '/js/search.js',
+                '/style.css'
+            ];
+            
+            let results = '文件检查结果:\n\n';
+            
+            for (const file of files) {
+                try {
+                    const response = await fetch(file);
+                    if (response.ok) {
+                        results += `✓ ${file} - OK\n`;
+                    } else {
+                        results += `✗ ${file} - 错误 ${response.status}\n`;
+                    }
+                } catch (error) {
+                    results += `✗ ${file} - 无法访问\n`;
+                }
+            }
+            
+            alert(results);
+        }
+
+        // 加载索引统计
+        async function loadIndexStats() {
+            try {
+                const response = await fetch('/search-index.json');
+                const data = await response.json();
+                
+                const categories = {};
+                data.pages.forEach(page => {
+                    const cat = page.category || 'Other';
+                    categories[cat] = (categories[cat] || 0) + 1;
+                });
+                
+                let html = '<ul class="test-list">';
+                html += `<li><strong>总页面数:</strong> ${data.pages.length}</li>`;
+                html += '<li><strong>分类统计:</strong><ul style="margin-left: 20px;">';
+                for (const [cat, count] of Object.entries(categories)) {
+                    html += `<li>${cat}: ${count} 页</li>`;
+                }
+                html += '</ul></li>';
+                html += '</ul>';
+                
+                document.getElementById('index-stats').innerHTML = html;
+            } catch (error) {
+                document.getElementById('index-stats').innerHTML = 
+                    '<p style="color: #dc3545;">无法加载搜索索引。请确认 search-index.json 文件存在。</p>';
+            }
+        }
+
+        // 页面加载时执行
+        window.addEventListener('load', () => {
+            loadIndexStats();
+            
+            // 检查搜索功能是否加载
+            setTimeout(() => {
+                const searchBtn = document.querySelector('.search-trigger-btn');
+                if (!searchBtn) {
+                    alert('警告: 搜索功能未正确加载！\n请检查 js/search.js 文件是否存在。');
+                }
+            }, 1000);
+        });
+    </script>
+
+    <!-- Search functionality -->
+    <script src="js/search.js"></script>
+</body>
+</html>

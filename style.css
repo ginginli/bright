@@ -514,6 +514,16 @@ a.logo {
 
 .footer-col a:hover { color: var(--bg-parchment); }
 
+/* Partner badge hover effect */
+.footer-col a img {
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.footer-col a:hover img {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
 .footer-bottom {
     border-top: 1px dashed rgba(232,223,213,0.2);
     padding-top: 20px;
@@ -1183,5 +1193,421 @@ a.logo {
     .nav-icon,
     .guide-icon {
         font-size: 2em;
+    }
+}
+
+/* =========================================
+   搜索功能样式
+   ========================================= */
+
+/* 搜索触发按钮 */
+.search-trigger {
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+.search-trigger-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.3);
+    border: var(--border-sketch);
+    border-radius: 6px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--text-ink);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.search-trigger-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateY(-1px);
+    box-shadow: 2px 2px 0 rgba(43, 28, 17, 0.15);
+}
+
+.search-icon {
+    font-size: 1.1rem;
+}
+
+.search-placeholder {
+    color: var(--accent-fade);
+}
+
+/* 搜索模态框 */
+.search-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10vh;
+}
+
+.search-modal.active {
+    display: flex;
+}
+
+.search-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(43, 28, 17, 0.7);
+    backdrop-filter: blur(4px);
+    animation: fadeIn 0.2s ease;
+}
+
+.search-modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    max-height: 80vh;
+    background: var(--bg-parchment);
+    border: var(--border-sketch);
+    border-radius: 12px;
+    box-shadow: 8px 8px 0 rgba(43, 28, 17, 0.2);
+    display: flex;
+    flex-direction: column;
+    animation: slideDown 0.3s ease;
+    overflow: hidden;
+}
+
+/* 搜索输入区域 */
+.search-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    border-bottom: var(--border-sketch);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.search-input-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--text-ink);
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: var(--accent-fade);
+    opacity: 0.7;
+}
+
+.search-close {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--accent-fade);
+    border-radius: 6px;
+    background: transparent;
+    font-size: 1.2rem;
+    color: var(--accent-fade);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.search-close:hover {
+    background: var(--accent-fade);
+    color: var(--bg-parchment);
+}
+
+/* 搜索结果区域 */
+.search-results-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.search-results {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+}
+
+/* 自定义滚动条 */
+.search-results::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-results::-webkit-scrollbar-track {
+    background: rgba(43, 28, 17, 0.05);
+}
+
+.search-results::-webkit-scrollbar-thumb {
+    background: var(--accent-fade);
+    border-radius: 4px;
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+    background: var(--text-ink);
+}
+
+/* 搜索分类 */
+.search-category {
+    margin-bottom: 24px;
+}
+
+.search-category:last-child {
+    margin-bottom: 0;
+}
+
+.search-category-header {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-fade);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed var(--accent-fade);
+}
+
+.search-category-count {
+    opacity: 0.6;
+    font-size: 0.8rem;
+}
+
+.search-category-items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* 搜索结果项 */
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-result-item:hover,
+.search-result-item.selected {
+    background: rgba(255, 255, 255, 0.6);
+    border-color: var(--text-ink);
+    transform: translateX(4px);
+}
+
+.search-result-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.search-result-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.search-result-title {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    color: var(--text-ink);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-result-description {
+    font-size: 0.85rem;
+    color: var(--accent-fade);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.search-result-arrow {
+    font-size: 1.2rem;
+    color: var(--accent-fade);
+    flex-shrink: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.search-result-item:hover .search-result-arrow,
+.search-result-item.selected .search-result-arrow {
+    opacity: 1;
+}
+
+/* 空状态 */
+.search-empty {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.search-empty-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    opacity: 0.5;
+}
+
+.search-empty p {
+    font-size: 1rem;
+    color: var(--text-ink);
+    margin: 8px 0;
+}
+
+.search-empty-hint {
+    font-size: 0.9rem;
+    color: var(--accent-fade);
+}
+
+.search-suggestions {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.search-suggestions p {
+    font-size: 0.9rem;
+    color: var(--accent-fade);
+    margin-bottom: 12px;
+}
+
+.search-suggestion-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.search-suggestion-tags span {
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--accent-fade);
+    border-radius: 16px;
+    font-size: 0.85rem;
+    color: var(--text-ink);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-suggestion-tags span:hover {
+    background: var(--accent-fade);
+    color: var(--bg-parchment);
+}
+
+/* 搜索页脚 */
+.search-footer {
+    padding: 12px 20px;
+    border-top: 1px dashed var(--accent-fade);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.search-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 0.8rem;
+    color: var(--accent-fade);
+}
+
+.search-hint kbd {
+    padding: 2px 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--accent-fade);
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+}
+
+/* 动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .search-trigger {
+        margin-right: 12px;
+    }
+    
+    .search-trigger-btn {
+        padding: 8px 12px;
+    }
+    
+    .search-placeholder {
+        display: none;
+    }
+    
+    .search-modal {
+        padding-top: 5vh;
+    }
+    
+    .search-modal-content {
+        width: 95%;
+        max-height: 85vh;
+        border-radius: 8px;
+    }
+    
+    .search-input-wrapper {
+        padding: 16px;
+    }
+    
+    .search-input {
+        font-size: 1rem;
+    }
+    
+    .search-results {
+        padding: 12px;
+    }
+    
+    .search-result-item {
+        padding: 10px;
+    }
+    
+    .search-result-title {
+        font-size: 0.95rem;
+    }
+    
+    .search-result-description {
+        font-size: 0.8rem;
+    }
+    
+    .search-hint {
+        font-size: 0.75rem;
+        gap: 8px;
     }
 }
