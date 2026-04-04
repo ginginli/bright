@@ -12,7 +12,7 @@
       "title": "Stands Database",
       "url": "/stands/",
       "category": "Stands",
-      "keywords": ["stands", "database", "list", "all stands", "complete", "tier list", "the world", "d4c", "killer queen"],
+      "keywords": ["stands", "database", "list", "all stands", "complete", "tier list"],
       "description": "Complete database of all 18+ Stands in Bridger Western with acquisition methods and tier rankings.",
       "icon": "🌟"
     },
@@ -300,7 +300,7 @@
       "title": "Primary Weapons",
       "url": "/weapons/primary-weapons.html",
       "category": "Weapons",
-      "keywords": ["primary weapons", "guns", "taurus", "winchester", "malcom", "bow", "mauser", "schofield", "whitney", "derringers", "bolt action"],
+      "keywords": ["primary weapons", "guns", "revolver", "pistol", "rifle", "sniper", "bow"],
       "description": "All 9 primary weapons including revolvers, pistols, rifles, and bow with complete stats.",
       "icon": "🔫"
     },
@@ -380,7 +380,7 @@
       "title": "Secondary Weapons",
       "url": "/weapons/secondary-weapons.html",
       "category": "Weapons",
-      "keywords": ["secondary weapons", "tier 3", "mare's leg", "sabre", "colt ocelot", "db shotgun", "tommy gun", "maverick"],
+      "keywords": ["secondary weapons", "tier 3", "melee", "shotgun", "smg", "revolver"],
       "description": "All 6 secondary weapons. Requires Tier 3 to equip alongside primary weapon.",
       "icon": "🔪"
     },
