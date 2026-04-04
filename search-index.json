@@ -463,6 +463,174 @@
       "keywords": ["revolver", "reload", "wasteful", "mechanics", "timing", "engagement"],
       "description": "Revolvers have wasteful reloads. Affects Taurus .357, Schofield 6, Whitney Dragoon, Colt Ocelot.",
       "icon": "🔄"
+    },
+    {
+      "title": "Cards Database",
+      "url": "/cards/",
+      "category": "Cards",
+      "keywords": ["cards", "tarot cards", "database", "mud witch", "150 moola", "3 cards", "swamp"],
+      "description": "Complete Tarot Cards database. All 25 cards, effects, builds, and how to obtain at Mud Witch.",
+      "icon": "🎴"
+    },
+    {
+      "title": "All Cards",
+      "url": "/cards/all-cards/",
+      "category": "Cards",
+      "keywords": ["all cards", "complete list", "25 cards", "ranged", "melee", "mobility", "high risk", "undocumented", "disabled"],
+      "description": "Complete database of all 25 Tarot Cards. Ranged, melee, mobility, high risk builds with full effects.",
+      "icon": "📋"
+    },
+    {
+      "title": "Card Builds",
+      "url": "/cards/card-builds/",
+      "category": "Cards",
+      "keywords": ["card builds", "best combinations", "3 card setup", "bow build", "gun build", "melee build", "hybrid"],
+      "description": "Optimized 3-card combinations for different playstyles. Bow, gun, melee, and hybrid builds.",
+      "icon": "🎯"
+    },
+    {
+      "title": "How to Get Cards",
+      "url": "/cards/how-to-get-cards/",
+      "category": "Cards",
+      "keywords": ["how to get cards", "mud witch", "swamp", "150 moola", "card roll", "reroll", "3 card limit"],
+      "description": "Complete guide to obtaining cards. Mud Witch location, 150 Moola per roll, reroll strategy.",
+      "icon": "📍"
+    },
+    {
+      "title": "Archer's Child",
+      "url": "/cards/all-cards/#ranged-combat",
+      "category": "Cards",
+      "keywords": ["archer's child", "bow", "drawspeed", "firerate", "ranged combat"],
+      "description": "1.5x drawspeed on bows. 2x firerate on bows. Best for bow builds.",
+      "icon": "🏹"
+    },
+    {
+      "title": "Desperado",
+      "url": "/cards/all-cards/#ranged-combat",
+      "category": "Cards",
+      "keywords": ["desperado", "low health", "gun damage", "high risk"],
+      "description": "The lower your health is, the more damage your guns do. Does not work with bows.",
+      "icon": "💀"
+    },
+    {
+      "title": "Boy With Fists",
+      "url": "/cards/all-cards/#melee-combat",
+      "category": "Cards",
+      "keywords": ["boy with fists", "melee damage", "gun accuracy", "melee build"],
+      "description": "Deal 20% more melee damage. Lose 55% gun accuracy. Best for pure melee builds.",
+      "icon": "👊"
+    },
+    {
+      "title": "Belmont Family Crest",
+      "url": "/cards/all-cards/#melee-combat",
+      "category": "Cards",
+      "keywords": ["belmont family crest", "vampire", "melee damage", "vampire hunter"],
+      "description": "Deal 25% more melee damage towards vampires. Take 25% more damage by humans.",
+      "icon": "🧛"
+    },
+    {
+      "title": "Show Me A Good Time",
+      "url": "/cards/all-cards/#melee-combat",
+      "category": "Cards",
+      "keywords": ["show me a good time", "parry", "slash", "sabre", "melee"],
+      "description": "0.45s of parry frames on slash/equip. Best for sabre builds.",
+      "icon": "⚔️"
+    },
+    {
+      "title": "A True Cowboy",
+      "url": "/cards/all-cards/#horseback-combat",
+      "category": "Cards",
+      "keywords": ["a true cowboy", "horseback", "lasso", "gun damage", "mounted"],
+      "description": "Your lasso is aimed at others while on horseback. Deal 17% more gun damage on horseback.",
+      "icon": "🤠"
+    },
+    {
+      "title": "Demolitions Expert",
+      "url": "/cards/all-cards/#explosives",
+      "category": "Cards",
+      "keywords": ["demolitions expert", "explosions", "dynamite", "explosive damage"],
+      "description": "Your explosions hurt you for less. Your explosions do more damage to others.",
+      "icon": "💣"
+    },
+    {
+      "title": "Free Runner",
+      "url": "/cards/all-cards/#mobility",
+      "category": "Cards",
+      "keywords": ["free runner", "stamina", "slide", "mobility", "combat roll"],
+      "description": "Gain 20 stamina. Combat roll is changed into a slide. Best for all builds.",
+      "icon": "🏃"
+    },
+    {
+      "title": "Poltergeist",
+      "url": "/cards/all-cards/#mobility",
+      "category": "Cards",
+      "keywords": ["poltergeist", "invisible", "combat roll", "stealth", "stamina"],
+      "description": "Almost invisible during combat roll. Roll takes 80% more stamina.",
+      "icon": "👻"
+    },
+    {
+      "title": "Can't Lay Off the Tonic",
+      "url": "/cards/all-cards/#high-risk",
+      "category": "Cards",
+      "keywords": ["can't lay off the tonic", "tonic", "damage", "high risk"],
+      "description": "Gain more damage the more tonics you consume. Take damage overtime if you don't consume tonics.",
+      "icon": "🍾"
+    },
+    {
+      "title": "Flesh Automaton",
+      "url": "/cards/all-cards/#high-risk",
+      "category": "Cards",
+      "keywords": ["flesh automaton", "explode", "death", "kamikaze", "high risk"],
+      "description": "Taking lethal damage causes your body to blare out warning noises, before exploding.",
+      "icon": "💥"
+    },
+    {
+      "title": "High Noon",
+      "url": "/cards/all-cards/#high-risk",
+      "category": "Cards",
+      "keywords": ["high noon", "autoaim", "noon", "12:00", "high risk"],
+      "description": "-10 Max Hp. When the time reaches noon, grants autoaim for 5 seconds.",
+      "icon": "🌅"
+    },
+    {
+      "title": "Snake Eater",
+      "url": "/cards/all-cards/#high-risk",
+      "category": "Cards",
+      "keywords": ["snake eater", "visible", "name", "gang tag", "stealth"],
+      "description": "Your name and gang tag are still visible to other players.",
+      "icon": "🐍"
+    },
+    {
+      "title": "Quick Draw",
+      "url": "/cards/all-cards/#special-abilities",
+      "category": "Cards",
+      "keywords": ["quick draw", "weapon swap", "primary weapon", "quickdraw state"],
+      "description": "Upon equipping your primary weapon, enter quickdraw state for a short duration.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Evil Eye",
+      "url": "/cards/all-cards/#special-abilities",
+      "category": "Cards",
+      "keywords": ["evil eye", "ocular", "prowess", "cooldown"],
+      "description": "Your ocular prowess lasts for 50% longer. Cooldown increased by 50%.",
+      "icon": "👁️"
+    },
+    {
+      "title": "EXECUTIONER",
+      "url": "/cards/all-cards/#special-abilities",
+      "category": "Cards",
+      "keywords": ["executioner", "headshot", "decapitate", "40 damage", "sniper"],
+      "description": "Dealing a headshot that would do more than 40 damage will decapitate.",
+      "icon": "💀"
+    },
+    {
+      "title": "Coin Roller",
+      "url": "/cards/all-cards/#disabled",
+      "category": "Cards",
+      "keywords": ["coin roller", "disabled", "unavailable"],
+      "description": "Currently disabled. Not available in-game.",
+      "icon": "🪙"
     }
   ]
 }
