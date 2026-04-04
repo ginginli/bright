@@ -631,6 +631,70 @@
       "keywords": ["coin roller", "disabled", "unavailable"],
       "description": "Currently disabled. Not available in-game.",
       "icon": "🪙"
+    },
+    {
+      "title": "Secret Technique",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["secret technique", "undocumented", "gif", "no description"],
+      "description": "Shown as a gif. No description available. Card is available in-game.",
+      "icon": "🎬"
+    },
+    {
+      "title": "Silver Prodigy",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["silver prodigy", "undocumented", "no description"],
+      "description": "No description available. Card is available in-game.",
+      "icon": "🥈"
+    },
+    {
+      "title": "STURDY",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["sturdy", "undocumented", "no description"],
+      "description": "No description available. Card is available in-game.",
+      "icon": "💪"
+    },
+    {
+      "title": "Time Heals All Wounds",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["time heals all wounds", "undocumented", "healing", "time", "no description"],
+      "description": "No description available. Card is available in-game.",
+      "icon": "⏰"
+    },
+    {
+      "title": "Total Checkmate",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["total checkmate", "undocumented", "right click", "no description"],
+      "description": "RIGHT CLICK TO USE. No description available. Card is available in-game.",
+      "icon": "♟️"
+    },
+    {
+      "title": "Twenty Meter Radius Steel",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["twenty meter radius steel", "undocumented", "gif", "steel", "no description"],
+      "description": "Gif description. No text description available. Card is available in-game.",
+      "icon": "⚙️"
+    },
+    {
+      "title": "Veteran",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["veteran", "undocumented", "no description"],
+      "description": "No description available. Card is available in-game.",
+      "icon": "🎖️"
+    },
+    {
+      "title": "Winged Man",
+      "url": "/cards/all-cards/#undocumented",
+      "category": "Cards",
+      "keywords": ["winged man", "undocumented", "flight", "wings", "no description"],
+      "description": "No description available. Card is available in-game.",
+      "icon": "🕊️"
     }
   ]
 }
