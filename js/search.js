@@ -1,6 +1,6 @@
 /**
  * Bridger Western Wiki - Search Functionality
- * Pure frontend fuzzy search with Fuse.js
+ * Pure frontend fuzzy search with Fuse.js (lazy loaded)
  */
 
 class WikiSearch {
@@ -10,6 +10,8 @@ class WikiSearch {
         this.isOpen = false;
         this.selectedIndex = 0;
         this.searchResults = [];
+        this.fuseLoaded = false;
+        this.indexLoaded = false;
         
         this.init();
     }
@@ -26,7 +28,60 @@ class WikiSearch {
     setup() {
         this.createSearchUI();
         this.attachEventListeners();
-        this.loadSearchIndex();
+        // Don't load search index immediately - wait for user interaction
+    }
+
+    async loadFuseJS() {
+        if (this.fuseLoaded) return;
+        
+        return new Promise((resolve, reject) => {
+            if (typeof Fuse !== 'undefined') {
+                this.fuseLoaded = true;
+                resolve();
+                return;
+            }
+            
+            const script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js';
+            script.onload = () => {
+                this.fuseLoaded = true;
+                resolve();
+            };
+            script.onerror = reject;
+            document.head.appendChild(script);
+        });
+    }
+
+    async loadSearchIndex() {
+        if (this.indexLoaded) return;
+        
+        try {
+            // Load Fuse.js first
+            await this.loadFuseJS();
+            
+            const response = await fetch('/search-index.json');
+            const data = await response.json();
+            this.searchIndex = data.pages;
+            
+            // Initialize Fuse.js
+            this.fuse = new Fuse(this.searchIndex, {
+                keys: [
+                    { name: 'title', weight: 0.4 },
+                    { name: 'keywords', weight: 0.3 },
+                    { name: 'description', weight: 0.2 },
+                    { name: 'category', weight: 0.1 }
+                ],
+                threshold: 0.0,
+                distance: 100,
+                minMatchCharLength: 2,
+                includeScore: true,
+                includeMatches: true
+            });
+            
+            this.indexLoaded = true;
+        } catch (error) {
+            console.error('Failed to load search:', error);
+        }
     }
 
     createSearchUI() {
@@ -45,17 +100,14 @@ class WikiSearch {
                     </button>
                 `;
                 
-                // Insert before nav-toggle, or append if nav-toggle doesn't exist
                 if (navToggle) {
                     header.insertBefore(searchTrigger, navToggle);
                 } else {
                     header.appendChild(searchTrigger);
                 }
-                
-                console.log('Header search trigger created');
             }
             
-            // Create floating search button (FAB) - always visible
+            // Create floating search button (FAB)
             const searchFAB = document.createElement('button');
             searchFAB.className = 'search-fab';
             searchFAB.setAttribute('aria-label', 'Search wiki');
@@ -64,7 +116,6 @@ class WikiSearch {
             `;
             
             document.body.appendChild(searchFAB);
-            console.log('Search FAB created');
 
             // Create search modal
             const searchModal = document.createElement('div');
@@ -97,7 +148,6 @@ class WikiSearch {
             `;
             
             document.body.appendChild(searchModal);
-            console.log('Search UI created successfully');
         } catch (error) {
             console.error('Failed to create search UI:', error);
         }
@@ -109,25 +159,19 @@ class WikiSearch {
             const triggerBtn = document.querySelector('.search-trigger-btn');
             if (triggerBtn) {
                 triggerBtn.addEventListener('click', () => this.openSearch());
-                console.log('Header search trigger attached');
             }
             
-            // Search FAB button (always present)
+            // Search FAB button
             const searchFAB = document.querySelector('.search-fab');
-            if (!searchFAB) {
-                console.error('Search FAB not found!');
-                return;
+            if (searchFAB) {
+                searchFAB.addEventListener('click', () => this.openSearch());
             }
-            searchFAB.addEventListener('click', () => this.openSearch());
-            console.log('Search FAB attached');
 
             // Search input
             const searchInput = document.querySelector('.search-input');
-            if (!searchInput) {
-                console.error('Search input not found!');
-                return;
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
             }
-            searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
 
             // Close buttons
             const closeBtn = document.querySelector('.search-close');
@@ -153,63 +197,17 @@ class WikiSearch {
                     }
                 }
             });
-            
-            console.log('Event listeners attached successfully');
         } catch (error) {
             console.error('Failed to attach event listeners:', error);
         }
     }
 
-    async loadSearchIndex() {
-        try {
-            // Check if Fuse.js is loaded
-            if (typeof Fuse === 'undefined') {
-                console.error('Fuse.js is not loaded! Search will not work.');
-                alert('Search library failed to load. Please refresh the page.');
-                return;
-            }
-            
-            const response = await fetch('/search-index.json');
-            const data = await response.json();
-            this.searchIndex = data.pages;
-            
-            // Debug logging
-            console.log('Search index loaded:', this.searchIndex.length, 'pages');
-            console.log('Sample entries:', this.searchIndex.slice(0, 3).map(p => p.title));
-            
-            // Find whitesnake specifically
-            const whitesnakeEntry = this.searchIndex.find(p => p.title.toLowerCase().includes('whitesnake'));
-            console.log('Whitesnake entry found:', whitesnakeEntry);
-            
-            // Initialize Fuse.js
-            this.fuse = new Fuse(this.searchIndex, {
-                keys: [
-                    { name: 'title', weight: 0.4 },
-                    { name: 'keywords', weight: 0.3 },
-                    { name: 'description', weight: 0.2 },
-                    { name: 'category', weight: 0.1 }
-                ],
-                threshold: 0.0,
-                distance: 100,
-                minMatchCharLength: 2,
-                includeScore: true,
-                includeMatches: true
-            });
-            
-            console.log('Fuse.js initialized successfully');
-            
-            // Test search immediately
-            const testResults = this.fuse.search('whitesnake');
-            console.log('Test search for "whitesnake":', testResults.length, 'results');
-            if (testResults.length > 0) {
-                console.log('First result:', testResults[0]);
-            }
-        } catch (error) {
-            console.error('Failed to load search index:', error);
+    async openSearch() {
+        // Lazy load search functionality on first open
+        if (!this.indexLoaded) {
+            await this.loadSearchIndex();
         }
-    }
-
-    openSearch() {
+        
         const modal = document.querySelector('.search-modal');
         const input = document.querySelector('.search-input');
         
@@ -217,7 +215,6 @@ class WikiSearch {
         this.isOpen = true;
         document.body.style.overflow = 'hidden';
         
-        // Focus input after animation
         setTimeout(() => input.focus(), 100);
     }
 
@@ -243,13 +240,7 @@ class WikiSearch {
         }
 
         const results = this.fuse.search(query);
-        
-        // Debug logging
-        console.log('Search query:', query);
-        console.log('Search results count:', results.length);
-        console.log('First 3 results:', results.slice(0, 3));
-        
-        this.searchResults = results.slice(0, 20); // Limit to 20 results
+        this.searchResults = results.slice(0, 20);
         this.selectedIndex = 0;
         this.renderResults(this.searchResults);
     }
@@ -430,59 +421,30 @@ new WikiSearch();
 
 // Highlight search terms from URL parameter
 (function() {
-    console.log('Highlight script loaded');
-    
     const urlParams = new URLSearchParams(window.location.search);
     const highlight = urlParams.get('highlight');
     
-    console.log('URL params:', window.location.search);
-    console.log('Highlight term:', highlight);
-    
     if (highlight) {
-        console.log('Highlight term found, waiting for page load...');
+        const tryHighlight = () => highlightSearchTerm(highlight);
         
-        // Try multiple load events for better mobile compatibility
-        const tryHighlight = () => {
-            console.log('Attempting to highlight:', highlight);
-            highlightSearchTerm(highlight);
-        };
-        
-        // Try on DOMContentLoaded
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', tryHighlight);
         }
         
-        // Try on window load
         window.addEventListener('load', tryHighlight);
         
-        // Also try immediately if DOM is already ready
         if (document.readyState === 'interactive' || document.readyState === 'complete') {
             setTimeout(tryHighlight, 100);
         }
-    } else {
-        console.log('No highlight term in URL');
     }
     
     function highlightSearchTerm(term) {
-        console.log('highlightSearchTerm called with:', term);
-        
         const searchTerm = term.toLowerCase();
         const mainContent = document.querySelector('section, main, .container');
         
-        console.log('Main content found:', !!mainContent);
-        console.log('Main content tag:', mainContent ? mainContent.tagName : 'N/A');
+        if (!mainContent) return;
         
-        if (!mainContent) {
-            console.error('Main content not found!');
-            return;
-        }
-        
-        // Log sample text
-        const sampleText = mainContent.textContent.substring(0, 200);
-        console.log('Sample text:', sampleText);
-        console.log('Contains search term?', sampleText.toLowerCase().includes(searchTerm));
-        
-        // Simpler approach: get all text nodes first, then filter
+        // Get all text nodes
         const allTextNodes = [];
         const treeWalker = document.createTreeWalker(
             mainContent,
@@ -495,8 +457,6 @@ new WikiSearch();
             allTextNodes.push(currentNode);
         }
         
-        console.log('Total text nodes found:', allTextNodes.length);
-        
         // Filter nodes
         const nodesToHighlight = allTextNodes.filter(node => {
             const parent = node.parentElement;
@@ -507,16 +467,12 @@ new WikiSearch();
                 return false;
             }
             
-            // Skip search modal
             if (parent.classList && parent.classList.contains('search-modal')) {
                 return false;
             }
             
-            // Check if contains search term
             return node.textContent.toLowerCase().includes(searchTerm);
         });
-        
-        console.log('Nodes to highlight:', nodesToHighlight.length);
         
         let firstHighlight = null;
         
@@ -544,47 +500,33 @@ new WikiSearch();
                 
                 parent.replaceChild(fragment, textNode);
                 
-                // Store first highlight for scrolling
                 if (!firstHighlight) {
                     firstHighlight = highlightSpan;
                 }
             }
         });
         
-        console.log('First highlight element:', firstHighlight);
-        
-        // Scroll to first highlight with smooth animation
+        // Scroll to first highlight
         if (firstHighlight) {
-            console.log('Scrolling to first highlight...');
-            
             setTimeout(() => {
                 try {
                     firstHighlight.scrollIntoView({ 
                         behavior: 'smooth', 
                         block: 'center' 
                     });
-                    
-                    console.log('Scroll completed');
-                    
-                    // Add a pulse animation to draw attention
                     firstHighlight.style.animation = 'highlightPulse 1s ease-in-out 2';
                 } catch (error) {
-                    console.error('Scroll error:', error);
-                    
-                    // Fallback: try without smooth behavior
                     try {
                         firstHighlight.scrollIntoView({ block: 'center' });
                     } catch (e) {
-                        console.error('Fallback scroll also failed:', e);
+                        // Silently fail
                     }
                 }
-            }, 500); // Increased delay for mobile
-        } else {
-            console.warn('No highlights created');
+            }, 500);
         }
     }
     
-    // Add CSS animation for highlight pulse
+    // Add CSS animation
     const style = document.createElement('style');
     style.textContent = `
         @keyframes highlightPulse {
@@ -599,5 +541,4 @@ new WikiSearch();
         }
     `;
     document.head.appendChild(style);
-    console.log('Highlight styles added');
 })();
