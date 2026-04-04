@@ -128,15 +128,14 @@ class WikiSearch {
                     { name: 'description', weight: 0.2 },
                     { name: 'category', weight: 0.1 }
                 ],
-                threshold: 0.3,
+                threshold: 0.0,
                 distance: 100,
                 minMatchCharLength: 2,
                 includeScore: true,
-                includeMatches: true,
-                ignoreLocation: true
+                includeMatches: true
             });
             
-            console.log('Fuse.js initialized with threshold:', 0.3);
+            console.log('Fuse.js initialized with threshold:', 0.0);
         } catch (error) {
             console.error('Failed to load search index:', error);
         }
