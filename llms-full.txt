@@ -442,3 +442,142 @@ URL: https://bridgerwestern.cc/weapons/weapon-mechanics.html
 - Headshots: Wear hat to prevent headshot damage
 - Water escape: Use aquatic terrain to avoid pursuers
 - Clan coordination: Essential for S-tier Stand acquisition
+
+
+---
+
+### Cards Section
+URL: https://bridgerwestern.cc/cards/
+Content: Complete Tarot Cards database with all 25 cards, effects, builds, and acquisition guide
+
+**Card Acquisition:**
+- Location: Mud Witch in Swamp
+- Cost: 150 Moola per roll
+- Selection: Choose 1 from 3 random cards
+- Maximum: 3 cards per character
+- Budget: 450-600 Moola total for ideal 3-card setup
+
+---
+
+### All Cards
+URL: https://bridgerwestern.cc/cards/all-cards/
+
+**Ranged Combat (2 cards):**
+- Archer's Child: 1.5x drawspeed, 2x firerate on bows
+- Desperado: More gun damage at low HP (does not work with bows)
+
+**Melee Combat (3 cards):**
+- Boy With Fists: +20% melee damage, -55% gun accuracy
+- Belmont Family Crest: +25% melee damage vs vampires, +25% damage taken from humans
+- Show Me A Good Time: 0.45s parry frames on slash/equip
+
+**Horseback Combat (1 card):**
+- A True Cowboy: Lasso aimed at others on horseback, +17% gun damage on horseback
+
+**Explosives (1 card):**
+- Demolitions Expert: Less self-damage from explosions, more damage to others
+
+**Mobility (2 cards):**
+- Free Runner: +20 stamina, combat roll changed to slide
+- Poltergeist: Almost invisible during combat roll, roll takes 80% more stamina
+
+**High Risk/High Reward (4 cards):**
+- Can't Lay Off the Tonic: More damage with tonics, take damage over time without tonics
+- Flesh Automaton: Explode on lethal damage
+- High Noon: -10 Max HP, autoaim for 5 seconds at noon
+- Snake Eater: Name and gang tag still visible to other players
+
+**Special Abilities (3 cards):**
+- Quick Draw: Enter quickdraw state when equipping primary weapon
+- Evil Eye: Ocular prowess lasts 50% longer, cooldown increased 50%
+- EXECUTIONER: Headshots over 40 damage decapitate
+
+**Undocumented Cards (9 cards):**
+Available in-game but lack detailed descriptions:
+- Secret Technique, Silver Prodigy, STURDY, Time Heals All Wounds, Total Checkmate, Twenty Meter Radius Steel, Veteran, Winged Man, Snake Eater
+
+**Disabled Cards (1 card):**
+- Coin Roller: Currently disabled, not available in-game
+
+---
+
+### Card Builds
+URL: https://bridgerwestern.cc/cards/card-builds/
+
+**Bow Build (Pure Bow DPS):**
+- Archer's Child + EXECUTIONER + Free Runner
+- Playstyle: Long-range sniper, focus on headshots for instant kills
+
+**Aggressive Gunslinger:**
+- Desperado + Quick Draw + Poltergeist
+- Playstyle: High-risk aggressive combat, stay at low HP for maximum damage
+
+**Mounted Gunslinger:**
+- A True Cowboy + Quick Draw + EXECUTIONER
+- Playstyle: Stay mounted for damage bonus, use lasso and headshots
+
+**Pure Melee Brawler:**
+- Boy With Fists + Show Me A Good Time + Free Runner
+- Playstyle: Close-range combat, use parry timing and slide
+
+**Vampire Hunter:**
+- Belmont Family Crest + Show Me A Good Time + Free Runner
+- Playstyle: Specialized anti-vampire build, avoid human PvP
+
+**Explosive Specialist:**
+- Demolitions Expert + Archer's Child + Free Runner
+- Playstyle: Dynamite arrows and explosives, reduced self-damage
+
+**Stealth Assassin:**
+- Poltergeist + EXECUTIONER + Quick Draw
+- Playstyle: Invisible roll, one-shot headshots, quick weapon swap
+
+**Kamikaze Bomber (Meme Build):**
+- Flesh Automaton + Demolitions Expert + Desperado
+- Playstyle: Rush enemies at low HP, explode on death
+
+**High Noon Sniper (Meme Build):**
+- High Noon + EXECUTIONER + Quick Draw
+- Playstyle: Wait for noon (12:00 in-game) for 5 seconds of autoaim
+
+---
+
+### How to Get Cards
+URL: https://bridgerwestern.cc/cards/how-to-get-cards/
+
+**Step-by-Step Process:**
+1. Visit Mud Witch in Swamp area
+2. Pay 150 Moola to roll for cards
+3. 3 random cards will be presented
+4. Choose 1 card from the 3 options
+5. Repeat until you have 3 cards total
+
+**Card Priority (High Priority):**
+- Archer's Child: Essential for bow builds
+- Free Runner: Universal mobility boost
+- EXECUTIONER: Instant kill potential
+- Quick Draw: Combat versatility
+- Desperado: High damage potential
+
+**Card Priority (Situational):**
+- Boy With Fists: Only for pure melee
+- Belmont Family Crest: Only vs vampires
+- A True Cowboy: Only for mounted combat
+- High Noon: Timing-dependent
+- Poltergeist: High stamina cost
+
+**Reroll Strategy:**
+- Wait until you see at least one good card in 3-card selection
+- Don't waste Moola on bad rolls
+- Budget 450-600 Moola total (3-4 rolls)
+
+**Moola Farming:**
+- Dog Bane fishing: Safest solo income route
+- Co-op farming: Team up with players, doubles efficiency
+- Budget planning: 150 Moola per roll × 3-4 rolls = 450-600 Moola
+
+**Important Notes:**
+- 3-card maximum per character
+- Once you have 3 cards, must remove one before rolling again
+- Card selection is completely random
+- No way to guarantee specific cards
