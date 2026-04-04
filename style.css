@@ -579,10 +579,15 @@ a.logo {
 
 /* Breadcrumb */
 .breadcrumb {
-    background: rgba(43,28,17,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: rgba(232, 223, 213, 0.95);
+    backdrop-filter: blur(8px);
     padding: 12px 0;
     border-bottom: 1px dashed var(--accent-fade);
     font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(43, 28, 17, 0.08);
 }
 
 .breadcrumb a {
