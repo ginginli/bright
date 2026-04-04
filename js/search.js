@@ -68,7 +68,7 @@ class WikiSearch {
                     <div class="search-footer">
                         <span class="search-hint">
                             <kbd>↑</kbd><kbd>↓</kbd> Navigate
-                            <kbd>Enter</kbd> Select
+                            <kbd>Enter</kbd> Open in New Tab
                             <kbd>ESC</kbd> Close
                         </span>
                     </div>
@@ -101,7 +101,7 @@ class WikiSearch {
         document.addEventListener('click', (e) => {
             if (e.target.closest('.search-result-item')) {
                 const url = e.target.closest('.search-result-item').dataset.url;
-                if (url) window.location.href = url;
+                if (url) window.open(url, '_blank');
             }
         });
     }
@@ -314,7 +314,7 @@ class WikiSearch {
         } else if (e.key === 'Enter') {
             e.preventDefault();
             if (this.searchResults[this.selectedIndex]) {
-                window.location.href = this.searchResults[this.selectedIndex].item.url;
+                window.open(this.searchResults[this.selectedIndex].item.url, '_blank');
             }
         }
     }
