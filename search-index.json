@@ -4,15 +4,23 @@
       "title": "Bridger Western Wiki Homepage",
       "url": "/",
       "category": "Home",
-      "keywords": ["home", "wiki", "bridger western", "stands", "guns", "guide", "roblox"],
+      "keywords": ["home", "wiki", "bridger western", "stands", "guns", "guide", "roblox", "survival", "moola", "permadeath"],
       "description": "The definitive Bridger Western resource for Ridge B Valley. Master Stands, guns, Moola farming, and permadeath survival.",
       "icon": "🏠"
+    },
+    {
+      "title": "Stands Database",
+      "url": "/stands/",
+      "category": "Stands",
+      "keywords": ["stands", "database", "list", "all stands", "complete", "tier list", "the world", "d4c", "killer queen"],
+      "description": "Complete database of all 18+ Stands in Bridger Western with acquisition methods and tier rankings.",
+      "icon": "🌟"
     },
     {
       "title": "How to Get a Stand",
       "url": "/stands/how-to-get-stand.html",
       "category": "Stands",
-      "keywords": ["stand", "corpse part", "arrow shard", "KOTH", "fishing", "how to get"],
+      "keywords": ["stand", "corpse part", "arrow shard", "KOTH", "fishing", "how to get", "acquisition", "obtain"],
       "description": "Arrow Shard fishing (0.5% drop rate), Corpse Part KOTH events, water escape tactics, and server selection strategies.",
       "icon": "🎯"
     },
@@ -20,7 +28,7 @@
       "title": "Stand Abilities & Skills",
       "url": "/stands/stand-abilities.html",
       "category": "Stands",
-      "keywords": ["abilities", "skills", "moveset", "keybinds", "mechanics"],
+      "keywords": ["abilities", "skills", "moveset", "keybinds", "mechanics", "the world", "d4c", "killer queen", "star platinum", "king crimson", "gold experience", "crazy diamond", "tusk", "hermit purple", "silver chariot", "hierophant green", "tubular bells", "20th century boy", "hey ya", "mandom", "purple haze", "whitesnake", "barrage", "timestop", "time erasure", "epitaph"],
       "description": "Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities.",
       "icon": "⚡"
     },
@@ -28,7 +36,7 @@
       "title": "Stand Tier List",
       "url": "/stands/stand-tier-list.html",
       "category": "Stands",
-      "keywords": ["tier list", "ranking", "best stands", "pvp", "meta"],
+      "keywords": ["tier list", "ranking", "best stands", "pvp", "meta", "s tier", "a tier", "b tier", "combat", "utility"],
       "description": "Complete tier list ranking all Stands by PvP and PvE performance.",
       "icon": "🏆"
     },
@@ -36,7 +44,7 @@
       "title": "Discord Coordination Guide",
       "url": "/stands/discord-coordination.html",
       "category": "Stands",
-      "keywords": ["discord", "clan", "coordination", "team", "strategy"],
+      "keywords": ["discord", "clan", "coordination", "team", "strategy", "server flooding", "monopoly", "cooperation"],
       "description": "Clan monopoly reality, team strategies, server flooding methods, and coordination success rates.",
       "icon": "🤝"
     },
@@ -44,7 +52,7 @@
       "title": "Corpse Part Survival Guide",
       "url": "/stands/corpse-part-guide.html",
       "category": "Stands",
-      "keywords": ["corpse part", "KOTH", "survival", "tactics", "water escape"],
+      "keywords": ["corpse part", "KOTH", "survival", "tactics", "water escape", "probability", "body parts", "left arm", "right arm", "heart", "spine", "legs"],
       "description": "KOTH mechanics, water escape tactics, probability systems, body part types, and advanced survival tips.",
       "icon": "💎"
     },
@@ -52,136 +60,144 @@
       "title": "Stands FAQ",
       "url": "/stands/faq.html",
       "category": "Stands",
-      "keywords": ["faq", "questions", "help", "troubleshooting", "common issues"],
+      "keywords": ["faq", "questions", "help", "troubleshooting", "common issues", "beginner", "mistakes"],
       "description": "Common questions, mechanism explanations, troubleshooting guide, and beginner mistake prevention.",
       "icon": "❓"
-    },
-    {
-      "title": "Stands Database",
-      "url": "/stands/",
-      "category": "Stands",
-      "keywords": ["stands", "database", "list", "all stands", "complete"],
-      "description": "Complete database of all 18+ Stands in Bridger Western with acquisition methods and tier rankings.",
-      "icon": "🌟"
     },
     {
       "title": "The World",
       "url": "/stands/stand-abilities.html#the-world",
       "category": "Stands",
-      "keywords": ["the world", "timestop", "dio", "combat", "s tier"],
-      "description": "Long timestop (~5 seconds). Top-tier combat Stand.",
+      "keywords": ["the world", "timestop", "dio", "combat", "s tier", "barrage", "shinei", "knife toss", "kick barrage"],
+      "description": "Long timestop (~5 seconds). Top-tier combat Stand with devastating time manipulation.",
       "icon": "🌍"
     },
     {
       "title": "D4C",
       "url": "/stands/stand-abilities.html#d4c",
       "category": "Stands",
-      "keywords": ["d4c", "dirty deeds", "dimension", "combat", "s tier"],
-      "description": "Special obtainment: 100 kills, 10 killstreak, Deserts area.",
+      "keywords": ["d4c", "dirty deeds", "dimension", "combat", "s tier", "clone", "swap", "dimension hop", "chop barrage"],
+      "description": "Special obtainment: 100 kills, 10 killstreak, Deserts area. Dimensional manipulation Stand.",
       "icon": "🇺🇸"
     },
     {
       "title": "Killer Queen",
       "url": "/stands/stand-abilities.html#killer-queen",
       "category": "Stands",
-      "keywords": ["killer queen", "bomb", "sheer heart attack", "combat"],
-      "description": "Bomb abilities and Sheer Heart Attack. Powerful combat Stand.",
+      "keywords": ["killer queen", "bomb", "sheer heart attack", "combat", "s tier", "explosion", "stray cat"],
+      "description": "Bomb abilities and Sheer Heart Attack. Powerful explosive combat Stand.",
       "icon": "💀"
     },
     {
       "title": "Star Platinum",
       "url": "/stands/stand-abilities.html#star-platinum",
       "category": "Stands",
-      "keywords": ["star platinum", "ora", "jotaro", "combat", "sptw"],
-      "description": "Can evolve to SPTW (1% chance with timestop movement).",
+      "keywords": ["star platinum", "ora", "jotaro", "combat", "sptw", "evolution", "timestop movement", "skull breaker", "star finger"],
+      "description": "Can evolve to SPTW (1% chance with timestop movement). Powerful melee Stand.",
+      "icon": "⭐"
+    },
+    {
+      "title": "Star Platinum The World",
+      "url": "/stands/stand-abilities.html#star-platinum-the-world",
+      "category": "Stands",
+      "keywords": ["star platinum the world", "sptw", "timestop", "evolved", "combat", "bearing shots", "beatdown"],
+      "description": "Evolved form of Star Platinum with 2-second timestop and grab beatdown.",
       "icon": "⭐"
     },
     {
       "title": "King Crimson",
       "url": "/stands/stand-abilities.html#king-crimson",
       "category": "Stands",
-      "keywords": ["king crimson", "time erasure", "epitaph", "combat"],
-      "description": "Time Erasure and Epitaph auto-dodge abilities.",
+      "keywords": ["king crimson", "time erasure", "epitaph", "combat", "auto dodge", "donut", "impale"],
+      "description": "Time Erasure and Epitaph auto-dodge abilities. Time manipulation Stand.",
       "icon": "👑"
     },
     {
       "title": "Gold Experience",
       "url": "/stands/stand-abilities.html#gold-experience",
       "category": "Stands",
-      "keywords": ["gold experience", "ger", "giorno", "healing", "life"],
-      "description": "Life Giver abilities and healing support.",
+      "keywords": ["gold experience", "ger", "giorno", "healing", "life", "life giver", "tree", "eagle", "scorpion"],
+      "description": "Life Giver abilities and healing support. Can summon creatures and heal.",
       "icon": "🌟"
+    },
+    {
+      "title": "Gold Experience Requiem",
+      "url": "/stands/stand-abilities.html#gold-experience-requiem",
+      "category": "Stands",
+      "keywords": ["gold experience requiem", "ger", "requiem", "giorno", "ultimate"],
+      "description": "Requiem evolution of Gold Experience. Status pending.",
+      "icon": "✨"
     },
     {
       "title": "Crazy Diamond",
       "url": "/stands/stand-abilities.html#crazy-diamond",
       "category": "Stands",
-      "keywords": ["crazy diamond", "josuke", "restoration", "healing"],
-      "description": "Restoration abilities and healing support.",
+      "keywords": ["crazy diamond", "josuke", "restoration", "healing", "facial reconstruction", "bearing shot", "blood slash"],
+      "description": "Restoration abilities and healing support. Can restore and heal.",
       "icon": "💎"
     },
     {
       "title": "Tusk Acts 1-3",
-      "url": "/stands/stand-abilities.html#tusk",
+      "url": "/stands/stand-abilities.html#tusk-acts",
       "category": "Stands",
-      "keywords": ["tusk", "johnny", "cripple", "left arm", "nail"],
-      "description": "Left Arm only. Cripple passive (cannot walk/use guns).",
+      "keywords": ["tusk", "johnny", "cripple", "left arm", "nail", "acts", "wormhole", "golden ratio"],
+      "description": "Left Arm only. Cripple passive (cannot walk/use guns). Nail-based attacks.",
       "icon": "🌪️"
     },
     {
       "title": "Hermit Purple",
       "url": "/stands/stand-abilities.html#hermit-purple",
       "category": "Stands",
-      "keywords": ["hermit purple", "joseph", "grapple", "mobility", "utility"],
-      "description": "Grapple and mobility utility Stand.",
+      "keywords": ["hermit purple", "joseph", "grapple", "mobility", "utility", "pull", "chop"],
+      "description": "Grapple and mobility utility Stand. Pull targets and mobility.",
       "icon": "🟣"
     },
     {
       "title": "Silver Chariot",
       "url": "/stands/stand-abilities.html#silver-chariot",
       "category": "Stands",
-      "keywords": ["silver chariot", "polnareff", "armor", "speed", "sword"],
-      "description": "Armor removal for speed boost. Fast combat Stand.",
+      "keywords": ["silver chariot", "polnareff", "armor", "speed", "sword", "rapier", "lunge", "whirlwind"],
+      "description": "Armor removal for speed boost. Fast rapier combat Stand.",
       "icon": "⚔️"
     },
     {
       "title": "Hierophant Green",
       "url": "/stands/stand-abilities.html#hierophant-green",
       "category": "Stands",
-      "keywords": ["hierophant green", "kakyoin", "emerald splash", "pilot"],
-      "description": "Emerald Splash and Stand Pilot abilities.",
+      "keywords": ["hierophant green", "kakyoin", "emerald splash", "pilot", "tentacle", "20 meter"],
+      "description": "Emerald Splash and Stand Pilot abilities. Ranged combat Stand.",
       "icon": "🟢"
     },
     {
       "title": "Tubular Bells",
       "url": "/stands/stand-abilities.html#tubular-bells",
       "category": "Stands",
-      "keywords": ["tubular bells", "balloon", "utility", "stamina"],
-      "description": "Balloon attacks with no stamina cost.",
+      "keywords": ["tubular bells", "balloon", "utility", "stamina", "dog", "snail", "swan"],
+      "description": "Balloon attacks with no stamina cost. Utility Stand.",
       "icon": "🎺"
     },
     {
       "title": "20th Century Boy",
       "url": "/stands/stand-abilities.html#20th-century-boy",
       "category": "Stands",
-      "keywords": ["20th century boy", "defense", "reflect", "utility"],
-      "description": "Absolute Defence that reflects attacks.",
+      "keywords": ["20th century boy", "defense", "reflect", "utility", "absolute defence", "dynamite"],
+      "description": "Absolute Defence that reflects attacks. Defensive utility Stand.",
       "icon": "🛡️"
     },
     {
       "title": "Hey Ya",
       "url": "/stands/stand-abilities.html#hey-ya",
       "category": "Stands",
-      "keywords": ["hey ya", "buff", "support", "utility", "random"],
-      "description": "Random buff provider utility Stand.",
+      "keywords": ["hey ya", "buff", "support", "utility", "random", "encouragement", "dodge", "damage"],
+      "description": "Random buff provider utility Stand. Encouragement passive.",
       "icon": "👋"
     },
     {
       "title": "Mandom",
       "url": "/stands/stand-abilities.html#mandom",
       "category": "Stands",
-      "keywords": ["mandom", "time rewind", "utility", "reset"],
-      "description": "Time Rewind (6 seconds) utility Stand.",
+      "keywords": ["mandom", "time rewind", "utility", "reset", "6 seconds", "watch"],
+      "description": "Time Rewind (6 seconds) utility Stand. Rewind time for all players.",
       "icon": "⏰"
     },
     {
@@ -191,6 +207,62 @@
       "keywords": ["purple haze", "fugo", "virus", "poison", "combat"],
       "description": "Poison virus combat Stand. Status pending.",
       "icon": "🟣"
+    },
+    {
+      "title": "Whitesnake",
+      "url": "/stands/stand-abilities.html#whitesnake",
+      "category": "Stands",
+      "keywords": ["whitesnake", "pucci", "disc", "steal", "unobtainable", "admin"],
+      "description": "Developer/admin only. Can permanently steal stands.",
+      "icon": "⚪"
+    },
+    {
+      "title": "KOTH Event Mechanics",
+      "url": "/stands/corpse-part-guide.html#koth-mechanics",
+      "category": "Stands",
+      "keywords": ["koth", "mechanics", "spawn", "event", "corpse part", "yellow beam", "announcement"],
+      "description": "Complete KOTH event mechanics, spawn requirements, and timing windows.",
+      "icon": "💎"
+    },
+    {
+      "title": "Probability Accumulation System",
+      "url": "/stands/corpse-part-guide.html#probability-system",
+      "category": "Stands",
+      "keywords": ["probability", "accumulation", "hold time", "success rate", "15-20 seconds", "pulse"],
+      "description": "How success probability increases with hold time. 15-20% max success rate.",
+      "icon": "📊"
+    },
+    {
+      "title": "Body Part Distribution",
+      "url": "/stands/corpse-part-guide.html#body-part-system",
+      "category": "Stands",
+      "keywords": ["body parts", "left arm", "right arm", "heart", "spine", "legs", "tusk", "distribution"],
+      "description": "Different body parts correlate with different Stands. Left arm for Tusk.",
+      "icon": "🗺️"
+    },
+    {
+      "title": "Water Escape Tactics",
+      "url": "/stands/corpse-part-guide.html#water-escape",
+      "category": "Stands",
+      "keywords": ["water escape", "horse", "aquatic", "survival", "tactics", "solo", "escape"],
+      "description": "Water escape method using horse for solo survival. Most reliable tactic.",
+      "icon": "🌊"
+    },
+    {
+      "title": "Discord Server Flooding",
+      "url": "/stands/discord-coordination.html#server-flooding",
+      "category": "Stands",
+      "keywords": ["server flooding", "discord", "coordination", "clan", "team", "monopoly"],
+      "description": "How clans flood servers to monopolize Corpse Part events.",
+      "icon": "🌊"
+    },
+    {
+      "title": "Team Coordination Strategies",
+      "url": "/stands/discord-coordination.html#team-strategies",
+      "category": "Stands",
+      "keywords": ["team", "coordination", "strategy", "clan", "communication", "roles"],
+      "description": "Team roles, communication protocols, and coordination strategies.",
+      "icon": "🎯"
     }
   ]
 }
