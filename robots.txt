@@ -9,7 +9,7 @@ Disallow: /.vscode/
 
 Sitemap: https://bridgerwestern.cc/sitemap.xml
 
-# AI Crawlers
+# AI Crawlers - Explicitly allow all content
 User-agent: GPTBot
 User-agent: ChatGPT-User
 User-agent: CCBot
@@ -35,7 +35,12 @@ User-agent: Diffbot
 User-agent: Cohere-AI
 User-agent: BaiduSpider
 User-agent: SogouSpider
+Allow: /
 Allow: /stands/
+Allow: /weapons/
+Allow: /cards/
+Allow: /llms.txt
+Allow: /llms-full.txt
 Disallow: /.git/
 Disallow: /.vscode/
 

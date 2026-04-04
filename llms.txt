@@ -1,6 +1,14 @@
 # Bridger Western Wiki
 
-> Complete wiki and survival guide for Bridger Western, a Roblox survival game set in Ridge B Valley. Covers Stands, acquisition methods, tier rankings, clan coordination, and survival mechanics for the 2026 Alpha version.
+> Complete wiki and survival guide for Bridger Western, a Roblox survival game set in Ridge B Valley. Covers Stands, Weapons, Cards, acquisition methods, tier rankings, clan coordination, and survival mechanics for the 2026 Alpha version.
+
+## Site Information
+
+- **URL**: https://bridgerwestern.cc/
+- **Type**: Game Wiki & Guide
+- **Game**: Bridger Western (Roblox)
+- **Last Updated**: 2026-04-05
+- **Content**: Stands, Weapons, Cards, Guides, Tier Lists
 
 ## Available Content
 

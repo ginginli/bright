@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Bridger Western Wiki",
+  "name_for_model": "bridger_western_wiki",
+  "description_for_human": "Complete wiki for Bridger Western Roblox game. Covers Stands, Weapons, Cards, and survival guides.",
+  "description_for_model": "Access comprehensive information about Bridger Western, a Roblox survival game. Includes complete databases for Stands (18+ stands with acquisition methods, tier rankings), Weapons (primary and secondary weapons with mechanics), and Cards (25 Tarot Cards with effects and builds). Provides guides for stand acquisition (Arrow Shard fishing 0.5%, Corpse Part KOTH events), card acquisition (Mud Witch, 150 Moola per roll), weapon mechanics (Tier 3 dual wield), and survival strategies (clan coordination, water escape tactics).",
+  "api": {
+    "type": "openapi",
+    "url": "https://bridgerwestern.cc/llms-full.txt"
+  },
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://bridgerwestern.cc/favicon.png",
+  "contact_email": "contact@bridgerwestern.cc",
+  "legal_info_url": "https://bridgerwestern.cc/"
+}
