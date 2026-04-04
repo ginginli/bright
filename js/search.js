@@ -30,84 +30,117 @@ class WikiSearch {
     }
 
     createSearchUI() {
-        // Create search trigger in header
-        const header = document.querySelector('header .container');
-        const navToggle = document.querySelector('.nav-toggle');
-        
-        const searchTrigger = document.createElement('div');
-        searchTrigger.className = 'search-trigger';
-        searchTrigger.innerHTML = `
-            <button class="search-trigger-btn" aria-label="Search wiki">
-                <span class="search-icon">🔍</span>
-                <span class="search-placeholder">Search wiki...</span>
-            </button>
-        `;
-        
-        // Insert before nav-toggle
-        header.insertBefore(searchTrigger, navToggle);
+        try {
+            // Create search trigger in header
+            const header = document.querySelector('header .container');
+            const navToggle = document.querySelector('.nav-toggle');
+            
+            if (!header) {
+                console.error('Header container not found!');
+                return;
+            }
+            
+            const searchTrigger = document.createElement('div');
+            searchTrigger.className = 'search-trigger';
+            searchTrigger.innerHTML = `
+                <button class="search-trigger-btn" aria-label="Search wiki">
+                    <span class="search-icon">🔍</span>
+                    <span class="search-placeholder">Search wiki...</span>
+                </button>
+            `;
+            
+            // Insert before nav-toggle, or append if nav-toggle doesn't exist
+            if (navToggle) {
+                header.insertBefore(searchTrigger, navToggle);
+            } else {
+                console.warn('Nav toggle not found, appending search trigger to header');
+                header.appendChild(searchTrigger);
+            }
 
-        // Create search modal
-        const searchModal = document.createElement('div');
-        searchModal.className = 'search-modal';
-        searchModal.innerHTML = `
-            <div class="search-modal-overlay"></div>
-            <div class="search-modal-content">
-                <div class="search-input-wrapper">
-                    <span class="search-input-icon">🔍</span>
-                    <input 
-                        type="text" 
-                        class="search-input" 
-                        placeholder="Search Bridger Western Wiki..."
-                        autocomplete="off"
-                        spellcheck="false"
-                    >
-                    <button class="search-close" aria-label="Close search">✕</button>
-                </div>
-                <div class="search-results-wrapper">
-                    <div class="search-results"></div>
-                    <div class="search-footer">
-                        <span class="search-hint">
-                            <kbd>↑</kbd><kbd>↓</kbd> Navigate
-                            <kbd>Enter</kbd> Open in New Tab
-                            <kbd>ESC</kbd> Close
-                        </span>
+            // Create search modal
+            const searchModal = document.createElement('div');
+            searchModal.className = 'search-modal';
+            searchModal.innerHTML = `
+                <div class="search-modal-overlay"></div>
+                <div class="search-modal-content">
+                    <div class="search-input-wrapper">
+                        <span class="search-input-icon">🔍</span>
+                        <input 
+                            type="text" 
+                            class="search-input" 
+                            placeholder="Search Bridger Western Wiki..."
+                            autocomplete="off"
+                            spellcheck="false"
+                        >
+                        <button class="search-close" aria-label="Close search">✕</button>
+                    </div>
+                    <div class="search-results-wrapper">
+                        <div class="search-results"></div>
+                        <div class="search-footer">
+                            <span class="search-hint">
+                                <kbd>↑</kbd><kbd>↓</kbd> Navigate
+                                <kbd>Enter</kbd> Open in New Tab
+                                <kbd>ESC</kbd> Close
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        `;
-        
-        document.body.appendChild(searchModal);
+            `;
+            
+            document.body.appendChild(searchModal);
+            console.log('Search UI created successfully');
+        } catch (error) {
+            console.error('Failed to create search UI:', error);
+        }
     }
 
     attachEventListeners() {
-        // Search trigger button
-        const triggerBtn = document.querySelector('.search-trigger-btn');
-        triggerBtn.addEventListener('click', () => this.openSearch());
-
-        // Search input
-        const searchInput = document.querySelector('.search-input');
-        searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
-
-        // Close buttons
-        const closeBtn = document.querySelector('.search-close');
-        const overlay = document.querySelector('.search-modal-overlay');
-        closeBtn.addEventListener('click', () => this.closeSearch());
-        overlay.addEventListener('click', () => this.closeSearch());
-
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => this.handleKeyboard(e));
-
-        // Result clicks
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.search-result-item')) {
-                const url = e.target.closest('.search-result-item').dataset.url;
-                const query = document.querySelector('.search-input').value;
-                if (url) {
-                    const urlWithQuery = query ? `${url}?highlight=${encodeURIComponent(query)}` : url;
-                    window.open(urlWithQuery, '_blank');
-                }
+        try {
+            // Search trigger button
+            const triggerBtn = document.querySelector('.search-trigger-btn');
+            if (!triggerBtn) {
+                console.error('Search trigger button not found!');
+                return;
             }
-        });
+            triggerBtn.addEventListener('click', () => this.openSearch());
+
+            // Search input
+            const searchInput = document.querySelector('.search-input');
+            if (!searchInput) {
+                console.error('Search input not found!');
+                return;
+            }
+            searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+
+            // Close buttons
+            const closeBtn = document.querySelector('.search-close');
+            const overlay = document.querySelector('.search-modal-overlay');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => this.closeSearch());
+            }
+            if (overlay) {
+                overlay.addEventListener('click', () => this.closeSearch());
+            }
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => this.handleKeyboard(e));
+
+            // Result clicks
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('.search-result-item')) {
+                    const url = e.target.closest('.search-result-item').dataset.url;
+                    const query = document.querySelector('.search-input').value;
+                    if (url) {
+                        const urlWithQuery = query ? `${url}?highlight=${encodeURIComponent(query)}` : url;
+                        window.open(urlWithQuery, '_blank');
+                    }
+                }
+            });
+            
+            console.log('Event listeners attached successfully');
+        } catch (error) {
+            console.error('Failed to attach event listeners:', error);
+        }
     }
 
     async loadSearchIndex() {
