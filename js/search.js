@@ -192,7 +192,14 @@ class WikiSearch {
                     const url = e.target.closest('.search-result-item').dataset.url;
                     const query = document.querySelector('.search-input').value;
                     if (url) {
-                        const urlWithQuery = query ? `${url}?highlight=${encodeURIComponent(query)}` : url;
+                        let urlWithQuery = url;
+                        if (query) {
+                            // Split URL by hash to insert query parameter before anchor
+                            const [basePath, hash] = url.split('#');
+                            urlWithQuery = hash 
+                                ? `${basePath}?highlight=${encodeURIComponent(query)}#${hash}`
+                                : `${basePath}?highlight=${encodeURIComponent(query)}`;
+                        }
                         window.open(urlWithQuery, '_blank');
                     }
                 }
@@ -391,7 +398,14 @@ class WikiSearch {
             if (this.searchResults[this.selectedIndex]) {
                 const url = this.searchResults[this.selectedIndex].item.url;
                 const query = document.querySelector('.search-input').value;
-                const urlWithQuery = query ? `${url}?highlight=${encodeURIComponent(query)}` : url;
+                let urlWithQuery = url;
+                if (query) {
+                    // Split URL by hash to insert query parameter before anchor
+                    const [basePath, hash] = url.split('#');
+                    urlWithQuery = hash 
+                        ? `${basePath}?highlight=${encodeURIComponent(query)}#${hash}`
+                        : `${basePath}?highlight=${encodeURIComponent(query)}`;
+                }
                 window.open(urlWithQuery, '_blank');
             }
         }
