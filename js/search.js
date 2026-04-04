@@ -101,7 +101,11 @@ class WikiSearch {
         document.addEventListener('click', (e) => {
             if (e.target.closest('.search-result-item')) {
                 const url = e.target.closest('.search-result-item').dataset.url;
-                if (url) window.open(url, '_blank');
+                const query = document.querySelector('.search-input').value;
+                if (url) {
+                    const urlWithQuery = query ? `${url}?highlight=${encodeURIComponent(query)}` : url;
+                    window.open(urlWithQuery, '_blank');
+                }
             }
         });
     }
@@ -314,7 +318,10 @@ class WikiSearch {
         } else if (e.key === 'Enter') {
             e.preventDefault();
             if (this.searchResults[this.selectedIndex]) {
-                window.open(this.searchResults[this.selectedIndex].item.url, '_blank');
+                const url = this.searchResults[this.selectedIndex].item.url;
+                const query = document.querySelector('.search-input').value;
+                const urlWithQuery = query ? `${url}?highlight=${encodeURIComponent(query)}` : url;
+                window.open(urlWithQuery, '_blank');
             }
         }
     }
@@ -340,3 +347,121 @@ class WikiSearch {
 
 // Initialize search when script loads
 new WikiSearch();
+
+// Highlight search terms from URL parameter
+(function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const highlight = urlParams.get('highlight');
+    
+    if (highlight) {
+        // Wait for page to fully load
+        window.addEventListener('load', () => {
+            highlightSearchTerm(highlight);
+        });
+    }
+    
+    function highlightSearchTerm(term) {
+        const searchTerm = term.toLowerCase();
+        const mainContent = document.querySelector('section, main, .container');
+        
+        if (!mainContent) return;
+        
+        // Create a TreeWalker to find all text nodes
+        const walker = document.createTreeWalker(
+            mainContent,
+            NodeFilter.SHOW_TEXT,
+            {
+                acceptNode: function(node) {
+                    // Skip script, style, and search modal elements
+                    const parent = node.parentElement;
+                    if (!parent) return NodeFilter.FILTER_REJECT;
+                    
+                    const tagName = parent.tagName.toLowerCase();
+                    if (tagName === 'script' || tagName === 'style' || tagName === 'noscript') {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+                    
+                    if (parent.closest('.search-modal')) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+                    
+                    // Only accept nodes with text content
+                    if (node.textContent.toLowerCase().includes(searchTerm)) {
+                        return NodeFilter.FILTER_ACCEPT;
+                    }
+                    
+                    return NodeFilter.FILTER_REJECT;
+                }
+            }
+        );
+        
+        const nodesToHighlight = [];
+        let node;
+        
+        while (node = walker.nextNode()) {
+            nodesToHighlight.push(node);
+        }
+        
+        let firstHighlight = null;
+        
+        // Highlight all matching text nodes
+        nodesToHighlight.forEach(textNode => {
+            const text = textNode.textContent;
+            const lowerText = text.toLowerCase();
+            const index = lowerText.indexOf(searchTerm);
+            
+            if (index !== -1) {
+                const parent = textNode.parentElement;
+                const before = text.substring(0, index);
+                const match = text.substring(index, index + searchTerm.length);
+                const after = text.substring(index + searchTerm.length);
+                
+                const highlightSpan = document.createElement('mark');
+                highlightSpan.className = 'search-highlight';
+                highlightSpan.textContent = match;
+                highlightSpan.style.cssText = 'background: #ffd700; color: #2b1c11; padding: 2px 4px; border-radius: 3px; font-weight: bold;';
+                
+                const fragment = document.createDocumentFragment();
+                if (before) fragment.appendChild(document.createTextNode(before));
+                fragment.appendChild(highlightSpan);
+                if (after) fragment.appendChild(document.createTextNode(after));
+                
+                parent.replaceChild(fragment, textNode);
+                
+                // Store first highlight for scrolling
+                if (!firstHighlight) {
+                    firstHighlight = highlightSpan;
+                }
+            }
+        });
+        
+        // Scroll to first highlight with smooth animation
+        if (firstHighlight) {
+            setTimeout(() => {
+                firstHighlight.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+                
+                // Add a pulse animation to draw attention
+                firstHighlight.style.animation = 'highlightPulse 1s ease-in-out 2';
+            }, 300);
+        }
+    }
+    
+    // Add CSS animation for highlight pulse
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes highlightPulse {
+            0%, 100% { 
+                background: #ffd700; 
+                transform: scale(1);
+            }
+            50% { 
+                background: #ffed4e; 
+                transform: scale(1.05);
+            }
+        }
+    `;
+    document.head.appendChild(style);
+})();
