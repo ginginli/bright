@@ -116,6 +116,10 @@ class WikiSearch {
             const data = await response.json();
             this.searchIndex = data.pages;
             
+            // Debug logging
+            console.log('Search index loaded:', this.searchIndex.length, 'pages');
+            console.log('Sample entries:', this.searchIndex.slice(0, 3).map(p => p.title));
+            
             // Initialize Fuse.js
             this.fuse = new Fuse(this.searchIndex, {
                 keys: [
@@ -124,12 +128,15 @@ class WikiSearch {
                     { name: 'description', weight: 0.2 },
                     { name: 'category', weight: 0.1 }
                 ],
-                threshold: 0.0,
+                threshold: 0.3,
                 distance: 100,
                 minMatchCharLength: 2,
                 includeScore: true,
-                includeMatches: true
+                includeMatches: true,
+                ignoreLocation: true
             });
+            
+            console.log('Fuse.js initialized with threshold:', 0.3);
         } catch (error) {
             console.error('Failed to load search index:', error);
         }
@@ -169,6 +176,12 @@ class WikiSearch {
         }
 
         const results = this.fuse.search(query);
+        
+        // Debug logging
+        console.log('Search query:', query);
+        console.log('Search results count:', results.length);
+        console.log('First 3 results:', results.slice(0, 3));
+        
         this.searchResults = results.slice(0, 20); // Limit to 20 results
         this.selectedIndex = 0;
         this.renderResults(this.searchResults);
