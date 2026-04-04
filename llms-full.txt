@@ -275,3 +275,170 @@ URL: https://bridgerwestern.cc/stands/faq.html
 - Not using Discord coordination
 - Dropping Corpse Parts too early
 - Joining empty servers (need 3+ players)
+
+---
+
+## Weapons Section
+
+### Weapons Database
+URL: https://bridgerwestern.cc/weapons/
+Content: Complete weapon guide with primary and secondary weapons, tier 3 dual wield system
+
+**Core Weapon Mechanics:**
+1. **Tier 3 Requirement**: Cannot equip both primary and secondary weapons until reaching tier 3
+2. **Stand Penalty**: Having a Stand decreases base gun damages
+3. **Revolver Reloads**: Revolvers have wasteful reload mechanics
+
+---
+
+### Primary Weapons
+URL: https://bridgerwestern.cc/weapons/primary-weapons.html
+
+**All 9 Primary Weapons:**
+
+1. **Taurus .357** (Starting Weapon)
+   - Mid range in all stats
+   - Reliable for beginners
+   - Revolver type (wasteful reload)
+
+2. **Schofield 6** (Revolver)
+   - Average in nearly every stat
+   - Reloads fairly quick
+   - Revolver type (wasteful reload)
+
+3. **Whitney Dragoon** (Revolver)
+   - High damage
+   - Slow reloading
+   - Revolver type (wasteful reload)
+
+4. **Dual Derringers** (Pistol)
+   - Low damage
+   - High fire rate
+   - Fast reloading
+
+5. **Mauser** (Pistol)
+   - Low recoil
+   - Low damage
+   - Fairly high fire rate
+
+6. **Winchester Repeater** (Rifle)
+   - 8 bullet capacity
+   - More range than revolvers
+   - Pretty high fire rate
+   - Functions like an 8-bullet revolver
+
+7. **Bow** (Ranged)
+   - Mid range sniper
+   - Less damage than rifles
+   - Takes longer to shoot
+   - Right click to switch: Silver Arrows or Dynamite Arrows
+
+8. **Malcom .70** (Sniper Rifle)
+   - 4 bullet capacity
+   - Scoped rifle
+   - Long range
+   - Headshots deal 50 damage
+
+9. **Bolt Action Rifle** (Unobtainable)
+   - Currently unobtainable
+   - Will be remodeled in future update
+
+---
+
+### Secondary Weapons
+URL: https://bridgerwestern.cc/weapons/secondary-weapons.html
+
+**Tier 3 Requirement**: Must reach tier 3 to equip alongside primary weapon
+
+**All 6 Secondary Weapons:**
+
+1. **Mare's Leg** (Rifle)
+   - 7 bullet capacity
+   - Lower damage than Winchester
+   - Faster version of Winchester Repeater
+
+2. **Sabre** (Melee)
+   - Melee weapon
+   - Can parry other sabres
+   - Can parry vampires
+
+3. **Colt Ocelot** (Revolver)
+   - Higher damage revolver
+   - Bullets ricochet 3 times
+   - Revolver type (wasteful reload)
+
+4. **DB Shotgun** (Shotgun)
+   - Double barrel shotgun
+   - Shoots twice
+   - Very wide spread
+
+5. **Tommy Gun** (SMG)
+   - 25 bullet capacity
+   - Heavy spread
+   - High speed
+
+6. **Maverick 88** (Shotgun)
+   - Pump action shotgun
+   - Low spread
+   - Shoots 6 pellets
+
+---
+
+### Weapon Mechanics
+URL: https://bridgerwestern.cc/weapons/weapon-mechanics.html
+
+**Tier 3 Dual Wield System:**
+- Cannot equip both primary and secondary weapons until tier 3
+- Must choose one weapon type before tier 3
+- Significant progression milestone
+- Unlocks dual wielding capability
+
+**Stand Penalty:**
+- Having a Stand decreases base gun damages
+- Affects all primary and secondary weapons equally
+- Creates strategic trade-off: Stand abilities vs weapon effectiveness
+- Consider playstyle before obtaining Stand
+
+**Revolver Reload Mechanics:**
+- Revolvers have wasteful reloads
+- Affects: Taurus .357, Schofield 6, Whitney Dragoon, Colt Ocelot
+- Less efficient than other weapon types
+- Requires careful engagement timing
+- Plan combat around reload windows
+
+**Weapon Strategy:**
+- Primary weapons: Main combat tool, available from start
+- Secondary weapons: Requires tier 3, provides tactical flexibility
+- Revolver users: Manage reload timing carefully
+- Stand users: Accept reduced gun damage for Stand abilities
+- Non-Stand users: Maximize gun damage potential
+
+---
+
+## Complete Game Mechanics Summary
+
+**Stand System:**
+- Arrow Shard fishing: 0.5% drop rate
+- Corpse Part KOTH: 15-20% success rate with holding
+- Clan coordination: 80%+ success vs 5% solo
+- Stand penalty: Reduces gun damage
+
+**Weapon System:**
+- 9 primary weapons (available from start)
+- 6 secondary weapons (requires tier 3)
+- Tier 3 unlocks dual wielding
+- Revolvers have wasteful reloads
+- Stand users have reduced gun damage
+
+**Progression:**
+- Tier 1-2: Single weapon only
+- Tier 3: Dual wield unlocked
+- Stand acquisition: Permanent choice affecting gun damage
+- Tusk: Permanent disability (Left Arm Corpse Part)
+
+**Combat Mechanics:**
+- Posture system: Blocking breaks posture
+- Limb damage: Damage is limb-specific
+- Headshots: Wear hat to prevent headshot damage
+- Water escape: Use aquatic terrain to avoid pursuers
+- Clan coordination: Essential for S-tier Stand acquisition
