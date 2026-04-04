@@ -454,7 +454,8 @@ new WikiSearch();
     
     function highlightSearchTerm(term) {
         const searchTerm = term.toLowerCase();
-        const mainContent = document.querySelector('section, main, .container');
+        // Use body instead of first section to search entire page
+        const mainContent = document.body;
         
         if (!mainContent) return;
         
@@ -471,7 +472,7 @@ new WikiSearch();
             allTextNodes.push(currentNode);
         }
         
-        // Filter nodes
+        // Filter nodes - exclude header, nav, footer, scripts
         const nodesToHighlight = allTextNodes.filter(node => {
             const parent = node.parentElement;
             if (!parent) return false;
@@ -481,7 +482,8 @@ new WikiSearch();
                 return false;
             }
             
-            if (parent.classList && parent.classList.contains('search-modal')) {
+            // Exclude header, nav, footer, breadcrumb
+            if (parent.closest('header, nav, footer, .breadcrumb, .search-modal, .search-fab')) {
                 return false;
             }
             
@@ -520,7 +522,7 @@ new WikiSearch();
             }
         });
         
-        // Scroll to first highlight
+        // Scroll to first highlight after anchor navigation
         if (firstHighlight) {
             setTimeout(() => {
                 try {
@@ -536,7 +538,7 @@ new WikiSearch();
                         // Silently fail
                     }
                 }
-            }, 500);
+            }, 800); // Increased delay to allow anchor scroll to complete first
         }
     }
     
