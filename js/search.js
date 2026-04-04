@@ -31,31 +31,40 @@ class WikiSearch {
 
     createSearchUI() {
         try {
-            // Create search trigger in header
+            // Create search trigger in header (for desktop)
             const header = document.querySelector('header .container');
             const navToggle = document.querySelector('.nav-toggle');
             
-            if (!header) {
-                console.error('Header container not found!');
-                return;
+            if (header) {
+                const searchTrigger = document.createElement('div');
+                searchTrigger.className = 'search-trigger';
+                searchTrigger.innerHTML = `
+                    <button class="search-trigger-btn" aria-label="Search wiki">
+                        <span class="search-icon">🔍</span>
+                        <span class="search-placeholder">Search wiki...</span>
+                    </button>
+                `;
+                
+                // Insert before nav-toggle, or append if nav-toggle doesn't exist
+                if (navToggle) {
+                    header.insertBefore(searchTrigger, navToggle);
+                } else {
+                    header.appendChild(searchTrigger);
+                }
+                
+                console.log('Header search trigger created');
             }
             
-            const searchTrigger = document.createElement('div');
-            searchTrigger.className = 'search-trigger';
-            searchTrigger.innerHTML = `
-                <button class="search-trigger-btn" aria-label="Search wiki">
-                    <span class="search-icon">🔍</span>
-                    <span class="search-placeholder">Search wiki...</span>
-                </button>
+            // Create floating search button (FAB) - always visible
+            const searchFAB = document.createElement('button');
+            searchFAB.className = 'search-fab';
+            searchFAB.setAttribute('aria-label', 'Search wiki');
+            searchFAB.innerHTML = `
+                <span class="search-fab-icon">🔍</span>
             `;
             
-            // Insert before nav-toggle, or append if nav-toggle doesn't exist
-            if (navToggle) {
-                header.insertBefore(searchTrigger, navToggle);
-            } else {
-                console.warn('Nav toggle not found, appending search trigger to header');
-                header.appendChild(searchTrigger);
-            }
+            document.body.appendChild(searchFAB);
+            console.log('Search FAB created');
 
             // Create search modal
             const searchModal = document.createElement('div');
@@ -96,13 +105,21 @@ class WikiSearch {
 
     attachEventListeners() {
         try {
-            // Search trigger button
+            // Header search trigger button (desktop)
             const triggerBtn = document.querySelector('.search-trigger-btn');
-            if (!triggerBtn) {
-                console.error('Search trigger button not found!');
+            if (triggerBtn) {
+                triggerBtn.addEventListener('click', () => this.openSearch());
+                console.log('Header search trigger attached');
+            }
+            
+            // Search FAB button (always present)
+            const searchFAB = document.querySelector('.search-fab');
+            if (!searchFAB) {
+                console.error('Search FAB not found!');
                 return;
             }
-            triggerBtn.addEventListener('click', () => this.openSearch());
+            searchFAB.addEventListener('click', () => this.openSearch());
+            console.log('Search FAB attached');
 
             // Search input
             const searchInput = document.querySelector('.search-input');

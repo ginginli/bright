@@ -1754,7 +1754,79 @@ a.logo {
    搜索功能样式
    ========================================= */
 
-/* 搜索触发按钮 */
+/* 浮动搜索按钮 (FAB) */
+.search-fab {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--text-ink), #3d2a1a);
+    border: 3px solid var(--bg-parchment);
+    box-shadow: 0 4px 12px rgba(43, 28, 17, 0.3), 0 8px 24px rgba(43, 28, 17, 0.2);
+    cursor: pointer;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    animation: fabPulse 2s ease-in-out infinite;
+}
+
+.search-fab:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 6px 16px rgba(43, 28, 17, 0.4), 0 12px 32px rgba(43, 28, 17, 0.3);
+    animation: none;
+}
+
+.search-fab:active {
+    transform: scale(0.95);
+}
+
+.search-fab-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes fabPulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(43, 28, 17, 0.3), 0 8px 24px rgba(43, 28, 17, 0.2);
+    }
+    50% {
+        box-shadow: 0 4px 12px rgba(43, 28, 17, 0.3), 0 8px 24px rgba(43, 28, 17, 0.2), 0 0 0 8px rgba(43, 28, 17, 0.1);
+    }
+}
+
+/* 移动端 FAB 优化 */
+@media (max-width: 768px) {
+    .search-fab {
+        width: 56px;
+        height: 56px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .search-fab-icon {
+        font-size: 1.8rem;
+    }
+}
+
+/* 小屏手机 FAB */
+@media (max-width: 480px) {
+    .search-fab {
+        width: 52px;
+        height: 52px;
+        bottom: 16px;
+        right: 16px;
+    }
+    
+    .search-fab-icon {
+        font-size: 1.6rem;
+    }
+}
+
+/* 旧的搜索触发按钮样式 - Web 端显示 */
 .search-trigger {
     flex-shrink: 0;
     margin-left: auto;
@@ -1789,6 +1861,13 @@ a.logo {
 
 .search-placeholder {
     color: var(--accent-fade);
+}
+
+/* 移动端隐藏导航栏搜索 */
+@media (max-width: 768px) {
+    .search-trigger {
+        display: none;
+    }
 }
 
 /* 搜索模态框 */
