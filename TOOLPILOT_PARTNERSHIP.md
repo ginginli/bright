@@ -7,7 +7,7 @@
 - **Stands 页面 (stands/index.html)**: 在 footer 添加了 Partners 小节和 ToolPilot.ai 徽章
 
 ### 2. 徽章详情
-- **徽章图片**: `/toolpilot.png`
+- **徽章图片**: `/toolpilot.svg`
 - **链接地址**: https://www.toolpilot.ai
 - **属性**: `target="_blank" rel="noopener noreferrer"`
 - **位置**: Footer Partners 栏
