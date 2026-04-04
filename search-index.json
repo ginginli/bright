@@ -18,7 +18,7 @@
     },
     {
       "title": "How to Get a Stand",
-      "url": "/stands/how-to-get-stand.html",
+      "url": "/stands/how-to-get-stand/",
       "category": "Stands",
       "keywords": ["stand", "corpse part", "arrow shard", "KOTH", "fishing", "how to get", "acquisition", "obtain"],
       "description": "Arrow Shard fishing (0.5% drop rate), Corpse Part KOTH events, water escape tactics, and server selection strategies.",
@@ -26,7 +26,7 @@
     },
     {
       "title": "Stand Abilities & Skills",
-      "url": "/stands/stand-abilities.html",
+      "url": "/stands/stand-abilities/",
       "category": "Stands",
       "keywords": ["abilities", "skills", "moveset", "keybinds", "mechanics", "barrage", "timestop", "time erasure", "epitaph", "passive abilities", "special mechanics", "combat", "utility"],
       "description": "Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities.",
@@ -34,7 +34,7 @@
     },
     {
       "title": "Stand Tier List",
-      "url": "/stands/stand-tier-list.html",
+      "url": "/stands/stand-tier-list/",
       "category": "Stands",
       "keywords": ["tier list", "ranking", "best stands", "pvp", "meta", "s tier", "a tier", "b tier", "combat", "utility"],
       "description": "Complete tier list ranking all Stands by PvP and PvE performance.",
@@ -42,7 +42,7 @@
     },
     {
       "title": "Discord Coordination Guide",
-      "url": "/stands/discord-coordination.html",
+      "url": "/stands/discord-coordination/",
       "category": "Stands",
       "keywords": ["discord", "clan", "coordination", "team", "strategy", "server flooding", "monopoly", "cooperation"],
       "description": "Clan monopoly reality, team strategies, server flooding methods, and coordination success rates.",
@@ -50,7 +50,7 @@
     },
     {
       "title": "Corpse Part Survival Guide",
-      "url": "/stands/corpse-part-guide.html",
+      "url": "/stands/corpse-part-guide/",
       "category": "Stands",
       "keywords": ["corpse part", "KOTH", "survival", "tactics", "water escape", "probability", "body parts", "left arm", "right arm", "heart", "spine", "legs"],
       "description": "KOTH mechanics, water escape tactics, probability systems, body part types, and advanced survival tips.",
@@ -58,7 +58,7 @@
     },
     {
       "title": "Stands FAQ",
-      "url": "/stands/faq.html",
+      "url": "/stands/faq/",
       "category": "Stands",
       "keywords": ["faq", "questions", "help", "troubleshooting", "common issues", "beginner", "mistakes"],
       "description": "Common questions, mechanism explanations, troubleshooting guide, and beginner mistake prevention.",
@@ -66,7 +66,7 @@
     },
     {
       "title": "The World",
-      "url": "/stands/stand-abilities.html#the-world",
+      "url": "/stands/stand-abilities/#the-world",
       "category": "Stands",
       "keywords": ["the world", "timestop", "dio", "combat", "s tier", "barrage", "shinei", "knife toss", "kick barrage"],
       "description": "Long timestop (~5 seconds). Top-tier combat Stand with devastating time manipulation.",
@@ -74,7 +74,7 @@
     },
     {
       "title": "D4C",
-      "url": "/stands/stand-abilities.html#d4c",
+      "url": "/stands/stand-abilities/#d4c",
       "category": "Stands",
       "keywords": ["d4c", "dirty deeds", "dimension", "combat", "s tier", "clone", "swap", "dimension hop", "chop barrage"],
       "description": "Special obtainment: 100 kills, 10 killstreak, Deserts area. Dimensional manipulation Stand.",
@@ -82,7 +82,7 @@
     },
     {
       "title": "Killer Queen",
-      "url": "/stands/stand-abilities.html#killer-queen",
+      "url": "/stands/stand-abilities/#killer-queen",
       "category": "Stands",
       "keywords": ["killer queen", "bomb", "sheer heart attack", "combat", "s tier", "explosion", "stray cat"],
       "description": "Bomb abilities and Sheer Heart Attack. Powerful explosive combat Stand.",
@@ -90,7 +90,7 @@
     },
     {
       "title": "Star Platinum",
-      "url": "/stands/stand-abilities.html#star-platinum",
+      "url": "/stands/stand-abilities/#star-platinum",
       "category": "Stands",
       "keywords": ["star platinum", "ora", "jotaro", "combat", "sptw", "evolution", "timestop movement", "skull breaker", "star finger"],
       "description": "Can evolve to SPTW (1% chance with timestop movement). Powerful melee Stand.",
@@ -98,7 +98,7 @@
     },
     {
       "title": "Star Platinum The World",
-      "url": "/stands/stand-abilities.html#star-platinum-the-world",
+      "url": "/stands/stand-abilities/#star-platinum-the-world",
       "category": "Stands",
       "keywords": ["star platinum the world", "sptw", "timestop", "evolved", "combat", "bearing shots", "beatdown"],
       "description": "Evolved form of Star Platinum with 2-second timestop and grab beatdown.",
@@ -106,7 +106,7 @@
     },
     {
       "title": "King Crimson",
-      "url": "/stands/stand-abilities.html#king-crimson",
+      "url": "/stands/stand-abilities/#king-crimson",
       "category": "Stands",
       "keywords": ["king crimson", "time erasure", "epitaph", "combat", "auto dodge", "donut", "impale"],
       "description": "Time Erasure and Epitaph auto-dodge abilities. Time manipulation Stand.",
@@ -114,7 +114,7 @@
     },
     {
       "title": "Gold Experience",
-      "url": "/stands/stand-abilities.html#gold-experience",
+      "url": "/stands/stand-abilities/#gold-experience",
       "category": "Stands",
       "keywords": ["gold experience", "ger", "giorno", "healing", "life", "life giver", "tree", "eagle", "scorpion"],
       "description": "Life Giver abilities and healing support. Can summon creatures and heal.",
@@ -122,7 +122,7 @@
     },
     {
       "title": "Gold Experience Requiem",
-      "url": "/stands/stand-abilities.html#gold-experience-requiem",
+      "url": "/stands/stand-abilities/#gold-experience-requiem",
       "category": "Stands",
       "keywords": ["gold experience requiem", "ger", "requiem", "giorno", "ultimate"],
       "description": "Requiem evolution of Gold Experience. Status pending.",
@@ -130,7 +130,7 @@
     },
     {
       "title": "Crazy Diamond",
-      "url": "/stands/stand-abilities.html#crazy-diamond",
+      "url": "/stands/stand-abilities/#crazy-diamond",
       "category": "Stands",
       "keywords": ["crazy diamond", "josuke", "restoration", "healing", "facial reconstruction", "bearing shot", "blood slash"],
       "description": "Restoration abilities and healing support. Can restore and heal.",
@@ -138,7 +138,7 @@
     },
     {
       "title": "Tusk Acts 1-3",
-      "url": "/stands/stand-abilities.html#tusk-acts",
+      "url": "/stands/stand-abilities/#tusk-acts",
       "category": "Stands",
       "keywords": ["tusk", "johnny", "cripple", "left arm", "nail", "acts", "wormhole", "golden ratio"],
       "description": "Left Arm only. Cripple passive (cannot walk/use guns). Nail-based attacks.",
@@ -146,7 +146,7 @@
     },
     {
       "title": "Hermit Purple",
-      "url": "/stands/stand-abilities.html#hermit-purple",
+      "url": "/stands/stand-abilities/#hermit-purple",
       "category": "Stands",
       "keywords": ["hermit purple", "joseph", "grapple", "mobility", "utility", "pull", "chop"],
       "description": "Grapple and mobility utility Stand. Pull targets and mobility.",
@@ -154,7 +154,7 @@
     },
     {
       "title": "Silver Chariot",
-      "url": "/stands/stand-abilities.html#silver-chariot",
+      "url": "/stands/stand-abilities/#silver-chariot",
       "category": "Stands",
       "keywords": ["silver chariot", "polnareff", "armor", "speed", "sword", "rapier", "lunge", "whirlwind"],
       "description": "Armor removal for speed boost. Fast rapier combat Stand.",
@@ -162,7 +162,7 @@
     },
     {
       "title": "Hierophant Green",
-      "url": "/stands/stand-abilities.html#hierophant-green",
+      "url": "/stands/stand-abilities/#hierophant-green",
       "category": "Stands",
       "keywords": ["hierophant green", "kakyoin", "emerald splash", "pilot", "tentacle", "20 meter"],
       "description": "Emerald Splash and Stand Pilot abilities. Ranged combat Stand.",
@@ -170,7 +170,7 @@
     },
     {
       "title": "Tubular Bells",
-      "url": "/stands/stand-abilities.html#tubular-bells",
+      "url": "/stands/stand-abilities/#tubular-bells",
       "category": "Stands",
       "keywords": ["tubular bells", "balloon", "utility", "stamina", "dog", "snail", "swan"],
       "description": "Balloon attacks with no stamina cost. Utility Stand.",
@@ -178,7 +178,7 @@
     },
     {
       "title": "20th Century Boy",
-      "url": "/stands/stand-abilities.html#20th-century-boy",
+      "url": "/stands/stand-abilities/#20th-century-boy",
       "category": "Stands",
       "keywords": ["20th century boy", "defense", "reflect", "utility", "absolute defence", "dynamite"],
       "description": "Absolute Defence that reflects attacks. Defensive utility Stand.",
@@ -186,7 +186,7 @@
     },
     {
       "title": "Hey Ya",
-      "url": "/stands/stand-abilities.html#hey-ya",
+      "url": "/stands/stand-abilities/#hey-ya",
       "category": "Stands",
       "keywords": ["hey ya", "buff", "support", "utility", "random", "encouragement", "dodge", "damage"],
       "description": "Random buff provider utility Stand. Encouragement passive.",
@@ -194,7 +194,7 @@
     },
     {
       "title": "Mandom",
-      "url": "/stands/stand-abilities.html#mandom",
+      "url": "/stands/stand-abilities/#mandom",
       "category": "Stands",
       "keywords": ["mandom", "time rewind", "utility", "reset", "6 seconds", "watch"],
       "description": "Time Rewind (6 seconds) utility Stand. Rewind time for all players.",
@@ -202,7 +202,7 @@
     },
     {
       "title": "Purple Haze",
-      "url": "/stands/stand-abilities.html#purple-haze",
+      "url": "/stands/stand-abilities/#purple-haze",
       "category": "Stands",
       "keywords": ["purple haze", "fugo", "virus", "poison", "combat"],
       "description": "Poison virus combat Stand. Status pending.",
@@ -210,7 +210,7 @@
     },
     {
       "title": "Whitesnake",
-      "url": "/stands/stand-abilities.html#whitesnake",
+      "url": "/stands/stand-abilities/#whitesnake",
       "category": "Stands",
       "keywords": ["whitesnake", "pucci", "disc", "steal", "unobtainable", "admin"],
       "description": "Developer/admin only. Can permanently steal stands.",
@@ -218,7 +218,7 @@
     },
     {
       "title": "KOTH Event Mechanics",
-      "url": "/stands/corpse-part-guide.html#koth-mechanics",
+      "url": "/stands/corpse-part-guide/#koth-mechanics",
       "category": "Stands",
       "keywords": ["koth", "mechanics", "spawn", "event", "corpse part", "yellow beam", "announcement"],
       "description": "Complete KOTH event mechanics, spawn requirements, and timing windows.",
@@ -226,7 +226,7 @@
     },
     {
       "title": "Probability Accumulation System",
-      "url": "/stands/corpse-part-guide.html#probability-system",
+      "url": "/stands/corpse-part-guide/#probability-system",
       "category": "Stands",
       "keywords": ["probability", "accumulation", "hold time", "success rate", "15-20 seconds", "pulse"],
       "description": "How success probability increases with hold time. 15-20% max success rate.",
@@ -234,7 +234,7 @@
     },
     {
       "title": "Body Part Distribution",
-      "url": "/stands/corpse-part-guide.html#body-part-system",
+      "url": "/stands/corpse-part-guide/#body-part-system",
       "category": "Stands",
       "keywords": ["body parts", "left arm", "right arm", "heart", "spine", "legs", "tusk", "distribution"],
       "description": "Different body parts correlate with different Stands. Left arm for Tusk.",
@@ -242,7 +242,7 @@
     },
     {
       "title": "Water Escape Tactics",
-      "url": "/stands/corpse-part-guide.html#water-escape",
+      "url": "/stands/corpse-part-guide/#water-escape",
       "category": "Stands",
       "keywords": ["water escape", "horse", "aquatic", "survival", "tactics", "solo", "escape"],
       "description": "Water escape method using horse for solo survival. Most reliable tactic.",
@@ -250,7 +250,7 @@
     },
     {
       "title": "Discord Server Flooding",
-      "url": "/stands/discord-coordination.html#server-flooding",
+      "url": "/stands/discord-coordination/#server-flooding",
       "category": "Stands",
       "keywords": ["server flooding", "discord", "coordination", "clan", "team", "monopoly"],
       "description": "How clans flood servers to monopolize Corpse Part events.",
@@ -258,7 +258,7 @@
     },
     {
       "title": "Team Coordination Strategies",
-      "url": "/stands/discord-coordination.html#team-strategies",
+      "url": "/stands/discord-coordination/#team-strategies",
       "category": "Stands",
       "keywords": ["team", "coordination", "strategy", "clan", "communication", "roles"],
       "description": "Team roles, communication protocols, and coordination strategies.",
@@ -298,7 +298,7 @@
     },
     {
       "title": "Primary Weapons",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["primary weapons", "guns", "revolver", "pistol", "rifle", "sniper", "bow"],
       "description": "All 9 primary weapons including revolvers, pistols, rifles, and bow with complete stats.",
@@ -306,7 +306,7 @@
     },
     {
       "title": "Taurus .357",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["taurus", "357", "starting weapon", "pistol", "revolver", "mid range"],
       "description": "Starting pistol. Mid range in all stats. Revolver with wasteful reload.",
@@ -314,7 +314,7 @@
     },
     {
       "title": "Schofield 6",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["schofield", "revolver", "average", "quick reload"],
       "description": "Average in nearly every stat. Reloads fairly quick.",
@@ -322,7 +322,7 @@
     },
     {
       "title": "Whitney Dragoon",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["whitney", "dragoon", "revolver", "high damage", "slow reload"],
       "description": "High damage, slow reloading revolver.",
@@ -330,7 +330,7 @@
     },
     {
       "title": "Dual Derringers",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["dual derringers", "pistol", "high fire rate", "low damage", "fast reload"],
       "description": "Low damage, high fire rate, fast reloading pistol.",
@@ -338,7 +338,7 @@
     },
     {
       "title": "Mauser",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["mauser", "pistol", "low recoil", "high fire rate"],
       "description": "Low recoil, low damage, fairly high fire rate pistol.",
@@ -346,7 +346,7 @@
     },
     {
       "title": "Winchester Repeater",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["winchester", "repeater", "rifle", "8 bullets", "high fire rate", "range"],
       "description": "8 bullet rifle with more range and high fire rate. Functions like an 8-bullet revolver.",
@@ -354,7 +354,7 @@
     },
     {
       "title": "Bow",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["bow", "arrows", "silver arrows", "dynamite arrows", "mid range", "sniper"],
       "description": "Mid-range sniper. Right click to switch between Silver Arrows and Dynamite Arrows.",
@@ -362,7 +362,7 @@
     },
     {
       "title": "Malcom .70",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["malcom", "70", "sniper", "scoped", "headshot", "50 damage", "long range"],
       "description": "4-bullet scoped rifle with long range. Headshots deal 50 damage.",
@@ -370,7 +370,7 @@
     },
     {
       "title": "Bolt Action Rifle",
-      "url": "/weapons/primary-weapons.html",
+      "url": "/weapons/primary-weapons/",
       "category": "Weapons",
       "keywords": ["bolt action", "rifle", "unobtainable", "remodel"],
       "description": "Currently unobtainable. Will be remodeled in future update.",
@@ -378,7 +378,7 @@
     },
     {
       "title": "Secondary Weapons",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["secondary weapons", "tier 3", "melee", "shotgun", "smg", "revolver"],
       "description": "All 6 secondary weapons. Requires Tier 3 to equip alongside primary weapon.",
@@ -386,7 +386,7 @@
     },
     {
       "title": "Mare's Leg",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["mare's leg", "rifle", "7 bullets", "fast", "winchester"],
       "description": "7 bullets, lower damage, faster version of Winchester Repeater.",
@@ -394,7 +394,7 @@
     },
     {
       "title": "Sabre",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["sabre", "melee", "parry", "sword", "vampire"],
       "description": "Melee weapon. Can parry other sabres and vampires.",
@@ -402,7 +402,7 @@
     },
     {
       "title": "Colt Ocelot",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["colt ocelot", "revolver", "ricochet", "high damage", "3 bounces"],
       "description": "Higher damage revolver. Bullets ricochet 3 times.",
@@ -410,7 +410,7 @@
     },
     {
       "title": "DB Shotgun",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["db shotgun", "double barrel", "shotgun", "wide spread", "close range"],
       "description": "Double barrel shotgun. Shoots twice with very wide spread.",
@@ -418,7 +418,7 @@
     },
     {
       "title": "Tommy Gun",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["tommy gun", "smg", "25 bullets", "heavy spread", "high speed"],
       "description": "25 bullets, shoots with heavy spread and speed.",
@@ -426,7 +426,7 @@
     },
     {
       "title": "Maverick 88",
-      "url": "/weapons/secondary-weapons.html",
+      "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
       "keywords": ["maverick", "88", "shotgun", "pump action", "low spread", "6 pellets"],
       "description": "Low spread pump action shotgun. Shoots 6 pellets.",
@@ -434,7 +434,7 @@
     },
     {
       "title": "Weapon Mechanics",
-      "url": "/weapons/weapon-mechanics.html",
+      "url": "/weapons/weapon-mechanics/",
       "category": "Weapons",
       "keywords": ["weapon mechanics", "tier 3", "dual wield", "stand penalty", "revolver reload", "system"],
       "description": "Complete weapon mechanics guide: Tier 3 dual wield, Stand penalty, revolver reloads.",
@@ -442,7 +442,7 @@
     },
     {
       "title": "Tier 3 Dual Wield System",
-      "url": "/weapons/weapon-mechanics.html",
+      "url": "/weapons/weapon-mechanics/",
       "category": "Weapons",
       "keywords": ["tier 3", "dual wield", "system", "progression", "unlock"],
       "description": "Cannot equip both primary and secondary weapons until tier 3. Significant progression milestone.",
@@ -450,7 +450,7 @@
     },
     {
       "title": "Stand Penalty Mechanics",
-      "url": "/weapons/weapon-mechanics.html",
+      "url": "/weapons/weapon-mechanics/",
       "category": "Weapons",
       "keywords": ["stand penalty", "gun damage", "weapon damage", "trade-off"],
       "description": "Having a Stand decreases base gun damages. Strategic trade-off between Stand abilities and weapon effectiveness.",
@@ -458,7 +458,7 @@
     },
     {
       "title": "Revolver Reload Mechanics",
-      "url": "/weapons/weapon-mechanics.html",
+      "url": "/weapons/weapon-mechanics/",
       "category": "Weapons",
       "keywords": ["revolver", "reload", "wasteful", "mechanics", "timing", "engagement"],
       "description": "Revolvers have wasteful reloads. Affects Taurus .357, Schofield 6, Whitney Dragoon, Colt Ocelot.",
