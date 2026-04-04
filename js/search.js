@@ -413,21 +413,51 @@ new WikiSearch();
 
 // Highlight search terms from URL parameter
 (function() {
+    console.log('Highlight script loaded');
+    
     const urlParams = new URLSearchParams(window.location.search);
     const highlight = urlParams.get('highlight');
     
+    console.log('URL params:', window.location.search);
+    console.log('Highlight term:', highlight);
+    
     if (highlight) {
-        // Wait for page to fully load
-        window.addEventListener('load', () => {
+        console.log('Highlight term found, waiting for page load...');
+        
+        // Try multiple load events for better mobile compatibility
+        const tryHighlight = () => {
+            console.log('Attempting to highlight:', highlight);
             highlightSearchTerm(highlight);
-        });
+        };
+        
+        // Try on DOMContentLoaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', tryHighlight);
+        }
+        
+        // Try on window load
+        window.addEventListener('load', tryHighlight);
+        
+        // Also try immediately if DOM is already ready
+        if (document.readyState === 'interactive' || document.readyState === 'complete') {
+            setTimeout(tryHighlight, 100);
+        }
+    } else {
+        console.log('No highlight term in URL');
     }
     
     function highlightSearchTerm(term) {
+        console.log('highlightSearchTerm called with:', term);
+        
         const searchTerm = term.toLowerCase();
         const mainContent = document.querySelector('section, main, .container');
         
-        if (!mainContent) return;
+        console.log('Main content found:', !!mainContent);
+        
+        if (!mainContent) {
+            console.error('Main content not found!');
+            return;
+        }
         
         // Create a TreeWalker to find all text nodes
         const walker = document.createTreeWalker(
@@ -465,6 +495,8 @@ new WikiSearch();
             nodesToHighlight.push(node);
         }
         
+        console.log('Nodes to highlight:', nodesToHighlight.length);
+        
         let firstHighlight = null;
         
         // Highlight all matching text nodes
@@ -498,17 +530,36 @@ new WikiSearch();
             }
         });
         
+        console.log('First highlight element:', firstHighlight);
+        
         // Scroll to first highlight with smooth animation
         if (firstHighlight) {
+            console.log('Scrolling to first highlight...');
+            
             setTimeout(() => {
-                firstHighlight.scrollIntoView({ 
-                    behavior: 'smooth', 
-                    block: 'center' 
-                });
-                
-                // Add a pulse animation to draw attention
-                firstHighlight.style.animation = 'highlightPulse 1s ease-in-out 2';
-            }, 300);
+                try {
+                    firstHighlight.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                    
+                    console.log('Scroll completed');
+                    
+                    // Add a pulse animation to draw attention
+                    firstHighlight.style.animation = 'highlightPulse 1s ease-in-out 2';
+                } catch (error) {
+                    console.error('Scroll error:', error);
+                    
+                    // Fallback: try without smooth behavior
+                    try {
+                        firstHighlight.scrollIntoView({ block: 'center' });
+                    } catch (e) {
+                        console.error('Fallback scroll also failed:', e);
+                    }
+                }
+            }, 500); // Increased delay for mobile
+        } else {
+            console.warn('No highlights created');
         }
     }
     
@@ -527,4 +578,5 @@ new WikiSearch();
         }
     `;
     document.head.appendChild(style);
+    console.log('Highlight styles added');
 })();
