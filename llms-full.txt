@@ -61,7 +61,7 @@ URL: https://bridgerwestern.cc/stands/stand-tier-list.html
 - Killer Queen: High damage, clan monopolized, Meta Score 91/100
 
 **A-Tier Stands:**
-- Star Platinum: High damage output, Meta Score 82/100
+- Star Platinum: High damage output, Meta Score 82/100, 1% chance to evolve into SPTW
 - TWAU: Versatile combat, Meta Score 80/100
 - King Crimson: High skill ceiling, Meta Score 78/100
 - Star Platinum The World: Evolution form, Meta Score 85/100
@@ -76,6 +76,143 @@ URL: https://bridgerwestern.cc/stands/stand-tier-list.html
 
 **Tier Pending (Unverified):**
 - Purple Haze, Mandom, Hey Ya
+
+---
+
+### Stand Abilities & Skills
+URL: https://bridgerwestern.cc/stands/stand-abilities.html
+
+**Stand Obtainment:**
+- Obtained via CORPSE PARTS: When 3+ players, corpse parts have a chance to spawn (yellow beam). Grab and hold to absorb. Pulses indicate % chance of obtaining a stand (caps at 15-20%).
+- Rarities: Default and Rare (time-manipulating).
+
+**S-Tier Stands:**
+
+**The World:**
+- E: Barrage
+- R: Shinei (autolock punch/mobility)
+- T: Knife Toss
+- G: Kick Barrage
+- V: Long Timestop (~5 seconds)
+
+**D4C:**
+- Chop Barrage
+- Tracking Chop
+- Clone Spawn
+- Clone Swap (lowers max HP)
+- Dimension Hop (poncho required; taking >20 damage sends you to another dimension)
+- Special Obtainment: 100 kills, 10 ks, in 'Deserts' area, knocked while corpse part spawns for 10% heart spawn chance
+
+**Killer Queen:**
+- E: Barrage
+- R: Regular Chop
+- T: Plant Bomb/Detonate Bomb
+- G: Sheer Heart Attack (drains stamina)
+- V: Stray Cat (air bubble bomb)
+
+**A-Tier Stands:**
+
+**Star Platinum:**
+- E: Barrage
+- R: Skull Breaker (decapitates at low hp)
+- T: Star Finger
+- V: Judgement
+- G: Timestop Movement (While in timestop, press G to move in timestop)
+- Evolution: Obtained with a 1% chance when using timestop movement with Star Platinum
+
+**Star Platinum The World:**
+- E: Barrage
+- R: Heavy Punch
+- T: Triple Bearing Shots
+- G: Time Stop (2 Seconds)
+- V: Grab Beatdown
+
+**King Crimson:**
+- E: Barrage
+- R: Regular Chop
+- T: Donut (impale)
+- G: Epitaph (auto-dodge)
+- V: Time Erasure (invis, iframes, speed boost)
+
+**B-Tier Stands:**
+
+**Gold Experience:**
+- Life Giver (yellow bar)
+- E: Barrage (7 page muda QTE)
+- R: Life Giver Punch (inverts controls or summons tree/eagle/scorpions)
+- T: Self/Other Heal
+- V: Variant Switcher
+
+**Gold Experience Requiem:**
+- Currently no description
+
+**Crazy Diamond:**
+- E: Barrage
+- R: Tracking Barrage
+- T: Facial Reconstruction (10% chance to change face)
+- G: Bearing Shot
+- V: Restore Mode
+- Blood Slash
+- Reconstruction Barrage
+
+**Tusk Acts 1-3:**
+- Act 1: Nail Bullets, Nail Glide, Nail Jump
+- Act 2: Wormhole Nails, Golden Ratio Nail
+- Act 3: Wormhole Nails
+- Press V to cycle between Acts
+- Obtainment: ONLY OBTAINABLE AT A SMALL CHANCE FROM LEFT ARM CORPSE PART
+- Passive - Cripple: Greatly reduced movement speed, cannot sprint, cannot use guns
+
+**Hermit Purple:**
+- Type: Utility Stand
+- Grapple/Pull Target
+- Chop/Dropkick
+
+**Silver Chariot:**
+- E: Barrage (with a rapier)
+- R: Rapier Uptilt
+- T: Lunge
+- G: Whirlwind Slash
+- Variant T: Ricochet Shot (LOW HP VARIANT)
+- V: Armor Removal - Remove Silver Chariot's Armor, greatly increasing speed and damage of all moves
+
+**Hierophant Green:**
+- E: Tentacle Wire
+- R: Emerald Splash
+- V: Stand Pilot
+- G: 20 Meter Emerald Splash - place down alot of tentacle wires, having your stand go invisible... fully automatic blasts
+
+**Tubular Bells:**
+- Type: Utility Stand
+- E: Balloon Command
+- R: Medium Balloons (Dog)
+- T: Light Balloons (Snail)
+- G: Heavy Balloons (Swan)
+- V: TUBULAR BELLS!!! - Send out all your balloons at once towards your mouse cursor
+
+**20th Century Boy:**
+- Type: Utility Stand
+- G: Absolute Defence - Crouch down and becom an impenetrable fortress, causing all attacks to be reflected back
+- V: Dynamite Strap (requires 6 dynamite) - Pull some loose dynamite... attatching it to your body. Using absolute defence will negate self damage
+
+**Tier Pending:**
+
+**Hey Ya:**
+- Type: Utility Stand
+- Passive - Encouragement: Hey Ya will guide the user along the right path, giving them words of encouragment that supply buffs
+- Buffs varying through dodges, damage buffs, healing, speed buffs, increased accuracy, etc
+
+**Mandom:**
+- Type: Utility Stand
+- G: Time Rewind - Twist back your watch, returning you and everyone around you 6 seconds back in time. Includes states/health
+
+**Unobtainable:**
+
+**Whitesnake (UNOB):**
+- Currently developer/admin only
+- Can permanently steal stands
+- Disc Extraction
+- Stand Discs
 
 ---
 
@@ -122,11 +259,15 @@ URL: https://bridgerwestern.cc/stands/faq.html
 - Fastest method? Corpse Part KOTH with Discord coordination
 - Can I change my Stand? No, Stands are permanent
 - Tusk Acts abilities:
-  - Act 1: Nail Glide + mini-gun spam
-  - Act 2: Homing bullets + ricochet + traps
-  - Act 3: Wormhole bullets + double damage
+  - Act 1: Nail Bullets, Nail Glide, Nail Jump
+  - Act 2: Wormhole Nails, Golden Ratio Nail
+  - Act 3: Wormhole Nails
+  - Press V to cycle between Acts
+- Star Platinum evolution: Obtained with a 1% chance when using timestop movement with Star Platinum
 - Hey Ya buffs: dodge, damage, healing, speed, accuracy (random activation)
 - Time Stop counters: maintain distance, use mobility, position behind cover
+- D4C special obtainment: 100 kills, 10 ks, in 'Deserts' area, knocked while corpse part spawns for 10% heart spawn chance
+- Corpse Part mechanics: Pulses indicate % chance (caps at 15-20%). Rarities: Default and Rare (time-manipulating)
 
 **Common Beginner Mistakes:**
 - Getting Tusk without understanding permanent disability
