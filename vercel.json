@@ -1,0 +1,49 @@
+{
+  "redirects": [
+    {
+      "source": "/stands/how-to-get-stand.html",
+      "destination": "/stands/how-to-get-stand/",
+      "permanent": true
+    },
+    {
+      "source": "/stands/stand-abilities.html",
+      "destination": "/stands/stand-abilities/",
+      "permanent": true
+    },
+    {
+      "source": "/stands/discord-coordination.html",
+      "destination": "/stands/discord-coordination/",
+      "permanent": true
+    },
+    {
+      "source": "/stands/corpse-part-guide.html",
+      "destination": "/stands/corpse-part-guide/",
+      "permanent": true
+    },
+    {
+      "source": "/stands/faq.html",
+      "destination": "/stands/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/stands/stand-tier-list.html",
+      "destination": "/stands/stand-tier-list/",
+      "permanent": true
+    },
+    {
+      "source": "/weapons/primary-weapons.html",
+      "destination": "/weapons/primary-weapons/",
+      "permanent": true
+    },
+    {
+      "source": "/weapons/secondary-weapons.html",
+      "destination": "/weapons/secondary-weapons/",
+      "permanent": true
+    },
+    {
+      "source": "/weapons/weapon-mechanics.html",
+      "destination": "/weapons/weapon-mechanics/",
+      "permanent": true
+    }
+  ]
+}
