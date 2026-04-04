@@ -230,32 +230,43 @@ footer p {
    ========================================= */
 
 @media (max-width: 768px) {
+    /* Phase 1 & 2: 紧凑型布局优化 */
+    
     /* 基础字体和间距优化 */
     body {
-        font-size: 16px; /* 防止 iOS 自动缩放 */
+        font-size: 15px; /* 微调字体 */
+        line-height: 1.4; /* 紧凑行高 */
         -webkit-text-size-adjust: 100%;
     }
     
     .container {
-        padding: 0 16px;
+        padding: 0 14px; /* 减少左右边距 */
     }
     
-    /* Hero 区域优化 */
+    /* Hero 区域优化 - 大幅压缩 */
     .hero {
-        padding: 60px 16px;
+        padding: 32px 14px; /* 减少 47% */
     }
     
     .hero h1 { 
-        font-size: 2.2rem;
-        line-height: 1.1;
+        font-size: 1.9rem; /* 进一步缩小 */
+        line-height: 1.05;
+        margin-bottom: 6px;
     }
     
     .hero-sub {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .hero p.subtitle {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+        line-height: 1.3;
+    }
+    
+    .hero-label {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
     }
     
     .hero .handwritten-note { 
@@ -264,32 +275,33 @@ footer p {
     
     /* Header 优化 - 减少高度 */
     header {
-        padding: 12px 0;
+        padding: 10px 0;
     }
     
     header .container { 
         flex-direction: column; 
-        gap: 12px;
+        gap: 10px;
         align-items: stretch;
     }
     
     .logo {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: center;
     }
     
-    /* 导航按钮优化 - 更大的触摸目标 */
+    /* 导航按钮优化 */
     nav a { 
-        margin: 0 8px;
-        padding: 8px 12px;
+        margin: 0 6px;
+        padding: 8px 10px;
         display: inline-block;
-        min-height: 44px; /* iOS 推荐最小触摸目标 */
+        min-height: 44px;
         line-height: 28px;
+        font-size: 0.85rem;
     }
     
     .nav-link {
-        padding: 12px 16px;
-        font-size: 0.9rem;
+        padding: 12px 14px;
+        font-size: 0.88rem;
         min-height: 44px;
         display: flex;
         align-items: center;
@@ -297,26 +309,27 @@ footer p {
     
     /* Breadcrumb 优化 - 减少高度 */
     .breadcrumb {
-        top: 56px; /* 调整后的 header 高度 */
-        padding: 8px 0;
-        font-size: 0.85rem;
+        top: 54px;
+        padding: 6px 0;
+        font-size: 0.8rem;
     }
     
-    /* Section 优化 */
+    /* Section 优化 - 大幅减少间距 */
     section { 
-        padding: 40px 0; 
+        padding: 24px 0; /* 减少 40% */
     }
     
     .section-title { 
-        font-size: 1.8rem;
-        margin-bottom: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 16px; /* 减少 47% */
+        line-height: 1.2;
     }
     
-    /* 按钮优化 - 更大的触摸目标 */
+    /* 按钮优化 */
     .btn {
-        font-size: 1rem;
-        padding: 14px 28px;
-        min-height: 48px;
+        font-size: 0.95rem;
+        padding: 12px 24px;
+        min-height: 44px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -324,189 +337,384 @@ footer p {
     
     .hero-cta {
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
+        margin-top: 16px;
     }
     
     .hero-cta .btn {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
     }
     
-    /* 网格布局优化 - 单列显示 */
-    .grid-3,
-    .grid-4 {
+    /* 网格布局优化 - 双列显示 */
+    .grid-3 {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 14px;
+    }
+    
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr); /* 双列布局 */
+        gap: 12px;
     }
     
     .grid-2 {
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 20px;
     }
     
-    /* 卡片优化 */
-    .sketch-card,
-    .category-card,
+    /* 卡片优化 - 紧凑布局 */
+    .sketch-card {
+        padding: 16px 14px;
+        box-shadow: 2px 2px 0 rgba(43, 28, 17, 0.1);
+    }
+    
+    .sketch-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+    }
+    
+    .sketch-card p {
+        font-size: 0.85rem;
+        line-height: 1.35;
+        margin-bottom: 10px;
+    }
+    
+    /* Category 卡片 - 双列紧凑布局 */
+    .category-card {
+        padding: 12px 10px;
+        box-shadow: 2px 2px 0 rgba(43, 28, 17, 0.1);
+        min-height: 110px;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 3px 3px 0 rgba(43, 28, 17, 0.15);
+    }
+    
+    .category-icon {
+        font-size: 1.8rem; /* 缩小 icon */
+        margin-bottom: 6px;
+    }
+    
+    .category-card h3 {
+        font-size: 0.95rem;
+        margin: 0 0 6px;
+        padding-bottom: 6px;
+    }
+    
+    .category-card p {
+        font-size: 0.75rem;
+        line-height: 1.3;
+        margin: 0 0 6px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 限制 2 行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .category-count {
+        font-size: 0.7rem;
+    }
+    
+    /* Stand 卡片优化 - 双列紧凑 */
     .stand-card {
-        padding: 20px;
-        box-shadow: 3px 3px 0 rgba(43, 28, 17, 0.1);
+        padding: 14px 12px;
+        box-shadow: 2px 2px 0 rgba(43, 28, 17, 0.1);
     }
     
-    .sketch-card:hover,
-    .category-card:hover,
     .stand-card:hover {
         transform: translateY(-2px);
-        box-shadow: 4px 4px 0 rgba(43, 28, 17, 0.15);
+        box-shadow: 3px 3px 0 rgba(43, 28, 17, 0.15);
     }
     
-    /* Stand 卡片优化 */
     .stand-icon {
-        font-size: 2.5rem;
+        font-size: 2rem; /* 缩小 20% */
+        margin-bottom: 8px;
     }
     
     .stand-card h4 {
-        font-size: 1.2rem;
+        font-size: 1.05rem;
+        margin-bottom: 6px;
+    }
+    
+    .stand-ability {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
     }
     
     .stand-desc {
-        font-size: 0.88rem;
+        font-size: 0.8rem;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 限制 2 行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
     
     /* Tier 标题优化 */
     .tier-title {
-        font-size: 1.5rem;
-        padding: 10px 16px;
+        font-size: 1.3rem;
+        padding: 8px 14px;
+        margin-bottom: 16px;
     }
     
-    /* 表格优化 - 横向滚动 */
+    /* 表格优化 */
     .data-table-wrapper {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
-        margin: 20px -16px;
-        padding: 0 16px;
+        margin: 16px -14px;
+        padding: 0 14px;
     }
     
     .data-table {
         min-width: 500px;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
     
     .data-table th,
     .data-table td {
-        padding: 10px 8px;
-        font-size: 0.85rem;
+        padding: 8px 6px;
+        font-size: 0.8rem;
     }
     
     /* FAQ 优化 */
+    .faq-item {
+        margin: 14px 0;
+    }
+    
     .faq-item h3 {
-        font-size: 1rem;
-        padding: 14px 16px;
-        padding-right: 44px; /* 为 + 号留空间 */
+        font-size: 0.95rem;
+        padding: 12px 14px;
+        padding-right: 40px;
     }
     
     .faq-item h3::after {
-        font-size: 1.3rem;
-        right: 16px;
+        font-size: 1.2rem;
+        right: 14px;
     }
     
     .faq-answer {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
     }
     
     /* Footer 优化 */
     .footer-grid {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
         text-align: center;
     }
     
     .footer-col h4 {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
     
     .footer-col a {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        margin-bottom: 4px;
     }
     
     /* 控制列表优化 */
     .control-list li {
-        font-size: 1rem;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+        font-size: 0.95rem;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
     }
     
     /* 导航卡片优化 */
     .nav-card,
     .guide-card {
-        padding: 20px 16px;
-        min-height: 120px;
+        padding: 14px 12px;
+        min-height: 100px;
     }
     
     .nav-icon,
     .guide-icon {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .nav-card h3,
+    .guide-card h3 {
+        font-size: 1rem;
+        margin: 8px 0 6px;
+    }
+    
+    .nav-card p,
+    .guide-card p {
+        font-size: 0.8rem;
+        line-height: 1.3;
     }
     
     /* 文章卡片优化 */
     .article-card h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-bottom: 6px;
     }
     
     .article-card p {
-        font-size: 0.88rem;
+        font-size: 0.82rem;
+        line-height: 1.35;
+        margin-bottom: 10px;
+    }
+    
+    .article-tag {
+        font-size: 0.68rem;
+        padding: 2px 6px;
+        margin-bottom: 8px;
     }
 }
 
-/* 小屏手机优化 (iPhone SE, 小型 Android) */
+/* 小屏手机优化 (iPhone SE, 小型 Android) - 超紧凑模式 */
 @media (max-width: 480px) {
+    /* 进一步压缩空间 */
+    section {
+        padding: 20px 0;
+    }
+    
+    .hero {
+        padding: 24px 12px;
+    }
+    
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        margin-bottom: 4px;
     }
     
     .hero-sub {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .hero p.subtitle {
-        font-size: 1rem;
+        font-size: 0.88rem;
+        margin-bottom: 12px;
+    }
+    
+    .hero-label {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
     }
     
     .section-title {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 12px;
     }
     
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     
     nav a {
         margin: 0 4px;
-        padding: 6px 10px;
-        font-size: 0.85rem;
+        padding: 6px 8px;
+        font-size: 0.8rem;
     }
     
     .btn {
-        font-size: 0.95rem;
-        padding: 12px 24px;
+        font-size: 0.9rem;
+        padding: 10px 20px;
+        min-height: 44px;
     }
     
-    .sketch-card,
-    .category-card,
+    /* 卡片进一步压缩 */
+    .sketch-card {
+        padding: 14px 12px;
+    }
+    
+    .category-card {
+        padding: 10px 8px;
+        min-height: 100px;
+    }
+    
+    .category-icon {
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+    }
+    
+    .category-card h3 {
+        font-size: 0.88rem;
+        margin-bottom: 4px;
+        padding-bottom: 4px;
+    }
+    
+    .category-card p {
+        font-size: 0.7rem;
+        margin-bottom: 4px;
+    }
+    
+    .category-count {
+        font-size: 0.65rem;
+    }
+    
     .stand-card {
-        padding: 16px;
+        padding: 12px 10px;
     }
     
     .tier-title {
-        font-size: 1.3rem;
-        padding: 8px 12px;
+        font-size: 1.2rem;
+        padding: 6px 12px;
+        margin-bottom: 12px;
     }
     
     .stand-icon {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 6px;
     }
     
     .stand-card h4 {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
+        margin-bottom: 4px;
+    }
+    
+    .stand-ability {
+        font-size: 0.7rem;
+        margin-bottom: 6px;
+    }
+    
+    .stand-desc {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+    }
+    
+    /* 导航和指南卡片 */
+    .nav-card,
+    .guide-card {
+        padding: 12px 10px;
+        min-height: 90px;
+    }
+    
+    .nav-icon,
+    .guide-icon {
+        font-size: 1.6rem;
+        margin-bottom: 6px;
+    }
+    
+    .nav-card h3,
+    .guide-card h3 {
+        font-size: 0.9rem;
+        margin: 6px 0 4px;
+    }
+    
+    .nav-card p,
+    .guide-card p {
+        font-size: 0.75rem;
+    }
+    
+    /* 文章卡片 */
+    .article-card h3 {
+        font-size: 1rem;
+    }
+    
+    .article-card p {
+        font-size: 0.78rem;
+    }
+    
+    .article-tag {
+        font-size: 0.65rem;
+        padding: 2px 5px;
     }
 }
 
@@ -811,8 +1019,8 @@ a.logo {
         display: block;
         min-height: 44px;
         min-width: 44px;
-        padding: 8px 14px;
-        font-size: 1.2rem;
+        padding: 6px 12px;
+        font-size: 1.1rem;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
     }
@@ -823,8 +1031,8 @@ a.logo {
         align-items: flex-start;
         width: 100%;
         border-top: var(--border-sketch);
-        margin-top: 12px;
-        padding-top: 12px;
+        margin-top: 10px;
+        padding-top: 10px;
     }
 
     .main-nav.open { 
@@ -837,8 +1045,8 @@ a.logo {
     
     .nav-link {
         width: 100%;
-        padding: 14px 16px;
-        font-size: 0.95rem;
+        padding: 12px 14px;
+        font-size: 0.88rem;
         border-bottom: 1px dashed var(--accent-fade);
     }
 
@@ -848,13 +1056,13 @@ a.logo {
         box-shadow: none;
         border: none;
         border-left: 3px solid var(--accent-fade);
-        margin-left: 16px;
+        margin-left: 14px;
         background: rgba(255, 255, 255, 0.2);
     }
     
     .nav-dropdown a {
-        padding: 12px 16px;
-        font-size: 0.9rem;
+        padding: 10px 14px;
+        font-size: 0.85rem;
     }
 
     .nav-item.active .nav-dropdown { 
@@ -862,16 +1070,18 @@ a.logo {
     }
 
     .hero-sub { 
-        font-size: 1.8rem; 
+        font-size: 1.3rem; 
     }
 
     .grid-4 { 
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
     }
 
     .footer-grid { 
         grid-template-columns: 1fr;
         text-align: center;
+        gap: 20px;
     }
 }
 /* =========================================
@@ -1057,23 +1267,24 @@ a.logo {
 
 @media (max-width: 768px) {
     .tier-title {
-        font-size: 1.4rem;
-        padding: 10px 16px;
+        font-size: 1.3rem;
+        padding: 8px 14px;
+        margin-bottom: 14px;
     }
     
     .stand-card {
-        padding: 20px;
+        padding: 14px 12px;
     }
     
     .stand-icon {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     /* Breadcrumb 移动端优化 */
     .breadcrumb {
-        top: 56px; /* 移动端 header 高度 */
-        padding: 8px 0;
-        font-size: 0.85rem;
+        top: 54px; /* 移动端 header 高度 */
+        padding: 6px 0;
+        font-size: 0.8rem;
     }
 }
 /* =========================================
@@ -1905,11 +2116,11 @@ a.logo {
 @media (max-width: 768px) {
     .search-trigger {
         margin-right: 0;
-        margin-left: 12px;
+        margin-left: 10px;
     }
     
     .search-trigger-btn {
-        padding: 10px 14px;
+        padding: 8px 12px;
         min-height: 44px;
         min-width: 44px;
     }
@@ -1934,83 +2145,42 @@ a.logo {
     }
     
     .search-input-wrapper {
-        padding: 16px;
+        padding: 14px;
         border-bottom: 2px solid var(--text-ink);
     }
     
     .search-input {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .search-close {
         min-width: 44px;
         min-height: 44px;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .search-results {
-        padding: 12px;
+        padding: 10px;
     }
     
-    .search-result-item {
-        padding: 14px 12px;
-        min-height: 60px;
+    .search-category {
+        margin-bottom: 16px;
     }
     
-    .search-result-icon {
-        font-size: 1.8rem;
-    }
-    
-    .search-result-title {
-        font-size: 1rem;
-    }
-    
-    .search-result-description {
-        font-size: 0.85rem;
-        -webkit-line-clamp: 1;
-    }
-    
-    .search-empty {
-        padding: 80px 20px;
-    }
-    
-    .search-empty-icon {
-        font-size: 3.5rem;
-    }
-    
-    .search-footer {
-        padding: 12px 16px;
-    }
-    
-    .search-hint {
+    .search-category-header {
         font-size: 0.75rem;
-        gap: 8px;
-        flex-wrap: wrap;
+        margin-bottom: 8px;
+        padding-bottom: 6px;
     }
     
-    .search-hint kbd {
-        font-size: 0.7rem;
-        padding: 2px 4px;
-    }
-    
-    /* 搜索建议标签优化 */
-    .search-suggestion-tags span {
-        padding: 8px 14px;
-        font-size: 0.9rem;
-        min-height: 36px;
-        display: inline-flex;
-        align-items: center;
-    }
-}
-
-/* 小屏手机搜索优化 */
-@media (max-width: 480px) {
-    .search-input {
-        font-size: 1rem;
+    .search-category-items {
+        gap: 6px;
     }
     
     .search-result-item {
-        padding: 12px 10px;
+        padding: 10px;
+        min-height: 56px;
+        gap: 10px;
     }
     
     .search-result-icon {
@@ -2018,15 +2188,101 @@ a.logo {
     }
     
     .search-result-title {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        margin-bottom: 2px;
     }
     
     .search-result-description {
+        font-size: 0.78rem;
+        -webkit-line-clamp: 1;
+    }
+    
+    .search-empty {
+        padding: 60px 16px;
+    }
+    
+    .search-empty-icon {
+        font-size: 3rem;
+        margin-bottom: 12px;
+    }
+    
+    .search-empty p {
+        font-size: 0.9rem;
+        margin: 6px 0;
+    }
+    
+    .search-empty-hint {
         font-size: 0.8rem;
     }
     
-    .search-category-header {
+    .search-suggestions {
+        margin-top: 24px;
+    }
+    
+    .search-suggestions p {
+        font-size: 0.82rem;
+        margin-bottom: 10px;
+    }
+    
+    .search-suggestion-tags {
+        gap: 6px;
+    }
+    
+    .search-suggestion-tags span {
+        padding: 6px 10px;
         font-size: 0.8rem;
+        min-height: 32px;
+    }
+    
+    .search-footer {
+        padding: 10px 14px;
+    }
+    
+    .search-hint {
+        font-size: 0.7rem;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+    
+    .search-hint kbd {
+        font-size: 0.68rem;
+        padding: 2px 4px;
+    }
+}
+
+/* 小屏手机搜索优化 */
+@media (max-width: 480px) {
+    .search-input {
+        font-size: 0.95rem;
+    }
+    
+    .search-result-item {
+        padding: 10px 8px;
+        min-height: 52px;
+    }
+    
+    .search-result-icon {
+        font-size: 1.3rem;
+    }
+    
+    .search-result-title {
+        font-size: 0.85rem;
+    }
+    
+    .search-result-description {
+        font-size: 0.75rem;
+    }
+    
+    .search-category-header {
+        font-size: 0.72rem;
+    }
+    
+    .search-empty {
+        padding: 50px 14px;
+    }
+    
+    .search-empty-icon {
+        font-size: 2.5rem;
     }
 }
 
@@ -2116,16 +2372,52 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 
 /* 大屏手机优化 (iPhone Pro Max, Android XL) */
 @media (min-width: 481px) and (max-width: 768px) {
+    /* 双列布局保持，但稍微宽松一些 */
     .grid-4 {
         grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
     }
     
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
     
     .hero-sub {
+        font-size: 1.4rem;
+    }
+    
+    .hero p.subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
         font-size: 1.6rem;
+        margin-bottom: 18px;
+    }
+    
+    .category-card {
+        padding: 14px 12px;
+        min-height: 115px;
+    }
+    
+    .category-icon {
+        font-size: 1.9rem;
+    }
+    
+    .category-card h3 {
+        font-size: 1rem;
+    }
+    
+    .category-card p {
+        font-size: 0.78rem;
+    }
+    
+    .stand-card {
+        padding: 16px 14px;
+    }
+    
+    .stand-icon {
+        font-size: 2.1rem;
     }
 }
 
