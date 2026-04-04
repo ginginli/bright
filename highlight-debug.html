@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Debug - Bridger Western Wiki</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .debug-info {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-family: monospace;
+        }
+        .test-content {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        mark.search-highlight {
+            background: #ffd700;
+            color: #2b1c11;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Highlight Debug Page</h1>
+    
+    <div class="debug-info" id="debug-info">
+        <strong>Debug Info:</strong><br>
+        Loading...
+    </div>
+    
+    <div class="test-content">
+        <h2>Test Content</h2>
+        <p>This page contains the word <strong>whitesnake</strong> multiple times.</p>
+        <p>Whitesnake is a Stand in Bridger Western.</p>
+        <p>The Whitesnake Stand has special abilities.</p>
+        <p>You can search for whitesnake using the search function.</p>
+        
+        <h3>Other Keywords</h3>
+        <ul>
+            <li>The World - Time-stopping Stand</li>
+            <li>D4C - Dimension-hopping Stand</li>
+            <li>Killer Queen - Bomb-planting Stand</li>
+        </ul>
+        
+        <h3>Instructions</h3>
+        <p>Add <code>?highlight=whitesnake</code> to the URL to test highlighting.</p>
+        <p>Example: <code>highlight-debug.html?highlight=whitesnake</code></p>
+    </div>
+
+    <script>
+        // Debug logging
+        const debugInfo = document.getElementById('debug-info');
+        const logs = [];
+        
+        function log(message) {
+            console.log(message);
+            logs.push(message);
+            debugInfo.innerHTML = '<strong>Debug Info:</strong><br>' + logs.join('<br>');
+        }
+        
+        log('Page loaded');
+        log('URL: ' + window.location.href);
+        
+        const urlParams = new URLSearchParams(window.location.search);
+        const highlight = urlParams.get('highlight');
+        
+        log('Highlight parameter: ' + (highlight || 'NONE'));
+        
+        if (highlight) {
+            log('Starting highlight process...');
+            
+            window.addEventListener('load', () => {
+                log('Window load event fired');
+                highlightSearchTerm(highlight);
+            });
+        } else {
+            log('No highlight parameter found. Add ?highlight=whitesnake to URL');
+        }
+        
+        function highlightSearchTerm(term) {
+            log('highlightSearchTerm called with: ' + term);
+            
+            const searchTerm = term.toLowerCase();
+            const mainContent = document.querySelector('.test-content');
+            
+            if (!mainContent) {
+                log('ERROR: Main content not found!');
+                return;
+            }
+            
+            log('Main content found');
+            
+            // Create a TreeWalker to find all text nodes
+            const walker = document.createTreeWalker(
+                mainContent,
+                NodeFilter.SHOW_TEXT,
+                {
+                    acceptNode: function(node) {
+                        const parent = node.parentElement;
+                        if (!parent) return NodeFilter.FILTER_REJECT;
+                        
+                        const tagName = parent.tagName.toLowerCase();
+                        if (tagName === 'script' || tagName === 'style') {
+                            return NodeFilter.FILTER_REJECT;
+                        }
+                        
+                        if (node.textContent.toLowerCase().includes(searchTerm)) {
+                            return NodeFilter.FILTER_ACCEPT;
+                        }
+                        
+                        return NodeFilter.FILTER_REJECT;
+                    }
+                }
+            );
+            
+            const nodesToHighlight = [];
+            let node;
+            
+            while (node = walker.nextNode()) {
+                nodesToHighlight.push(node);
+            }
+            
+            log('Found ' + nodesToHighlight.length + ' text nodes to highlight');
+            
+            let firstHighlight = null;
+            let highlightCount = 0;
+            
+            nodesToHighlight.forEach(textNode => {
+                const text = textNode.textContent;
+                const lowerText = text.toLowerCase();
+                const index = lowerText.indexOf(searchTerm);
+                
+                if (index !== -1) {
+                    const parent = textNode.parentElement;
+                    const before = text.substring(0, index);
+                    const match = text.substring(index, index + searchTerm.length);
+                    const after = text.substring(index + searchTerm.length);
+                    
+                    const highlightSpan = document.createElement('mark');
+                    highlightSpan.className = 'search-highlight';
+                    highlightSpan.textContent = match;
+                    
+                    const fragment = document.createDocumentFragment();
+                    if (before) fragment.appendChild(document.createTextNode(before));
+                    fragment.appendChild(highlightSpan);
+                    if (after) fragment.appendChild(document.createTextNode(after));
+                    
+                    parent.replaceChild(fragment, textNode);
+                    highlightCount++;
+                    
+                    if (!firstHighlight) {
+                        firstHighlight = highlightSpan;
+                    }
+                }
+            });
+            
+            log('Created ' + highlightCount + ' highlights');
+            
+            if (firstHighlight) {
+                log('Scrolling to first highlight...');
+                setTimeout(() => {
+                    firstHighlight.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                    log('Scroll completed');
+                    
+                    firstHighlight.style.animation = 'highlightPulse 1s ease-in-out 2';
+                }, 300);
+            } else {
+                log('WARNING: No highlights created!');
+            }
+        }
+        
+        // Add CSS animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes highlightPulse {
+                0%, 100% { 
+                    background: #ffd700; 
+                    transform: scale(1);
+                }
+                50% { 
+                    background: #ffed4e; 
+                    transform: scale(1.05);
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

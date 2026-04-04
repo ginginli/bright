@@ -470,47 +470,51 @@ new WikiSearch();
         const mainContent = document.querySelector('section, main, .container');
         
         console.log('Main content found:', !!mainContent);
+        console.log('Main content tag:', mainContent ? mainContent.tagName : 'N/A');
         
         if (!mainContent) {
             console.error('Main content not found!');
             return;
         }
         
-        // Create a TreeWalker to find all text nodes
-        const walker = document.createTreeWalker(
+        // Log sample text
+        const sampleText = mainContent.textContent.substring(0, 200);
+        console.log('Sample text:', sampleText);
+        console.log('Contains search term?', sampleText.toLowerCase().includes(searchTerm));
+        
+        // Simpler approach: get all text nodes first, then filter
+        const allTextNodes = [];
+        const treeWalker = document.createTreeWalker(
             mainContent,
             NodeFilter.SHOW_TEXT,
-            {
-                acceptNode: function(node) {
-                    // Skip script, style, and search modal elements
-                    const parent = node.parentElement;
-                    if (!parent) return NodeFilter.FILTER_REJECT;
-                    
-                    const tagName = parent.tagName.toLowerCase();
-                    if (tagName === 'script' || tagName === 'style' || tagName === 'noscript') {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-                    
-                    if (parent.closest('.search-modal')) {
-                        return NodeFilter.FILTER_REJECT;
-                    }
-                    
-                    // Only accept nodes with text content
-                    if (node.textContent.toLowerCase().includes(searchTerm)) {
-                        return NodeFilter.FILTER_ACCEPT;
-                    }
-                    
-                    return NodeFilter.FILTER_REJECT;
-                }
-            }
+            null
         );
         
-        const nodesToHighlight = [];
-        let node;
-        
-        while (node = walker.nextNode()) {
-            nodesToHighlight.push(node);
+        let currentNode;
+        while (currentNode = treeWalker.nextNode()) {
+            allTextNodes.push(currentNode);
         }
+        
+        console.log('Total text nodes found:', allTextNodes.length);
+        
+        // Filter nodes
+        const nodesToHighlight = allTextNodes.filter(node => {
+            const parent = node.parentElement;
+            if (!parent) return false;
+            
+            const tagName = parent.tagName.toLowerCase();
+            if (tagName === 'script' || tagName === 'style' || tagName === 'noscript') {
+                return false;
+            }
+            
+            // Skip search modal
+            if (parent.classList && parent.classList.contains('search-modal')) {
+                return false;
+            }
+            
+            // Check if contains search term
+            return node.textContent.toLowerCase().includes(searchTerm);
+        });
         
         console.log('Nodes to highlight:', nodesToHighlight.length);
         
