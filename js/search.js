@@ -120,7 +120,7 @@ class WikiSearch {
                     { name: 'description', weight: 0.2 },
                     { name: 'category', weight: 0.1 }
                 ],
-                threshold: 0.4,
+                threshold: 0.0,
                 distance: 100,
                 minMatchCharLength: 2,
                 includeScore: true,
