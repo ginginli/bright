@@ -841,6 +841,14 @@
       "icon": "🗺️"
     },
     {
+      "title": "Bridger Western Map",
+      "url": "/locations/map/",
+      "category": "Locations",
+      "keywords": ["map", "world map", "bridger western map", "interactive map", "locations map", "game map", "navigation"],
+      "description": "Interactive Bridger Western world map showing all locations, NPCs, shops, and points of interest.",
+      "icon": "🗺️"
+    },
+    {
       "title": "Locations FAQ",
       "url": "/locations/faq/",
       "category": "Locations",

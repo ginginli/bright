@@ -795,6 +795,27 @@ Content: Complete guide to all NPCs, shops, and services in Ridge B Valley
 
 ---
 
+### Bridger Western Map
+URL: https://bridgerwestern.cc/locations/map/
+Content: Interactive world map showing all locations, NPCs, shops, and points of interest
+
+**Map Features:**
+- Visual display of all key locations in Ridge B Valley
+- Main Town: Gun Store, General Store, Banker, Tailor, Barbershop, Red Corner Fight Club
+- Customization Services: Tailor (15-30 Moola), Barbershop (15-25 Moola)
+- Special Locations: Mud Witch's Hut (Swamp), Outlaw Camp Dealer, Horse Stables, Blacksmith (Flint)
+- Utility NPCs: Spawn Point NPCs (150 Moola to change spawn)
+
+**Key Locations:**
+- Main Town: Central hub with most essential services
+- Swamp: Mud Witch's Hut location (Cards 150 Moola, Dogbane trades)
+- Outlaw Camp: Dealer for extra guns and throwables
+- Horse Stables: Replace horse, press M for stats (Speed, Stamina, Jump, Damage, Scale, Turn)
+- Blacksmith: Can Questline, Mares Leg repair (1500 Moola)
+- Spawn Points: Various locations (150 Moola to set respawn)
+
+---
+
 ### Locations FAQ
 URL: https://bridgerwestern.cc/locations/faq/
 

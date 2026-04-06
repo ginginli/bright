@@ -33,6 +33,7 @@
 - [Fishing Guide](https://bridgerwestern.cc/fishing/): Complete fishing guide with drop rates, Arrow Shard farming (0.05%), Golden Bass (15k Moola), Moola farming
 - [Fishing FAQ](https://bridgerwestern.cc/fishing/faq/): Common fishing questions about Arrow Shards, Golden Bass, drop rates, fishing mechanics
 - [Locations Guide](https://bridgerwestern.cc/locations/): Complete NPCs and shops guide - Gun Store, Mud Witch, Horse Stables, Banker, Blacksmith
+- [Bridger Western Map](https://bridgerwestern.cc/locations/map/): Interactive world map showing all locations, NPCs, shops, and points of interest
 - [Locations FAQ](https://bridgerwestern.cc/locations/faq/): Common questions about NPCs, shops, Mud Witch services, Horse Stables, customization costs
 
 ## Key Game Mechanics

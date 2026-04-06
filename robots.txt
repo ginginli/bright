@@ -42,6 +42,8 @@ Allow: /cards/
 Allow: /items/
 Allow: /fishing/
 Allow: /locations/
+Allow: /locations/map/
+Allow: /locations/faq/
 Allow: /llms.txt
 Allow: /llms-full.txt
 Disallow: /.git/
