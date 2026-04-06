@@ -13,7 +13,7 @@
 ## Available Content
 
 - [Stands Database](https://bridgerwestern.cc/stands/): Complete Stand roster with tier rankings (S/A/B/Pending)
-- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.5% drop rate), Corpse Part KOTH events, water escape tactics, server selection
+- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.05% drop rate), Corpse Part KOTH events, water escape tactics, server selection
 - [Stand Abilities](https://bridgerwestern.cc/stands/stand-abilities.html): Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities
 - [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): S-tier (The World, D4C, Killer Queen), A-tier (TWAU, King Crimson, Star Platinum, SPTW), B-tier rankings
 - [Corpse Part Guide](https://bridgerwestern.cc/stands/corpse-part-guide.html): KOTH mechanics, probability system (15-20% success rate), body part types, survival tactics
@@ -33,7 +33,7 @@
 
 ## Key Game Mechanics
 
-- **Stand Acquisition**: Arrow Shard fishing (0.5%) or Corpse Part KOTH events (15-20% with holding)
+- **Stand Acquisition**: Arrow Shard fishing (0.05%) or Corpse Part KOTH events (15-20% with holding)
 - **Card Acquisition**: Mud Witch in Swamp, 150 Moola per roll, choose 1 from 3 random cards, 3-card maximum per character
 - **Items & Utilities**: Ammo Box (& Silver Ammo for vampires), Tonic (healing), Dogbane Herb (4% chest drop, trade for 2500 moola/age regression/stand removal), Dynamite, Molotov, Silver Dagger, Wooden Stake (anti-vampire), Lasso, Poncho (damage reduction), Cowboy Hat (headshot protection), Lantern, Coin (ricochet), Smoke Bomb, Arrow Pack, Knives, Steel Wireset
 - **Best Cards**: Archer's Child (bow builds), Desperado (gun builds), Free Runner (universal mobility), EXECUTIONER (headshot kills), Quick Draw (weapon swap)
