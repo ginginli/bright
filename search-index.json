@@ -791,6 +791,46 @@
       "keywords": ["winged man", "undocumented", "flight", "wings", "no description"],
       "description": "No description available. Card is available in-game.",
       "icon": "🕊️"
+    },
+    {
+      "title": "Fishing Guide",
+      "url": "/fishing/",
+      "category": "Fishing",
+      "keywords": ["fishing", "arrow shard", "golden bass", "drop rates", "moola farming", "fishing guide", "legendary", "0.05%"],
+      "description": "Complete fishing guide with drop rates, Arrow Shard farming (0.05%), Golden Bass hunting, and Moola farming strategies.",
+      "icon": "🎣"
+    },
+    {
+      "title": "Fishing FAQ",
+      "url": "/fishing/faq/",
+      "category": "Fishing",
+      "keywords": ["fishing faq", "arrow shard questions", "golden bass", "fishing help", "drop rates", "moola farming"],
+      "description": "Common fishing questions about Arrow Shards, Golden Bass, drop rates, and fishing mechanics.",
+      "icon": "❓"
+    },
+    {
+      "title": "Arrow Shard Fishing",
+      "url": "/fishing/",
+      "category": "Fishing",
+      "keywords": ["arrow shard", "0.05%", "legendary", "stand acquisition", "fishing", "guaranteed stand"],
+      "description": "Arrow Shards have 0.05% drop rate and guarantee a Stand when used. Cannot be stored or traded.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Golden Bass",
+      "url": "/fishing/",
+      "category": "Fishing",
+      "keywords": ["golden bass", "15000 moola", "15k", "legendary fish", "moola farming", "rare"],
+      "description": "Golden Bass sells for 15,000 Moola. Legendary drop with 0.05% chance.",
+      "icon": "💰"
+    },
+    {
+      "title": "Mares Leg",
+      "url": "/fishing/",
+      "category": "Fishing",
+      "keywords": ["mares leg", "epic", "2%", "secondary weapon", "fishing drop"],
+      "description": "Mares Leg is an Epic fishing drop (2% chance). Secondary weapon with 7 bullets, faster Winchester.",
+      "icon": "🔫"
     }
   ]
 }

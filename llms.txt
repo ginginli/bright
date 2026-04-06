@@ -30,6 +30,8 @@
 - [Cards FAQ](https://bridgerwestern.cc/cards/faq/): Common questions about Tarot Cards, card builds, Mud Witch, reroll strategies
 - [Items Database](https://bridgerwestern.cc/items/): Complete Items & Utilities guide with consumables, combat items, and equipment
 - [Items FAQ](https://bridgerwestern.cc/items/faq/): Common questions about items, rare drops, combat utilities, vampire hunting tools
+- [Fishing Guide](https://bridgerwestern.cc/fishing/): Complete fishing guide with drop rates, Arrow Shard farming (0.05%), Golden Bass (15k Moola), Moola farming
+- [Fishing FAQ](https://bridgerwestern.cc/fishing/faq/): Common fishing questions about Arrow Shards, Golden Bass, drop rates, fishing mechanics
 
 ## Key Game Mechanics
 

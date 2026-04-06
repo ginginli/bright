@@ -631,3 +631,81 @@ URL: https://bridgerwestern.cc/items/faq/
 - Poncho: Reduces overall damage but increases limb damage
 - Coin: Deflects hitscan shot to nearest entity when shot during glimmer
 - Steel Wireset: Gains silver burn with [Silver Wireset] card
+
+---
+
+## Fishing Section
+
+### Fishing Guide
+URL: https://bridgerwestern.cc/fishing/
+Content: Complete fishing guide with drop rates, mechanics, and Moola farming strategies
+
+**Fishing Basics:**
+- Location: Tackle Bait | Fishing Goods shop (follow train tracks)
+- Fishing Rod: 150 Moola
+- Bait: 15 Moola per pack
+- Bait makes pull time 2x faster
+
+**How to Fish:**
+1. Equip fishing rod near water
+2. Click and hold to cast bait
+3. Wait for fish to bite
+4. Perform QTE (Quick Time Event) to reel up catch
+
+**Complete Drop Rates:**
+- Common (81.7%): Cod ($35), Snapper ($25), Bass ($45)
+- Rare (16.25%): Chests (random loot)
+- Epic (2%): Mares Leg (secondary weapon, 7 bullets, faster Winchester)
+- Legendary (0.05%): Golden Bass (15,000 Moola), Arrow Shards (guarantees Stand)
+
+**Legendary Drops (0.05%):**
+
+**Golden Bass:**
+- Value: 15,000 Moola
+- Best single-item Moola source in game
+- Worth 333x more than regular Bass
+
+**Arrow Shard:**
+- Function: Guarantees a random Stand when used
+- Drop rate: 0.05% (approximately 1 in 2000 fishing attempts)
+- Restrictions:
+  - Cannot be banked or stored
+  - Cannot be dropped or traded
+  - Cannot be used if you already have a Stand
+  - Lost on death if not used
+- Use immediately after obtaining
+
+**Fish Cooking:**
+- Cook fish by placing in campfire
+- Different cooked fish provide different buffs and healing effects
+- Useful for combat preparation and KOTH events
+
+**Moola Farming:**
+- Fishing is one of the safest Moola farming methods
+- No PvP risk
+- Consistent income from common fish
+- Chance at Golden Bass jackpot (15k Moola)
+- Can fish for Arrow Shards simultaneously
+
+**Best Fishing Strategy:**
+- All water sources have same drop rates (no "best spot")
+- Choose safe locations with low player traffic
+- Always buy bait for 2x faster fishing
+- Budget: 165 Moola minimum (rod + 1 bait pack)
+
+---
+
+### Fishing FAQ
+URL: https://bridgerwestern.cc/fishing/faq/
+
+**Key Q&A:**
+- Arrow Shard drop rate: 0.05% (Legendary), approximately 1 in 2000 attempts
+- Golden Bass value: 15,000 Moola
+- Fishing gear location: Tackle Bait shop (follow train tracks)
+- Fishing Rod cost: 150 Moola
+- Bait cost: 15 Moola (makes fishing 2x faster)
+- Arrow Shard restrictions: Cannot be stored, traded, or used if you have a Stand
+- Best fishing spot: All water sources have same drop rates
+- Moola per fish: Cod $35, Snapper $25, Bass $45, Golden Bass $15,000
+- Average time for Arrow Shard: Many hours (~2000 fishing attempts)
+- Fish cooking: Place in campfire for buffs and healing effects
