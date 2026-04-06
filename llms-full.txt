@@ -833,3 +833,38 @@ URL: https://bridgerwestern.cc/locations/faq/
 - Red Corner Fight Club: PvP fist fighting, lose = 300 Moola cost
 - Outlaw Camp Dealer: Sells extra guns and throwables, may require Outlaw faction
 - Dogbane Herb uses: 2500 Moola, age regression (-20 years), or Stand removal
+
+---
+
+### Horse Guide
+URL: https://bridgerwestern.cc/locations/horses/
+
+Content: Complete guide to horses in Bridger Western including stats, rarities, and Horse Stables locations
+
+**Horse Stats:**
+- Press M to view your horse's stats
+- Speed: How fast your horse can run
+- Stamina: How long your horse can sprint
+- Jump: How high your horse can jump
+- Damage: Combat damage dealt by horse
+- Scale: Size of your horse
+- Turn: How quickly your horse can turn
+
+**Horse Rarities (Lowest to Highest):**
+1. Common - Basic stats
+2. Rare - Improved stats
+3. Epic - Good stats
+4. Legendary - Excellent stats
+5. Mythical - Best stats
+
+**Best Horses:** Mythical and Legendary horses have the best stats for speed, stamina, and mobility
+
+**Horse Stables:**
+- Location: Various locations across the map
+- Services: Horse replacement and information
+- Features: Replace your current horse, view horse stats (press M)
+- Look for "Horse Stables | Horse Info" NPCs
+
+**Horse-Related Content:**
+- A True Cowboy Card: Lasso auto-aims on horseback, +17% gun damage while mounted
+- Tusk Stand: Requires legendary/mythical horse for mobility (Tusk users cannot walk, crawl only, cannot use weapons)

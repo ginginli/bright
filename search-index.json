@@ -895,6 +895,14 @@
       "keywords": ["blacksmith", "flint", "mares leg repair", "1500 moola", "can questline", "weapon repair"],
       "description": "Blacksmith (Flint) repairs rusted Mares Leg for 1500 Moola and offers Can Questline.",
       "icon": "⚒️"
+    },
+    {
+      "title": "Horse Guide",
+      "url": "/locations/horses/",
+      "category": "Locations",
+      "keywords": ["horse", "horse guide", "horse stats", "horse rarities", "mythical horse", "legendary horse", "press m", "speed stamina jump", "horse stables", "a true cowboy", "tusk horse"],
+      "description": "Complete horse guide: Stats (Speed, Stamina, Jump, Damage, Scale, Turn), rarities (Common to Mythical), Horse Stables locations, and horse-related content.",
+      "icon": "🐴"
     }
   ]
 }

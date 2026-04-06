@@ -43,6 +43,7 @@ Allow: /items/
 Allow: /fishing/
 Allow: /locations/
 Allow: /locations/map/
+Allow: /locations/horses/
 Allow: /locations/faq/
 Allow: /llms.txt
 Allow: /llms-full.txt
