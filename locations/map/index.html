@@ -172,7 +172,45 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Bridger Western Wiki. All game content and trademarks are property of their respective owners.</p>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Guides</h4>
+                <span style="color: #999;">Coming Soon</span>
+            </div>
+            <div class="footer-col">
+                <h4>Stands & Weapons</h4>
+                <a href="../../stands/faq/">Stands FAQ</a>
+                <a href="../../weapons/faq/">Weapons FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Items & Fishing</h4>
+                <a href="../../items/">Items Database</a>
+                <a href="../../fishing/">Fishing Guide</a>
+                <a href="../../fishing/faq/">Fishing FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Cards & Locations</h4>
+                <a href="../../cards/faq/">Cards FAQ</a>
+                <a href="../">Locations Guide</a>
+                <a href="../faq/">Locations FAQ</a>
+                <a href="./">World Map</a>
+            </div>
+            <div class="footer-col">
+                <h4>Tools</h4>
+                <span style="color: #999;">Coming Soon</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bridger Western Wiki. An unofficial community resource.</p>
+        </div>
     </footer>
+
+    <script>
+        const toggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('.main-nav');
+        if (toggle && nav) {
+            toggle.addEventListener('click', () => nav.classList.toggle('open'));
+        }
+    </script>
 </body>
 </html>
