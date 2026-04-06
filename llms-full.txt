@@ -352,7 +352,7 @@ URL: https://bridgerwestern.cc/weapons/secondary-weapons.html
 
 **All 6 Secondary Weapons:**
 
-1. **Mare's Leg** (Rifle)
+1. **Mares Leg** (Rifle)
    - 7 bullet capacity
    - Lower damage than Winchester
    - Faster version of Winchester Repeater

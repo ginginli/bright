@@ -385,10 +385,10 @@
       "icon": "🔪"
     },
     {
-      "title": "Mare's Leg",
+      "title": "Mares Leg",
       "url": "/weapons/secondary-weapons/",
       "category": "Weapons",
-      "keywords": ["mare's leg", "rifle", "7 bullets", "fast", "winchester"],
+      "keywords": ["mares leg", "mare's leg", "rifle", "7 bullets", "fast", "winchester"],
       "description": "7 bullets, lower damage, faster version of Winchester Repeater.",
       "icon": "🔫"
     },
