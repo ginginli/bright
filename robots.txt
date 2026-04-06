@@ -39,6 +39,7 @@ Allow: /
 Allow: /stands/
 Allow: /weapons/
 Allow: /cards/
+Allow: /items/
 Allow: /llms.txt
 Allow: /llms-full.txt
 Disallow: /.git/

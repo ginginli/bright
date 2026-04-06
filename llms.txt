@@ -27,11 +27,15 @@
 - [All Cards](https://bridgerwestern.cc/cards/all-cards/): Complete list of all 25 Tarot Cards organized by category (Ranged, Melee, Mobility, High Risk, Special Abilities)
 - [Card Builds](https://bridgerwestern.cc/cards/card-builds/): Optimized 3-card combinations for bow, gun, melee, and hybrid builds
 - [How to Get Cards](https://bridgerwestern.cc/cards/how-to-get-cards/): Mud Witch location in Swamp, 150 Moola per roll, 3-card limit, reroll strategy
+- [Cards FAQ](https://bridgerwestern.cc/cards/faq/): Common questions about Tarot Cards, card builds, Mud Witch, reroll strategies
+- [Items Database](https://bridgerwestern.cc/items/): Complete Items & Utilities guide with consumables, combat items, and equipment
+- [Items FAQ](https://bridgerwestern.cc/items/faq/): Common questions about items, rare drops, combat utilities, vampire hunting tools
 
 ## Key Game Mechanics
 
 - **Stand Acquisition**: Arrow Shard fishing (0.5%) or Corpse Part KOTH events (15-20% with holding)
 - **Card Acquisition**: Mud Witch in Swamp, 150 Moola per roll, choose 1 from 3 random cards, 3-card maximum per character
+- **Items & Utilities**: Ammo Box (& Silver Ammo for vampires), Tonic (healing), Dogbane Herb (4% chest drop, trade for 2500 moola/age regression/stand removal), Dynamite, Molotov, Silver Dagger, Wooden Stake (anti-vampire), Lasso, Poncho (damage reduction), Cowboy Hat (headshot protection), Lantern, Coin (ricochet), Smoke Bomb, Arrow Pack, Knives, Steel Wireset
 - **Best Cards**: Archer's Child (bow builds), Desperado (gun builds), Free Runner (universal mobility), EXECUTIONER (headshot kills), Quick Draw (weapon swap)
 - **Tusk**: Requires Left Arm Corpse Part (10% chance), causes permanent disability (crawl only, no weapons)
 - **Tusk Acts**: Act 1 (Nail Glide + mini-gun spam), Act 2 (Homing bullets + ricochet + traps), Act 3 (Wormhole bullets + double damage)

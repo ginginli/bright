@@ -473,6 +473,86 @@
       "icon": "🔄"
     },
     {
+      "title": "Items & Utilities Database",
+      "url": "/items/",
+      "category": "Items",
+      "keywords": ["items", "utilities", "consumables", "throwables", "dogbane herb", "silver ammo", "tonic", "dynamite", "molotov"],
+      "description": "Complete items and utilities database. Consumables, throwables, special equipment, and vampire-hunting tools.",
+      "icon": "🎒"
+    },
+    {
+      "title": "Dogbane Herb",
+      "url": "/items/#consumables",
+      "category": "Items",
+      "keywords": ["dogbane herb", "rare item", "4% chest drop", "mud witch", "2500 moola", "age regression", "stand removal"],
+      "description": "Rare 4% chest drop. Trade to Mud Witch for 2500 moola, age regression (-20 years), or stand removal.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Silver Ammo",
+      "url": "/items/#consumables",
+      "category": "Items",
+      "keywords": ["silver ammo", "vampire damage", "silver prodigy", "ammo box"],
+      "description": "Applies silver damage to vampires. Silver Prodigy card spawns you with +1 silver ammo pack each life.",
+      "icon": "✨"
+    },
+    {
+      "title": "Tonic",
+      "url": "/items/#consumables",
+      "category": "Items",
+      "keywords": ["tonic", "healing", "alcohol", "consumable", "hp recovery"],
+      "description": "Roblox friendly alcohol. Drink to heal HP. Too much blurs your screen until you pass out.",
+      "icon": "🍾"
+    },
+    {
+      "title": "Dynamite",
+      "url": "/items/#throwables",
+      "category": "Items",
+      "keywords": ["dynamite", "explosive", "throwable", "outlaw", "tier 2", "tier 3"],
+      "description": "Throw dynamite, explodes after a delay. Outlaws throw 2 at tier 2 and 3 at tier 3.",
+      "icon": "💥"
+    },
+    {
+      "title": "Molotov",
+      "url": "/items/#throwables",
+      "category": "Items",
+      "keywords": ["molotov", "fire", "throwable", "area denial", "fire pool"],
+      "description": "Leaves a fire pool on impact. Tossing on smoke bomb creates large explosion.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Silver Dagger",
+      "url": "/items/#special-equipment",
+      "category": "Items",
+      "keywords": ["silver dagger", "chest drop", "vampire", "silver fire", "melee", "grab shank"],
+      "description": "Chest drop. 8 base damage (double to vampires). Leaves silver fire. M2 grab and shank.",
+      "icon": "🗡️"
+    },
+    {
+      "title": "Wooden Stake",
+      "url": "/items/#special-equipment",
+      "category": "Items",
+      "keywords": ["wooden stake", "vampire", "anti vampire", "burn", "stake"],
+      "description": "Emergency anti vampire solution. Stakes vampires for ~10s, burns them while embedded.",
+      "icon": "🔱"
+    },
+    {
+      "title": "Cowboy Hat",
+      "url": "/items/#wearables",
+      "category": "Items",
+      "keywords": ["cowboy hat", "headshot protection", "wearable", "survival"],
+      "description": "Protects you from 1 headshot. Essential survival item.",
+      "icon": "🤠"
+    },
+    {
+      "title": "Poncho",
+      "url": "/items/#wearables",
+      "category": "Items",
+      "keywords": ["poncho", "damage reduction", "wearable", "limb damage"],
+      "description": "Less overall damage in exchange for more limb damage. Makes you look swag.",
+      "icon": "🧥"
+    },
+    {
       "title": "Cards Database",
       "url": "/cards/",
       "category": "Cards",

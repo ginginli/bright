@@ -581,3 +581,53 @@ URL: https://bridgerwestern.cc/cards/how-to-get-cards/
 - Once you have 3 cards, must remove one before rolling again
 - Card selection is completely random
 - No way to guarantee specific cards
+
+---
+
+## Items & Utilities Section
+
+### Items Database
+URL: https://bridgerwestern.cc/items/
+Content: Complete Items & Utilities guide with consumables, combat items, and equipment
+
+**All Items & Utilities:**
+
+**Consumables:**
+- **Ammo Box**: Replenishes ammo for all weapons
+- **Silver Ammo**: Applies silver damage to vampires. [Silver Prodigy] card spawns you with +1 silver ammo pack each life
+- **Tonic**: Roblox-friendly alcohol. Drink to heal a small amount of HP. The more you drink, the more blurred your screen gets until you pass out
+- **Dogbane Herb**: Rare 4% chance from chests. Can be brought to the Mud Witch for 2500 moola, age regression (-20 years), or a stand removal
+- **Arrow Pack**: For all your bow shooting needs (gives 5 arrows)
+- **Knives**: Can be bought nearly all around the map
+
+**Combat Items:**
+- **Dynamite**: Throw dynamite, explodes after a little. Outlaws throw 2 at tier 2 and 3 at tier 3
+- **Molotov**: Leaves a fire pool
+- **Smoke Bomb**: Leaves a smoke screen. Tossing a molotov on it creates a large explosion
+- **Silver Dagger**: Drops from chests. Slashes forward and takes stamina, leaves silver fire on vampires. Does 8 base damage (double to vampires). M2 does a grab and shank
+- **Wooden Stake**: Emergency anti-vampire solution. Leaves a stake in them for ~10s, burns them while it's in them
+- **Steel Wireset**: Click to place origin, click again to send it forth. Gains silver burn to vampires if accompanied by the [Silver Wireset] card
+
+**Equipment & Utilities:**
+- **Lasso**: Used for tying up wrong doers and evil folk
+- **Poncho**: Makes you look swag. Makes you take less overall damage in exchange for taking more limb damage
+- **Cowboy Hat**: Protects you from 1 headshot
+- **Lantern**: Provides light to your surroundings
+- **Coin**: Totally not a ricochet from Ultrakill. Toss into the air, shooting it during the glimmer deflects a hitscan shot to the nearest entity
+
+---
+
+### Items FAQ
+URL: https://bridgerwestern.cc/items/faq/
+
+**Key Q&A:**
+- Dogbane Herb: 4% chance from chests, trade at Mud Witch for 2500 moola, age regression (-20 years), or stand removal
+- Silver Ammo: Applies silver damage to vampires, [Silver Prodigy] card gives +1 pack per life
+- Wooden Stake: Anti-vampire tool, leaves stake for ~10s with burn damage
+- Silver Dagger: 8 base damage (16 to vampires), M2 grab and shank, leaves silver fire on vampires
+- Dynamite: Outlaws throw 2 at tier 2, 3 at tier 3
+- Smoke Bomb + Molotov: Creates large explosion when combined
+- Cowboy Hat: Protects from 1 headshot, essential for PvP
+- Poncho: Reduces overall damage but increases limb damage
+- Coin: Deflects hitscan shot to nearest entity when shot during glimmer
+- Steel Wireset: Gains silver burn with [Silver Wireset] card
