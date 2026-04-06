@@ -831,6 +831,62 @@
       "keywords": ["mares leg", "epic", "2%", "secondary weapon", "fishing drop"],
       "description": "Mares Leg is an Epic fishing drop (2% chance). Secondary weapon with 7 bullets, faster Winchester.",
       "icon": "🔫"
+    },
+    {
+      "title": "Locations Guide",
+      "url": "/locations/",
+      "category": "Locations",
+      "keywords": ["locations", "npcs", "shops", "mud witch", "gun store", "horse stables", "banker", "blacksmith", "map"],
+      "description": "Complete guide to all NPCs and shops: Gun Store, Mud Witch, Horse Stables, Banker, Tailor, Barbershop, Blacksmith.",
+      "icon": "🗺️"
+    },
+    {
+      "title": "Locations FAQ",
+      "url": "/locations/faq/",
+      "category": "Locations",
+      "keywords": ["locations faq", "npc questions", "mud witch help", "horse stables", "banker storage", "shop prices"],
+      "description": "Common questions about NPCs, shops, Mud Witch services, Horse Stables, and customization costs.",
+      "icon": "❓"
+    },
+    {
+      "title": "Mud Witch",
+      "url": "/locations/",
+      "category": "Locations",
+      "keywords": ["mud witch", "swamp", "cards", "dogbane herb", "150 moola", "2500 moola", "age regression", "stand removal"],
+      "description": "Mud Witch in Swamp offers Card rolls (150 Moola) and Dogbane Herb trades (2500 Moola, age -20 years, Stand wipe).",
+      "icon": "🧙"
+    },
+    {
+      "title": "Gun Store",
+      "url": "/locations/",
+      "category": "Locations",
+      "keywords": ["gun store", "weapons shop", "buy guns", "main town", "primary weapons", "secondary weapons"],
+      "description": "Gun Store in Main Town sells most guns including primary and secondary weapons.",
+      "icon": "🔫"
+    },
+    {
+      "title": "Horse Stables",
+      "url": "/locations/",
+      "category": "Locations",
+      "keywords": ["horse stables", "horse stats", "press m", "mythical horse", "legendary horse", "speed stamina"],
+      "description": "Horse Stables allow horse replacement. Press M to view stats: Speed, Stamina, Jump, Damage, Scale, Turn.",
+      "icon": "🐴"
+    },
+    {
+      "title": "Banker",
+      "url": "/locations/",
+      "category": "Locations",
+      "keywords": ["banker", "storage", "bank", "item storage", "wipe", "not kept"],
+      "description": "Banker provides item storage for guns, utilities, and items. NOT kept upon server wipe.",
+      "icon": "🏦"
+    },
+    {
+      "title": "Blacksmith",
+      "url": "/locations/",
+      "category": "Locations",
+      "keywords": ["blacksmith", "flint", "mares leg repair", "1500 moola", "can questline", "weapon repair"],
+      "description": "Blacksmith (Flint) repairs rusted Mares Leg for 1500 Moola and offers Can Questline.",
+      "icon": "⚒️"
     }
   ]
 }

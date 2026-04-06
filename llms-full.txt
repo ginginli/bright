@@ -709,3 +709,106 @@ URL: https://bridgerwestern.cc/fishing/faq/
 - Moola per fish: Cod $35, Snapper $25, Bass $45, Golden Bass $15,000
 - Average time for Arrow Shard: Many hours (~2000 fishing attempts)
 - Fish cooking: Place in campfire for buffs and healing effects
+
+---
+
+## Locations Section
+
+### Locations Guide
+URL: https://bridgerwestern.cc/locations/
+Content: Complete guide to all NPCs, shops, and services in Ridge B Valley
+
+**Main Town Locations:**
+
+**Gun Store:**
+- Location: Main Town
+- Services: Sells most guns in the game
+- Available: Primary weapons, secondary weapons (requires Tier 3), ammo
+
+**General Store:**
+- Location: Main Town
+- Services: Sells utilities and equipment
+- Available: Knives, Cowboy Hat (headshot protection), Poncho (damage reduction), Lasso, Coin (ricochet), Lantern
+
+**Banker:**
+- Location: Main Town
+- Services: Item storage system
+- Can store: Guns, utilities, items
+- Important: All items in bank are NOT kept upon server wipe (temporary storage only)
+
+**Red Corner Fight Club:**
+- Location: Main Town
+- Services: PvP fist fighting arena
+- Cost: 300 Moola if you lose
+- No weapons allowed
+
+**Customization Services:**
+
+**Tailor:**
+- Location: Main Town
+- Services: Clothing customization
+- Prices: Reroll Shirt & Pants (15 Moola), Reroll Accessory (30 Moola)
+
+**Barbershop:**
+- Location: Main Town
+- Services: Hair customization
+- Prices: Reroll Hairstyle (25 Moola), Reroll Hair Color (15 Moola)
+
+**Special Locations:**
+
+**Mud Witch's Hut:**
+- Location: Swamp area
+- Services: Fortune reading and Dogbane Herb trades
+- Card Rolls: 150 Moola per roll, choose 1 from 3 random cards, max 3 cards per character
+- Dogbane Herb Trades:
+  - Option 1: Get 2500 Moola
+  - Option 2: Decrease age by 20 years
+  - Option 3: Wipe/remove your Stand
+- Note: Dogbane Herb is rare 4% drop from chests
+
+**Outlaw Camp Dealer:**
+- Location: Outlaw Camp
+- Services: Sells extra guns and throwables
+- May require Outlaw faction status
+
+**Horse Stables | Horse Info:**
+- Location: Various locations
+- Services: Horse replacement and information
+- Press M to view horse stats: Speed, Stamina, Jump, Damage, Scale, Turn
+- Horse rarities: Common, Rare, Epic, Legendary, Mythical
+- Mythical and Legendary horses have best stats
+
+**Flint | Blacksmith:**
+- Location: Main Town
+- Services: Weapon repairs and quests
+- Can Questline: Special quest series
+- Mares Leg Repair: Fix rusted Mares Leg for 1500 Moola
+
+**Utility NPCs:**
+
+**Spawn Point NPCs:**
+- Location: Various locations across map
+- Service: Change your spawn point
+- Cost: 150 Moola
+- Respawn at this location after death
+- Strategy: Set spawn points near important locations (Mud Witch, fishing spots, KOTH areas)
+
+---
+
+### Locations FAQ
+URL: https://bridgerwestern.cc/locations/faq/
+
+**Key Q&A:**
+- Mud Witch location: Swamp area (Mud Witch's Hut)
+- Mud Witch services: Card rolls (150 Moola) and Dogbane Herb trades (2500 Moola, age -20 years, Stand removal)
+- Gun Store: Main Town, sells most guns
+- General Store: Main Town, sells Cowboy Hat, Poncho, Lasso, Coin, Lantern, Knives
+- Banker: Provides item storage, but items NOT kept on server wipe
+- Customization costs: Tailor (15-30 Moola), Barbershop (15-25 Moola)
+- Horse stats: Press M to view Speed, Stamina, Jump, Damage, Scale, Turn
+- Horse rarities: Common, Rare, Epic, Legendary, Mythical (best stats)
+- Blacksmith: Repairs rusted Mares Leg for 1500 Moola, offers Can Questline
+- Spawn point change: 150 Moola at Spawn Point NPCs
+- Red Corner Fight Club: PvP fist fighting, lose = 300 Moola cost
+- Outlaw Camp Dealer: Sells extra guns and throwables, may require Outlaw faction
+- Dogbane Herb uses: 2500 Moola, age regression (-20 years), or Stand removal
