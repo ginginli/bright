@@ -38,6 +38,11 @@ User-agent: SogouSpider
 Allow: /
 Allow: /stands/
 Allow: /weapons/
+Allow: /weapons/primary-weapons/
+Allow: /weapons/secondary-weapons/
+Allow: /weapons/weapon-mechanics/
+Allow: /weapons/faq/
+Allow: /weapons/mares-leg/
 Allow: /cards/
 Allow: /items/
 Allow: /fishing/

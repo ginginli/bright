@@ -868,3 +868,38 @@ Content: Complete guide to horses in Bridger Western including stats, rarities, 
 **Horse-Related Content:**
 - A True Cowboy Card: Lasso auto-aims on horseback, +17% gun damage while mounted
 - Tusk Stand: Requires legendary/mythical horse for mobility (Tusk users cannot walk, crawl only, cannot use weapons)
+
+
+---
+
+### Mares Leg Guide
+URL: https://bridgerwestern.cc/weapons/mares-leg/
+
+Content: Complete guide to obtaining, repairing, and using the Mares Leg secondary weapon
+
+**How to Get:**
+- Fishing drop: 2% chance (Epic rarity)
+- Drops as rusted (unusable until repaired)
+- Available at any fishing spot
+
+**Repair Process:**
+- NPC: Flint (Blacksmith) in Main Town
+- Cost: 1500 Moola
+- Result: Functional secondary weapon
+
+**Weapon Stats:**
+- Capacity: 7 bullets
+- Damage: Lower than Winchester Repeater
+- Fire Rate: Faster than Winchester Repeater
+- Type: Secondary Weapon (Rifle)
+
+**Usage Requirements:**
+- Tier 3 required to equip alongside primary weapon
+- Cannot dual wield until Tier 3
+- Stand penalty applies (decreases base gun damage)
+
+**Worth It:**
+- Good secondary weapon for mobile combat
+- 1500 Moola repair cost is reasonable
+- Rare Epic drop (2% chance)
+- Faster fire rate compensates for lower damage

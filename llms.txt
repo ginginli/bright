@@ -23,6 +23,7 @@
 - [Primary Weapons](https://bridgerwestern.cc/weapons/primary-weapons.html): 9 primary weapons including Taurus .357, Winchester Repeater, Malcom .70, Bow with arrow switching
 - [Secondary Weapons](https://bridgerwestern.cc/weapons/secondary-weapons.html): 6 secondary weapons including Tommy Gun, DB Shotgun, Sabre, Colt Ocelot (requires Tier 3)
 - [Weapon Mechanics](https://bridgerwestern.cc/weapons/weapon-mechanics/): Tier 3 dual wield system, Stand penalty, revolver reload mechanics
+- [Mares Leg Guide](https://bridgerwestern.cc/weapons/mares-leg/): Complete guide - 2% fishing drop, 1500 Moola repair, 7 bullets, faster Winchester, Tier 3 required
 - [Cards Database](https://bridgerwestern.cc/cards/): Complete Tarot Cards guide with all 25 cards, effects, and acquisition methods
 - [All Cards](https://bridgerwestern.cc/cards/all-cards/): Complete list of all 25 Tarot Cards organized by category (Ranged, Melee, Mobility, High Risk, Special Abilities)
 - [Card Builds](https://bridgerwestern.cc/cards/card-builds/): Optimized 3-card combinations for bow, gun, melee, and hybrid builds
