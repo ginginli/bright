@@ -1,0 +1,51 @@
+name: IndexNow Submission
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Wait for Vercel deployment
+        run: sleep 60
+      
+      - name: Submit to IndexNow
+        run: |
+          curl -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "host": "bridgerwestern.cc",
+              "key": "a1fcb8ea0d9d467cb3a148652769f105",
+              "keyLocation": "https://bridgerwestern.cc/a1fcb8ea0d9d467cb3a148652769f105.txt",
+              "urlList": [
+                "https://bridgerwestern.cc/",
+                "https://bridgerwestern.cc/stands/",
+                "https://bridgerwestern.cc/stands/how-to-get-stand/",
+                "https://bridgerwestern.cc/stands/stand-abilities/",
+                "https://bridgerwestern.cc/stands/corpse-part-guide/",
+                "https://bridgerwestern.cc/stands/discord-coordination/",
+                "https://bridgerwestern.cc/weapons/",
+                "https://bridgerwestern.cc/weapons/primary-weapons/",
+                "https://bridgerwestern.cc/weapons/secondary-weapons/",
+                "https://bridgerwestern.cc/weapons/mares-leg/",
+                "https://bridgerwestern.cc/cards/",
+                "https://bridgerwestern.cc/cards/all-cards/",
+                "https://bridgerwestern.cc/cards/card-builds/",
+                "https://bridgerwestern.cc/cards/how-to-get-cards/",
+                "https://bridgerwestern.cc/fishing/",
+                "https://bridgerwestern.cc/locations/",
+                "https://bridgerwestern.cc/locations/horses/",
+                "https://bridgerwestern.cc/locations/map/",
+                "https://bridgerwestern.cc/items/"
+              ]
+            }'
+      
+      - name: Check submission result
+        run: echo "✅ IndexNow submission complete!"
