@@ -684,8 +684,15 @@ const HighlightNavigation = {
     },
     
     selectHighlight(index) {
-        // Remove previous highlight active state
-        this.highlights.forEach(hl => hl.classList.remove('active'));
+        // If selecting the same index, do nothing
+        if (index === this.currentIndex) {
+            return;
+        }
+        
+        // Remove only the previous highlight active state
+        if (this.highlights[this.currentIndex]) {
+            this.highlights[this.currentIndex].classList.remove('active');
+        }
         
         // Update current index
         this.currentIndex = index;
