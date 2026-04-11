@@ -521,7 +521,7 @@ new WikiSearch();
             }
         });
         
-        // 创建导航UI（如果有多个高亮）
+        // Create navigation UI (if there are multiple highlights)
         if (nodesToHighlight.length > 1) {
             HighlightNavigation.init(term);
         } else if (firstHighlight) {
@@ -551,7 +551,7 @@ new WikiSearch();
     
 })();
 
-// 高亮导航控制器
+// Highlight navigation controller
 const HighlightNavigation = {
     highlights: [],
     currentIndex: 0,
@@ -564,7 +564,7 @@ const HighlightNavigation = {
         this.searchTerm = searchTerm;
         this.highlights = Array.from(document.querySelectorAll('.search-highlight'));
         
-        // 如果只有一个高亮，不需要导航
+        // If there's only one highlight, no navigation needed
         if (this.highlights.length <= 1) return;
         
         this.createUI();
@@ -572,43 +572,36 @@ const HighlightNavigation = {
     },
     
     createUI() {
-        // 移除已存在的导航
+        // Remove existing navigation if any
         this.removeUI();
         
-        // 创建导航面板
+        // Create navigation panel
         this.navigationPanel = document.createElement('div');
         this.navigationPanel.className = 'search-highlight-navigation active';
         this.navigationPanel.innerHTML = `
             <div class="highlight-nav-header">
-                <h3>搜索导航</h3>
-                <button class="close-highlight-nav" aria-label="关闭导航">✕</button>
+                <h3>Search Navigation</h3>
+                <button class="close-highlight-nav" aria-label="Close navigation">✕</button>
             </div>
             <div class="highlight-stats">
-                找到 <strong>${this.highlights.length}</strong> 个匹配项: "<strong>${this.searchTerm}</strong>"
+                <strong>${this.highlights.length}</strong> matches found for "<strong>${this.searchTerm}</strong>"
             </div>
             <div class="highlight-nav-controls">
                 <button class="highlight-nav-btn prev-highlight" ${this.currentIndex === 0 ? 'disabled' : ''}>
-                    ← 上一个
+                    ← Previous
                 </button>
                 <button class="highlight-nav-btn next-highlight" ${this.currentIndex === this.highlights.length - 1 ? 'disabled' : ''}>
-                    下一个 →
+                    Next →
                 </button>
-            </div>
-            <div class="highlight-list">
-                ${this.highlights.map((_, idx) => `
-                    <div class="highlight-list-item ${idx === this.currentIndex ? 'active' : ''}" data-index="${idx}">
-                        匹配 ${idx + 1}
-                    </div>
-                `).join('')}
             </div>
         `;
         
         document.body.appendChild(this.navigationPanel);
         
-        // 创建切换按钮
+        // Create toggle button
         this.toggleButton = document.createElement('button');
         this.toggleButton.className = 'highlight-toggle-btn';
-        this.toggleButton.setAttribute('aria-label', '显示高亮导航');
+        this.toggleButton.setAttribute('aria-label', 'Show highlight navigation');
         this.toggleButton.innerHTML = '🔍';
         document.body.appendChild(this.toggleButton);
         
@@ -628,12 +621,12 @@ const HighlightNavigation = {
     },
     
     setupEventListeners() {
-        // 关闭按钮
+        // Close button
         this.navigationPanel.querySelector('.close-highlight-nav').addEventListener('click', () => {
             this.hide();
         });
         
-        // 导航按钮
+        // Navigation buttons
         this.navigationPanel.querySelector('.prev-highlight').addEventListener('click', () => {
             this.prev();
         });
@@ -642,20 +635,14 @@ const HighlightNavigation = {
             this.next();
         });
         
-        // 列表项
-        this.navigationPanel.querySelectorAll('.highlight-list-item').forEach(item => {
-            item.addEventListener('click', (e) => {
-                const index = parseInt(e.currentTarget.dataset.index);
-                this.selectHighlight(index);
-            });
-        });
+
         
-        // 切换按钮
+        // Toggle button
         this.toggleButton.addEventListener('click', () => {
             this.toggle();
         });
         
-        // ESC键关闭
+        // ESC key to close
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && this.isVisible) {
                 this.hide();
@@ -697,27 +684,20 @@ const HighlightNavigation = {
     },
     
     selectHighlight(index) {
-        // 移除之前的高亮激活状态
+        // Remove previous highlight active state
         this.highlights.forEach(hl => hl.classList.remove('active'));
         
-        // 更新当前索引
+        // Update current index
         this.currentIndex = index;
         
-        // 激活当前高亮
+        // Activate current highlight
         const highlight = this.highlights[index];
         highlight.classList.add('active');
         
-        // 滚动到视图
+        // Scroll to view
         highlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
         
-        // 更新列表项激活状态
-        const listItems = this.navigationPanel.querySelectorAll('.highlight-list-item');
-        listItems.forEach(item => item.classList.remove('active'));
-        if (listItems[index]) {
-            listItems[index].classList.add('active');
-        }
-        
-        // 更新按钮状态
+        // Update button states
         this.updateButtonStates();
     },
     
