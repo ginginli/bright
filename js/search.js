@@ -507,7 +507,6 @@ new WikiSearch();
                 const highlightSpan = document.createElement('mark');
                 highlightSpan.className = 'search-highlight';
                 highlightSpan.textContent = match;
-                highlightSpan.style.cssText = 'background: #ffd700; color: #2b1c11; padding: 2px 4px; border-radius: 3px; font-weight: bold;';
                 
                 const fragment = document.createDocumentFragment();
                 if (before) fragment.appendChild(document.createTextNode(before));
@@ -522,15 +521,23 @@ new WikiSearch();
             }
         });
         
-        // Scroll to first highlight after anchor navigation
-        if (firstHighlight) {
+        // 创建导航UI（如果有多个高亮）
+        if (nodesToHighlight.length > 1) {
+            HighlightNavigation.init(term);
+        } else if (firstHighlight) {
+            // Single highlight: just scroll to it
             setTimeout(() => {
                 try {
                     firstHighlight.scrollIntoView({ 
                         behavior: 'smooth', 
                         block: 'center' 
                     });
-                    firstHighlight.style.animation = 'highlightPulse 1s ease-in-out 2';
+                    firstHighlight.classList.add('active');
+                    
+                    // Remove active class after animation
+                    setTimeout(() => {
+                        firstHighlight.classList.remove('active');
+                    }, 1500);
                 } catch (error) {
                     try {
                         firstHighlight.scrollIntoView({ block: 'center' });
@@ -538,23 +545,211 @@ new WikiSearch();
                         // Silently fail
                     }
                 }
-            }, 800); // Increased delay to allow anchor scroll to complete first
+            }, 800);
         }
     }
     
-    // Add CSS animation
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes highlightPulse {
-            0%, 100% { 
-                background: #ffd700; 
-                transform: scale(1);
-            }
-            50% { 
-                background: #ffed4e; 
-                transform: scale(1.05);
-            }
-        }
-    `;
-    document.head.appendChild(style);
 })();
+
+// 高亮导航控制器
+const HighlightNavigation = {
+    highlights: [],
+    currentIndex: 0,
+    searchTerm: '',
+    navigationPanel: null,
+    toggleButton: null,
+    isVisible: false,
+    
+    init(searchTerm) {
+        this.searchTerm = searchTerm;
+        this.highlights = Array.from(document.querySelectorAll('.search-highlight'));
+        
+        // 如果只有一个高亮，不需要导航
+        if (this.highlights.length <= 1) return;
+        
+        this.createUI();
+        this.setupKeyboardNavigation();
+    },
+    
+    createUI() {
+        // 移除已存在的导航
+        this.removeUI();
+        
+        // 创建导航面板
+        this.navigationPanel = document.createElement('div');
+        this.navigationPanel.className = 'search-highlight-navigation active';
+        this.navigationPanel.innerHTML = `
+            <div class="highlight-nav-header">
+                <h3>搜索导航</h3>
+                <button class="close-highlight-nav" aria-label="关闭导航">✕</button>
+            </div>
+            <div class="highlight-stats">
+                找到 <strong>${this.highlights.length}</strong> 个匹配项: "<strong>${this.searchTerm}</strong>"
+            </div>
+            <div class="highlight-nav-controls">
+                <button class="highlight-nav-btn prev-highlight" ${this.currentIndex === 0 ? 'disabled' : ''}>
+                    ← 上一个
+                </button>
+                <button class="highlight-nav-btn next-highlight" ${this.currentIndex === this.highlights.length - 1 ? 'disabled' : ''}>
+                    下一个 →
+                </button>
+            </div>
+            <div class="highlight-list">
+                ${this.highlights.map((_, idx) => `
+                    <div class="highlight-list-item ${idx === this.currentIndex ? 'active' : ''}" data-index="${idx}">
+                        匹配 ${idx + 1}
+                    </div>
+                `).join('')}
+            </div>
+        `;
+        
+        document.body.appendChild(this.navigationPanel);
+        
+        // 创建切换按钮
+        this.toggleButton = document.createElement('button');
+        this.toggleButton.className = 'highlight-toggle-btn';
+        this.toggleButton.setAttribute('aria-label', '显示高亮导航');
+        this.toggleButton.innerHTML = '🔍';
+        document.body.appendChild(this.toggleButton);
+        
+        this.setupEventListeners();
+        this.selectHighlight(0);
+    },
+    
+    removeUI() {
+        if (this.navigationPanel?.parentNode) {
+            this.navigationPanel.parentNode.removeChild(this.navigationPanel);
+            this.navigationPanel = null;
+        }
+        if (this.toggleButton?.parentNode) {
+            this.toggleButton.parentNode.removeChild(this.toggleButton);
+            this.toggleButton = null;
+        }
+    },
+    
+    setupEventListeners() {
+        // 关闭按钮
+        this.navigationPanel.querySelector('.close-highlight-nav').addEventListener('click', () => {
+            this.hide();
+        });
+        
+        // 导航按钮
+        this.navigationPanel.querySelector('.prev-highlight').addEventListener('click', () => {
+            this.prev();
+        });
+        
+        this.navigationPanel.querySelector('.next-highlight').addEventListener('click', () => {
+            this.next();
+        });
+        
+        // 列表项
+        this.navigationPanel.querySelectorAll('.highlight-list-item').forEach(item => {
+            item.addEventListener('click', (e) => {
+                const index = parseInt(e.currentTarget.dataset.index);
+                this.selectHighlight(index);
+            });
+        });
+        
+        // 切换按钮
+        this.toggleButton.addEventListener('click', () => {
+            this.toggle();
+        });
+        
+        // ESC键关闭
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.isVisible) {
+                this.hide();
+            }
+        });
+    },
+    
+    setupKeyboardNavigation() {
+        document.addEventListener('keydown', (e) => {
+            if (!this.isVisible) return;
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+            
+            if (e.key === 'ArrowRight' || e.key === 'PageDown') {
+                e.preventDefault();
+                this.next();
+            } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+                e.preventDefault();
+                this.prev();
+            } else if (e.key === 'Home') {
+                e.preventDefault();
+                this.selectHighlight(0);
+            } else if (e.key === 'End') {
+                e.preventDefault();
+                this.selectHighlight(this.highlights.length - 1);
+            }
+        });
+    },
+    
+    prev() {
+        if (this.currentIndex > 0) {
+            this.selectHighlight(this.currentIndex - 1);
+        }
+    },
+    
+    next() {
+        if (this.currentIndex < this.highlights.length - 1) {
+            this.selectHighlight(this.currentIndex + 1);
+        }
+    },
+    
+    selectHighlight(index) {
+        // 移除之前的高亮激活状态
+        this.highlights.forEach(hl => hl.classList.remove('active'));
+        
+        // 更新当前索引
+        this.currentIndex = index;
+        
+        // 激活当前高亮
+        const highlight = this.highlights[index];
+        highlight.classList.add('active');
+        
+        // 滚动到视图
+        highlight.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // 更新列表项激活状态
+        const listItems = this.navigationPanel.querySelectorAll('.highlight-list-item');
+        listItems.forEach(item => item.classList.remove('active'));
+        if (listItems[index]) {
+            listItems[index].classList.add('active');
+        }
+        
+        // 更新按钮状态
+        this.updateButtonStates();
+    },
+    
+    updateButtonStates() {
+        const prevBtn = this.navigationPanel?.querySelector('.prev-highlight');
+        const nextBtn = this.navigationPanel?.querySelector('.next-highlight');
+        
+        if (prevBtn) prevBtn.disabled = this.currentIndex === 0;
+        if (nextBtn) nextBtn.disabled = this.currentIndex === this.highlights.length - 1;
+    },
+    
+    toggle() {
+        if (this.isVisible) {
+            this.hide();
+        } else {
+            this.show();
+        }
+    },
+    
+    show() {
+        if (this.navigationPanel) {
+            this.navigationPanel.classList.add('active');
+            this.isVisible = true;
+            this.toggleButton.innerHTML = '✕';
+        }
+    },
+    
+    hide() {
+        if (this.navigationPanel) {
+            this.navigationPanel.classList.remove('active');
+            this.isVisible = false;
+            this.toggleButton.innerHTML = '🔍';
+        }
+    }
+};
