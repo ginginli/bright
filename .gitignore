@@ -1,0 +1,28 @@
+# Error report files
+error*.csv
+
+# Test files
+test-*.html
+
+# Node modules
+node_modules/
+
+# macOS
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build output
+dist/
+build/
+out/
