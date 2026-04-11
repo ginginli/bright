@@ -903,3 +903,41 @@ Content: Complete guide to obtaining, repairing, and using the Mares Leg seconda
 - 1500 Moola repair cost is reasonable
 - Rare Epic drop (2% chance)
 - Faster fire rate compensates for lower damage
+
+---
+## Guides Section
+
+### Complete Guides Collection
+URL: https://bridgerwestern.cc/guides/
+Content: Complete collection of game guides covering beginner tutorials, controls, fishing economy, and advanced strategies
+
+**Available Guides:**
+
+**Complete Beginner Guide**
+URL: https://bridgerwestern.cc/guides/beginner-guide/
+Content: Comprehensive beginner tutorial covering character creation, starting money management, horse selection, early game priorities, and first-hour progression loop
+
+**Controls & Keybinds Guide**
+URL: https://bridgerwestern.cc/guides/controls/
+Content: Complete game controls reference with all keybinds, movement mechanics, combat controls, and advanced input techniques
+
+**Fishing Economy Guide**
+URL: https://bridgerwestern.cc/guides/fishing-basics/
+Content: Master fishing system for safe Moola farming and Arrow Shard acquisition (0.05% drop rate)
+
+**Stand Acquisition Guide**
+URL: https://bridgerwestern.cc/guides/stand-acquisition/
+Content: Detailed comparison of fishing vs Corpse Part KOTH methods for obtaining Stands
+
+**Related Database Guides:**
+- Cards Database: https://bridgerwestern.cc/cards/
+- Fishing Guide: https://bridgerwestern.cc/fishing/
+- Stands Database: https://bridgerwestern.cc/stands/
+- Weapons Database: https://bridgerwestern.cc/weapons/
+
+**Key Guide Features:**
+- Beginner-friendly tutorials with step-by-step instructions
+- Advanced strategies for experienced players
+- Verified gameplay data and community-tested methods
+- Updated for 2026 Alpha version
+- Based on guide videos and expert community analysis

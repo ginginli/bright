@@ -10101,6 +10101,254 @@
       ],
       "description": "Partners - Bridger Western Wiki – Stands, Guns & Complete Guide 2026",
       "icon": "📄"
+    },
+    {
+      "title": "Bridger Western Complete Guides",
+      "url": "/guides/",
+      "category": "Guides",
+      "keywords": [
+        "guides",
+        "complete guides",
+        "tutorials",
+        "beginner guides",
+        "expert guides",
+        "master bridger western"
+      ],
+      "description": "Bridger Western Complete Guides - Master the game with expert tutorials covering beginner basics to advanced strategies",
+      "icon": "📚"
+    },
+    {
+      "title": "Complete Beginner Guide",
+      "url": "/guides/beginner-guide/",
+      "category": "Guides",
+      "keywords": [
+        "beginner guide",
+        "complete beginner guide",
+        "character creation",
+        "starting money",
+        "horse selection",
+        "early game",
+        "first hour loop"
+      ],
+      "description": "Complete Beginner Guide - Start your journey in Ridge B Valley with comprehensive beginner tutorial",
+      "icon": "🎮"
+    },
+    {
+      "title": "Step 1: Character Creation",
+      "url": "/guides/beginner-guide/#step-1-character-creation",
+      "category": "Guides",
+      "keywords": [
+        "character creation",
+        "create character",
+        "alignment",
+        "outlaw",
+        "inlaw",
+        "spawn point",
+        "red corner"
+      ],
+      "description": "Step 1: Character Creation - Create character, select alignment, and choose spawn point",
+      "icon": "🎮"
+    },
+    {
+      "title": "Step 2: Initial Moola Strategy",
+      "url": "/guides/beginner-guide/#step-2-initial-moola-strategy",
+      "category": "Guides",
+      "keywords": [
+        "moola strategy",
+        "starting money",
+        "wipe strategy",
+        "money management",
+        "fishing start"
+      ],
+      "description": "Step 2: Initial Moola Strategy - Manage starting money and implement wipe strategy if needed",
+      "icon": "💰"
+    },
+    {
+      "title": "Step 3: Fishing Start",
+      "url": "/guides/beginner-guide/#step-3-fishing-start",
+      "category": "Guides",
+      "keywords": [
+        "fishing start",
+        "fishing priority",
+        "safest moola source",
+        "dog bane fishing",
+        "fishing basics"
+      ],
+      "description": "Step 3: Fishing Start - Begin with fishing for safe Moola farming without PvP risk",
+      "icon": "🎣"
+    },
+    {
+      "title": "Step 4: Horse Upgrade",
+      "url": "/guides/beginner-guide/#step-4-horse-upgrade",
+      "category": "Guides",
+      "keywords": [
+        "horse upgrade",
+        "better horse",
+        "horse selection",
+        "rich b county",
+        "horse water tech"
+      ],
+      "description": "Step 4: Horse Upgrade - Get a better horse and master horse water technology",
+      "icon": "🐎"
+    },
+    {
+      "title": "Step 5: Unlocking Cards",
+      "url": "/guides/beginner-guide/#step-5-unlocking-cards",
+      "category": "Guides",
+      "keywords": [
+        "unlocking cards",
+        "mud witch",
+        "card system",
+        "tarot cards",
+        "card builds"
+      ],
+      "description": "Step 5: Unlocking Cards - Visit Mud Witch in swamp to unlock Tarot Card system",
+      "icon": "🃏"
+    },
+    {
+      "title": "Quick Reference Checklist",
+      "url": "/guides/beginner-guide/#quick-reference-checklist",
+      "category": "Guides",
+      "keywords": [
+        "quick reference",
+        "checklist",
+        "beginner checklist",
+        "progression guide"
+      ],
+      "description": "Quick Reference Checklist - Essential checklist for new players starting Bridger Western",
+      "icon": "✅"
+    },
+    {
+      "title": "Pro Tips from Guide Videos",
+      "url": "/guides/beginner-guide/#pro-tips-from-guide-videos",
+      "category": "Guides",
+      "keywords": [
+        "pro tips",
+        "guide videos",
+        "game understanding",
+        "money management",
+        "fishing priority"
+      ],
+      "description": "Pro Tips from Guide Videos - Expert advice from Bridger Western guide creators",
+      "icon": "💡"
+    },
+    {
+      "title": "Complete Controls & Keybinds Guide",
+      "url": "/guides/controls/",
+      "category": "Guides",
+      "keywords": [
+        "controls guide",
+        "keybinds",
+        "game controls",
+        "movement controls",
+        "combat controls",
+        "horse controls"
+      ],
+      "description": "Complete Controls & Keybinds Guide - Master all game controls, keybinds, and movement mechanics",
+      "icon": "⌨️"
+    },
+    {
+      "title": "Movement Controls",
+      "url": "/guides/controls/#movement-controls",
+      "category": "Guides",
+      "keywords": [
+        "movement controls",
+        "w/a/s/d",
+        "sprint",
+        "roll",
+        "vault",
+        "double-tap w"
+      ],
+      "description": "Movement Controls - Basic movement, sprinting, rolling, and vaulting mechanics",
+      "icon": "🏃"
+    },
+    {
+      "title": "Combat Controls",
+      "url": "/guides/controls/#combat-controls",
+      "category": "Guides",
+      "keywords": [
+        "combat controls",
+        "shoot",
+        "aim",
+        "reload",
+        "melee",
+        "switch weapons"
+      ],
+      "description": "Combat Controls - Shooting, aiming, reloading, melee attacks, and weapon switching",
+      "icon": "⚔️"
+    },
+    {
+      "title": "Horse Controls",
+      "url": "/guides/controls/#horse-controls",
+      "category": "Guides",
+      "keywords": [
+        "horse controls",
+        "summon horse",
+        "dismount",
+        "horse sprint",
+        "quick stop",
+        "mount/dismount"
+      ],
+      "description": "Horse Controls - Summoning, mounting, dismounting, and controlling your horse",
+      "icon": "🐎"
+    },
+    {
+      "title": "Special Abilities",
+      "url": "/guides/controls/#special-abilities",
+      "category": "Guides",
+      "keywords": [
+        "special abilities",
+        "ocular pro s",
+        "esp",
+        "aimbot",
+        "x activation"
+      ],
+      "description": "Special Abilities - Ocular Pro S (ESP/aimbot) activation and features",
+      "icon": "👁️"
+    },
+    {
+      "title": "Detailed Control Explanations",
+      "url": "/guides/controls/#detailed-control-explanations",
+      "category": "Guides",
+      "keywords": [
+        "detailed controls",
+        "control explanations",
+        "movement techniques",
+        "combat techniques",
+        "horse mechanics"
+      ],
+      "description": "Detailed Control Explanations - In-depth explanations of all control systems",
+      "icon": "📋"
+    },
+    {
+      "title": "Advanced Control Techniques",
+      "url": "/guides/controls/#advanced-control-techniques",
+      "category": "Guides",
+      "keywords": [
+        "advanced controls",
+        "horse water tech",
+        "quick stop",
+        "aimbot card combo",
+        "advanced techniques"
+      ],
+      "description": "Advanced Control Techniques - Horse water technology and other advanced control methods",
+      "icon": "🚀"
+    },
+    {
+      "title": "Quick Pro Tips from Guide Videos",
+      "url": "/guides/#quick-pro-tips-from-guide-videos",
+      "category": "Guides",
+      "keywords": [
+        "quick pro tips",
+        "guide videos",
+        "spawn strategy",
+        "horse tech",
+        "fishing priority",
+        "horse selection",
+        "money management"
+      ],
+      "description": "Quick Pro Tips from Guide Videos - Essential tips from guide video creators",
+      "icon": "💡"
     }
   ]
 }

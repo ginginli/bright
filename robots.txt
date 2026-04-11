@@ -43,6 +43,9 @@ Allow: /weapons/secondary-weapons/
 Allow: /weapons/weapon-mechanics/
 Allow: /weapons/faq/
 Allow: /weapons/mares-leg/
+Allow: /guides/
+Allow: /guides/beginner-guide/
+Allow: /guides/controls/
 Allow: /cards/
 Allow: /items/
 Allow: /fishing/

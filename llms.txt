@@ -31,6 +31,9 @@
 - [Cards FAQ](https://bridgerwestern.cc/cards/faq/): Common questions about Tarot Cards, card builds, Mud Witch, reroll strategies
 - [Items Database](https://bridgerwestern.cc/items/): Complete Items & Utilities guide with consumables, combat items, and equipment
 - [Items FAQ](https://bridgerwestern.cc/items/faq/): Common questions about items, rare drops, combat utilities, vampire hunting tools
+- [Guides Collection](https://bridgerwestern.cc/guides/): Complete collection of game guides covering beginner tutorials, controls, and advanced strategies
+- [Complete Beginner Guide](https://bridgerwestern.cc/guides/beginner-guide/): Comprehensive beginner tutorial covering character creation, starting money, horse selection, and first-hour progression
+- [Controls & Keybinds Guide](https://bridgerwestern.cc/guides/controls/): Complete game controls reference with all keybinds and movement mechanics
 - [Fishing Guide](https://bridgerwestern.cc/fishing/): Complete fishing guide with drop rates, Arrow Shard farming (0.05%), Golden Bass (15k Moola), Moola farming
 - [Fishing FAQ](https://bridgerwestern.cc/fishing/faq/): Common fishing questions about Arrow Shards, Golden Bass, drop rates, fishing mechanics
 - [Locations Guide](https://bridgerwestern.cc/locations/): Complete NPCs and shops guide - Gun Store, Mud Witch, Horse Stables, Banker, Blacksmith
