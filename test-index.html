@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Index Test</title>
+    <style>
+        body { font-family: monospace; padding: 20px; }
+        .entry { border: 1px solid #ccc; padding: 10px; margin: 5px 0; }
+        .club { background: #fff8dc; border-left: 4px solid gold; }
+    </style>
+</head>
+<body>
+    <h1>Search Index Test</h1>
+    <div id="status">Loading...</div>
+    <div id="results"></div>
+    
+    <script>
+        fetch('/search-index.json')
+            .then(response => {
+                console.log('HTTP Status:', response.status, response.statusText);
+                console.log('Content-Type:', response.headers.get('Content-Type'));
+                console.log('Content-Length:', response.headers.get('Content-Length'));
+                
+                return response.text().then(text => {
+                    console.log('Raw text length:', text.length);
+                    console.log('First 500 chars:', text.substring(0, 500));
+                    console.log('Last 500 chars:', text.substring(text.length - 500));
+                    
+                    try {
+                        const data = JSON.parse(text);
+                        console.log('✅ JSON parsed successfully');
+                        console.log('Pages count:', data.pages?.length);
+                        
+                        document.getElementById('status').innerHTML = 
+                            `<strong>✅ Loaded ${data.pages?.length || 0} entries</strong>`;
+                        
+                        // Show first 20 entries
+                        const resultsDiv = document.getElementById('results');
+                        const first20 = (data.pages || []).slice(0, 20);
+                        
+                        first20.forEach((item, i) => {
+                            const div = document.createElement('div');
+                            div.className = 'entry';
+                            if (item.title && item.title.toLowerCase().includes('club')) {
+                                div.classList.add('club');
+                            }
+                            
+                            div.innerHTML = `
+                                <strong>${i+1}. ${item.title || 'No title'}</strong><br>
+                                Keywords: ${(item.keywords || []).slice(0, 5).join(', ')}${item.keywords && item.keywords.length > 5 ? '...' : ''}<br>
+                                Category: ${item.category || 'None'}
+                            `;
+                            resultsDiv.appendChild(div);
+                        });
+                        
+                        // Count club entries
+                        const clubEntries = (data.pages || []).filter(p => 
+                            p.title && p.title.toLowerCase().includes('club') ||
+                            p.keywords && p.keywords.some(k => k.toLowerCase().includes('club'))
+                        );
+                        
+                        console.log('Club entries:', clubEntries.length);
+                        if (clubEntries.length > 0) {
+                            console.log('First club entry:', clubEntries[0]);
+                        }
+                        
+                    } catch(e) {
+                        console.error('❌ JSON parse error:', e.message);
+                        document.getElementById('status').innerHTML = 
+                            `<strong style="color:red">❌ JSON Parse Error: ${e.message}</strong>`;
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Fetch error:', error);
+                document.getElementById('status').innerHTML = 
+                    `<strong style="color:red">❌ Fetch Error: ${error.message}</strong>`;
+            });
+    </script>
+</body>
+</html>
