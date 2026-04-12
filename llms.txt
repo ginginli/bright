@@ -31,6 +31,7 @@
 - [How to Get Cards](https://bridgerwestern.cc/cards/how-to-get-cards/): Mud Witch location in Swamp, 150 Moola per roll, 3-card limit, reroll strategy
 - [Cards FAQ](https://bridgerwestern.cc/cards/faq/): Common questions about Tarot Cards, card builds, Mud Witch, reroll strategies
 - [Items Database](https://bridgerwestern.cc/items/): Complete Items & Utilities guide with consumables, combat items, and equipment
+- [Silver Dagger Guide](https://bridgerwestern.cc/items/silver-dagger/): Anti-vampire melee weapon, 8 base damage (16 vs vampires), silver fire effect, grab attack
 - [Items FAQ](https://bridgerwestern.cc/items/faq/): Common questions about items, rare drops, combat utilities, vampire hunting tools
 - [Guides Collection](https://bridgerwestern.cc/guides/): Complete collection of game guides covering beginner tutorials, controls, and advanced strategies
 - [Complete Beginner Guide](https://bridgerwestern.cc/guides/beginner-guide/): Comprehensive beginner tutorial covering character creation, starting money, horse selection, and first-hour progression

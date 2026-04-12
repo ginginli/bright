@@ -619,6 +619,19 @@ URL: https://bridgerwestern.cc/cards/how-to-get-cards/
 URL: https://bridgerwestern.cc/items/
 Content: Complete Items & Utilities guide with consumables, combat items, and equipment
 
+### Silver Dagger Guide
+URL: https://bridgerwestern.cc/items/silver-dagger/
+Content: Complete Silver Dagger guide covering combat mechanics, damage stats, vampire effectiveness, and card synergies
+
+**Silver Dagger Details:**
+- **Base Damage**: 8 per swing (16 vs vampires - automatic double damage)
+- **Grab Attack (M2)**: 28 total damage (56 vs vampires)
+- **Silver Fire**: Leaves burning effect on vampires only
+- **Stamina Cost**: Each attack consumes stamina
+- **Card Synergies**: Silver Prodigy (silver weapon damage), Boy With Fists (melee damage)
+- **Combat Strategy**: Last resort when out of ammo, highly effective vs vampires
+- **Animation**: Grab → Shank → Kick away combo for M2 attack
+
 **All Items & Utilities:**
 
 **Consumables:**
