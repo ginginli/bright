@@ -96,91 +96,7 @@
 </head>
 <body>
     <!-- Header / Nav -->
-    <header>
-        <div class="container">
-            <a href="../" class="logo">🤠 Bridger Wiki</a>
-            <nav class="main-nav">
-                <div class="nav-item">
-                    <a href="../guides/" class="nav-link">Guides ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="../guides/beginner-guide/">Beginner Guide</a>
-                        <a href="../guides/controls/">Controls Guide</a>
-                        <span style="color: #999; padding: 8px 16px; display: block;">Aging System (Coming Soon)</span>
-                        <span style="color: #999; padding: 8px 16px; display: block;">Outlaw or Inlaw (Coming Soon)</span>
-                        <span style="color: #999; padding: 8px 16px; display: block;">Gangs (Coming Soon)</span>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../stands/" class="nav-link">Stands ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="../stands/how-to-get-stand/">How to Get a Stand</a>
-                        <a href="../stands/practical-acquisition/" style="color: var(--text-ink); padding: 8px 16px; display: block; font-weight: bold;">Practical Video Guide</a>
-                        <a href="../stands/stand-abilities/">Stand Abilities</a>
-                        <a href="../stands/stand-tier-list/">Stand Tier List</a>
-                        <a href="../stands/discord-coordination/">Discord Coordination</a>
-                        <a href="../stands/corpse-part-guide/">Corpse Part Guide</a>
-                        <a href="../stands/faq/">Stands FAQ</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../items/" class="nav-link active">Items ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="./">Items Database</a>
-                        <a href="silver-dagger/">Silver Dagger</a>
-                        <a href="faq/">Items FAQ</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../weapons/" class="nav-link">Weapons ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="../weapons/primary-weapons/">Primary Weapons</a>
-                        <a href="../weapons/secondary-weapons/">Secondary Weapons</a>
-                        <a href="../weapons/weapon-mechanics/">Weapon Mechanics</a>
-                        <a href="../weapons/faq/">Weapons FAQ</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../cards/" class="nav-link">Cards ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="../cards/all-cards/">All Cards</a>
-                        <a href="../cards/card-builds/">Card Builds</a>
-                        <a href="../cards/how-to-get-cards/">How to Get Cards</a>
-                        <a href="../cards/faq/">Cards FAQ</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../fishing/" class="nav-link">Fishing ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="../fishing/">Fishing Guide</a>
-                        <a href="../fishing/faq/">Fishing FAQ</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a href="../locations/" class="nav-link">Locations ▾</a>
-                    <div class="nav-dropdown">
-                        <a href="../locations/">Locations Guide</a>
-                        <a href="../locations/map/">World Map</a>
-                        <a href="../locations/horses/">Horse Guide</a>
-                        <a href="../locations/faq/">Locations FAQ</a>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <span class="nav-link" style="cursor:default;opacity:0.5;">Tools ▾</span>
-                    <div class="nav-dropdown">
-                        <span style="color: #999; padding: 8px 16px; display: block;">Coming Soon</span>
-                    </div>
-                </div>
-            </nav>
-            <!-- Search trigger for desktop -->
-            <div class="search-trigger">
-                <button class="search-trigger-btn" aria-label="Search wiki" onclick="if (window.WikiSearch) window.wikiSearch.openSearch();">
-                    <span class="search-icon">🔍</span>
-                    <span class="search-placeholder">Search wiki...</span>
-                </button>
-            </div>
-            <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-        </div>
-    </header>
+    <div id="nav-container"></div>
 
     <!-- Breadcrumb -->
     <section class="breadcrumb">
@@ -434,5 +350,8 @@
     <!-- Advertising -->
     <script src="../js/ads-config.js"></script>
     <script src="../js/ads-manager.js"></script>
+    
+    <!-- Load components -->
+    <script src="../js/components.js"></script>
 </body>
 </html>
