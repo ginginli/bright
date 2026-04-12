@@ -10349,6 +10349,123 @@
       ],
       "description": "Quick Pro Tips from Guide Videos - Essential tips from guide video creators",
       "icon": "💡"
+    },
+    {
+      "title": "Bridger Western Stand Acquisition: Practical Video Guide",
+      "url": "/stands/practical-acquisition/",
+      "category": "Stands",
+      "keywords": [
+        "practical stand guide",
+        "video demonstrations",
+        "gameplay walkthrough",
+        "fishing demonstration",
+        "corpse part chase",
+        "horse water technique",
+        "youtube guide content",
+        "real-time strategy",
+        "actual gameplay",
+        "step-by-step demonstrations",
+        "video-based data"
+      ],
+      "description": "Practical Stand acquisition demonstrations based on YouTube guide videos - real gameplay footage with step-by-step execution",
+      "icon": "🎬"
+    },
+    {
+      "title": "🎬 What This Guide Covers",
+      "url": "/stands/practical-acquisition/#what-this-guide-covers",
+      "category": "Stands",
+      "keywords": [
+        "guide coverage",
+        "video demonstrations",
+        "complete walkthrough",
+        "beginner quick start",
+        "real-time fishing",
+        "actual corpse part chase",
+        "horse water technique in action"
+      ],
+      "description": "🎬 What This Guide Covers - Practical video demonstration overview",
+      "icon": "📹"
+    },
+    {
+      "title": "📹 Guide Video Summaries & Timestamps",
+      "url": "/stands/practical-acquisition/#video-summaries",
+      "category": "Stands",
+      "keywords": [
+        "video summaries",
+        "timestamps",
+        "complete gameplay walkthrough",
+        "beginner's quick start guide",
+        "key practical demonstrations",
+        "actual gameplay footage",
+        "real-time execution"
+      ],
+      "description": "📹 Guide Video Summaries & Timestamps - Detailed breakdown of YouTube guide videos",
+      "icon": "⏱️"
+    },
+    {
+      "title": "🛠️ Step-by-Step Practical Walkthrough",
+      "url": "/stands/practical-acquisition/#step-by-step-practical-walkthrough",
+      "category": "Stands",
+      "keywords": [
+        "step-by-step walkthrough",
+        "character creation",
+        "fishing setup",
+        "corpse part event response",
+        "post-acquisition actions",
+        "practical execution",
+        "real gameplay steps"
+      ],
+      "description": "🛠️ Step-by-Step Practical Walkthrough - Exact gameplay execution from videos",
+      "icon": "👣"
+    },
+    {
+      "title": "📊 Video-Based Probability Data",
+      "url": "/stands/practical-acquisition/#video-based-probability-data",
+      "category": "Stands",
+      "keywords": [
+        "video-based probability",
+        "arrow shard fishing",
+        "corpse part server probabilities",
+        "youtube data vs official data",
+        "actual player experiences",
+        "0.5% drop rate mentioned",
+        "server probability calculations"
+      ],
+      "description": "📊 Video-Based Probability Data - Actual probabilities mentioned in guide videos",
+      "icon": "📈"
+    },
+    {
+      "title": "⚡ Advanced Techniques from Video Demonstrations",
+      "url": "/stands/practical-acquisition/#advanced-techniques-from-video-demonstrations",
+      "category": "Stands",
+      "keywords": [
+        "horse water technique",
+        "aimbot card combo",
+        "money farming optimization",
+        "advanced gameplay techniques",
+        "youtube demonstrations",
+        "real-time strategies",
+        "gameplay optimization"
+      ],
+      "description": "⚡ Advanced Techniques from Video Demonstrations - Expert techniques from guide videos",
+      "icon": "⚡"
+    },
+    {
+      "title": "🔍 Video Analysis & Player Insights",
+      "url": "/stands/practical-acquisition/#video-analysis-player-insights",
+      "category": "Stands",
+      "keywords": [
+        "video analysis",
+        "player insights",
+        "actual player experiences",
+        "visual cues",
+        "audio cues",
+        "ui elements",
+        "common misconceptions",
+        "video demonstration value"
+      ],
+      "description": "🔍 Video Analysis & Player Insights - Breakdown of what videos show vs theory guides",
+      "icon": "🔍"
     }
   ]
 }

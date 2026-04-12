@@ -216,6 +216,35 @@ URL: https://bridgerwestern.cc/stands/stand-abilities.html
 
 ---
 
+### Practical Video Guide
+URL: https://bridgerwestern.cc/stands/practical-acquisition/
+
+**Video-Based Demonstrations:**
+- Based on YouTube gameplay guide videos
+- Real-time fishing demonstrations with exact timing
+- Actual Corpse Part chase and survival footage
+- Horse water technique in action
+- Step-by-step walkthroughs from actual gameplay
+
+**Key Video Content:**
+- Complete gameplay walkthrough (Guide Video 1)
+- Beginner's quick start guide (Guide Video 2)
+- Real-time fishing with Arrow Shard demonstration (0.5% rate mentioned)
+- Actual server probability calculations from videos
+- Horse water tech to reach swamp area
+
+**Video vs Official Data Notes:**
+- Arrow Shard drop rate: Videos mention 0.5% (Trello says 0.05%)
+- Corpse Part probabilities: Based on video analysis of gameplay
+- Success rates: Reflect actual player experiences from videos
+
+**Practical Techniques from Videos:**
+- Horse water technique: Hold shift, enter water, hold space
+- Aimbot card combo with Ocular Pro S (X key)
+- Money farming optimization from fishing demonstrations
+
+---
+
 ### Corpse Part Guide
 URL: https://bridgerwestern.cc/stands/corpse-part-guide.html
 

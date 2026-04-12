@@ -1,0 +1,15 @@
+{
+  "name": "bridger-western-wiki",
+  "version": "1.0.0",
+  "description": "Bridger Western Wiki & Trello",
+  "scripts": {
+    "new-page": "node scripts/create-page.js",
+    "index-content": "node scripts/content-indexer.js",
+    "sync-all": "node scripts/content-indexer.js",
+    "test": "echo \"Testing scripts...\" && node scripts/content-indexer.js",
+    "pre-commit": "node scripts/pre-commit-hook.js"
+  },
+  "keywords": ["wiki", "bridger", "western", "roblox"],
+  "author": "Bridger Western Wiki Team",
+  "license": "MIT"
+}

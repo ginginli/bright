@@ -15,6 +15,7 @@
 - [Stands Database](https://bridgerwestern.cc/stands/): Complete Stand roster with tier rankings (S/A/B/Pending)
 - [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.05% drop rate), Corpse Part KOTH events, water escape tactics, server selection
 - [Stand Abilities](https://bridgerwestern.cc/stands/stand-abilities.html): Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities
+- [Practical Video Guide](https://bridgerwestern.cc/stands/practical-acquisition/): Video-based demonstrations from YouTube gameplay guides, step-by-step walkthroughs, real-time fishing, and Corpse Part chase tactics
 - [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): S-tier (The World, D4C, Killer Queen), A-tier (TWAU, King Crimson, Star Platinum, SPTW), B-tier rankings
 - [Corpse Part Guide](https://bridgerwestern.cc/stands/corpse-part-guide.html): KOTH mechanics, probability system (15-20% success rate), body part types, survival tactics
 - [Discord Coordination](https://bridgerwestern.cc/stands/discord-coordination.html): Clan strategies, server flooding methods, team coordination

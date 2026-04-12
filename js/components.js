@@ -7,7 +7,8 @@ class ComponentLoader {
     constructor() {
         this.components = {
             'nav': '/components/nav.html',
-            'footer': '/components/footer.html'
+            'footer': '/components/footer.html',
+            'ad-header': '/components/ad-header.html'
         };
     }
 
@@ -35,6 +36,16 @@ class ComponentLoader {
             if (container) {
                 container.innerHTML = html;
                 
+                // Re-execute any script tags in the loaded component
+                container.querySelectorAll('script').forEach(oldScript => {
+                    const newScript = document.createElement('script');
+                    Array.from(oldScript.attributes).forEach(attr => {
+                        newScript.setAttribute(attr.name, attr.value);
+                    });
+                    newScript.textContent = oldScript.textContent;
+                    oldScript.parentNode.replaceChild(newScript, oldScript);
+                });
+
                 // After loading nav, set active state based on current URL
                 if (componentName === 'nav') {
                     this.setActiveNavItem();
@@ -96,6 +107,11 @@ class ComponentLoader {
         // Load footer if container exists
         if (document.getElementById('footer-container')) {
             await this.loadComponent('footer', 'footer-container');
+        }
+
+        // Load ad if container exists
+        if (document.getElementById('ad-container')) {
+            await this.loadComponent('ad-header', 'ad-container');
         }
     }
 

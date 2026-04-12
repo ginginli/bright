@@ -37,6 +37,7 @@ User-agent: BaiduSpider
 User-agent: SogouSpider
 Allow: /
 Allow: /stands/
+Allow: /stands/practical-acquisition/
 Allow: /weapons/
 Allow: /weapons/primary-weapons/
 Allow: /weapons/secondary-weapons/

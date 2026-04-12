@@ -225,6 +225,25 @@ footer p {
     opacity: 0.8; 
 }
 
+.footer-links {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    color: var(--bg-parchment);
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
 /* =========================================
    移动端优化 - Roblox 玩家专用
    ========================================= */
@@ -763,8 +782,20 @@ a.logo {
     background: var(--bg-parchment);
     border: var(--border-sketch);
     box-shadow: 4px 4px 0 rgba(43,28,17,0.15);
-    min-width: 200px;
+    min-width: 220px;
     z-index: 100;
+    animation: dropdownFadeIn 0.2s ease;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .nav-dropdown a {
@@ -1010,6 +1041,56 @@ a.logo {
 }
 
 /* =========================================
+   Advertising Styles
+   ========================================= */
+
+.ad-container {
+    margin: 32px auto;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.ad-header {
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.ad-middle {
+    margin: 40px auto;
+    border-top: 1px dashed rgba(232,223,213,0.2);
+    border-bottom: 1px dashed rgba(232,223,213,0.2);
+    padding: 24px 0;
+}
+
+.ad-footer {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Responsive ad containers */
+@media (max-width: 768px) {
+    .ad-container {
+        margin: 20px auto;
+    }
+    
+    .ad-header {
+        margin-top: 16px;
+        margin-bottom: 24px;
+    }
+    
+    .ad-middle {
+        margin: 30px auto;
+        padding: 20px 0;
+    }
+    
+    .ad-footer {
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+}
+
+/* =========================================
    Mobile
    ========================================= */
 
@@ -1067,6 +1148,16 @@ a.logo {
 
     .nav-item.active .nav-dropdown { 
         display: block; 
+    }
+    
+    /* 移动端导航切换按钮样式增强 */
+    .nav-toggle:focus {
+        outline: 2px solid var(--accent-fade);
+        outline-offset: 2px;
+    }
+    
+    .nav-toggle:active {
+        transform: translateY(2px);
     }
 
     .hero-sub { 
