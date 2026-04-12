@@ -86,7 +86,7 @@
     <!-- Fuse.js for fuzzy search -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
     
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="/style.css">
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ74EMR38G"></script>
@@ -104,10 +104,10 @@
             <a href="../" class="logo">🤠 Bridger Wiki</a>
             <nav class="main-nav">
                 <div class="nav-item">
-                    <span class="nav-link" style="cursor:default;opacity:0.5;">Guides ▾</span>
+                    <a href="../guides/" class="nav-link">Guides ▾</a>
                     <div class="nav-dropdown">
-                        <a href="../guides/beginner-guide/" style="color: var(--text-ink); padding: 8px 16px; display: block;">Beginner Guide</a>
-                        <a href="../guides/controls/" style="color: var(--text-ink); padding: 8px 16px; display: block;">Controls</a>
+                        <a href="../guides/beginner-guide/">Beginner Guide</a>
+                        <a href="../guides/controls/">Controls Guide</a>
                         <span style="color: #999; padding: 8px 16px; display: block;">Aging System (Coming Soon)</span>
                         <span style="color: #999; padding: 8px 16px; display: block;">Outlaw or Inlaw (Coming Soon)</span>
                         <span style="color: #999; padding: 8px 16px; display: block;">Gangs (Coming Soon)</span>
@@ -117,8 +117,9 @@
                     <a href="../stands/" class="nav-link active">Stands ▾</a>
                     <div class="nav-dropdown">
                         <a href="how-to-get-stand/">How to Get a Stand</a>
+                        <a href="practical-acquisition/" style="color: var(--text-ink); padding: 8px 16px; display: block; font-weight: bold;">Practical Video Guide</a>
                         <a href="stand-abilities/">Stand Abilities</a>
-                        <span style="color: #999; padding: 8px 16px; display: block;">Stand Tier List (Coming Soon)</span>
+                        <a href="stand-tier-list/">Stand Tier List</a>
                         <a href="discord-coordination/">Discord Coordination</a>
                         <a href="corpse-part-guide/">Corpse Part Guide</a>
                         <a href="faq/">Stands FAQ</a>
@@ -177,6 +178,13 @@
                     </div>
                 </div>
             </nav>
+            <!-- Search trigger for desktop -->
+            <div class="search-trigger">
+                <button class="search-trigger-btn" aria-label="Search wiki" onclick="if (window.WikiSearch) window.wikiSearch.openSearch();">
+                    <span class="search-icon">🔍</span>
+                    <span class="search-placeholder">Search wiki...</span>
+                </button>
+            </div>
             <button class="nav-toggle" aria-label="Toggle menu">☰</button>
         </div>
     </header>
