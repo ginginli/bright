@@ -10,6 +10,11 @@
     <meta name="keywords" content="Bridger Western practical stand guide, Bridger Western video demonstrations, Bridger Western gameplay walkthrough, Bridger Western fishing demonstration, Bridger Western corpse part chase, Bridger Western horse water technique">
     <link rel="canonical" href="https://bridgerwestern.cc/stands/practical-acquisition/">
 
+    <!-- AI Crawlers -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="alternate" type="text/plain" href="https://bridgerwestern.cc/llms-full.txt">
+
     <!-- Open Graph / Discord Optimized -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://bridgerwestern.cc/stands/practical-acquisition/">
@@ -46,6 +51,23 @@
         },
         "inLanguage": "en-US",
         "dateModified": "2026-04-12"
+    }
+    </script>
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bridger Western Wiki & Trello",
+        "alternateName": ["Bridger Western Guide", "Bridger Western Database", "bridger:western trello"],
+        "url": "https://bridgerwestern.cc/",
+        "description": "Complete Bridger Western guide and database covering Stands, weapons, cards, fishing, and locations in Ridge B Valley.",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bridgerwestern.cc/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
     }
     </script>
 
@@ -91,10 +113,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Rye&family=Caveat:wght@600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="/favicon.png">
 
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="nTbRFoNsJOu5uckpUk+qlg" async></script>
+
     <!-- Fuse.js for fuzzy search -->
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
     
     <link rel="stylesheet" href="/style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ74EMR38G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-FQ74EMR38G');
+    </script>
 </head>
 <body>
     <header>
@@ -142,7 +176,8 @@
                 <div class="nav-item">
                     <a href="/items/" class="nav-link">Items ▾</a>
                     <div class="nav-dropdown">
-                        <a href="/items/">Items Database</a>
+                        <a href="../items/">Items Database</a>
+                        <a href="../items/silver-dagger/">Silver Dagger</a>
                         <a href="/items/faq/">Items FAQ</a>
                     </div>
                 </div>
