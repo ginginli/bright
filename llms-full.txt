@@ -234,7 +234,7 @@ URL: https://bridgerwestern.cc/stands/practical-acquisition/
 - Horse water tech to reach swamp area
 
 **Video vs Official Data Notes:**
-- Arrow Shard drop rate: Videos mention 0.5% (Trello says 0.05%)
+- Arrow Shard drop rate: Videos mention 0.5% (bridger:western trello says 0.05%)
 - Corpse Part probabilities: Based on video analysis of gameplay
 - Success rates: Reflect actual player experiences from videos
 
