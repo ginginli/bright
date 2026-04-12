@@ -10466,6 +10466,309 @@
       ],
       "description": "🔍 Video Analysis & Player Insights - Breakdown of what videos show vs theory guides",
       "icon": "🔍"
+    },
+    {
+      "title": "🗡️ Silver Dagger Guide",
+      "url": "/items/silver-dagger/#title-1",
+      "category": "Items",
+      "keywords": [
+        "silver",
+        "dagger",
+        "guide",
+        "anti-vampire",
+        "melee",
+        "weapon"
+      ],
+      "description": "🗡️ Silver Dagger Guide - Complete anti-vampire melee weapon guide",
+      "icon": "🗡️"
+    },
+    {
+      "title": "⚔️ Quick Stats",
+      "url": "/items/silver-dagger/#quick-stats",
+      "category": "Items",
+      "keywords": [
+        "quick",
+        "stats",
+        "damage",
+        "silver dagger",
+        "base damage",
+        "vampire damage"
+      ],
+      "description": "⚔️ Quick Stats - Silver Dagger damage and attack statistics",
+      "icon": "⚔️"
+    },
+    {
+      "title": "🗡️ Basic Attack",
+      "url": "/items/silver-dagger/#basic-attack",
+      "category": "Items",
+      "keywords": [
+        "basic",
+        "attack",
+        "8 damage",
+        "16 damage",
+        "vampires",
+        "stamina"
+      ],
+      "description": "🗡️ Basic Attack - Silver Dagger basic slash attack mechanics",
+      "icon": "🗡️"
+    },
+    {
+      "title": "🤜 Grab Attack (M2)",
+      "url": "/items/silver-dagger/#grab-attack",
+      "category": "Items",
+      "keywords": [
+        "grab",
+        "attack",
+        "m2",
+        "28 damage",
+        "56 damage",
+        "combo"
+      ],
+      "description": "🤜 Grab Attack (M2) - Silver Dagger devastating grab combo",
+      "icon": "🤜"
+    },
+    {
+      "title": "⚔️ Combat Guide",
+      "url": "/items/silver-dagger/#combat-guide",
+      "category": "Items",
+      "keywords": [
+        "combat",
+        "guide",
+        "silver dagger",
+        "fighting",
+        "strategy",
+        "tactics"
+      ],
+      "description": "⚔️ Combat Guide - Complete Silver Dagger combat mechanics",
+      "icon": "⚔️"
+    },
+    {
+      "title": "🗡️ Basic Attacks",
+      "url": "/items/silver-dagger/#basic-attacks",
+      "category": "Items",
+      "keywords": [
+        "basic",
+        "attacks",
+        "slash",
+        "forward",
+        "stamina",
+        "management"
+      ],
+      "description": "🗡️ Basic Attacks - Silver Dagger slash attack details",
+      "icon": "🗡️"
+    },
+    {
+      "title": "🔥 Silver Fire Effect",
+      "url": "/items/silver-dagger/#silver-fire-effect",
+      "category": "Items",
+      "keywords": [
+        "silver",
+        "fire",
+        "effect",
+        "vampires",
+        "damage over time",
+        "burning"
+      ],
+      "description": "🔥 Silver Fire Effect - Silver Dagger anti-vampire burning effect",
+      "icon": "🔥"
+    },
+    {
+      "title": "🃏 Card Synergies",
+      "url": "/items/silver-dagger/#card-synergies",
+      "category": "Items",
+      "keywords": [
+        "card",
+        "synergies",
+        "silver prodigy",
+        "boy with fists",
+        "damage boost"
+      ],
+      "description": "🃏 Card Synergies - Best cards for Silver Dagger builds",
+      "icon": "🃏"
+    },
+    {
+      "title": "🥈 Silver Prodigy",
+      "url": "/items/silver-dagger/#silver-prodigy",
+      "category": "Items",
+      "keywords": [
+        "silver",
+        "prodigy",
+        "card",
+        "silver weapon",
+        "damage",
+        "enhancement"
+      ],
+      "description": "🥈 Silver Prodigy - Silver weapon damage enhancement card",
+      "icon": "🥈"
+    },
+    {
+      "title": "👊 Boy With Fists",
+      "url": "/items/silver-dagger/#boy-with-fists",
+      "category": "Items",
+      "keywords": [
+        "boy",
+        "fists",
+        "card",
+        "melee",
+        "damage",
+        "boost"
+      ],
+      "description": "👊 Boy With Fists - Melee damage enhancement card",
+      "icon": "👊"
+    },
+    {
+      "title": "💡 Usage Tips",
+      "url": "/items/silver-dagger/#usage-tips",
+      "category": "Items",
+      "keywords": [
+        "usage",
+        "tips",
+        "strategy",
+        "when to use",
+        "combat tips"
+      ],
+      "description": "💡 Usage Tips - Silver Dagger usage strategies and tips",
+      "icon": "💡"
+    },
+    {
+      "title": "🎯 When to Use",
+      "url": "/items/silver-dagger/#when-to-use",
+      "category": "Items",
+      "keywords": [
+        "when",
+        "use",
+        "out of ammo",
+        "vampire encounters",
+        "emergency"
+      ],
+      "description": "🎯 When to Use - Optimal situations for Silver Dagger",
+      "icon": "🎯"
+    },
+    {
+      "title": "⚡ Combat Strategy",
+      "url": "/items/silver-dagger/#combat-strategy",
+      "category": "Items",
+      "keywords": [
+        "combat",
+        "strategy",
+        "stamina management",
+        "grab timing",
+        "hit and run"
+      ],
+      "description": "⚡ Combat Strategy - Advanced Silver Dagger combat tactics",
+      "icon": "⚡"
+    },
+    {
+      "title": "⚠️ Limitations",
+      "url": "/items/silver-dagger/#limitations",
+      "category": "Items",
+      "keywords": [
+        "limitations",
+        "weaknesses",
+        "range",
+        "stamina cost",
+        "animation lock"
+      ],
+      "description": "⚠️ Limitations - Silver Dagger weaknesses and drawbacks",
+      "icon": "⚠️"
+    },
+    {
+      "title": "❓ Frequently Asked Questions",
+      "url": "/items/silver-dagger/#faq",
+      "category": "Items",
+      "keywords": [
+        "faq",
+        "questions",
+        "silver dagger",
+        "common questions",
+        "help"
+      ],
+      "description": "❓ Frequently Asked Questions - Silver Dagger FAQ section",
+      "icon": "❓"
+    },
+    {
+      "title": "How much damage does the Silver Dagger do?",
+      "url": "/items/silver-dagger/#faq-damage",
+      "category": "Items",
+      "keywords": [
+        "damage",
+        "8 base damage",
+        "16 vampire damage",
+        "28 grab damage",
+        "56 vampire grab"
+      ],
+      "description": "How much damage does the Silver Dagger do? - Damage statistics FAQ",
+      "icon": "❓"
+    },
+    {
+      "title": "What is the silver fire effect?",
+      "url": "/items/silver-dagger/#faq-silver-fire",
+      "category": "Items",
+      "keywords": [
+        "silver fire",
+        "effect",
+        "vampires only",
+        "damage over time",
+        "burning"
+      ],
+      "description": "What is the silver fire effect? - Silver fire mechanics FAQ",
+      "icon": "❓"
+    },
+    {
+      "title": "Which cards work best with the Silver Dagger?",
+      "url": "/items/silver-dagger/#faq-cards",
+      "category": "Items",
+      "keywords": [
+        "cards",
+        "silver prodigy",
+        "boy with fists",
+        "synergy",
+        "builds"
+      ],
+      "description": "Which cards work best with the Silver Dagger? - Card synergy FAQ",
+      "icon": "❓"
+    },
+    {
+      "title": "How do I perform the grab attack?",
+      "url": "/items/silver-dagger/#faq-grab",
+      "category": "Items",
+      "keywords": [
+        "grab attack",
+        "m2",
+        "right click",
+        "combo",
+        "28 damage"
+      ],
+      "description": "How do I perform the grab attack? - Grab attack controls FAQ",
+      "icon": "❓"
+    },
+    {
+      "title": "Does the Silver Dagger consume stamina?",
+      "url": "/items/silver-dagger/#faq-stamina",
+      "category": "Items",
+      "keywords": [
+        "stamina",
+        "consumption",
+        "energy",
+        "management",
+        "attacks"
+      ],
+      "description": "Does the Silver Dagger consume stamina? - Stamina mechanics FAQ",
+      "icon": "❓"
+    },
+    {
+      "title": "Is the Silver Dagger effective against humans?",
+      "url": "/items/silver-dagger/#faq-humans",
+      "category": "Items",
+      "keywords": [
+        "humans",
+        "effectiveness",
+        "normal damage",
+        "backup weapon",
+        "vampires vs humans"
+      ],
+      "description": "Is the Silver Dagger effective against humans? - Human vs vampire effectiveness FAQ",
+      "icon": "❓"
     }
   ]
 }
