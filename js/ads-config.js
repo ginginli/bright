@@ -22,7 +22,7 @@ const AdConfig = {
     // Ad placements - positions where ads should appear
     placements: {
         main: {
-            enabled: true,
+            enabled: false,
             containerId: 'ad-container',
             priority: 'high'
         },
@@ -42,7 +42,7 @@ const AdConfig = {
             priority: 'medium'
         },
         footer: {
-            enabled: false,
+            enabled: true,
             containerId: 'ad-footer',
             priority: 'low'
         }
