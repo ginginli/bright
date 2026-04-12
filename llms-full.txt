@@ -921,14 +921,6 @@ Content: Comprehensive beginner tutorial covering character creation, starting m
 URL: https://bridgerwestern.cc/guides/controls/
 Content: Complete game controls reference with all keybinds, movement mechanics, combat controls, and advanced input techniques
 
-**Fishing Economy Guide**
-URL: https://bridgerwestern.cc/guides/fishing-basics/
-Content: Master fishing system for safe Moola farming and Arrow Shard acquisition (0.05% drop rate)
-
-**Stand Acquisition Guide**
-URL: https://bridgerwestern.cc/guides/stand-acquisition/
-Content: Detailed comparison of fishing vs Corpse Part KOTH methods for obtaining Stands
-
 **Related Database Guides:**
 - Cards Database: https://bridgerwestern.cc/cards/
 - Fishing Guide: https://bridgerwestern.cc/fishing/
