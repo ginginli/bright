@@ -97,6 +97,16 @@ header {
     border-bottom: var(--border-sketch);
     box-shadow: 0 2px 8px rgba(43, 28, 17, 0.1);
 }
+
+/* Dynamic nav container - needs sticky too since header is injected inside a div */
+#nav-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#nav-container header {
+    position: static;
+}
 header .container {
     display: flex;
     justify-content: space-between;
