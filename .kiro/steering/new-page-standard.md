@@ -1,5 +1,6 @@
 ---
 inclusion: auto
+description: Standard workflow and checklist for creating new pages on the Bridger Western Wiki. Enforces SEO structure, analytics, ads, content rules, and post-creation file updates.
 ---
 
 # Bridger Western Wiki — New Page Standard
