@@ -327,23 +327,6 @@
             <p>Not affiliated with BRIDGER INC. or Roblox Corporation.</p>
         </div>
     </footer>
-
-    <script>
-        // Mobile nav toggle
-        const toggle = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('.main-nav');
-        toggle.addEventListener('click', () => nav.classList.toggle('open'));
-
-        // Dropdown on mobile tap
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', e => {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    link.closest('.nav-item').classList.toggle('active');
-                }
-            });
-        });
-    </script>
     
     <!-- Search functionality -->
     <script src="../js/search.js"></script>

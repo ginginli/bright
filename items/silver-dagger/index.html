@@ -153,6 +153,16 @@
     <!-- Header / Nav -->
     <div id="nav-container"></div>
 
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <span class="handwritten handwritten-note">The last line of defense against vampires...</span>
+            <p class="hero-label">Bridger Western Items Guide</p>
+            <h1>🗡️ Silver Dagger Guide<br><span class="hero-sub">Anti-Vampire Melee Weapon</span></h1>
+            <p class="subtitle">8 base damage (16 vs vampires), silver fire effect, and devastating grab attack. The ultimate anti-vampire melee weapon in Bridger Western.</p>
+        </div>
+    </section>
+
     <main class="container">
         <!-- Breadcrumb Navigation -->
         <div class="breadcrumb">
@@ -162,8 +172,6 @@
         </div>
 
         <article>
-            <h1>🗡️ Silver Dagger Guide</h1>
-            <p class="subtitle">The last line of defense against vampires and humans when you're out of ammo</p>
 
             <!-- Quick Stats -->
             <div class="sketch-card">
@@ -362,28 +370,6 @@
     </footer>
 
     <!-- Mobile nav toggle -->
-    <script>
-        const toggle = document.querySelector('.nav-toggle');
-        const nav = document.querySelector('.main-nav');
-        toggle.addEventListener('click', () => nav.classList.toggle('open'));
-
-        // Dropdown on mobile tap
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', e => {
-                if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                    link.closest('.nav-item').classList.toggle('active');
-                }
-            });
-        });
-
-        // FAQ toggle functionality
-        document.querySelectorAll('.faq-item h3').forEach(question => {
-            question.addEventListener('click', () => {
-                question.parentElement.classList.toggle('active');
-            });
-        });
-    </script>
     
     <!-- Advertising -->
     <script src="../../js/ads-config.js"></script>
