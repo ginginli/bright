@@ -258,6 +258,23 @@ URL: https://bridgerwestern.cc/stands/corpse-part-guide.html
 - Left Arm: Tusk (10% chance)
 - All other parts: Random Stand
 
+---
+
+### Corpse Part Spawn Locations
+URL: https://bridgerwestern.cc/stands/corpse-part-locations/
+
+All 8 confirmed Corpse Part spawn locations in Ridge B Valley:
+1. Swamp — in the Forest where the Mud Witch resides
+2. Anthill Island
+3. Red Corner — top of the watch tower
+4. Pit of Doom — bottom of the pit (Digsite)
+5. Mineshaft Entrance — near Ridge B. County
+6. Cave — inside the cave close to Ridge B. County
+7. Grassy area to the right of the Swamp, between the Forest and the Abandoned Town
+8. Death Valley
+
+Includes interactive map with numbered pins. Requires 3+ players to spawn. Spawns are random from these 8 locations.
+
 **Survival Tactics:**
 - Water method for escape
 - Horse mobility essential

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Corpse Part Spawn Locations – Bridger Western 2026</title>
+    <meta name="description" content="All 8 Corpse Part spawn locations in Bridger Western: Swamp, Anthill Island, Red Corner watch tower, Pit of Doom, Mineshaft, cave, grassy plains, Death Valley.">
+    <meta name="keywords" content="Bridger Western corpse part locations, corpse part spawn, KOTH locations, Bridger Western spawn map, corpse part guide, where do corpse parts spawn">
+    <link rel="canonical" href="https://bridgerwestern.cc/stands/corpse-part-locations/">
+
+    <!-- AI Crawlers -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="alternate" type="text/plain" href="https://bridgerwestern.cc/llms-full.txt">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://bridgerwestern.cc/stands/corpse-part-locations/">
+    <meta property="og:title" content="💀 Corpse Part Spawn Locations – Bridger Western Map Guide">
+    <meta property="og:description" content="💀 All 8 spawn locations | 🗺️ Interactive map | 🏆 KOTH strategy | Swamp, Anthill Island, Pit of Doom, Death Valley & more">
+    <meta property="og:image" content="https://bridgerwestern.cc/background.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Bridger Western Corpse Part Spawn Locations Map">
+    <meta property="og:site_name" content="Bridger Western Wiki &amp; Trello">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bridgerwestern">
+    <meta name="twitter:creator" content="@bridgerwestern">
+    <meta name="twitter:title" content="💀 Corpse Part Spawn Locations – Bridger Western Map Guide">
+    <meta name="twitter:description" content="All 8 Corpse Part spawn locations with map. Swamp, Anthill Island, Pit of Doom, Death Valley &amp; more.">
+    <meta name="twitter:image" content="https://bridgerwestern.cc/background.png">
+    <meta name="twitter:image:alt" content="Bridger Western Corpse Part Spawn Locations">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Guide",
+        "name": "Bridger Western Corpse Part Spawn Locations",
+        "description": "Complete guide to all 8 Corpse Part spawn locations in Bridger Western, with map reference.",
+        "url": "https://bridgerwestern.cc/stands/corpse-part-locations/",
+        "publisher": { "@type": "Organization", "name": "Bridger Western Wiki &amp; Trello", "url": "https://bridgerwestern.cc/" },
+        "inLanguage": "en-US",
+        "dateModified": "2026-04-14"
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bridgerwestern.cc/" },
+            { "@type": "ListItem", "position": 2, "name": "Stands", "item": "https://bridgerwestern.cc/stands/" },
+            { "@type": "ListItem", "position": 3, "name": "Corpse Part Locations", "item": "https://bridgerwestern.cc/stands/corpse-part-locations/" }
+        ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rye&family=Caveat:wght@600&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Ahrefs Analytics -->
+    <script src="https://analytics.ahrefs.com/analytics.js" data-key="nTbRFoNsJOu5uckpUk+qlg" async></script>
+
+    <!-- Fuse.js -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ74EMR38G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-FQ74EMR38G");
+    </script>
+
+    <!-- Load components -->
+    <script src="../../js/components.js"></script>
+
+    <style>
+        /* Map container with clickable numbered pins */
+        .map-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            display: block;
+        }
+        .map-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 2px solid #2b1c11;
+        }
+        .map-pin {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background: #dc3545;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: "Rye", cursive;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+            transition: transform 0.2s, background 0.2s;
+            z-index: 10;
+        }
+        .map-pin:hover, .map-pin.active {
+            background: #2b1c11;
+            transform: translate(-50%, -50%) scale(1.25);
+        }
+        .map-pin-tooltip {
+            position: absolute;
+            background: #2b1c11;
+            color: #e8dfd5;
+            padding: 6px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 20;
+            top: -36px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .map-pin:hover .map-pin-tooltip {
+            opacity: 1;
+        }
+        /* Location cards */
+        .location-card {
+            border: 2px solid #2b1c11;
+            padding: 20px 24px;
+            background: rgba(255,255,255,0.3);
+            box-shadow: 4px 4px 0 rgba(43,28,17,0.1);
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+        }
+        .location-card:hover, .location-card.active {
+            background: rgba(220,53,69,0.08);
+            box-shadow: 4px 4px 0 rgba(220,53,69,0.2);
+        }
+        .location-number {
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            background: #dc3545;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-family: "Rye", cursive;
+            font-size: 1rem;
+        }
+        .location-card.active .location-number {
+            background: #2b1c11;
+        }
+        .location-info h3 {
+            margin: 0 0 4px;
+            font-size: 1.1rem;
+        }
+        .location-info p {
+            margin: 0;
+            font-size: 0.88rem;
+            color: #8a7360;
+            line-height: 1.5;
+        }
+        .location-tag {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-family: "Rye", cursive;
+            letter-spacing: 1px;
+            color: #8a7360;
+            border: 1px solid #8a7360;
+            padding: 1px 6px;
+            margin-bottom: 6px;
+        }
+        @media (max-width: 768px) {
+            .map-pin { width: 24px; height: 24px; font-size: 0.7rem; }
+        }
+    </style>
+</head>
+<body>
+    <div id="nav-container"></div>
+
+    <section class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> &rarr; <a href="/stands/">Stands</a> &rarr; <span>Corpse Part Spawn Locations</span>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="container">
+            <span class="handwritten handwritten-note">Eight locations across Ridge B Valley...</span>
+            <p class="hero-label">Bridger Western Stands Guide</p>
+            <h1>Corpse Part Spawn Locations<br><span class="hero-sub">All 8 Locations with Map</span></h1>
+            <p class="subtitle">Every confirmed Corpse Part spawn location in Ridge B Valley. Click a pin on the map or a card below to highlight the location.</p>
+            <div class="hero-cta">
+                <a href="/stands/corpse-part-guide/" class="btn">💀 KOTH Survival Guide</a>
+                <a href="/stands/how-to-get-stand/" class="btn btn-outline">🎯 How to Get a Stand</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <!-- Map Section -->
+        <section id="spawn-map">
+            <h2 class="section-title">🗺️ Spawn Location Map</h2>
+            <div class="sketch-card" style="padding: 20px; text-align: center;">
+                <p style="margin-bottom: 16px; color: #8a7360; font-size: 0.9rem;">Click a numbered pin to highlight the location details below.</p>
+                <div class="map-wrapper">
+                    <img src="/map.png" alt="Bridger Western World Map with Corpse Part Spawn Locations" width="1393" height="997">
+                    <!-- Pin positions are approximate percentages based on map.png 1393x997 -->
+                    <!-- 1: Swamp / Forest (Mud Witch area) -->
+                    <div class="map-pin" style="left:22%;top:62%;" data-loc="1" onclick="highlightLocation(1)">1<span class="map-pin-tooltip">Swamp (Mud Witch)</span></div>
+                    <!-- 2: Anthill Island -->
+                    <div class="map-pin" style="left:68%;top:78%;" data-loc="2" onclick="highlightLocation(2)">2<span class="map-pin-tooltip">Anthill Island</span></div>
+                    <!-- 3: Red Corner watch tower -->
+                    <div class="map-pin" style="left:38%;top:30%;" data-loc="3" onclick="highlightLocation(3)">3<span class="map-pin-tooltip">Red Corner Watch Tower</span></div>
+                    <!-- 4: Pit of Doom -->
+                    <div class="map-pin" style="left:55%;top:55%;" data-loc="4" onclick="highlightLocation(4)">4<span class="map-pin-tooltip">Pit of Doom</span></div>
+                    <!-- 5: Mineshaft Entrance, Ridge B. County -->
+                    <div class="map-pin" style="left:62%;top:38%;" data-loc="5" onclick="highlightLocation(5)">5<span class="map-pin-tooltip">Mineshaft Entrance</span></div>
+                    <!-- 6: Cave near Ridge B. County -->
+                    <div class="map-pin" style="left:70%;top:42%;" data-loc="6" onclick="highlightLocation(6)">6<span class="map-pin-tooltip">Cave (Ridge B. County)</span></div>
+                    <!-- 7: Grassy area between Forest and Abandoned Town -->
+                    <div class="map-pin" style="left:32%;top:50%;" data-loc="7" onclick="highlightLocation(7)">7<span class="map-pin-tooltip">Grassy Plains</span></div>
+                    <!-- 8: Death Valley -->
+                    <div class="map-pin" style="left:80%;top:25%;" data-loc="8" onclick="highlightLocation(8)">8<span class="map-pin-tooltip">Death Valley</span></div>
+                </div>
+                <p style="margin-top: 12px; font-size: 0.78rem; color: #8a7360;">&#9888; Pin positions are approximate. Exact in-game coordinates may vary.</p>
+            </div>
+        </section>
+
+        <!-- Location List -->
+        <section id="location-list">
+            <h2 class="section-title">💀 All 8 Spawn Locations</h2>
+
+            <div class="location-card" id="loc-1" onclick="highlightLocation(1)">
+                <div class="location-number">1</div>
+                <div class="location-info">
+                    <span class="location-tag">Swamp Biome</span>
+                    <h3>Swamp — Forest (Mud Witch Area)</h3>
+                    <p>In the Swamp, which is located in the Forest where the Mud Witch resides. Also described as: within the Swamp forest biome.</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-2" onclick="highlightLocation(2)">
+                <div class="location-number">2</div>
+                <div class="location-info">
+                    <span class="location-tag">Island</span>
+                    <h3>Anthill Island</h3>
+                    <p>Located on Anthill Island.</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-3" onclick="highlightLocation(3)">
+                <div class="location-number">3</div>
+                <div class="location-info">
+                    <span class="location-tag">Red Corner</span>
+                    <h3>Red Corner — Top of Watch Tower</h3>
+                    <p>At the top of the watch tower in Red Corner. Also described as: Red Corner on top of the watch tower.</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-4" onclick="highlightLocation(4)">
+                <div class="location-number">4</div>
+                <div class="location-info">
+                    <span class="location-tag">Digsite</span>
+                    <h3>Pit of Doom — Bottom of the Pit</h3>
+                    <p>The Pit of Doom, more specifically the bottom of the pit. Also described as: at the bottom of the Pit of Doom (Digsite Location).</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-5" onclick="highlightLocation(5)">
+                <div class="location-number">5</div>
+                <div class="location-info">
+                    <span class="location-tag">Ridge B. County</span>
+                    <h3>Mineshaft Entrance — Ridge B. County</h3>
+                    <p>Close to the Mineshaft Entrance in Ridge B. County. Also described as: near Ridge B. County, on top of the ascending path to the top of the hill.</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-6" onclick="highlightLocation(6)">
+                <div class="location-number">6</div>
+                <div class="location-info">
+                    <span class="location-tag">Ridge B. County</span>
+                    <h3>Cave — Near Ridge B. County</h3>
+                    <p>Inside the cave that is close to Ridge B. County. Also described as: near Ridge B. County inside the cave system.</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-7" onclick="highlightLocation(7)">
+                <div class="location-number">7</div>
+                <div class="location-info">
+                    <span class="location-tag">Plains</span>
+                    <h3>Grassy Area — Between Forest and Abandoned Town</h3>
+                    <p>In the grassy area to the right of the Swamp, between the Forest and the Abandoned Town. Also described as: behind the stone formations in the plains next to the Swamp.</p>
+                </div>
+            </div>
+
+            <div class="location-card" id="loc-8" onclick="highlightLocation(8)">
+                <div class="location-number">8</div>
+                <div class="location-info">
+                    <span class="location-tag">Death Valley</span>
+                    <h3>Death Valley</h3>
+                    <p>In Death Valley. Also described as: along the rocks at Death Valley.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips -->
+        <section id="tips">
+            <h2 class="section-title">⚡ KOTH Tips</h2>
+            <div class="grid-2">
+                <div class="sketch-card">
+                    <h3>🔊 How to Detect a Spawn</h3>
+                    <ul>
+                        <li>Listen for the loud sound effect</li>
+                        <li>Look for the yellow beam visible in the sky</li>
+                        <li>The beam lasts approximately 30 seconds</li>
+                        <li>Requires 3+ players in the server to spawn</li>
+                    </ul>
+                </div>
+                <div class="sketch-card">
+                    <h3>🌊 Water Escape Method</h3>
+                    <ul>
+                        <li>Grab the Corpse Part immediately</li>
+                        <li>Mount your horse (N) and sprint (Shift)</li>
+                        <li>Head to water and hold Space to cross</li>
+                        <li>Keep moving — the whole server will chase you</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sketch-card" style="margin-top: 16px; background: rgba(255,193,7,0.1); border-left: 4px solid #ffc107;">
+                <h3>⚠️ Important Notes</h3>
+                <ul>
+                    <li>Corpse Parts spawn at <strong>random</strong> from these 8 locations — no fixed order</li>
+                    <li>Holding a Corpse Part gives a <strong>15–20% chance</strong> of obtaining a Stand</li>
+                    <li>The <strong>Left Arm</strong> specifically gives a 10% chance for Tusk (causes permanent disability)</li>
+                    <li>For full KOTH mechanics, see the <a href="/stands/corpse-part-guide/">Corpse Part Survival Guide</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SEO Long-tail Keywords -->
+        <section id="corpse-part-locations-seo" style="background: rgba(43,28,17,0.04); padding: 40px 0; margin-top: 40px;">
+            <div class="container seo-block">
+                <h2>Bridger Western Corpse Part Spawn Locations – Complete 2026 Map Guide</h2>
+                <p>
+                    Looking for all <strong>Bridger Western Corpse Part spawn locations</strong>? There are 8 confirmed spawn points across Ridge B Valley. The <strong>Bridger Western Corpse Part map</strong> shows locations in the Swamp forest biome (near the Mud Witch), on Anthill Island, at the top of the Red Corner watch tower, at the bottom of the Pit of Doom (Digsite), near the Mineshaft Entrance in Ridge B. County, inside the cave close to Ridge B. County, in the grassy plains between the Forest and Abandoned Town, and in Death Valley. <strong>Bridger Western where do Corpse Parts spawn</strong> is one of the most searched questions — this guide covers all 8 confirmed locations.
+                </p>
+                <p>
+                    <strong>Bridger Western KOTH spawn locations</strong> are announced by a loud sound effect and a yellow beam visible in the sky, lasting approximately 30 seconds. The <strong>Bridger Western Corpse Part spawn requirements</strong> include a minimum of 3 players in the server. <strong>Bridger Western Corpse Part locations map</strong> reference is essential for quickly routing to the spawn before other players. The <strong>Bridger Western Pit of Doom Corpse Part</strong> location is at the very bottom of the pit, while the <strong>Bridger Western Death Valley Corpse Part</strong> spawns along the rocks in that area. For <strong>Bridger Western Anthill Island Corpse Part</strong>, players need to navigate to the island in the southern part of the map.
+                </p>
+                <p>
+                    <strong>Bridger Western Corpse Part KOTH strategy</strong> involves knowing all spawn locations in advance so you can reach them faster than other players. The <strong>Bridger Western water escape method</strong> — sprinting on horseback into water while holding Space — is the most reliable survival tactic after grabbing a Corpse Part. <strong>Bridger Western Corpse Part holding time</strong> builds up to a 15–20% Stand acquisition chance. The <strong>Bridger Western Left Arm Corpse Part</strong> specifically has a 10% chance of granting Tusk, which causes permanent disability (no walking, no weapons). See the full <a href="/stands/corpse-part-guide/">Corpse Part Survival Guide</a> and <a href="/stands/how-to-get-stand/">How to Get a Stand</a> for complete KOTH strategies.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Stands Guides</h4>
+                <a href="/stands/">Stands Database</a>
+                <a href="/stands/how-to-get-stand/">How to Get a Stand</a>
+                <a href="/stands/corpse-part-guide/">Corpse Part Guide</a>
+                <a href="/stands/corpse-part-locations/">Spawn Locations</a>
+                <a href="/stands/stand-tier-list/">Stand Tier List</a>
+            </div>
+            <div class="footer-col">
+                <h4>Related</h4>
+                <a href="/stands/discord-coordination/">Discord Coordination</a>
+                <a href="/stands/stand-abilities/">Stand Abilities</a>
+                <a href="/stands/faq/">Stands FAQ</a>
+                <a href="/locations/map/">World Map</a>
+            </div>
+            <div class="footer-col">
+                <h4>Locations</h4>
+                <a href="/locations/">Locations Guide</a>
+                <a href="/locations/map/">World Map</a>
+                <a href="/locations/horses/">Horse Guide</a>
+                <a href="/locations/faq/">Locations FAQ</a>
+            </div>
+            <div class="footer-col">
+                <h4>Bridger Western Wiki</h4>
+                <a href="/">Homepage</a>
+                <a href="/stands/">Stands Database</a>
+                <a href="/guides/beginner-guide/">Beginner Guide</a>
+                <a href="/fishing/">Fishing Guide</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bridger Western Wiki &amp; Trello. An unofficial community resource.</p>
+            <p>Not affiliated with BRIDGER INC. or Roblox Corporation.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/search.js"></script>
+    <script src="../../js/ads-config.js"></script>
+    <script src="../../js/ads-manager.js"></script>
+
+    <script>
+        function highlightLocation(num) {
+            // Reset all
+            document.querySelectorAll(".location-card").forEach(c => c.classList.remove("active"));
+            document.querySelectorAll(".map-pin").forEach(p => p.classList.remove("active"));
+            // Activate selected
+            const card = document.getElementById("loc-" + num);
+            const pin = document.querySelector(".map-pin[data-loc='" + num + "']");
+            if (card) {
+                card.classList.add("active");
+                card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            }
+            if (pin) pin.classList.add("active");
+        }
+    </script>
+</body>
+</html>

@@ -10769,6 +10769,86 @@
       ],
       "description": "Is the Silver Dagger effective against humans? - Human vs vampire effectiveness FAQ",
       "icon": "❓"
+    },
+    {
+      "title": "Corpse Part Spawn Locations",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "corpse part spawn locations, KOTH locations, where do corpse parts spawn, corpse part map",
+      "icon": "💀"
+    },
+    {
+      "title": "All 8 Spawn Locations",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "8 spawn locations, corpse part locations list",
+      "icon": "🗺️"
+    },
+    {
+      "title": "Swamp — Forest (Mud Witch Area)",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "swamp corpse part, mud witch location, forest spawn",
+      "icon": "💀"
+    },
+    {
+      "title": "Anthill Island",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "anthill island corpse part spawn",
+      "icon": "💀"
+    },
+    {
+      "title": "Red Corner — Top of Watch Tower",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "red corner watch tower corpse part",
+      "icon": "💀"
+    },
+    {
+      "title": "Pit of Doom — Bottom of the Pit",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "pit of doom corpse part digsite",
+      "icon": "💀"
+    },
+    {
+      "title": "Mineshaft Entrance — Ridge B. County",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "mineshaft entrance corpse part ridge b county",
+      "icon": "💀"
+    },
+    {
+      "title": "Cave — Near Ridge B. County",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "cave corpse part ridge b county",
+      "icon": "💀"
+    },
+    {
+      "title": "Grassy Area — Between Forest and Abandoned Town",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "grassy plains corpse part swamp abandoned town",
+      "icon": "💀"
+    },
+    {
+      "title": "Death Valley",
+      "url": "/stands/corpse-part-locations/",
+      "section": "Stands",
+      "type": "guide",
+      "keywords": "death valley corpse part spawn",
+      "icon": "💀"
     }
   ]
 }
