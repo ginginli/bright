@@ -504,6 +504,18 @@ window.wikiSearch = new WikiSearch();
                 }
             }
         });
+
+        // Auto-expand any faq-item that contains a highlight
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item.querySelector('mark.search-highlight')) {
+                item.classList.add('active');
+                const answer = item.querySelector('.faq-answer');
+                if (answer) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.padding = '20px';
+                }
+            }
+        });
         
         // Create navigation UI (if there are multiple highlights)
         if (nodesToHighlight.length > 1) {
