@@ -87,10 +87,8 @@
     <script src="../../js/components.js"></script>
 
     <style>
-        /* Map container with clickable numbered pins */
+        /* Map */
         .map-wrapper {
-            position: relative;
-            display: inline-block;
             width: 100%;
             max-width: 900px;
             margin: 0 auto;
@@ -102,48 +100,6 @@
             display: block;
             border: 2px solid #2b1c11;
         }
-        .map-pin {
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            background: #dc3545;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-family: "Rye", cursive;
-            font-size: 0.85rem;
-            cursor: pointer;
-            transform: translate(-50%, -50%);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-            transition: transform 0.2s, background 0.2s;
-            z-index: 10;
-        }
-        .map-pin:hover, .map-pin.active {
-            background: #2b1c11;
-            transform: translate(-50%, -50%) scale(1.25);
-        }
-        .map-pin-tooltip {
-            position: absolute;
-            background: #2b1c11;
-            color: #e8dfd5;
-            padding: 6px 10px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            white-space: nowrap;
-            pointer-events: none;
-            opacity: 0;
-            transition: opacity 0.2s;
-            z-index: 20;
-            top: -36px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .map-pin:hover .map-pin-tooltip {
-            opacity: 1;
-        }
         /* Location cards */
         .location-card {
             border: 2px solid #2b1c11;
@@ -154,12 +110,6 @@
             gap: 16px;
             align-items: flex-start;
             margin-bottom: 16px;
-            cursor: pointer;
-            transition: background 0.2s, box-shadow 0.2s;
-        }
-        .location-card:hover, .location-card.active {
-            background: rgba(220,53,69,0.08);
-            box-shadow: 4px 4px 0 rgba(220,53,69,0.2);
         }
         .location-number {
             width: 36px;
@@ -198,7 +148,7 @@
             margin-bottom: 6px;
         }
         @media (max-width: 768px) {
-            .map-pin { width: 24px; height: 24px; font-size: 0.7rem; }
+            .location-card { flex-direction: column; }
         }
     </style>
 </head>
@@ -228,30 +178,11 @@
 
         <!-- Map Section -->
         <section id="spawn-map">
-            <h2 class="section-title">🗺️ Spawn Location Map</h2>
+            <h2 class="section-title">🗺️ World Map</h2>
             <div class="sketch-card" style="padding: 20px; text-align: center;">
-                <p style="margin-bottom: 16px; color: #8a7360; font-size: 0.9rem;">Click a numbered pin to highlight the location details below.</p>
                 <div class="map-wrapper">
-                    <img src="/map.png" alt="Bridger Western World Map with Corpse Part Spawn Locations" width="1393" height="997">
-                    <!-- Pin positions are approximate percentages based on map.png 1393x997 -->
-                    <!-- 1: Swamp / Forest (Mud Witch area) -->
-                    <div class="map-pin" style="left:22%;top:62%;" data-loc="1" onclick="highlightLocation(1)">1<span class="map-pin-tooltip">Swamp (Mud Witch)</span></div>
-                    <!-- 2: Anthill Island -->
-                    <div class="map-pin" style="left:68%;top:78%;" data-loc="2" onclick="highlightLocation(2)">2<span class="map-pin-tooltip">Anthill Island</span></div>
-                    <!-- 3: Red Corner watch tower -->
-                    <div class="map-pin" style="left:38%;top:30%;" data-loc="3" onclick="highlightLocation(3)">3<span class="map-pin-tooltip">Red Corner Watch Tower</span></div>
-                    <!-- 4: Pit of Doom -->
-                    <div class="map-pin" style="left:55%;top:55%;" data-loc="4" onclick="highlightLocation(4)">4<span class="map-pin-tooltip">Pit of Doom</span></div>
-                    <!-- 5: Mineshaft Entrance, Ridge B. County -->
-                    <div class="map-pin" style="left:62%;top:38%;" data-loc="5" onclick="highlightLocation(5)">5<span class="map-pin-tooltip">Mineshaft Entrance</span></div>
-                    <!-- 6: Cave near Ridge B. County -->
-                    <div class="map-pin" style="left:70%;top:42%;" data-loc="6" onclick="highlightLocation(6)">6<span class="map-pin-tooltip">Cave (Ridge B. County)</span></div>
-                    <!-- 7: Grassy area between Forest and Abandoned Town -->
-                    <div class="map-pin" style="left:32%;top:50%;" data-loc="7" onclick="highlightLocation(7)">7<span class="map-pin-tooltip">Grassy Plains</span></div>
-                    <!-- 8: Death Valley -->
-                    <div class="map-pin" style="left:80%;top:25%;" data-loc="8" onclick="highlightLocation(8)">8<span class="map-pin-tooltip">Death Valley</span></div>
+                    <img src="/map.png" alt="Bridger Western World Map" width="1393" height="997">
                 </div>
-                <p style="margin-top: 12px; font-size: 0.78rem; color: #8a7360;">&#9888; Pin positions are approximate. Exact in-game coordinates may vary.</p>
             </div>
         </section>
 
@@ -259,7 +190,7 @@
         <section id="location-list">
             <h2 class="section-title">💀 All 8 Spawn Locations</h2>
 
-            <div class="location-card" id="loc-1" onclick="highlightLocation(1)">
+            <div class="location-card" id="loc-1">
                 <div class="location-number">1</div>
                 <div class="location-info">
                     <span class="location-tag">Swamp Biome</span>
@@ -268,7 +199,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-2" onclick="highlightLocation(2)">
+            <div class="location-card" id="loc-2">
                 <div class="location-number">2</div>
                 <div class="location-info">
                     <span class="location-tag">Island</span>
@@ -277,7 +208,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-3" onclick="highlightLocation(3)">
+            <div class="location-card" id="loc-3">
                 <div class="location-number">3</div>
                 <div class="location-info">
                     <span class="location-tag">Red Corner</span>
@@ -286,7 +217,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-4" onclick="highlightLocation(4)">
+            <div class="location-card" id="loc-4">
                 <div class="location-number">4</div>
                 <div class="location-info">
                     <span class="location-tag">Digsite</span>
@@ -295,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-5" onclick="highlightLocation(5)">
+            <div class="location-card" id="loc-5">
                 <div class="location-number">5</div>
                 <div class="location-info">
                     <span class="location-tag">Ridge B. County</span>
@@ -304,7 +235,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-6" onclick="highlightLocation(6)">
+            <div class="location-card" id="loc-6">
                 <div class="location-number">6</div>
                 <div class="location-info">
                     <span class="location-tag">Ridge B. County</span>
@@ -313,7 +244,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-7" onclick="highlightLocation(7)">
+            <div class="location-card" id="loc-7">
                 <div class="location-number">7</div>
                 <div class="location-info">
                     <span class="location-tag">Plains</span>
@@ -322,7 +253,7 @@
                 </div>
             </div>
 
-            <div class="location-card" id="loc-8" onclick="highlightLocation(8)">
+            <div class="location-card" id="loc-8">
                 <div class="location-number">8</div>
                 <div class="location-info">
                     <span class="location-tag">Death Valley</span>
@@ -425,21 +356,5 @@
     <script src="../../js/search.js"></script>
     <script src="../../js/ads-config.js"></script>
     <script src="../../js/ads-manager.js"></script>
-
-    <script>
-        function highlightLocation(num) {
-            // Reset all
-            document.querySelectorAll(".location-card").forEach(c => c.classList.remove("active"));
-            document.querySelectorAll(".map-pin").forEach(p => p.classList.remove("active"));
-            // Activate selected
-            const card = document.getElementById("loc-" + num);
-            const pin = document.querySelector(".map-pin[data-loc='" + num + "']");
-            if (card) {
-                card.classList.add("active");
-                card.scrollIntoView({ behavior: "smooth", block: "nearest" });
-            }
-            if (pin) pin.classList.add("active");
-        }
-    </script>
 </body>
 </html>
