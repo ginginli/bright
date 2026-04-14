@@ -86,27 +86,9 @@ class WikiSearch {
 
     createSearchUI() {
         try {
-            // Create search trigger in header (for desktop)
-            const header = document.querySelector('header .container');
-            const navToggle = document.querySelector('.nav-toggle');
-            
-            if (header) {
-                const searchTrigger = document.createElement('div');
-                searchTrigger.className = 'search-trigger';
-                searchTrigger.innerHTML = `
-                    <button class="search-trigger-btn" aria-label="Search wiki">
-                        <span class="search-icon">🔍</span>
-                        <span class="search-placeholder">Search wiki...</span>
-                    </button>
-                `;
-                
-                if (navToggle) {
-                    header.insertBefore(searchTrigger, navToggle);
-                } else {
-                    header.appendChild(searchTrigger);
-                }
-            }
-            
+            // The search trigger button is already in components/nav.html
+            // Only create the FAB and modal here
+
             // Create floating search button (FAB)
             const searchFAB = document.createElement('button');
             searchFAB.className = 'search-fab';
@@ -155,11 +137,13 @@ class WikiSearch {
 
     attachEventListeners() {
         try {
-            // Header search trigger button (desktop)
-            const triggerBtn = document.querySelector('.search-trigger-btn');
-            if (triggerBtn) {
-                triggerBtn.addEventListener('click', () => this.openSearch());
-            }
+            // Header search trigger button — nav is loaded dynamically,
+            // so we use event delegation on document instead of direct binding
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('.search-trigger-btn')) {
+                    this.openSearch();
+                }
+            });
             
             // Search FAB button
             const searchFAB = document.querySelector('.search-fab');
