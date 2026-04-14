@@ -431,7 +431,7 @@ class WikiSearch {
 }
 
 // Initialize search when script loads
-new WikiSearch();
+window.wikiSearch = new WikiSearch();
 
 // Highlight search terms from URL parameter
 (function() {
