@@ -19,6 +19,7 @@
 - [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): S-tier (The World, D4C, Killer Queen), A-tier (TWAU, King Crimson, Star Platinum, SPTW), B-tier rankings
 - [Corpse Part Guide](https://bridgerwestern.cc/stands/corpse-part-guide.html): KOTH mechanics, probability system (15-20% success rate), body part types, survival tactics
 - [Corpse Part Spawn Locations](https://bridgerwestern.cc/stands/corpse-part-locations/): All 8 confirmed Corpse Part spawn locations with map — Swamp, Anthill Island, Red Corner watch tower, Pit of Doom, Mineshaft, cave, grassy plains, Death Valley
+- [Arrow Shard Guide](https://bridgerwestern.cc/stands/arrow-shard/): Complete Arrow Shard guide — 0.05% fishing drop, guarantees any Stand, not lost on death, cannot be stored or traded
 - [Discord Coordination](https://bridgerwestern.cc/stands/discord-coordination.html): Clan strategies, server flooding methods, team coordination
 - [Stands FAQ](https://bridgerwestern.cc/stands/faq.html): Common questions, troubleshooting, beginner mistakes, Tusk Acts abilities, Hey Ya buffs, PvP counters
 - [Weapons Database](https://bridgerwestern.cc/weapons/): Complete weapon guide with primary and secondary weapons, tier 3 dual wield system

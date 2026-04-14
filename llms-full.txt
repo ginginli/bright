@@ -275,6 +275,20 @@ All 8 confirmed Corpse Part spawn locations in Ridge B Valley:
 
 Includes interactive map with numbered pins. Requires 3+ players to spawn. Spawns are random from these 8 locations.
 
+---
+
+### Arrow Shard Guide
+URL: https://bridgerwestern.cc/stands/arrow-shard/
+
+Complete guide to the Arrow Shard in Bridger Western.
+- Drop rate: 0.05% (Legendary) from fishing — approximately 2000 attempts average
+- Guarantees a random Stand from the obtainable pool (100% success)
+- NOT lost upon death or leaving the server
+- Cannot be banked, stored, dropped, or traded
+- Cannot be used if you already possess a Stand
+- Cannot give unobtainable Stands or Stands with specific obtainment methods (D4C, Tusk)
+- Has a glowing, smoky aura whilst held
+
 **Survival Tactics:**
 - Water method for escape
 - Horse mobility essential
