@@ -226,6 +226,40 @@ If the new page should appear in the navigation dropdown, update `components/nav
 
 ---
 
+## Step 6 — Add internal links (bidirectional)
+
+After creating the page, add internal links in **both directions**:
+
+### Outbound links (new page → existing pages)
+The new page should already link to related pages via:
+- Hero CTA buttons
+- "Related Guides" section at the bottom
+- In-text links within content
+
+### Inbound links (existing pages → new page)
+Search for existing pages that mention the same topic and add links pointing to the new page:
+
+1. **Find related pages**: Search for keywords related to the new page topic
+2. **Add links in context**: Where the topic is mentioned, wrap it in an `<a>` tag
+3. **Make cards clickable**: If a `sketch-card` covers the same topic, convert it to `<a class="sketch-card article-card">` with a `read-more` span
+4. **Add "Read Guide →" links**: At the end of relevant sections, add a `<span class="read-more">` link
+
+**Minimum inbound links to add:**
+- Parent section index page (e.g. `/stands/` for a stands sub-page)
+- Most closely related existing page (e.g. fishing guide for Arrow Shard page)
+- FAQ page of the same section if it mentions the topic
+
+**Card link pattern** (makes the whole card clickable with hover effect):
+```html
+<a href="/path/to/new-page/" class="sketch-card article-card" style="display: block; text-decoration: none; color: inherit;">
+    <h3>Card Title</h3>
+    <p>Card content...</p>
+    <span class="read-more">Read Guide →</span>
+</a>
+```
+
+---
+
 ## Checklist before committing
 
 - [ ] `<title>` ≤ 60 chars
@@ -241,3 +275,5 @@ If the new page should appear in the navigation dropdown, update `components/nav
 - [ ] `llms-full.txt` updated
 - [ ] `search-index.json` updated with H1–H6 headings
 - [ ] `components/nav.html` updated if needed
+- [ ] Inbound links added from at least 3 related existing pages
+- [ ] Clickable cards use `<a class="sketch-card article-card">` pattern
