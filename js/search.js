@@ -736,3 +736,52 @@ const HighlightNavigation = {
         }
     }
 };
+
+
+// =========================================
+// FAQ Accordion with ARIA support
+// =========================================
+function initFAQAccordion() {
+    document.querySelectorAll('.faq-item h3').forEach((trigger, i) => {
+        const item = trigger.parentElement;
+        const answer = item.querySelector('.faq-answer');
+        if (!answer) return;
+
+        // Set up ARIA
+        const answerId = 'faq-answer-' + i;
+        answer.id = answerId;
+        trigger.setAttribute('role', 'button');
+        trigger.setAttribute('tabindex', '0');
+        trigger.setAttribute('aria-expanded', 'false');
+        trigger.setAttribute('aria-controls', answerId);
+        answer.setAttribute('role', 'region');
+        answer.setAttribute('aria-labelledby', trigger.id || (trigger.id = 'faq-trigger-' + i));
+
+        function toggle() {
+            const isOpen = item.classList.contains('active');
+            item.classList.toggle('active');
+            trigger.setAttribute('aria-expanded', String(!isOpen));
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                answer.style.padding = '20px';
+            } else {
+                answer.style.maxHeight = '0';
+                answer.style.padding = '0 20px';
+            }
+        }
+
+        trigger.addEventListener('click', toggle);
+        trigger.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggle();
+            }
+        });
+    });
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFAQAccordion);
+} else {
+    initFAQAccordion();
+}
