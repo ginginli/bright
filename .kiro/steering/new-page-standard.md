@@ -220,9 +220,25 @@ Extract all H1–H6 headings from the new page and add entries to `search-index.
 
 ---
 
-## Step 5 — Update nav if needed
+## Step 5 — Update nav (REQUIRED for all new pages)
 
-If the new page should appear in the navigation dropdown, update `components/nav.html` to add the link in the correct section.
+Every new page MUST be added to `components/nav.html` under the correct dropdown section. The nav is dynamically loaded on all pages, so one edit covers the whole site.
+
+**Which dropdown to add to:**
+- `/stands/[page]/` → Stands dropdown
+- `/items/[page]/` → Items dropdown
+- `/weapons/[page]/` → Weapons dropdown
+- `/cards/[page]/` → Cards dropdown
+- `/guides/[page]/` → Guides dropdown
+- `/fishing/[page]/` → Fishing dropdown
+- `/locations/[page]/` → Locations dropdown
+
+**Format:**
+```html
+<a href="/[section]/[page]/">[Page Title]</a>
+```
+
+Add it in a logical position within the dropdown (e.g. after related pages, before FAQ).
 
 ---
 
