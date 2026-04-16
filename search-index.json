@@ -10889,6 +10889,44 @@
       "type": "faq",
       "keywords": "arrow shard lost on death, arrow shard bank store, arrow shard stand result",
       "icon": "❓"
+    },
+    {
+      "title": "Stand Skins Gallery",
+      "url": "/stands/skins/",
+      "category": "Stands",
+      "keywords": [
+        "stand skins",
+        "shiny stands",
+        "shiny skin",
+        "the world skin",
+        "star platinum skin",
+        "d4c skin",
+        "twau skin",
+        "mandom skin",
+        "hierophant green skin",
+        "hermit purple skin",
+        "magicians red skin",
+        "5% shiny chance"
+      ],
+      "description": "All Stand shiny skin variants in Bridger Western. 5% chance on any obtainment roll.",
+      "icon": "✨"
+    },
+    {
+      "title": "Rokakaka Fruit",
+      "url": "/items/rokakaka-fruit/",
+      "category": "Items",
+      "keywords": [
+        "rokakaka",
+        "rokakaka fruit",
+        "stand trade",
+        "trade stands",
+        "equalize age",
+        "swap cards",
+        "tier 3 item",
+        "1% shiny trade"
+      ],
+      "description": "Split with another Tier 3 player to equalize ages, swap cards, and trade stands. 1% shiny chance on trade.",
+      "icon": "🍈"
     }
   ]
 }
