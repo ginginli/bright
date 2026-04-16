@@ -176,6 +176,14 @@ class WikiSearch {
                     const url = e.target.closest('.search-result-item').dataset.url;
                     const query = document.querySelector('.search-input').value;
                     if (url) {
+                        // GA4: track search click
+                        if (typeof gtag === 'function') {
+                            gtag('event', 'search_click', {
+                                search_term: query,
+                                destination_url: url,
+                                results_count: this.searchResults.length
+                            });
+                        }
                         let urlWithQuery = url;
                         if (query) {
                             // Split URL by hash to insert query parameter before anchor
@@ -234,6 +242,23 @@ class WikiSearch {
         this.searchResults = results.slice(0, 20);
         this.selectedIndex = 0;
         this.renderResults(this.searchResults);
+
+        // GA4: track search query (debounced — fires 1s after user stops typing)
+        clearTimeout(this._searchTrackTimer);
+        this._searchTrackTimer = setTimeout(() => {
+            if (typeof gtag === 'function') {
+                gtag('event', 'search', {
+                    search_term: query,
+                    results_count: this.searchResults.length
+                });
+                // separately track zero-result searches
+                if (this.searchResults.length === 0) {
+                    gtag('event', 'search_no_results', {
+                        search_term: query
+                    });
+                }
+            }
+        }, 1000);
     }
 
     renderResults(results) {
