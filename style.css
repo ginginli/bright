@@ -1712,7 +1712,7 @@ a.logo {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     white-space: nowrap;
     border-bottom: none;
 }
@@ -1721,7 +1721,7 @@ a.logo {
 .data-table tr.table-group-header td {
     background: rgba(43, 28, 17, 0.12);
     font-family: var(--font-heading);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--text-ink);
@@ -1729,17 +1729,17 @@ a.logo {
     padding: 8px 14px;
 }
 
-/* 第一列：加粗 body 字体，不用 heading */
+/* 第一列：加粗 body 字体，最小 */
 .data-table td:first-child {
     font-family: var(--font-body);
     font-weight: bold;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 /* 其余列：正常 body 字体 */
 .data-table td {
     font-family: var(--font-body);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .data-table tr:nth-child(even) td {
