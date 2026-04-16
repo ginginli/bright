@@ -10927,6 +10927,384 @@
       ],
       "description": "Split with another Tier 3 player to equalize ages, swap cards, and trade stands. 1% shiny chance on trade.",
       "icon": "🍈"
+    },
+    {
+      "title": "The World – Greatest High Skin",
+      "url": "/stands/skins/#the-world-skins",
+      "category": "Stands",
+      "keywords": [
+        "the world skin",
+        "the world greatest high skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "greatest high"
+      ],
+      "description": "The World Greatest High shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "The World – OVA Skin",
+      "url": "/stands/skins/#the-world-skins",
+      "category": "Stands",
+      "keywords": [
+        "the world skin",
+        "the world ova skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "ova"
+      ],
+      "description": "The World OVA shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum – HFTF Skin",
+      "url": "/stands/skins/#star-platinum-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum skin",
+        "star platinum hftf skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "hftf"
+      ],
+      "description": "Star Platinum HFTF shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum – Intro Skin",
+      "url": "/stands/skins/#star-platinum-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum skin",
+        "star platinum intro skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "intro"
+      ],
+      "description": "Star Platinum Intro shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum – Judge Skin",
+      "url": "/stands/skins/#star-platinum-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum skin",
+        "star platinum judge skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "judge"
+      ],
+      "description": "Star Platinum Judge shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum – OVA Skin",
+      "url": "/stands/skins/#star-platinum-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum skin",
+        "star platinum ova skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "ova"
+      ],
+      "description": "Star Platinum OVA shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum – Strength Skin",
+      "url": "/stands/skins/#star-platinum-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum skin",
+        "star platinum strength skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "strength"
+      ],
+      "description": "Star Platinum Strength shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum | The World – Final Beatdown Skin",
+      "url": "/stands/skins/#sptw-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum | the world skin",
+        "star platinum | the world final beatdown skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "final beatdown"
+      ],
+      "description": "Star Platinum | The World Final Beatdown shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum | The World – Stone Ocean Skin",
+      "url": "/stands/skins/#sptw-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum | the world skin",
+        "star platinum | the world stone ocean skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "stone ocean"
+      ],
+      "description": "Star Platinum | The World Stone Ocean shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Star Platinum | The World – Whitesnake – All Star Skin",
+      "url": "/stands/skins/#sptw-skins",
+      "category": "Stands",
+      "keywords": [
+        "star platinum | the world skin",
+        "star platinum | the world whitesnake – all star skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "whitesnake – all star"
+      ],
+      "description": "Star Platinum | The World Whitesnake – All Star shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "D4C – Cracked Skin",
+      "url": "/stands/skins/#d4c-skins",
+      "category": "Stands",
+      "keywords": [
+        "d4c skin",
+        "d4c cracked skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "cracked"
+      ],
+      "description": "D4C Cracked shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "D4C – M4C Skin",
+      "url": "/stands/skins/#d4c-skins",
+      "category": "Stands",
+      "keywords": [
+        "d4c skin",
+        "d4c m4c skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "m4c"
+      ],
+      "description": "D4C M4C shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "TWAU – Manga Skin",
+      "url": "/stands/skins/#twau-skins",
+      "category": "Stands",
+      "keywords": [
+        "twau skin",
+        "twau manga skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "manga"
+      ],
+      "description": "TWAU Manga shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "TWAU – Neo Skin",
+      "url": "/stands/skins/#twau-skins",
+      "category": "Stands",
+      "keywords": [
+        "twau skin",
+        "twau neo skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "neo"
+      ],
+      "description": "TWAU Neo shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "TWAU – STW Skin",
+      "url": "/stands/skins/#twau-skins",
+      "category": "Stands",
+      "keywords": [
+        "twau skin",
+        "twau stw skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "stw"
+      ],
+      "description": "TWAU STW shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hierophant Green – HFTF Skin",
+      "url": "/stands/skins/#hierophant-skins",
+      "category": "Stands",
+      "keywords": [
+        "hierophant green skin",
+        "hierophant green hftf skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "hftf"
+      ],
+      "description": "Hierophant Green HFTF shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hierophant Green – Purple Skin",
+      "url": "/stands/skins/#hierophant-skins",
+      "category": "Stands",
+      "keywords": [
+        "hierophant green skin",
+        "hierophant green purple skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "purple"
+      ],
+      "description": "Hierophant Green Purple shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hierophant Green – Red Skin",
+      "url": "/stands/skins/#hierophant-skins",
+      "category": "Stands",
+      "keywords": [
+        "hierophant green skin",
+        "hierophant green red skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "red"
+      ],
+      "description": "Hierophant Green Red shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hierophant Green – Yellow Skin",
+      "url": "/stands/skins/#hierophant-skins",
+      "category": "Stands",
+      "keywords": [
+        "hierophant green skin",
+        "hierophant green yellow skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "yellow"
+      ],
+      "description": "Hierophant Green Yellow shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hermit Purple – Hermit Blue Skin",
+      "url": "/stands/skins/#hermit-purple-skins",
+      "category": "Stands",
+      "keywords": [
+        "hermit purple skin",
+        "hermit purple hermit blue skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "hermit blue"
+      ],
+      "description": "Hermit Purple Hermit Blue shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hermit Purple – Hermit Gold Skin",
+      "url": "/stands/skins/#hermit-purple-skins",
+      "category": "Stands",
+      "keywords": [
+        "hermit purple skin",
+        "hermit purple hermit gold skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "hermit gold"
+      ],
+      "description": "Hermit Purple Hermit Gold shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Hermit Purple – Holy's Stand Skin",
+      "url": "/stands/skins/#hermit-purple-skins",
+      "category": "Stands",
+      "keywords": [
+        "hermit purple skin",
+        "hermit purple holy's stand skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "holy's stand"
+      ],
+      "description": "Hermit Purple Holy's Stand shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Mandom – King Mandom Skin",
+      "url": "/stands/skins/#mandom-skins",
+      "category": "Stands",
+      "keywords": [
+        "mandom skin",
+        "mandom king mandom skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "king mandom"
+      ],
+      "description": "Mandom King Mandom shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Mandom – Mintdom Skin",
+      "url": "/stands/skins/#mandom-skins",
+      "category": "Stands",
+      "keywords": [
+        "mandom skin",
+        "mandom mintdom skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "mintdom"
+      ],
+      "description": "Mandom Mintdom shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Mandom – Purple Mandom Skin",
+      "url": "/stands/skins/#mandom-skins",
+      "category": "Stands",
+      "keywords": [
+        "mandom skin",
+        "mandom purple mandom skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "purple mandom"
+      ],
+      "description": "Mandom Purple Mandom shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Mandom – Reverse Mandom Skin",
+      "url": "/stands/skins/#mandom-skins",
+      "category": "Stands",
+      "keywords": [
+        "mandom skin",
+        "mandom reverse mandom skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "reverse mandom"
+      ],
+      "description": "Mandom Reverse Mandom shiny skin variant in Bridger Western.",
+      "icon": "✨"
+    },
+    {
+      "title": "Magicians Red – Purple Skin",
+      "url": "/stands/skins/#magicians-red-skins",
+      "category": "Stands",
+      "keywords": [
+        "magicians red skin",
+        "magicians red purple skin",
+        "bridger western stand skin",
+        "shiny stand",
+        "purple"
+      ],
+      "description": "Magicians Red Purple shiny skin variant in Bridger Western.",
+      "icon": "✨"
     }
   ]
 }
