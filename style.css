@@ -821,6 +821,18 @@ a.logo {
 .nav-dropdown a:last-child { border-bottom: none; }
 .nav-dropdown a:hover { background: rgba(43,28,17,0.06); }
 
+.nav-dropdown-group {
+    padding: 8px 16px 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-fade);
+    border-top: 1px solid rgba(43,28,17,0.1);
+    margin-top: 4px;
+}
+.nav-dropdown-group:first-child { border-top: none; margin-top: 0; }
+
 .nav-item:hover .nav-dropdown { display: block; }
 
 .nav-toggle {
