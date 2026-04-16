@@ -1704,29 +1704,42 @@ a.logo {
     vertical-align: middle;
 }
 
-/* 列标题：heading 字体，小号大写 */
+/* 列标题：最明显，深色背景 + 白色文字 */
 .data-table th {
-    background: rgba(43, 28, 17, 0.06);
+    background: rgba(43, 28, 17, 0.75);
+    color: #e8dfd5;
     font-family: var(--font-heading);
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 0.72rem;
     white-space: nowrap;
-    border-bottom: 2px solid rgba(43, 28, 17, 0.18);
-    color: var(--accent-fade);
+    border-bottom: none;
 }
 
-/* 第一列：行标识，heading 字体加粗 */
-.data-table td:first-child {
+/* 分类标题行（colspan 行）：次之，中等深度背景 */
+.data-table tr.table-group-header td {
+    background: rgba(43, 28, 17, 0.12);
     font-family: var(--font-heading);
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-ink);
+    border-bottom: 1px solid rgba(43, 28, 17, 0.15);
+    padding: 8px 14px;
 }
 
-/* 其余列：body 字体 */
+/* 第一列：加粗 body 字体，不用 heading */
+.data-table td:first-child {
+    font-family: var(--font-body);
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* 其余列：正常 body 字体 */
 .data-table td {
     font-family: var(--font-body);
+    font-size: 0.95rem;
 }
 
 .data-table tr:nth-child(even) td {
