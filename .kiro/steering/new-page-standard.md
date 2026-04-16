@@ -373,7 +373,7 @@ After the page is created and internal links are in place, perform a full SEO au
 - [ ] `llms.txt` updated
 - [ ] `llms-full.txt` updated
 - [ ] `search-index.json` updated with H1–H6 headings
-- [ ] `components/nav.html` updated if needed
+- [ ] `components/nav.html` updated (REQUIRED — add to correct dropdown)
 - [ ] Inbound links added from at least 3 related existing pages
 - [ ] Clickable cards use `<a class="sketch-card article-card">` pattern
 - [ ] Anchor text is descriptive (no "click here" or "read more" as sole text)
