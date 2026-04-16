@@ -1006,3 +1006,11 @@ Content: Complete game controls reference with all keybinds, movement mechanics,
 - Verified gameplay data and community-tested methods
 - Updated for 2026 Alpha version
 - Based on guide videos and expert community analysis
+
+## Stand Skins Gallery
+URL: https://bridgerwestern.cc/stands/skins/
+Gallery of all Stand shiny skin variants in Bridger Western. Any obtainment method that rolls for your Stand has a 5% chance to grant a Shiny skin. Covers The World (Greatest High, OVA), Star Platinum (HFTF, Intro, Judge, OVA, Strength), Star Platinum The World (Final Beatdown, Stone Ocean), D4C (Cracked, M4C), TWAU (Manga, Neo, STW), Hierophant Green (HFTF, Purple, Red, Yellow), Hermit Purple (Hermit Blue, Hermit Gold, Holy's Stand), Mandom (King Mandom, Mintdom, Purple Mandom, Reverse Mandom), and Magicians Red (Purple).
+
+## Rokakaka Fruit
+URL: https://bridgerwestern.cc/items/rokakaka-fruit/
+The Rokakaka Fruit is a special item that allows two Tier 3 players who both possess a Stand to split the fruit together. Splitting equalizes both players' ages, swaps 1-2 cards, and optionally trades Stands with a 1% chance to turn a base Stand into a random shiny variant. The fruit cannot be dropped but is kept upon death and can be stored in the bank. A known bug may consume multiple Rokakakas at once, so store them individually.

@@ -22,6 +22,7 @@
 - [Arrow Shard Guide](https://bridgerwestern.cc/stands/arrow-shard/): Complete Arrow Shard guide — 0.1% fishing drop, guarantees any Stand, not lost on death, cannot be stored or traded
 - [Discord Coordination](https://bridgerwestern.cc/stands/discord-coordination.html): Clan strategies, server flooding methods, team coordination
 - [Stands FAQ](https://bridgerwestern.cc/stands/faq.html): Common questions, troubleshooting, beginner mistakes, Tusk Acts abilities, Hey Ya buffs, PvP counters
+- [Stand Skins Gallery](https://bridgerwestern.cc/stands/skins/): All Stand shiny skin variants — The World, Star Platinum, D4C, TWAU, Mandom, Hierophant Green, Hermit Purple, Magicians Red. 5% chance on any obtainment roll
 - [Weapons Database](https://bridgerwestern.cc/weapons/): Complete weapon guide with primary and secondary weapons, tier 3 dual wield system
 - [Primary Weapons](https://bridgerwestern.cc/weapons/primary-weapons.html): 9 primary weapons including Taurus .357, Winchester Repeater, Malcom .70, Bow with arrow switching
 - [Secondary Weapons](https://bridgerwestern.cc/weapons/secondary-weapons.html): 6 secondary weapons including Tommy Gun, DB Shotgun, Sabre, Colt Ocelot (requires Tier 3)
