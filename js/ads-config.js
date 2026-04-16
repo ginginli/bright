@@ -5,18 +5,16 @@
  */
 
 const AdConfig = {
-    // Main advertising code
+    // Main advertising code (Native Banner)
     mainAd: {
         script: 'https://pl29131932.profitablecpmratenetwork.com/85cc155fa0b0e59e62294968d56227a5/invoke.js',
         containerId: 'container-85cc155fa0b0e59e62294968d56227a5'
     },
-    
-    // Alternative ads (future use)
-    altAds: {
-        // Example: {
-        //     script: 'https://example.com/ad.js',
-        //     containerId: 'ad-container-alt'
-        // }
+
+    // Social Bar (auto-positioned by Adsterra, no container needed)
+    socialBar: {
+        script: 'https://pl29165194.profitablecpmratenetwork.com/15/83/db/1583dbcab238dce3dbe6eb01c06e3f48.js',
+        enabled: true
     },
     
     // Ad placements - positions where ads should appear

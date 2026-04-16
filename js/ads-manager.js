@@ -61,8 +61,15 @@ class AdManager {
         script.async = true;
         script.dataset.cfasync = 'false';
         script.src = this.config.mainAd.script;
-        
         document.head.appendChild(script);
+
+        // Load Social Bar if enabled (self-positioning, no container needed)
+        if (this.config.socialBar?.enabled && this.config.socialBar?.script) {
+            const sbScript = document.createElement('script');
+            sbScript.async = true;
+            sbScript.src = this.config.socialBar.script;
+            document.head.appendChild(sbScript);
+        }
     }
     
     /**
