@@ -70,28 +70,13 @@
         },
         "inLanguage": "en-US",
         "dateModified": "2026-04-02",
-        "breadcrumb": {
-            "@type": "BreadcrumbList",
-            "itemListElement": [
-                {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Bridger Western Stands",
-                    "item": "https://bridgerwestern.cc/stands/"
-                },
-                {
-                    "@type": "ListItem", 
-                    "position": 2,
-                    "name": "Bridger Western Guns",
-                    "item": "https://bridgerwestern.cc/weapons/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3, 
-                    "name": "Bridger Western Guides",
-                    "item": "https://bridgerwestern.cc/guides/"
-                }
-            ]
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://bridgerwestern.cc/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
         }
     }
     </script>
@@ -141,6 +126,7 @@
     </section>
 
     <!-- Quick Nav Cards (分类索引) -->
+    <main>
     <section id="explore">
         <div class="container">
             <h2 class="section-title">Explore the Wiki</h2>
@@ -226,19 +212,19 @@
                     <span class="read-more">Read Guide →</span>
                 </a>
 
-                <div class="sketch-card article-card" style="opacity: 0.6;">
-                    <span class="article-tag" style="background: #999;">Coming Soon</span>
+                <a href="weapons/" class="sketch-card article-card">
+                    <span class="article-tag">Weapons</span>
                     <h3>Bridger Western Gun Tier List</h3>
-                    <p>Bridger Western Russian Roulette, Bridger Western Tommy Gun, Bridger Western Colt Ocelot — ranked by PvP and PvE performance.</p>
-                    <span style="color: #999;">Under Development</span>
-                </div>
+                    <p>Bridger Western Winchester Repeater, Bridger Western Tommy Gun, Bridger Western Colt Ocelot — ranked by PvP and PvE performance.</p>
+                    <span class="read-more">View Weapons →</span>
+                </a>
 
-                <div class="sketch-card article-card" style="opacity: 0.6;">
-                    <span class="article-tag" style="background: #999;">Coming Soon</span>
+                <a href="fishing/" class="sketch-card article-card">
+                    <span class="article-tag">Fishing</span>
                     <h3>Bridger Western Moola Farming Guide</h3>
-                    <p>Best Bridger Western routes to earn Moola fast. Bridger Western co-op methods, Bridger Western Dog Bane fishing, and the Bridger Western Wipe & Drop strategy.</p>
-                    <span style="color: #999;">Under Development</span>
-                </div>
+                    <p>Best Bridger Western routes to earn Moola fast. Bridger Western Dog Bane fishing, Arrow Shard farming (0.05%), and Golden Bass (15,000 Moola).</p>
+                    <span class="read-more">Read Guide →</span>
+                </a>
 
                 <a href="stands/" class="sketch-card article-card">
                     <span class="article-tag">Stands</span>
@@ -247,12 +233,12 @@
                     <span class="read-more">Read Guide →</span>
                 </a>
 
-                <div class="sketch-card article-card" style="opacity: 0.6;">
-                    <span class="article-tag" style="background: #999;">Coming Soon</span>
+                <a href="locations/horses/" class="sketch-card article-card">
+                    <span class="article-tag">Locations</span>
                     <h3>Bridger Western Horse Guide</h3>
-                    <p>Bridger Western horse stamina, Bridger Western vitality stats, best Bridger Western mounts, and how to use aquatic terrain to escape chasers.</p>
-                    <span style="color: #999;">Under Development</span>
-                </div>
+                    <p>Bridger Western horse stamina, vitality stats, best mounts by rarity, and how to use aquatic terrain to escape chasers.</p>
+                    <span class="read-more">Read Guide →</span>
+                </a>
 
             </div>
         </div>
@@ -288,6 +274,8 @@
     </section>
 
     <!-- SEO Text Section for Long Tail Keywords -->
+    </main>
+
     <section id="about-game" class="section pt-0 pb-xl" style="background: rgba(43,28,17,0.04);">
         <div class="container seo-block">
             <h2>Bridger Western Wiki & Trello - Complete 2026 Alpha Database & Guides</h2>

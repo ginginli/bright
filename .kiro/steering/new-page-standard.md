@@ -260,16 +260,99 @@ Search for existing pages that mention the same topic and add links pointing to 
 
 ---
 
+## Step 7 — SEO Deep Analysis (per Google Search Central best practices)
+
+After the page is created and internal links are in place, perform a full SEO audit covering all dimensions below. Reference: [Google Search Central Docs](https://developers.google.com/search/docs)
+
+### 7.1 Technical SEO
+- `<link rel="canonical">` present and pointing to the correct URL
+- `<meta name="robots">` set to `index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`
+- Page is listed in `sitemap.xml` with correct `<lastmod>` and `<priority>`
+- No broken links (404) on the page
+- HTTPS enforced (all internal links use `/` relative paths or `https://bridgerwestern.cc/`)
+- No `noindex` on pages that should be indexed
+
+### 7.2 HTML Structure & H-tag Hierarchy
+- **One and only one `<h1>`** per page — must be the main topic title
+- H-tags follow strict hierarchy: H1 → H2 → H3 (never skip levels, e.g. H1 → H3)
+- H2 tags used for major sections; H3 for sub-items within those sections
+- No heading used purely for visual styling (use CSS classes instead)
+- `<main>` landmark wraps the primary content
+- `<section>`, `<article>`, `<nav>`, `<footer>` used semantically
+
+### 7.3 Meta Tags Quality
+- `<title>` is 50–60 chars, includes primary keyword near the front, ends with `– Bridger Western [Year]`
+- `<meta description>` is 120–160 chars, includes a clear value proposition and primary keyword
+- No emoji in `<title>` or `<meta description>` (emojis belong in OG/Twitter tags only)
+- OG `og:description` uses emoji-separated keyword clusters for social sharing
+
+### 7.4 Image Optimisation
+- Every `<img>` has a descriptive `alt` attribute (not empty, not "image", not filename)
+- `alt` text describes the image content and includes a relevant keyword where natural
+- Images use `loading="lazy"` except above-the-fold hero images
+- `width` and `height` attributes set on all images to prevent CLS
+
+### 7.5 Structured Data (Schema.org)
+- Page-type schema chosen correctly:
+  - FAQ pages → `FAQPage` with all Q&A pairs in `mainEntity`
+  - Guide/article pages → `TechArticle` or `Article`
+  - Index/collection pages → `CollectionPage` with `ItemList`
+  - Homepage → `WebSite` with `SearchAction`
+- `BreadcrumbList` always present and matches the visible breadcrumb
+- Validate with [Google Rich Results Test](https://search.google.com/test/rich-results) after publishing
+
+### 7.6 Content Quality & E-E-A-T
+- Content is based on verified game data only (no invented stats)
+- Page demonstrates **Experience**: first-person gameplay observations where relevant
+- Page demonstrates **Expertise**: specific mechanics, numbers, and strategies
+- Page demonstrates **Authoritativeness**: links to related authoritative pages on the wiki
+- Page demonstrates **Trustworthiness**: disclaimer "unofficial community resource" in footer
+- Content fully answers the user's search intent (informational, navigational, or transactional)
+- Minimum 300 words of substantive content per page (excluding nav/footer)
+
+### 7.7 Keyword Optimisation
+- Primary keyword appears in: `<title>`, `<meta description>`, `<h1>`, first paragraph of body
+- Secondary keywords distributed naturally across H2/H3 headings and body text
+- No keyword stuffing — keyword density should feel natural when read aloud
+- Long-tail keyword section at the bottom covers all search intent variations
+
+### 7.8 Internal Linking Quality
+- Anchor text is descriptive (e.g. "Arrow Shard fishing guide" not "click here")
+- No orphan pages — every page reachable within 3 clicks from homepage
+- Parent section index page links to the new page (inbound)
+- New page links back to parent section and at least 2 sibling pages (outbound)
+- Footer includes the new page in the relevant column
+
+### 7.9 Page Experience & Core Web Vitals
+- No render-blocking scripts in `<head>` (all JS uses `defer` or `async`)
+- Google Fonts loaded with `preconnect` hints
+- No inline `style` attributes that cause layout shifts on load
+- Touch targets (buttons, links) are at least 48×48px on mobile
+- No horizontal scroll on mobile (test at 375px viewport width)
+
+### 7.10 Accessibility (a11y)
+- Interactive elements (`<button>`, `<a>`) have visible focus styles
+- Navigation toggle has `aria-label="Toggle menu"`
+- Search button has `aria-label="Search wiki"`
+- Social links have `aria-label` describing the platform
+- Colour contrast ratio ≥ 4.5:1 for body text (dark ink on parchment background passes)
+- Page is navigable by keyboard (Tab order logical)
+
+---
+
 ## Checklist before committing
 
-- [ ] `<title>` ≤ 60 chars
-- [ ] `<meta description>` 120–160 chars
-- [ ] All OG tags present
-- [ ] BreadcrumbList schema present
+- [ ] `<title>` 50–60 chars, primary keyword near front, no emoji
+- [ ] `<meta description>` 120–160 chars, includes keyword and value proposition, no emoji
+- [ ] All OG tags present (emoji allowed in OG title/description)
+- [ ] BreadcrumbList schema present and matches visible breadcrumb
+- [ ] Page-type schema correct (FAQPage / TechArticle / CollectionPage)
+- [ ] **One H1 only**, H-tag hierarchy is H1→H2→H3 (no skipped levels)
+- [ ] All `<img>` have descriptive `alt` text + `loading="lazy"` + `width`/`height`
 - [ ] Hero section with `class="hero"` present
-- [ ] SEO long-tail keywords section present
+- [ ] SEO long-tail keywords section present (3 paragraphs, 300+ words)
 - [ ] No invented content (all facts sourced)
-- [ ] Correct JS path depth
+- [ ] Correct JS path depth; all scripts use `defer` or `async`
 - [ ] `sitemap.xml` updated
 - [ ] `llms.txt` updated
 - [ ] `llms-full.txt` updated
@@ -277,3 +360,6 @@ Search for existing pages that mention the same topic and add links pointing to 
 - [ ] `components/nav.html` updated if needed
 - [ ] Inbound links added from at least 3 related existing pages
 - [ ] Clickable cards use `<a class="sketch-card article-card">` pattern
+- [ ] Anchor text is descriptive (no "click here" or "read more" as sole text)
+- [ ] No render-blocking scripts in `<head>`
+- [ ] `rel="canonical"` present and correct
