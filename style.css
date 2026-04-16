@@ -491,21 +491,16 @@ footer p {
     
     /* 表格优化 */
     .data-table-wrapper {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
         margin: 16px -14px;
         padding: 0 14px;
     }
-    
     .data-table {
         min-width: 500px;
-        font-size: 0.8rem;
+        font-size: 0.82rem;
     }
-    
     .data-table th,
     .data-table td {
-        padding: 8px 6px;
-        font-size: 0.8rem;
+        padding: 8px 8px;
     }
     
     /* FAQ 优化 */
@@ -1687,18 +1682,25 @@ a.logo {
 }
 
 /* 数据表格样式 */
+.data-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+}
+
 .data-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
     background: rgba(255, 255, 255, 0.3);
+    font-size: 0.95rem;
 }
 
 .data-table th,
 .data-table td {
     border: 1px solid var(--accent-fade);
-    padding: 12px;
+    padding: 12px 14px;
     text-align: left;
+    vertical-align: middle;
 }
 
 .data-table th {
@@ -1707,10 +1709,30 @@ a.logo {
     font-family: var(--font-heading);
     text-transform: uppercase;
     letter-spacing: 1px;
+    font-size: 0.8rem;
+    white-space: nowrap;
 }
 
-.data-table tr:nth-child(even) {
+.data-table tr:nth-child(even) td {
     background: rgba(255, 255, 255, 0.2);
+}
+
+.data-table tbody tr:hover td {
+    background: rgba(43, 28, 17, 0.06);
+    cursor: default;
+}
+
+/* 整行可点击（用于 Stand 索引等） */
+.data-table tbody tr[data-href] td {
+    cursor: pointer;
+}
+
+.data-table tbody tr[data-href]:hover td {
+    background: rgba(43, 28, 17, 0.08);
+}
+
+.data-table tbody tr[data-href]:hover td:first-child {
+    text-decoration: underline;
 }
 
 /* 快速参考网格 */
@@ -1823,24 +1845,15 @@ a.logo {
         padding: 16px;
     }
     
-    .data-table {
-        font-size: 0.85rem;
-    }
-    
-    .data-table th,
-    .data-table td {
-        padding: 10px 8px;
-    }
-    
-    /* 表格横向滚动容器 */
+    /* 表格横向滚动容器（兼容旧类名） */
     .table-scroll-wrapper {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         margin: 20px -16px;
         padding: 0 16px;
     }
-    
-    .table-scroll-wrapper .data-table {
+    .table-scroll-wrapper .data-table,
+    .data-table-wrapper .data-table {
         min-width: 500px;
     }
 }
