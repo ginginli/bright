@@ -13,13 +13,13 @@
 ## Available Content
 
 - [Stands Database](https://bridgerwestern.cc/stands/): Complete Stand roster with tier rankings (S/A/B/Pending)
-- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.05% drop rate), Corpse Part KOTH events, water escape tactics, server selection
+- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.1% drop rate), Corpse Part KOTH events, water escape tactics, server selection
 - [Stand Abilities](https://bridgerwestern.cc/stands/stand-abilities.html): Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities
 - [Practical Video Guide](https://bridgerwestern.cc/stands/practical-acquisition/): Video-based demonstrations from YouTube gameplay guides, step-by-step walkthroughs, real-time fishing, and Corpse Part chase tactics
 - [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): S-tier (The World, D4C, Killer Queen), A-tier (TWAU, King Crimson, Star Platinum, SPTW), B-tier rankings
 - [Corpse Part Guide](https://bridgerwestern.cc/stands/corpse-part-guide.html): KOTH mechanics, probability system (15-20% success rate), body part types, survival tactics
 - [Corpse Part Spawn Locations](https://bridgerwestern.cc/stands/corpse-part-locations/): All 8 confirmed Corpse Part spawn locations with map — Swamp, Anthill Island, Red Corner watch tower, Pit of Doom, Mineshaft, cave, grassy plains, Death Valley
-- [Arrow Shard Guide](https://bridgerwestern.cc/stands/arrow-shard/): Complete Arrow Shard guide — 0.05% fishing drop, guarantees any Stand, not lost on death, cannot be stored or traded
+- [Arrow Shard Guide](https://bridgerwestern.cc/stands/arrow-shard/): Complete Arrow Shard guide — 0.1% fishing drop, guarantees any Stand, not lost on death, cannot be stored or traded
 - [Discord Coordination](https://bridgerwestern.cc/stands/discord-coordination.html): Clan strategies, server flooding methods, team coordination
 - [Stands FAQ](https://bridgerwestern.cc/stands/faq.html): Common questions, troubleshooting, beginner mistakes, Tusk Acts abilities, Hey Ya buffs, PvP counters
 - [Weapons Database](https://bridgerwestern.cc/weapons/): Complete weapon guide with primary and secondary weapons, tier 3 dual wield system
@@ -40,7 +40,7 @@
 - [Guides Collection](https://bridgerwestern.cc/guides/): Complete collection of game guides covering beginner tutorials, controls, and advanced strategies
 - [Complete Beginner Guide](https://bridgerwestern.cc/guides/beginner-guide/): Comprehensive beginner tutorial covering character creation, starting money, horse selection, and first-hour progression
 - [Controls & Keybinds Guide](https://bridgerwestern.cc/guides/controls/): Complete game controls reference with all keybinds and movement mechanics
-- [Fishing Guide](https://bridgerwestern.cc/fishing/): Complete fishing guide with drop rates, Arrow Shard farming (0.05%), Golden Bass (15k Moola), Moola farming
+- [Fishing Guide](https://bridgerwestern.cc/fishing/): Complete fishing guide with drop rates, Arrow Shard farming (0.1%), Golden Bass (15k Moola), Moola farming
 - [Fishing FAQ](https://bridgerwestern.cc/fishing/faq/): Common fishing questions about Arrow Shards, Golden Bass, drop rates, fishing mechanics
 - [Locations Guide](https://bridgerwestern.cc/locations/): Complete NPCs and shops guide - Gun Store, Mud Witch, Horse Stables, Banker, Blacksmith
 - [Bridger Western Map](https://bridgerwestern.cc/locations/map/): Interactive world map showing all locations, NPCs, shops, and points of interest
@@ -49,7 +49,7 @@
 
 ## Key Game Mechanics
 
-- **Stand Acquisition**: Arrow Shard fishing (0.05%) or Corpse Part KOTH events (15-20% with holding)
+- **Stand Acquisition**: Arrow Shard fishing (0.1%) or Corpse Part KOTH events (15-20% with holding)
 - **Card Acquisition**: Mud Witch in Swamp, 150 Moola per roll, choose 1 from 3 random cards, 3-card maximum per character
 - **Items & Utilities**: Ammo Box (& Silver Ammo for vampires), Tonic (healing), Dogbane Herb (4% chest drop, trade for 2500 moola/age regression/stand removal), Dynamite, Molotov, Silver Dagger, Wooden Stake (anti-vampire), Lasso, Poncho (damage reduction), Cowboy Hat (headshot protection), Lantern, Coin (ricochet), Smoke Bomb, Arrow Pack, Knives, Steel Wireset
 - **Best Cards**: Archer's Child (bow builds), Desperado (gun builds), Free Runner (universal mobility), EXECUTIONER (headshot kills), Quick Draw (weapon swap)

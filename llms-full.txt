@@ -24,7 +24,7 @@ Content: Complete Stand database with tier classifications
 URL: https://bridgerwestern.cc/stands/how-to-get-stand.html
 
 **Method 1 - Arrow Shard Fishing:**
-- Drop rate: 0.05%
+- Drop rate: 0.1%
 - Guarantees a Stand when used
 - Requires fishing rod and bait
 
@@ -234,7 +234,7 @@ URL: https://bridgerwestern.cc/stands/practical-acquisition/
 - Horse water tech to reach swamp area
 
 **Video vs Official Data Notes:**
-- Arrow Shard drop rate: Videos mention 0.5% (bridger:western trello says 0.05%)
+- Arrow Shard drop rate: Videos mention 0.5% (bridger:western trello says 0.1%)
 - Corpse Part probabilities: Based on video analysis of gameplay
 - Success rates: Reflect actual player experiences from videos
 
@@ -281,7 +281,7 @@ Includes interactive map with numbered pins. Requires 3+ players to spawn. Spawn
 URL: https://bridgerwestern.cc/stands/arrow-shard/
 
 Complete guide to the Arrow Shard in Bridger Western.
-- Drop rate: 0.05% (Legendary) from fishing — approximately 2000 attempts average
+- Drop rate: 0.1% (Legendary) from fishing — approximately 2000 attempts average
 - Guarantees a random Stand from the obtainable pool (100% success)
 - NOT lost upon death or leaving the server
 - Cannot be banked, stored, dropped, or traded
@@ -315,7 +315,7 @@ URL: https://bridgerwestern.cc/stands/discord-coordination.html
 URL: https://bridgerwestern.cc/stands/faq.html
 
 **Key Q&A:**
-- Are there Stand Arrows? No traditional arrows. Arrow Shards exist via fishing (0.05%)
+- Are there Stand Arrows? No traditional arrows. Arrow Shards exist via fishing (0.1%)
 - Fastest method? Corpse Part KOTH with Discord coordination
 - Can I change my Stand? No, Stands are permanent
 - Tusk Acts abilities:
@@ -478,7 +478,7 @@ URL: https://bridgerwestern.cc/weapons/weapon-mechanics.html
 ## Complete Game Mechanics Summary
 
 **Stand System:**
-- Arrow Shard fishing: 0.05% drop rate
+- Arrow Shard fishing: 0.1% drop rate
 - Corpse Part KOTH: 15-20% success rate with holding
 - Clan coordination: 80%+ success vs 5% solo
 - Stand penalty: Reduces gun damage
@@ -729,9 +729,9 @@ Content: Complete fishing guide with drop rates, mechanics, and Moola farming st
 - Common (81.7%): Cod ($35), Snapper ($25), Bass ($45)
 - Rare (16.25%): Chests (random loot)
 - Epic (2%): Mares Leg (secondary weapon, 7 bullets, faster Winchester)
-- Legendary (0.05%): Golden Bass (15,000 Moola), Arrow Shards (guarantees Stand)
+- Legendary (0.1%): Golden Bass (15,000 Moola), Arrow Shards (guarantees Stand)
 
-**Legendary Drops (0.05%):**
+**Legendary Drops (0.1%):**
 
 **Golden Bass:**
 - Value: 15,000 Moola
@@ -740,7 +740,7 @@ Content: Complete fishing guide with drop rates, mechanics, and Moola farming st
 
 **Arrow Shard:**
 - Function: Guarantees a random Stand when used
-- Drop rate: 0.05% (approximately 1 in 2000 fishing attempts)
+- Drop rate: 0.1% (approximately 1 in 2000 fishing attempts)
 - Restrictions:
   - Cannot be banked or stored
   - Cannot be dropped or traded
@@ -772,7 +772,7 @@ Content: Complete fishing guide with drop rates, mechanics, and Moola farming st
 URL: https://bridgerwestern.cc/fishing/faq/
 
 **Key Q&A:**
-- Arrow Shard drop rate: 0.05% (Legendary), approximately 1 in 2000 attempts
+- Arrow Shard drop rate: 0.1% (Legendary), approximately 1 in 2000 attempts
 - Golden Bass value: 15,000 Moola
 - Fishing gear location: Tackle Bait shop (follow train tracks)
 - Fishing Rod cost: 150 Moola
