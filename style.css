@@ -3231,7 +3231,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 .sidebar-toc a {
     font-size: 0.85rem;
     color: rgba(43,28,17,0.7);
-    padding: 5px 8px;
+    padding: 7px 8px;
 }
 
 .sidebar-toc a:hover {
