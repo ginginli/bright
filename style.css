@@ -98,7 +98,7 @@ header {
     top: 0;
     z-index: 1000;
     background: var(--bg-parchment);
-    padding: 18px 0;
+    padding: 25px 0;
     border-bottom: var(--border-sketch);
     box-shadow: 0 2px 8px rgba(43, 28, 17, 0.1);
 }
