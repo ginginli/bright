@@ -270,38 +270,5 @@
     <script src="/js/ads-config.js" defer></script>
     <script src="/js/ads-manager.js" defer></script>
     <script src="/js/components.js" defer></script>
-    <script>
-    (function() {
-        var main = document.querySelector('.page-sidebar-main');
-        var toc = document.getElementById('page-toc');
-        var tocMobile = document.getElementById('page-toc-mobile');
-        if (!main) return;
-        var h2s = Array.from(main.querySelectorAll('h2.section-title'));
-        if (h2s.length === 0) {
-            var all = Array.from(main.querySelectorAll('h2'));
-            h2s = all.slice(1, all.length - 1);
-        }
-        [toc, tocMobile].forEach(function(container) {
-            if (!container) return;
-            if (h2s.length === 0) { return; }
-            h2s.forEach(function(h, i) {
-                if (!h.id) h.id = 'sec-' + i;
-                var a = document.createElement('a');
-                a.href = '#' + h.id;
-                var text = h.textContent.trim().replace(/^[^a-zA-Z0-9]+/, '').trim();
-                a.textContent = text || h.textContent.trim();
-                container.appendChild(a);
-            });
-        });
-        if (!toc) return;
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(e) {
-                var link = toc.querySelector('a[href="#' + e.target.id + '"]');
-                if (link) link.classList.toggle('toc-active', e.isIntersecting);
-            });
-        }, { rootMargin: '-5% 0px -80% 0px' });
-        h2s.forEach(function(h) { observer.observe(h); });
-    })();
-    </script>
 </body>
 </html>

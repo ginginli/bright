@@ -145,6 +145,61 @@ class ComponentLoader {
 document.addEventListener('DOMContentLoaded', () => {
     const loader = new ComponentLoader();
     loader.init();
+
+    // ── Global TOC (On This Page) ──────────────────────────────
+    // Runs on all pages. If a #page-toc container exists, populate it.
+    // Otherwise, if the page has enough H2s, create a floating TOC FAB.
+    (function initTOC() {
+        // Find content area: prefer .page-sidebar-main, fallback to <main>
+        var contentArea = document.querySelector('.page-sidebar-main') || document.querySelector('main');
+        if (!contentArea) return;
+
+        // Collect H2s with section-title class first, then all H2s (skip first/last)
+        var h2s = Array.from(contentArea.querySelectorAll('h2.section-title'));
+        if (h2s.length === 0) {
+            var all = Array.from(contentArea.querySelectorAll('h2'));
+            h2s = all.length > 2 ? all.slice(1, all.length - 1) : all;
+        }
+        if (h2s.length < 2) return; // not enough sections to warrant a TOC
+
+        // Assign IDs
+        h2s.forEach(function(h, i) {
+            if (!h.id) h.id = 'sec-' + i;
+        });
+
+        function buildLinks(container) {
+            if (!container) return;
+            h2s.forEach(function(h) {
+                var a = document.createElement('a');
+                a.href = '#' + h.id;
+                var text = h.textContent.trim().replace(/^[^a-zA-Z0-9]+/, '').trim();
+                a.textContent = text || h.textContent.trim();
+                container.appendChild(a);
+            });
+        }
+
+        // Populate existing #page-toc and #page-toc-mobile if present
+        buildLinks(document.getElementById('page-toc'));
+        buildLinks(document.getElementById('page-toc-mobile'));
+
+        // Scroll highlight via IntersectionObserver
+        var allTocContainers = [
+            document.getElementById('page-toc'),
+            document.getElementById('page-toc-mobile')
+        ].filter(Boolean);
+
+        if (allTocContainers.length > 0 && 'IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    allTocContainers.forEach(function(container) {
+                        var link = container.querySelector('a[href="#' + e.target.id + '"]');
+                        if (link) link.classList.toggle('toc-active', e.isIntersecting);
+                    });
+                });
+            }, { rootMargin: '-5% 0px -80% 0px' });
+            h2s.forEach(function(h) { observer.observe(h); });
+        }
+    })();
 });
 
 // Export for manual usage
