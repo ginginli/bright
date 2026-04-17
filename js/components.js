@@ -150,8 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Runs on all pages. If a #page-toc container exists, populate it.
     // Otherwise, if the page has enough H2s, create a floating TOC FAB.
     (function initTOC() {
-        // Find content area: prefer .page-sidebar-main, fallback to <main>
-        var contentArea = document.querySelector('.page-sidebar-main') || document.querySelector('main');
+        // Find content area: prefer .page-sidebar-main, fallback to .page-toc-main, then <main>
+        var contentArea = document.querySelector('.page-sidebar-main') 
+            || document.querySelector('.page-toc-main')
+            || document.querySelector('main');
         if (!contentArea) return;
 
         // Collect H2s with section-title class first, then all H2s (skip first/last)
