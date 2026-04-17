@@ -3146,7 +3146,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     display: flex;
     gap: 0;
     align-items: flex-start;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -3163,6 +3163,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     scrollbar-color: rgba(43,28,17,0.15) transparent;
     padding-right: 8px;
     padding-top: 12px;
+    margin-left: 8px;
 }
 
 /* 左侧第二列：On This Page (140px) */
