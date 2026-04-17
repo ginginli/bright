@@ -336,9 +336,9 @@ footer p {
         align-items: center;
     }
     
-    /* Breadcrumb 优化 - 减少高度 */
+    /* Breadcrumb 移动端不吸顶 */
     .breadcrumb {
-        top: 54px;
+        position: static;
         padding: 6px 0;
         font-size: 0.8rem;
     }
@@ -1396,9 +1396,9 @@ a.logo {
         font-size: 2rem;
     }
     
-    /* Breadcrumb 移动端优化 */
+    /* Breadcrumb 移动端不吸顶 */
     .breadcrumb {
-        top: 54px; /* 移动端 header 高度 */
+        position: static;
         padding: 6px 0;
         font-size: 0.8rem;
     }
@@ -2600,7 +2600,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     }
     
     .breadcrumb {
-        top: 48px;
+        position: static;
         padding: 6px 0;
     }
     
