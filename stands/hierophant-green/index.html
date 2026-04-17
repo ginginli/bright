@@ -75,7 +75,40 @@
             </div>
         </div>
     </section>
-    <main class="container">
+        <!-- Mobile stand selector -->
+    <div class="stand-sidebar-mobile">
+        <button class="stand-sidebar-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=this.nextElementSibling.classList.contains('open')?'▲':'▾'">
+            All Stands <span class="toggle-arrow">▾</span>
+        </button>
+        <div class="stand-sidebar-dropdown">
+            <a href="/stands/the-world/">The World</a>
+            <a href="/stands/d4c/">D4C</a>
+            <a href="/stands/killer-queen/">Killer Queen</a>
+            <a href="/stands/star-platinum/">Star Platinum</a>
+            <a href="/stands/star-platinum-the-world/">Star Platinum | The World</a>
+            <a href="/stands/king-crimson/">King Crimson</a>
+            <a href="/stands/gold-experience/">Gold Experience</a>
+            <a href="/stands/gold-experience-requiem/">Gold Experience Requiem</a>
+            <a href="/stands/crazy-diamond/">Crazy Diamond</a>
+            <a href="/stands/tusk-acts/">Tusk Acts 1-3</a>
+            <a href="/stands/hierophant-green/" class="active">Hierophant Green</a>
+            <a href="/stands/silver-chariot/">Silver Chariot</a>
+            <a href="/stands/magicians-red/">Magicians Red</a>
+            <a href="/stands/purple-haze/">Purple Haze</a>
+            <a href="/stands/stone-free/">Stone Free</a>
+            <a href="/stands/whitesnake/">Whitesnake</a>
+            <a href="/stands/twau/">TWAU</a>
+            <a href="/stands/hermit-purple/">Hermit Purple</a>
+            <a href="/stands/tubular-bells/">Tubular Bells</a>
+            <a href="/stands/hey-ya/">Hey Ya</a>
+            <a href="/stands/20th-century-boy/">20th Century Boy</a>
+            <a href="/stands/mandom/">Mandom</a>
+        </div>
+    </div>
+
+    <main>
+    <div class="stand-page-layout">
+        <div class="stand-page-main">
         <section id="overview" style="margin-bottom: 32px;">
             <div class="sketch-card" style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
                 <div style="font-size:4rem;" aria-hidden="true">🟢</div>
@@ -162,6 +195,36 @@
                 <p><strong>Hierophant Green</strong> is a DEFAULT Humanoid stand in Bridger Western. The <strong>Tentacle Wire (E)</strong> places tripwires wherever thrown. <strong>Emerald Splash (R)</strong> is a hold-to-charge powerful projectile blast. The <strong>20 Meter Emerald Splash (G)</strong> is a zone-control ability — place tentacle wires, go invisible, and auto-blast emeralds at anyone who enters the area. <strong>Stand Pilot (V)</strong> lets you take aerial control of your stand. Players searching for <strong>Bridger Western Hierophant Green stand</strong> should note it is DEFAULT rarity and obtainable through standard Arrow Shard or Corpse Part rolls.</p>
             </div>
         </section>
+            </div><!-- end stand-page-main -->
+
+        <aside class="stand-sidebar">
+            <div class="stand-sidebar-inner">
+                <div class="stand-sidebar-title">All Stands</div>
+                <a href="/stands/the-world/">The World</a>
+                <a href="/stands/d4c/">D4C</a>
+                <a href="/stands/killer-queen/">Killer Queen</a>
+                <a href="/stands/star-platinum/">Star Platinum</a>
+                <a href="/stands/star-platinum-the-world/">Star Platinum | The World</a>
+                <a href="/stands/king-crimson/">King Crimson</a>
+                <a href="/stands/gold-experience/">Gold Experience</a>
+                <a href="/stands/gold-experience-requiem/">Gold Experience Requiem</a>
+                <a href="/stands/crazy-diamond/">Crazy Diamond</a>
+                <a href="/stands/tusk-acts/">Tusk Acts 1-3</a>
+                <a href="/stands/hierophant-green/" class="active">Hierophant Green</a>
+                <a href="/stands/silver-chariot/">Silver Chariot</a>
+                <a href="/stands/magicians-red/">Magicians Red</a>
+                <a href="/stands/purple-haze/">Purple Haze</a>
+                <a href="/stands/stone-free/">Stone Free</a>
+                <a href="/stands/whitesnake/">Whitesnake</a>
+                <a href="/stands/twau/">TWAU</a>
+                <a href="/stands/hermit-purple/">Hermit Purple</a>
+                <a href="/stands/tubular-bells/">Tubular Bells</a>
+                <a href="/stands/hey-ya/">Hey Ya</a>
+                <a href="/stands/20th-century-boy/">20th Century Boy</a>
+                <a href="/stands/mandom/">Mandom</a>
+            </div>
+        </aside>
+    </div><!-- end stand-page-layout -->
     </main>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">

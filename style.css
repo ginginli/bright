@@ -3131,3 +3131,140 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
         }
     }
 }
+
+/* =========================================
+   Stand 详情页侧边栏布局
+   ========================================= */
+
+.stand-page-layout {
+    display: flex;
+    gap: 32px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.stand-page-main {
+    flex: 1;
+    min-width: 0;
+}
+
+/* 侧边栏 */
+.stand-sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 108px; /* header + breadcrumb height */
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.stand-sidebar-inner {
+    background: rgba(255,255,255,0.4);
+    border: 1px solid rgba(43,28,17,0.12);
+    border-radius: 6px;
+    padding: 12px 0;
+}
+
+.stand-sidebar-title {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-fade);
+    padding: 0 14px 8px;
+    border-bottom: 1px solid rgba(43,28,17,0.1);
+    margin-bottom: 4px;
+}
+
+.stand-sidebar a {
+    display: block;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: var(--text-ink);
+    text-decoration: none;
+    transition: background 0.15s;
+    border-left: 3px solid transparent;
+}
+
+.stand-sidebar a:hover {
+    background: rgba(43,28,17,0.05);
+}
+
+.stand-sidebar a.active {
+    background: rgba(43,28,17,0.07);
+    border-left-color: var(--text-ink);
+    font-weight: bold;
+}
+
+/* 移动端：折叠下拉 */
+.stand-sidebar-mobile {
+    display: none;
+    margin: 0 20px 20px;
+}
+
+.stand-sidebar-toggle {
+    width: 100%;
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(43,28,17,0.2);
+    border-radius: 6px;
+    padding: 10px 16px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-ink);
+}
+
+.stand-sidebar-dropdown {
+    display: none;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid rgba(43,28,17,0.15);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.stand-sidebar-dropdown.open {
+    display: block;
+}
+
+.stand-sidebar-dropdown a {
+    display: block;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    color: var(--text-ink);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(43,28,17,0.06);
+}
+
+.stand-sidebar-dropdown a:hover {
+    background: rgba(43,28,17,0.05);
+}
+
+.stand-sidebar-dropdown a.active {
+    font-weight: bold;
+    background: rgba(43,28,17,0.07);
+}
+
+@media (max-width: 768px) {
+    .stand-page-layout {
+        display: block;
+        padding: 0;
+    }
+    .stand-page-main {
+        padding: 0 20px;
+    }
+    .stand-sidebar {
+        display: none;
+    }
+    .stand-sidebar-mobile {
+        display: block;
+    }
+}
