@@ -3315,3 +3315,47 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 }
 
 
+
+/* =========================================
+   单 TOC 侧边栏布局（无 All Stands）
+   ========================================= */
+
+.page-toc-layout {
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-toc-sidebar {
+    width: 200px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 140px;
+    max-height: calc(100vh - 155px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding-right: 16px;
+    padding-top: 12px;
+    margin-left: 8px;
+}
+
+.page-toc-main {
+    flex: 1;
+    min-width: 0;
+}
+
+@media (max-width: 768px) {
+    .page-toc-layout {
+        display: block;
+        padding: 0;
+    }
+    .page-toc-main {
+        padding: 0 20px;
+    }
+    .page-toc-sidebar {
+        display: none;
+    }
+}
