@@ -3150,8 +3150,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 180px;
     flex-shrink: 0;
     position: sticky;
-    top: 108px;
-    max-height: calc(100vh - 120px);
+    top: 130px;
+    max-height: calc(100vh - 140px);
     overflow-y: auto;
     scrollbar-width: thin;
 }
@@ -3161,8 +3161,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 140px;
     flex-shrink: 0;
     position: sticky;
-    top: 108px;
-    max-height: calc(100vh - 120px);
+    top: 130px;
+    max-height: calc(100vh - 140px);
     overflow-y: auto;
     scrollbar-width: thin;
 }
