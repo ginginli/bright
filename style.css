@@ -43,6 +43,11 @@ h1, h2, h3, .logo {
     letter-spacing: 2px;
 }
 
+/* 防止 sticky 导航遮挡锚点跳转目标 */
+h1, h2, h3, h4 {
+    scroll-margin-top: 90px;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -114,8 +119,9 @@ header .container {
 }
 .logo { 
     font-size: 2rem; 
-    margin: 0; 
-}
+    margin: 0;
+    white-space: nowrap;
+}}
 nav a {
     color: var(--text-ink);
     text-decoration: none;
@@ -3150,8 +3156,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 180px;
     flex-shrink: 0;
     position: sticky;
-    top: 100px;
-    max-height: calc(100vh - 115px);
+    top: 80px;
+    max-height: calc(100vh - 95px);
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: rgba(43,28,17,0.15) transparent;
@@ -3164,8 +3170,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 140px;
     flex-shrink: 0;
     position: sticky;
-    top: 100px;
-    max-height: calc(100vh - 115px);
+    top: 80px;
+    max-height: calc(100vh - 95px);
     overflow-y: auto;
     scrollbar-width: thin;
     padding-right: 16px;
