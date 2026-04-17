@@ -45,7 +45,7 @@ h1, h2, h3, .logo {
 
 /* 防止 sticky 导航遮挡锚点跳转目标 */
 h1, h2, h3, h4 {
-    scroll-margin-top: 120px;
+    scroll-margin-top: 125px;
 }
 
 .container {
@@ -1214,7 +1214,7 @@ a.logo {
 /* Breadcrumb */
 .breadcrumb {
     position: sticky;
-    top: 80px; /* Header height: 25px padding-top + ~30px content + 25px padding-bottom */
+    top: 85px; /* Header height: 25px padding-top + ~30px content + 25px padding-bottom */
     z-index: 999;
     background: rgba(232, 223, 213, 0.95);
     backdrop-filter: blur(8px);
@@ -3157,8 +3157,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 180px;
     flex-shrink: 0;
     position: sticky;
-    top: 120px;
-    max-height: calc(100vh - 135px);
+    top: 125px;
+    max-height: calc(100vh - 140px);
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: rgba(43,28,17,0.15) transparent;
@@ -3172,8 +3172,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 140px;
     flex-shrink: 0;
     position: sticky;
-    top: 120px;
-    max-height: calc(100vh - 135px);
+    top: 125px;
+    max-height: calc(100vh - 140px);
     overflow-y: auto;
     scrollbar-width: thin;
     padding-right: 16px;
