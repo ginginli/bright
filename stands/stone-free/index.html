@@ -75,13 +75,13 @@
             </div>
         </div>
     </section>
-        <!-- Mobile stand selectors -->
-    <div class="stand-sidebar-mobile">
+        <!-- Mobile sidebar -->
+    <div class="sidebar-mobile-bar">
         <div style="flex:1;">
-            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
-                All Stands <span class="toggle-arrow">▾</span>
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                All Stands <span>▾</span>
             </button>
-            <div class="stand-sidebar-dropdown">
+            <div class="sidebar-mobile-dropdown">
             <a href="/stands/the-world/">The World</a>
             <a href="/stands/d4c/">D4C</a>
             <a href="/stands/killer-queen/">Killer Queen</a>
@@ -107,18 +107,18 @@
             </div>
         </div>
         <div style="flex:1;">
-            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
-                On This Page <span class="toggle-arrow">▾</span>
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                On This Page <span>▾</span>
             </button>
-            <div class="stand-sidebar-dropdown" id="stand-toc-mobile"></div>
+            <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
         </div>
     </div>
 
     <main>
-    <div class="stand-page-layout">
-        <aside class="stand-sidebar-left">
-            <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">All Stands</div>
+    <div class="page-with-sidebar">
+        <aside class="page-sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">All Stands</div>
                 <a href="/stands/the-world/">The World</a>
                 <a href="/stands/d4c/">D4C</a>
                 <a href="/stands/killer-queen/">Killer Queen</a>
@@ -142,8 +142,12 @@
                 <a href="/stands/20th-century-boy/">20th Century Boy</a>
                 <a href="/stands/mandom/">Mandom</a>
             </div>
+            <div class="sidebar-section sidebar-toc">
+                <div class="sidebar-section-title">On This Page</div>
+                <div id="page-toc"></div>
+            </div>
         </aside>
-        <div class="stand-page-main">
+        <div class="page-sidebar-main">
         <section id="overview" style="margin-bottom: 32px;">
             <div class="sketch-card" style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
                 <div style="font-size:4rem;" aria-hidden="true">🧵</div>
@@ -218,15 +222,8 @@
                 <p><strong>Stone Free</strong> is a DEFAULT Humanoid stand in Bridger Western with a <strong>Thread Weaving passive</strong> — M1 on surfaces places threads attached to your arm, and M1 on a person while threaded pulls them in. The <strong>Heavy Punch (R)</strong> deals 25 damage with a forward dash. <strong>String Pull (T)</strong> pulls nearby targets toward you. <strong>String Patchworks (G)</strong> heals yourself. The signature <strong>Rock Swing (V)</strong> pulls earth from the ground and slams for 12|12|12|12|20 damage. Players searching for <strong>Bridger Western Stone Free stand</strong> should note it is DEFAULT rarity and obtainable through standard Arrow Shard or Corpse Part rolls.</p>
             </div>
         </section>
-            </div><!-- end stand-page-main -->
-
-        <aside class="stand-sidebar-right">
-            <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">On This Page</div>
-                <div id="stand-toc"></div>
-            </div>
-        </aside>
-    </div><!-- end stand-page-layout -->
+            </div><!-- end page-sidebar-main -->
+    </div><!-- end page-with-sidebar -->
     </main>
 
     <footer>

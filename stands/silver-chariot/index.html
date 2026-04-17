@@ -75,13 +75,13 @@
             </div>
         </div>
     </section>
-        <!-- Mobile stand selectors -->
-    <div class="stand-sidebar-mobile">
+        <!-- Mobile sidebar -->
+    <div class="sidebar-mobile-bar">
         <div style="flex:1;">
-            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
-                All Stands <span class="toggle-arrow">▾</span>
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                All Stands <span>▾</span>
             </button>
-            <div class="stand-sidebar-dropdown">
+            <div class="sidebar-mobile-dropdown">
             <a href="/stands/the-world/">The World</a>
             <a href="/stands/d4c/">D4C</a>
             <a href="/stands/killer-queen/">Killer Queen</a>
@@ -107,18 +107,18 @@
             </div>
         </div>
         <div style="flex:1;">
-            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
-                On This Page <span class="toggle-arrow">▾</span>
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                On This Page <span>▾</span>
             </button>
-            <div class="stand-sidebar-dropdown" id="stand-toc-mobile"></div>
+            <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
         </div>
     </div>
 
     <main>
-    <div class="stand-page-layout">
-        <aside class="stand-sidebar-left">
-            <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">All Stands</div>
+    <div class="page-with-sidebar">
+        <aside class="page-sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">All Stands</div>
                 <a href="/stands/the-world/">The World</a>
                 <a href="/stands/d4c/">D4C</a>
                 <a href="/stands/killer-queen/">Killer Queen</a>
@@ -142,8 +142,12 @@
                 <a href="/stands/20th-century-boy/">20th Century Boy</a>
                 <a href="/stands/mandom/">Mandom</a>
             </div>
+            <div class="sidebar-section sidebar-toc">
+                <div class="sidebar-section-title">On This Page</div>
+                <div id="page-toc"></div>
+            </div>
         </aside>
-        <div class="stand-page-main">
+        <div class="page-sidebar-main">
         <section id="overview" style="margin-bottom: 32px;">
             <div class="sketch-card" style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
                 <div style="font-size:4rem;" aria-hidden="true">⚔️</div>
@@ -217,15 +221,8 @@
                 <p><strong>Silver Chariot</strong> is a DEFAULT Humanoid stand in Bridger Western. The <strong>Rapier Uptilt (R)</strong> slices upward and briefly launches you into the air. <strong>Lunge (T)</strong> deals ~20 damage with slight homing, and at low HP it transforms into <strong>Ricochet Shot</strong> — a rapier that bounces off surfaces and homes in after the 3rd ricochet. <strong>Whirlwind Slash (G)</strong> hits all nearby targets twice. <strong>Armor Removal (V)</strong> is the signature ability, greatly boosting speed and damage with special visual effects. Players searching for <strong>Bridger Western Silver Chariot stand</strong> should note it is DEFAULT rarity and obtainable through standard rolls.</p>
             </div>
         </section>
-            </div><!-- end stand-page-main -->
-
-        <aside class="stand-sidebar-right">
-            <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">On This Page</div>
-                <div id="stand-toc"></div>
-            </div>
-        </aside>
-    </div><!-- end stand-page-layout -->
+            </div><!-- end page-sidebar-main -->
+    </div><!-- end page-with-sidebar -->
     </main>
 
     <footer>

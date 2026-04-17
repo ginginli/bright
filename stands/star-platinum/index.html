@@ -75,13 +75,13 @@
             </div>
         </div>
     </section>
-        <!-- Mobile stand selectors -->
-    <div class="stand-sidebar-mobile">
+        <!-- Mobile sidebar -->
+    <div class="sidebar-mobile-bar">
         <div style="flex:1;">
-            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
-                All Stands <span class="toggle-arrow">▾</span>
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                All Stands <span>▾</span>
             </button>
-            <div class="stand-sidebar-dropdown">
+            <div class="sidebar-mobile-dropdown">
             <a href="/stands/the-world/">The World</a>
             <a href="/stands/d4c/">D4C</a>
             <a href="/stands/killer-queen/">Killer Queen</a>
@@ -107,18 +107,18 @@
             </div>
         </div>
         <div style="flex:1;">
-            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
-                On This Page <span class="toggle-arrow">▾</span>
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                On This Page <span>▾</span>
             </button>
-            <div class="stand-sidebar-dropdown" id="stand-toc-mobile"></div>
+            <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
         </div>
     </div>
 
     <main>
-    <div class="stand-page-layout">
-        <aside class="stand-sidebar-left">
-            <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">All Stands</div>
+    <div class="page-with-sidebar">
+        <aside class="page-sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-section-title">All Stands</div>
                 <a href="/stands/the-world/">The World</a>
                 <a href="/stands/d4c/">D4C</a>
                 <a href="/stands/killer-queen/">Killer Queen</a>
@@ -142,8 +142,12 @@
                 <a href="/stands/20th-century-boy/">20th Century Boy</a>
                 <a href="/stands/mandom/">Mandom</a>
             </div>
+            <div class="sidebar-section sidebar-toc">
+                <div class="sidebar-section-title">On This Page</div>
+                <div id="page-toc"></div>
+            </div>
         </aside>
-        <div class="stand-page-main">
+        <div class="page-sidebar-main">
         <section id="overview" style="margin-bottom: 32px;">
             <div class="sketch-card" style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
                 <div style="font-size:4rem;" aria-hidden="true">⭐</div>
@@ -239,15 +243,8 @@
                 <p><strong>Star Platinum</strong> is a RARE time-manipulating Humanoid stand in Bridger Western. Its barrage deals 2.2 dmg/hit, and the <strong>Skull Breaker (R)</strong> hits for 25 damage with an execution variant that decapitates at low HP. <strong>Star Finger (T)</strong> deals 12 damage and ragdolls targets. The <strong>G move (Time Stop Movement)</strong> allows movement during timestop and has a <strong>1% chance to evolve Star Platinum into Star Platinum | The World</strong>. The <strong>Beatdown (V)</strong> grabs and pummels for 11 | 2.4/punch | 14 damage. Players searching for <strong>Bridger Western Star Platinum stand</strong> should note it is RARE rarity and obtainable through Arrow Shard fishing or Corpse Part KOTH events.</p>
             </div>
         </section>
-            </div><!-- end stand-page-main -->
-
-        <aside class="stand-sidebar-right">
-            <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">On This Page</div>
-                <div id="stand-toc"></div>
-            </div>
-        </aside>
-    </div><!-- end stand-page-layout -->
+            </div><!-- end page-sidebar-main -->
+    </div><!-- end page-with-sidebar -->
     </main>
 
     <div class="lightbox" id="lightbox" onclick="closeLightbox()">
