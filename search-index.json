@@ -11305,6 +11305,292 @@
       ],
       "description": "Magicians Red Purple shiny skin variant in Bridger Western.",
       "icon": "✨"
+    },
+    {
+      "title": "The World – Bridger Western Stand",
+      "url": "/stands/the-world/",
+      "category": "Stands",
+      "keywords": [
+        "the world",
+        "bridger western the world",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "RARE time-manipulating Humanoid stand. Long Timestop (~5 seconds), Checkmate passive, Knife Toss.",
+      "icon": "🌟"
+    },
+    {
+      "title": "D4C – Bridger Western Stand",
+      "url": "/stands/d4c/",
+      "category": "Stands",
+      "keywords": [
+        "d4c",
+        "bridger western d4c",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand. Dimension Hop passive (requires poncho). Clone Swap, special obtainment.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Killer Queen – Bridger Western Stand",
+      "url": "/stands/killer-queen/",
+      "category": "Stands",
+      "keywords": [
+        "killer queen",
+        "bridger western killer queen",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand. Bomb mechanics, Sheer Heart Attack tracking, Stray Cat air bubble bombs.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Star Platinum – Bridger Western Stand",
+      "url": "/stands/star-platinum/",
+      "category": "Stands",
+      "keywords": [
+        "star platinum",
+        "bridger western star platinum",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "RARE time-manipulating Humanoid stand. Can evolve to Star Platinum The World (1% chance).",
+      "icon": "🌟"
+    },
+    {
+      "title": "Star Platinum | The World – Bridger Western Stand",
+      "url": "/stands/star-platinum-the-world/",
+      "category": "Stands",
+      "keywords": [
+        "star platinum | the world",
+        "bridger western star platinum | the world",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand, evolved form of Star Platinum. 2-second Time Stop.",
+      "icon": "🌟"
+    },
+    {
+      "title": "King Crimson – Bridger Western Stand",
+      "url": "/stands/king-crimson/",
+      "category": "Stands",
+      "keywords": [
+        "king crimson",
+        "bridger western king crimson",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "RARE time-manipulating Humanoid stand. Epitaph auto-dodge, Time Erasure iframes.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Gold Experience – Bridger Western Stand",
+      "url": "/stands/gold-experience/",
+      "category": "Stands",
+      "keywords": [
+        "gold experience",
+        "bridger western gold experience",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand with Life Giver passive. 7 Page Muda, healing, life-giving abilities.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Gold Experience Requiem – Bridger Western Stand",
+      "url": "/stands/gold-experience-requiem/",
+      "category": "Stands",
+      "keywords": [
+        "gold experience requiem",
+        "bridger western gold experience requiem",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "UNOBTAINABLE/SPEC stand. Return To Zero nullifies all attacks. True Life Giver passive.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Crazy Diamond – Bridger Western Stand",
+      "url": "/stands/crazy-diamond/",
+      "category": "Stands",
+      "keywords": [
+        "crazy diamond",
+        "bridger western crazy diamond",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand with Restore Mode. Tracking Barrage, Facial Reconstruction, Blood Slash.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Tusk Acts 1-3 – Bridger Western Stand",
+      "url": "/stands/tusk-acts/",
+      "category": "Stands",
+      "keywords": [
+        "tusk acts 1-3",
+        "bridger western tusk acts 1-3",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand. Cripple passive (cannot walk or use guns). Saint's Left Arm fusion (2%).",
+      "icon": "🌟"
+    },
+    {
+      "title": "Hierophant Green – Bridger Western Stand",
+      "url": "/stands/hierophant-green/",
+      "category": "Stands",
+      "keywords": [
+        "hierophant green",
+        "bridger western hierophant green",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand. Emerald Splash, tentacle wires, Stand Pilot aerial mode.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Silver Chariot – Bridger Western Stand",
+      "url": "/stands/silver-chariot/",
+      "category": "Stands",
+      "keywords": [
+        "silver chariot",
+        "bridger western silver chariot",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand. Armor Removal speed boost, Ricochet Shot low HP variant.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Magicians Red – Bridger Western Stand",
+      "url": "/stands/magicians-red/",
+      "category": "Stands",
+      "keywords": [
+        "magicians red",
+        "bridger western magicians red",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand. Crossfire Hurricane Special, Red Bind burn, Stand Pilot aerial.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Purple Haze – Bridger Western Stand",
+      "url": "/stands/purple-haze/",
+      "category": "Stands",
+      "keywords": [
+        "purple haze",
+        "bridger western purple haze",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand with Poison Bulbs passive. Stand Pilot, area denial poison traps.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Stone Free – Bridger Western Stand",
+      "url": "/stands/stone-free/",
+      "category": "Stands",
+      "keywords": [
+        "stone free",
+        "bridger western stone free",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Humanoid stand with Thread Weaving passive. Rock Swing, String Pull, self-healing.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Whitesnake – Bridger Western Stand",
+      "url": "/stands/whitesnake/",
+      "category": "Stands",
+      "keywords": [
+        "whitesnake",
+        "bridger western whitesnake",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "RARE time-manipulating Humanoid stand. Disc Grab disables stands, Acid Spit sleep effect.",
+      "icon": "🌟"
+    },
+    {
+      "title": "TWAU – Bridger Western Stand",
+      "url": "/stands/twau/",
+      "category": "Stands",
+      "keywords": [
+        "twau",
+        "bridger western twau",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "RARE time-manipulating Humanoid stand. Short and long timestop, Checkmate knife passive.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Hermit Purple – Bridger Western Stand",
+      "url": "/stands/hermit-purple/",
+      "category": "Stands",
+      "keywords": [
+        "hermit purple",
+        "bridger western hermit purple",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Non-Humanoid Utility stand. Grapple mobility, no stamina cost.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Tubular Bells – Bridger Western Stand",
+      "url": "/stands/tubular-bells/",
+      "category": "Stands",
+      "keywords": [
+        "tubular bells",
+        "bridger western tubular bells",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Non-Humanoid Utility stand. Balloon attacks — Dog/Snail/Swan variants.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Hey Ya – Bridger Western Stand",
+      "url": "/stands/hey-ya/",
+      "category": "Stands",
+      "keywords": [
+        "hey ya",
+        "bridger western hey ya",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Non-Humanoid Utility stand. Encouragement passive provides random buffs.",
+      "icon": "🌟"
+    },
+    {
+      "title": "20th Century Boy – Bridger Western Stand",
+      "url": "/stands/20th-century-boy/",
+      "category": "Stands",
+      "keywords": [
+        "20th century boy",
+        "bridger western 20th century boy",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "DEFAULT Non-Humanoid Utility stand. Absolute Defense reflects all attacks.",
+      "icon": "🌟"
+    },
+    {
+      "title": "Mandom – Bridger Western Stand",
+      "url": "/stands/mandom/",
+      "category": "Stands",
+      "keywords": [
+        "mandom",
+        "bridger western mandom",
+        "stand guide",
+        "stand abilities"
+      ],
+      "description": "RARE time-manipulating Non-Humanoid Utility stand. Time Rewind returns everyone 6 seconds back.",
+      "icon": "🌟"
     }
   ]
 }
