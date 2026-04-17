@@ -75,12 +75,13 @@
             </div>
         </div>
     </section>
-        <!-- Mobile stand selector -->
+        <!-- Mobile stand selectors -->
     <div class="stand-sidebar-mobile">
-        <button class="stand-sidebar-toggle" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=this.nextElementSibling.classList.contains('open')?'▲':'▾'">
-            All Stands <span class="toggle-arrow">▾</span>
-        </button>
-        <div class="stand-sidebar-dropdown">
+        <div style="flex:1;">
+            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
+                All Stands <span class="toggle-arrow">▾</span>
+            </button>
+            <div class="stand-sidebar-dropdown">
             <a href="/stands/the-world/">The World</a>
             <a href="/stands/d4c/">D4C</a>
             <a href="/stands/killer-queen/">Killer Queen</a>
@@ -103,11 +104,45 @@
             <a href="/stands/hey-ya/">Hey Ya</a>
             <a href="/stands/20th-century-boy/">20th Century Boy</a>
             <a href="/stands/mandom/">Mandom</a>
+            </div>
+        </div>
+        <div style="flex:1;">
+            <button class="stand-sidebar-toggle" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('.toggle-arrow').textContent=d.classList.contains('open')?'▲':'▾'">
+                On This Page <span class="toggle-arrow">▾</span>
+            </button>
+            <div class="stand-sidebar-dropdown" id="stand-toc-mobile"></div>
         </div>
     </div>
 
     <main>
     <div class="stand-page-layout">
+        <aside class="stand-sidebar-left">
+            <div class="stand-sidebar-inner">
+                <div class="stand-sidebar-title">All Stands</div>
+                <a href="/stands/the-world/">The World</a>
+                <a href="/stands/d4c/">D4C</a>
+                <a href="/stands/killer-queen/">Killer Queen</a>
+                <a href="/stands/star-platinum/">Star Platinum</a>
+                <a href="/stands/star-platinum-the-world/">Star Platinum | The World</a>
+                <a href="/stands/king-crimson/">King Crimson</a>
+                <a href="/stands/gold-experience/">Gold Experience</a>
+                <a href="/stands/gold-experience-requiem/">Gold Experience Requiem</a>
+                <a href="/stands/crazy-diamond/">Crazy Diamond</a>
+                <a href="/stands/tusk-acts/">Tusk Acts 1-3</a>
+                <a href="/stands/hierophant-green/">Hierophant Green</a>
+                <a href="/stands/silver-chariot/">Silver Chariot</a>
+                <a href="/stands/magicians-red/">Magicians Red</a>
+                <a href="/stands/purple-haze/" class="active">Purple Haze</a>
+                <a href="/stands/stone-free/">Stone Free</a>
+                <a href="/stands/whitesnake/">Whitesnake</a>
+                <a href="/stands/twau/">TWAU</a>
+                <a href="/stands/hermit-purple/">Hermit Purple</a>
+                <a href="/stands/tubular-bells/">Tubular Bells</a>
+                <a href="/stands/hey-ya/">Hey Ya</a>
+                <a href="/stands/20th-century-boy/">20th Century Boy</a>
+                <a href="/stands/mandom/">Mandom</a>
+            </div>
+        </aside>
         <div class="stand-page-main">
         <section id="overview" style="margin-bottom: 32px;">
             <div class="sketch-card" style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
@@ -185,31 +220,10 @@
         </section>
             </div><!-- end stand-page-main -->
 
-        <aside class="stand-sidebar">
+        <aside class="stand-sidebar-right">
             <div class="stand-sidebar-inner">
-                <div class="stand-sidebar-title">All Stands</div>
-                <a href="/stands/the-world/">The World</a>
-                <a href="/stands/d4c/">D4C</a>
-                <a href="/stands/killer-queen/">Killer Queen</a>
-                <a href="/stands/star-platinum/">Star Platinum</a>
-                <a href="/stands/star-platinum-the-world/">Star Platinum | The World</a>
-                <a href="/stands/king-crimson/">King Crimson</a>
-                <a href="/stands/gold-experience/">Gold Experience</a>
-                <a href="/stands/gold-experience-requiem/">Gold Experience Requiem</a>
-                <a href="/stands/crazy-diamond/">Crazy Diamond</a>
-                <a href="/stands/tusk-acts/">Tusk Acts 1-3</a>
-                <a href="/stands/hierophant-green/">Hierophant Green</a>
-                <a href="/stands/silver-chariot/">Silver Chariot</a>
-                <a href="/stands/magicians-red/">Magicians Red</a>
-                <a href="/stands/purple-haze/" class="active">Purple Haze</a>
-                <a href="/stands/stone-free/">Stone Free</a>
-                <a href="/stands/whitesnake/">Whitesnake</a>
-                <a href="/stands/twau/">TWAU</a>
-                <a href="/stands/hermit-purple/">Hermit Purple</a>
-                <a href="/stands/tubular-bells/">Tubular Bells</a>
-                <a href="/stands/hey-ya/">Hey Ya</a>
-                <a href="/stands/20th-century-boy/">20th Century Boy</a>
-                <a href="/stands/mandom/">Mandom</a>
+                <div class="stand-sidebar-title">On This Page</div>
+                <div id="stand-toc"></div>
             </div>
         </aside>
     </div><!-- end stand-page-layout -->
@@ -254,5 +268,31 @@
     <script src="/js/ads-config.js" defer></script>
     <script src="/js/ads-manager.js" defer></script>
     <script src="/js/components.js" defer></script>
+    <script>
+    // Build right TOC from H2s in main content
+    (function() {
+        var main = document.querySelector('.stand-page-main');
+        var toc = document.getElementById('stand-toc');
+        if (!main || !toc) return;
+        var h2s = main.querySelectorAll('h2');
+        if (h2s.length === 0) { toc.parentElement.style.display='none'; return; }
+        h2s.forEach(function(h, i) {
+            if (!h.id) h.id = 'toc-' + i;
+            var a = document.createElement('a');
+            a.href = '#' + h.id;
+            a.textContent = h.textContent.replace(/^[^a-zA-Z]+/, '').trim();
+            toc.appendChild(a);
+        });
+        // Highlight on scroll
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                var id = e.target.id;
+                var link = toc.querySelector('a[href="#' + id + '"]');
+                if (link) link.classList.toggle('toc-active', e.isIntersecting);
+            });
+        }, { rootMargin: '-10% 0px -80% 0px' });
+        h2s.forEach(function(h) { observer.observe(h); });
+    })();
+    </script>
 </body>
 </html>

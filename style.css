@@ -3133,32 +3133,43 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 }
 
 /* =========================================
-   Stand 详情页侧边栏布局
+   Stand 详情页双侧边栏布局
    ========================================= */
 
 .stand-page-layout {
     display: flex;
-    gap: 32px;
+    gap: 20px;
     align-items: flex-start;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* 左侧边栏：All Stands (180px) */
+.stand-sidebar-left {
+    width: 180px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 108px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+/* 右侧边栏：On This Page H2 目录 (140px) */
+.stand-sidebar-right {
+    width: 140px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 108px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    scrollbar-width: thin;
 }
 
 .stand-page-main {
     flex: 1;
     min-width: 0;
-}
-
-/* 侧边栏 */
-.stand-sidebar {
-    width: 220px;
-    flex-shrink: 0;
-    position: sticky;
-    top: 108px; /* header + breadcrumb height */
-    max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    scrollbar-width: thin;
 }
 
 .stand-sidebar-inner {
@@ -3170,49 +3181,75 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 
 .stand-sidebar-title {
     font-family: var(--font-heading);
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--accent-fade);
-    padding: 0 14px 8px;
+    padding: 0 12px 8px;
     border-bottom: 1px solid rgba(43,28,17,0.1);
     margin-bottom: 4px;
 }
 
-.stand-sidebar a {
+.stand-sidebar-left a {
     display: block;
-    padding: 6px 14px;
-    font-size: 0.85rem;
+    padding: 5px 12px;
+    font-size: 0.8rem;
     color: var(--text-ink);
     text-decoration: none;
     transition: background 0.15s;
     border-left: 3px solid transparent;
+    line-height: 1.3;
 }
 
-.stand-sidebar a:hover {
+.stand-sidebar-left a:hover {
     background: rgba(43,28,17,0.05);
 }
 
-.stand-sidebar a.active {
+.stand-sidebar-left a.active {
     background: rgba(43,28,17,0.07);
     border-left-color: var(--text-ink);
     font-weight: bold;
 }
 
-/* 移动端：折叠下拉 */
+/* 右侧 TOC 链接 */
+.stand-sidebar-right a {
+    display: block;
+    padding: 5px 12px;
+    font-size: 0.78rem;
+    color: var(--accent-fade);
+    text-decoration: none;
+    transition: color 0.15s;
+    border-left: 3px solid transparent;
+    line-height: 1.3;
+}
+
+.stand-sidebar-right a:hover {
+    color: var(--text-ink);
+    background: rgba(43,28,17,0.04);
+}
+
+.stand-sidebar-right a.toc-active {
+    color: var(--text-ink);
+    border-left-color: var(--accent-fade);
+    font-weight: bold;
+}
+
+/* 移动端：两个折叠按钮 */
 .stand-sidebar-mobile {
     display: none;
-    margin: 0 20px 20px;
+    margin: 0 20px 16px;
+    display: none;
+    gap: 8px;
 }
 
 .stand-sidebar-toggle {
-    width: 100%;
+    flex: 1;
     background: rgba(255,255,255,0.5);
     border: 1px solid rgba(43,28,17,0.2);
     border-radius: 6px;
-    padding: 10px 16px;
+    padding: 8px 12px;
     font-family: var(--font-heading);
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     text-align: left;
     cursor: pointer;
     display: flex;
@@ -3227,7 +3264,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     border: 1px solid rgba(43,28,17,0.15);
     border-top: none;
     border-radius: 0 0 6px 6px;
-    max-height: 280px;
+    max-height: 240px;
     overflow-y: auto;
 }
 
@@ -3237,8 +3274,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 
 .stand-sidebar-dropdown a {
     display: block;
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    padding: 7px 14px;
+    font-size: 0.82rem;
     color: var(--text-ink);
     text-decoration: none;
     border-bottom: 1px solid rgba(43,28,17,0.06);
@@ -3261,10 +3298,12 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     .stand-page-main {
         padding: 0 20px;
     }
-    .stand-sidebar {
+    .stand-sidebar-left,
+    .stand-sidebar-right {
         display: none;
     }
     .stand-sidebar-mobile {
-        display: block;
+        display: flex;
     }
 }
+
