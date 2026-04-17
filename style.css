@@ -3150,12 +3150,13 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 180px;
     flex-shrink: 0;
     position: sticky;
-    top: 160px;
-    max-height: calc(100vh - 175px);
+    top: 100px;
+    max-height: calc(100vh - 115px);
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: rgba(43,28,17,0.15) transparent;
     padding-right: 8px;
+    padding-top: 12px;
 }
 
 /* 左侧第二列：On This Page (140px) */
@@ -3163,11 +3164,12 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
     width: 140px;
     flex-shrink: 0;
     position: sticky;
-    top: 160px;
-    max-height: calc(100vh - 175px);
+    top: 100px;
+    max-height: calc(100vh - 115px);
     overflow-y: auto;
     scrollbar-width: thin;
     padding-right: 16px;
+    padding-top: 12px;
 }
 
 .page-sidebar-main {
