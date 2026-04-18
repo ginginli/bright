@@ -202,6 +202,13 @@ URL: https://bridgerwestern.cc/[path]/
 [2-3 sentence summary of page content]
 ```
 
+### IndexNow (GitHub Actions)
+Add the new page URL to `.github/workflows/indexnow.yml` in the appropriate `urlList` array:
+```yaml
+"https://bridgerwestern.cc/[path]/"
+```
+This ensures Bing, Yandex and other IndexNow partners are notified immediately on next push.
+
 ---
 
 ## Step 4 — Update search-index.json
@@ -373,6 +380,7 @@ After the page is created and internal links are in place, perform a full SEO au
 - [ ] `llms.txt` updated
 - [ ] `llms-full.txt` updated
 - [ ] `search-index.json` updated with H1–H6 headings
+- [ ] `.github/workflows/indexnow.yml` updated with new page URL
 - [ ] `components/nav.html` updated (REQUIRED — add to correct dropdown)
 - [ ] Inbound links added from at least 3 related existing pages
 - [ ] Clickable cards use `<a class="sketch-card article-card">` pattern
