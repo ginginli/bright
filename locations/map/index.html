@@ -304,11 +304,20 @@
     <!-- User Intent Tracking -->
     <script>
       function trackUserIntent(intent) {
+        // Assign different values for different intents to make analysis easier
+        const intentValues = {
+          'npc_locations': 5,
+          'shop_locations': 4, 
+          'spawn_points': 3,
+          'horse_stables': 2,
+          'general_navigation': 1
+        };
+
         // Track the user's stated intent
         gtag('event', 'user_intent_declared', {
           'event_category': 'user_research',
           'event_label': intent,
-          'value': 1,
+          'value': intentValues[intent] || 1,
           'custom_parameter_1': 'map_page'
         });
 
