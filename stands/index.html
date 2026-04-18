@@ -125,7 +125,25 @@
             </div>
         </div>
     </section>
-    <!-- Authority Notice -->
+
+    <!-- Mobile TOC -->
+    <div class="sidebar-mobile-bar" style="margin: 0 20px 16px;">
+        <div style="flex:1; max-width:200px;">
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
+                On This Page <span>▾</span>
+            </button>
+            <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
+        </div>
+    </div>
+
+    <div class="page-toc-layout">
+        <aside class="page-toc-sidebar">
+            <div class="sidebar-section sidebar-toc">
+                <div class="sidebar-section-title">On This Page</div>
+                <div id="page-toc"></div>
+            </div>
+        </aside>
+        <div class="page-toc-main">
     <section id="authority-notice" style="background: rgba(255,215,0,0.1); border: 2px solid #ffd700;">
         <div class="container">
             <div class="sketch-card" style="background: rgba(255,255,255,0.8); text-align: center;">
@@ -400,6 +418,9 @@
             </p>
         </div>
     </section>
+
+        </div><!-- end page-toc-main -->
+    </div><!-- end page-toc-layout -->
 
     <!-- Footer -->
     <footer>
