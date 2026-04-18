@@ -14,11 +14,11 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Wait for Vercel deployment
-        run: sleep 60
+        run: sleep 90
       
-      - name: Submit to IndexNow
+      - name: Submit core pages to IndexNow
         run: |
-          curl -X POST "https://api.indexnow.org/indexnow" \
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
             -H "Content-Type: application/json" \
             -d '{
               "host": "bridgerwestern.cc",
@@ -28,24 +28,77 @@ jobs:
                 "https://bridgerwestern.cc/",
                 "https://bridgerwestern.cc/stands/",
                 "https://bridgerwestern.cc/stands/how-to-get-stand/",
+                "https://bridgerwestern.cc/stands/stand-tier-list/",
                 "https://bridgerwestern.cc/stands/stand-abilities/",
                 "https://bridgerwestern.cc/stands/corpse-part-guide/",
+                "https://bridgerwestern.cc/stands/corpse-part-locations/",
                 "https://bridgerwestern.cc/stands/discord-coordination/",
+                "https://bridgerwestern.cc/stands/arrow-shard/",
+                "https://bridgerwestern.cc/stands/practical-acquisition/",
+                "https://bridgerwestern.cc/stands/skins/",
+                "https://bridgerwestern.cc/stands/faq/",
                 "https://bridgerwestern.cc/weapons/",
                 "https://bridgerwestern.cc/weapons/primary-weapons/",
                 "https://bridgerwestern.cc/weapons/secondary-weapons/",
+                "https://bridgerwestern.cc/weapons/weapon-mechanics/",
                 "https://bridgerwestern.cc/weapons/mares-leg/",
+                "https://bridgerwestern.cc/weapons/faq/",
                 "https://bridgerwestern.cc/cards/",
                 "https://bridgerwestern.cc/cards/all-cards/",
                 "https://bridgerwestern.cc/cards/card-builds/",
                 "https://bridgerwestern.cc/cards/how-to-get-cards/",
+                "https://bridgerwestern.cc/cards/faq/",
                 "https://bridgerwestern.cc/fishing/",
+                "https://bridgerwestern.cc/fishing/faq/",
                 "https://bridgerwestern.cc/locations/",
                 "https://bridgerwestern.cc/locations/horses/",
                 "https://bridgerwestern.cc/locations/map/",
-                "https://bridgerwestern.cc/items/"
+                "https://bridgerwestern.cc/locations/faq/",
+                "https://bridgerwestern.cc/items/",
+                "https://bridgerwestern.cc/items/silver-dagger/",
+                "https://bridgerwestern.cc/items/dogbane-herb/",
+                "https://bridgerwestern.cc/items/rokakaka-fruit/",
+                "https://bridgerwestern.cc/items/faq/",
+                "https://bridgerwestern.cc/guides/",
+                "https://bridgerwestern.cc/guides/beginner-guide/",
+                "https://bridgerwestern.cc/guides/controls/",
+                "https://bridgerwestern.cc/guides/faq/"
               ]
             }'
-      
-      - name: Check submission result
-        run: echo "✅ IndexNow submission complete!"
+
+      - name: Submit stand detail pages to IndexNow
+        run: |
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "host": "bridgerwestern.cc",
+              "key": "a1fcb8ea0d9d467cb3a148652769f105",
+              "keyLocation": "https://bridgerwestern.cc/a1fcb8ea0d9d467cb3a148652769f105.txt",
+              "urlList": [
+                "https://bridgerwestern.cc/stands/the-world/",
+                "https://bridgerwestern.cc/stands/d4c/",
+                "https://bridgerwestern.cc/stands/killer-queen/",
+                "https://bridgerwestern.cc/stands/star-platinum/",
+                "https://bridgerwestern.cc/stands/star-platinum-the-world/",
+                "https://bridgerwestern.cc/stands/king-crimson/",
+                "https://bridgerwestern.cc/stands/gold-experience/",
+                "https://bridgerwestern.cc/stands/gold-experience-requiem/",
+                "https://bridgerwestern.cc/stands/crazy-diamond/",
+                "https://bridgerwestern.cc/stands/tusk-acts/",
+                "https://bridgerwestern.cc/stands/hierophant-green/",
+                "https://bridgerwestern.cc/stands/silver-chariot/",
+                "https://bridgerwestern.cc/stands/magicians-red/",
+                "https://bridgerwestern.cc/stands/purple-haze/",
+                "https://bridgerwestern.cc/stands/stone-free/",
+                "https://bridgerwestern.cc/stands/whitesnake/",
+                "https://bridgerwestern.cc/stands/twau/",
+                "https://bridgerwestern.cc/stands/hermit-purple/",
+                "https://bridgerwestern.cc/stands/tubular-bells/",
+                "https://bridgerwestern.cc/stands/hey-ya/",
+                "https://bridgerwestern.cc/stands/20th-century-boy/",
+                "https://bridgerwestern.cc/stands/mandom/"
+              ]
+            }'
+
+      - name: Submission complete
+        run: echo "✅ IndexNow submission complete! Submitted 60 URLs to Bing, Yandex and partners."
