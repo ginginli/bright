@@ -119,7 +119,7 @@
           'event_category': 'navigation',
           'event_label': linkText,
           'value': 1,
-          'custom_parameter_1': linkUrl
+          'link_destination': linkUrl
         });
       }
 
@@ -130,10 +130,10 @@
           'event_category': 'engagement',
           'event_label': 'page_exit',
           'value': timeSpent,
-          'custom_parameter_1': mapEngagement.scrollDepth,
-          'custom_parameter_2': mapEngagement.mapViewed ? 1 : 0,
-          'custom_parameter_3': mapEngagement.locationsViewed ? 1 : 0,
-          'custom_parameter_4': mapEngagement.linksClicked.length
+          'scroll_depth': mapEngagement.scrollDepth,
+          'map_viewed': mapEngagement.mapViewed ? 1 : 0,
+          'locations_viewed': mapEngagement.locationsViewed ? 1 : 0,
+          'links_clicked_count': mapEngagement.linksClicked.length
         });
       });
     </script>
@@ -318,7 +318,7 @@
           'event_category': 'user_research',
           'event_label': intent,
           'value': intentValues[intent] || 1,
-          'custom_parameter_1': 'map_page'
+          'page_source': 'map_page'
         });
 
         // Show feedback
