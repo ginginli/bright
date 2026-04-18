@@ -3208,7 +3208,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 .sidebar-section a {
     display: block;
     padding: 6px 8px;
-    font-size: 0.88rem;
+    font-size: 1rem;
     line-height: 1.4;
     color: var(--text-ink);
     text-decoration: none;
@@ -3229,7 +3229,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 
 /* TOC 链接稍淡 */
 .sidebar-toc a {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgba(43,28,17,0.7);
     padding: 7px 8px;
 }
@@ -3366,7 +3366,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 
 /* H2 分类链接 */
 .sidebar-toc a.toc-h2 {
-    font-size: 0.88rem;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--text-ink);
     padding: 6px 8px 4px;
@@ -3388,7 +3388,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 
 /* H3 stand 名称链接 — 缩进 + 更小字号 */
 .sidebar-toc a.toc-h3 {
-    font-size: 0.84rem;
+    font-size: 0.9rem;
     color: rgba(43,28,17,0.6);
     padding: 3px 8px 3px 18px;
     display: block;
