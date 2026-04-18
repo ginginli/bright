@@ -162,13 +162,41 @@
             <div class="sketch-card" style="background: rgba(255,193,7,0.1); border-left: 4px solid #ffc107; margin-bottom: 2rem;">
                 <h3>🎯 What are you looking for?</h3>
                 <p style="margin-bottom: 1rem;">Help us improve this map by telling us what you need:</p>
-                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem;">
+                
+                <!-- Quick Intent Buttons -->
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.5rem;">
                     <button class="intent-btn" onclick="trackUserIntent('npc_locations')" style="background: #17a2b8; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🧙 NPC Locations</button>
                     <button class="intent-btn" onclick="trackUserIntent('shop_locations')" style="background: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🏪 Shop Locations</button>
                     <button class="intent-btn" onclick="trackUserIntent('spawn_points')" style="background: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">📍 Spawn Points</button>
                     <button class="intent-btn" onclick="trackUserIntent('horse_stables')" style="background: #6f42c1; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🐴 Horse Stables</button>
                     <button class="intent-btn" onclick="trackUserIntent('general_navigation')" style="background: #fd7e14; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🗺️ General Navigation</button>
                 </div>
+
+                <!-- Custom Text Input -->
+                <div style="border-top: 1px solid rgba(255,193,7,0.3); padding-top: 1rem;">
+                    <label for="custom-need" style="display: block; font-weight: bold; margin-bottom: 8px; color: #856404;">
+                        💬 Or tell us specifically what you're looking for:
+                    </label>
+                    <div style="display: flex; gap: 8px; align-items: flex-start;">
+                        <textarea 
+                            id="custom-need" 
+                            placeholder="e.g., 'Where is the best fishing spot?', 'How to get to Mud Witch quickly?', 'Safe route to avoid PvP areas?'..."
+                            style="flex: 1; min-height: 80px; padding: 12px; border: 2px solid #ffc107; border-radius: 6px; font-family: inherit; font-size: 0.9rem; resize: vertical; background: rgba(255,255,255,0.9);"
+                            maxlength="500"
+                        ></textarea>
+                        <button 
+                            id="submit-custom-need" 
+                            onclick="submitCustomNeed()" 
+                            style="background: #ffc107; color: #212529; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; white-space: nowrap; min-height: 80px; display: flex; align-items: center;"
+                        >
+                            📝 Submit
+                        </button>
+                    </div>
+                    <div style="margin-top: 8px; font-size: 0.8rem; color: #856404;">
+                        <span id="char-count">0</span>/500 characters • Your feedback helps us improve the map
+                    </div>
+                </div>
+
                 <div id="intent-feedback" style="display: none; background: rgba(40,167,69,0.1); padding: 12px; border-radius: 4px; margin-top: 1rem;">
                     <p style="margin: 0; color: #155724;">✅ Thanks! We'll use this to improve the map.</p>
                 </div>
@@ -348,6 +376,86 @@
           }
         }, 1000);
       }
+
+      // Handle custom need submission
+      function submitCustomNeed() {
+        const textarea = document.getElementById('custom-need');
+        const customNeed = textarea.value.trim();
+        
+        if (customNeed.length === 0) {
+          alert('Please enter your specific need before submitting.');
+          textarea.focus();
+          return;
+        }
+
+        if (customNeed.length < 10) {
+          alert('Please provide more details (at least 10 characters).');
+          textarea.focus();
+          return;
+        }
+
+        // Track custom user need
+        gtag('event', 'custom_user_need_submitted', {
+          'event_category': 'user_feedback',
+          'event_label': 'map_page_custom_need',
+          'value': customNeed.length,
+          'custom_need_text': customNeed.substring(0, 100), // Limit to 100 chars for GA
+          'custom_need_length': customNeed.length,
+          'page_source': 'map_page'
+        });
+
+        // Show success feedback
+        document.getElementById('intent-feedback').style.display = 'block';
+        
+        // Disable form after submission
+        textarea.disabled = true;
+        textarea.style.opacity = '0.6';
+        document.getElementById('submit-custom-need').disabled = true;
+        document.getElementById('submit-custom-need').style.opacity = '0.6';
+        document.getElementById('submit-custom-need').innerHTML = '✅ Submitted';
+        
+        // Disable intent buttons too
+        const buttons = document.querySelectorAll('.intent-btn');
+        buttons.forEach(btn => {
+          btn.disabled = true;
+          btn.style.opacity = '0.6';
+        });
+
+        // Optional: Clear the textarea after a delay
+        setTimeout(() => {
+          textarea.value = 'Thank you for your feedback!';
+        }, 1000);
+      }
+
+      // Character counter for textarea
+      document.addEventListener('DOMContentLoaded', function() {
+        const textarea = document.getElementById('custom-need');
+        const charCount = document.getElementById('char-count');
+        
+        if (textarea && charCount) {
+          textarea.addEventListener('input', function() {
+            const currentLength = this.value.length;
+            charCount.textContent = currentLength;
+            
+            // Change color based on length
+            if (currentLength > 450) {
+              charCount.style.color = '#dc3545'; // Red when near limit
+            } else if (currentLength > 300) {
+              charCount.style.color = '#fd7e14'; // Orange when getting long
+            } else {
+              charCount.style.color = '#856404'; // Default color
+            }
+          });
+
+          // Allow Enter key to submit (Ctrl+Enter or Shift+Enter)
+          textarea.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && (e.ctrlKey || e.shiftKey)) {
+              e.preventDefault();
+              submitCustomNeed();
+            }
+          });
+        }
+      });
 
       // Intersection Observer to track when sections come into view
       const observer = new IntersectionObserver((entries) => {
