@@ -182,7 +182,7 @@
                             id="custom-need" 
                             placeholder="e.g., 'Where is the best fishing spot?', 'How to get to Mud Witch quickly?', 'Safe route to avoid PvP areas?'..."
                             style="flex: 1; min-height: 80px; padding: 12px; border: 2px solid #ffc107; border-radius: 6px; font-family: inherit; font-size: 0.9rem; resize: vertical; background: rgba(255,255,255,0.9);"
-                            maxlength="500"
+                            maxlength="100"
                         ></textarea>
                         <button 
                             id="submit-custom-need" 
@@ -193,7 +193,7 @@
                         </button>
                     </div>
                     <div style="margin-top: 8px; font-size: 0.8rem; color: #856404;">
-                        <span id="char-count">0</span>/500 characters • Your feedback helps us improve the map
+                        <span id="char-count">0</span>/100 characters • Your feedback helps us improve the map
                     </div>
                 </div>
 
@@ -388,8 +388,8 @@
           return;
         }
 
-        if (customNeed.length < 10) {
-          alert('Please provide more details (at least 10 characters).');
+        if (customNeed.length < 2) {
+          alert('Please provide more details (at least 2 characters).');
           textarea.focus();
           return;
         }
@@ -399,8 +399,7 @@
           'event_category': 'user_feedback',
           'event_label': 'map_page_custom_need',
           'value': customNeed.length,
-          'custom_need_text': customNeed.substring(0, 100), // Limit to 100 chars for GA
-          'custom_need_length': customNeed.length,
+          'custom_need_text': customNeed,
           'page_source': 'map_page'
         });
 
@@ -438,9 +437,9 @@
             charCount.textContent = currentLength;
             
             // Change color based on length
-            if (currentLength > 450) {
+            if (currentLength > 90) {
               charCount.style.color = '#dc3545'; // Red when near limit
-            } else if (currentLength > 300) {
+            } else if (currentLength > 70) {
               charCount.style.color = '#fd7e14'; // Orange when getting long
             } else {
               charCount.style.color = '#856404'; // Default color
