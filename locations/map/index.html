@@ -94,7 +94,8 @@
           mapEngagement.mapViewed = true;
           gtag('event', 'map_image_viewed', {
             'event_category': 'engagement',
-            'event_label': 'world_map_image'
+            'event_label': 'world_map_image',
+            'value': 1
           });
         }
       }
@@ -105,7 +106,8 @@
           mapEngagement.locationsViewed = true;
           gtag('event', 'locations_section_viewed', {
             'event_category': 'engagement',
-            'event_label': 'key_locations'
+            'event_label': 'key_locations',
+            'value': 1
           });
         }
       }
@@ -116,7 +118,8 @@
         gtag('event', 'map_link_click', {
           'event_category': 'navigation',
           'event_label': linkText,
-          'value': linkUrl
+          'value': 1,
+          'custom_parameter_1': linkUrl
         });
       }
 
@@ -125,11 +128,12 @@
         const timeSpent = Math.round((Date.now() - mapEngagement.timeOnPage) / 1000);
         gtag('event', 'map_page_engagement', {
           'event_category': 'engagement',
-          'time_on_page': timeSpent,
-          'scroll_depth': mapEngagement.scrollDepth,
-          'map_viewed': mapEngagement.mapViewed,
-          'locations_viewed': mapEngagement.locationsViewed,
-          'links_clicked_count': mapEngagement.linksClicked.length
+          'event_label': 'page_exit',
+          'value': timeSpent,
+          'custom_parameter_1': mapEngagement.scrollDepth,
+          'custom_parameter_2': mapEngagement.mapViewed ? 1 : 0,
+          'custom_parameter_3': mapEngagement.locationsViewed ? 1 : 0,
+          'custom_parameter_4': mapEngagement.linksClicked.length
         });
       });
     </script>
@@ -304,6 +308,7 @@
         gtag('event', 'user_intent_declared', {
           'event_category': 'user_research',
           'event_label': intent,
+          'value': 1,
           'custom_parameter_1': 'map_page'
         });
 
