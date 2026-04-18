@@ -68,6 +68,71 @@
       gtag('js', new Date());
       gtag('config', 'G-FQ74EMR38G');
     </script>
+
+    <!-- User Behavior Tracking -->
+    <script>
+      // Track user engagement on map page
+      let mapEngagement = {
+        timeOnPage: Date.now(),
+        mapViewed: false,
+        locationsViewed: false,
+        linksClicked: [],
+        scrollDepth: 0
+      };
+
+      // Track scroll depth
+      window.addEventListener('scroll', function() {
+        const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+        if (scrollPercent > mapEngagement.scrollDepth) {
+          mapEngagement.scrollDepth = scrollPercent;
+        }
+      });
+
+      // Track when user views map image
+      function trackMapView() {
+        if (!mapEngagement.mapViewed) {
+          mapEngagement.mapViewed = true;
+          gtag('event', 'map_image_viewed', {
+            'event_category': 'engagement',
+            'event_label': 'world_map_image'
+          });
+        }
+      }
+
+      // Track when user views locations section
+      function trackLocationsView() {
+        if (!mapEngagement.locationsViewed) {
+          mapEngagement.locationsViewed = true;
+          gtag('event', 'locations_section_viewed', {
+            'event_category': 'engagement',
+            'event_label': 'key_locations'
+          });
+        }
+      }
+
+      // Track link clicks
+      function trackLinkClick(linkText, linkUrl) {
+        mapEngagement.linksClicked.push({text: linkText, url: linkUrl});
+        gtag('event', 'map_link_click', {
+          'event_category': 'navigation',
+          'event_label': linkText,
+          'value': linkUrl
+        });
+      }
+
+      // Send engagement data before user leaves
+      window.addEventListener('beforeunload', function() {
+        const timeSpent = Math.round((Date.now() - mapEngagement.timeOnPage) / 1000);
+        gtag('event', 'map_page_engagement', {
+          'event_category': 'engagement',
+          'time_on_page': timeSpent,
+          'scroll_depth': mapEngagement.scrollDepth,
+          'map_viewed': mapEngagement.mapViewed,
+          'locations_viewed': mapEngagement.locationsViewed,
+          'links_clicked_count': mapEngagement.linksClicked.length
+        });
+      });
+    </script>
 </head>
 <body>
 
@@ -88,8 +153,38 @@
     <section id="map" class="section">
         <div class="container">
             <h2 class="section-title">🗺️ World Map</h2>
+            
+            <!-- User Intent Survey -->
+            <div class="sketch-card" style="background: rgba(255,193,7,0.1); border-left: 4px solid #ffc107; margin-bottom: 2rem;">
+                <h3>🎯 What are you looking for?</h3>
+                <p style="margin-bottom: 1rem;">Help us improve this map by telling us what you need:</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1rem;">
+                    <button class="intent-btn" onclick="trackUserIntent('npc_locations')" style="background: #17a2b8; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🧙 NPC Locations</button>
+                    <button class="intent-btn" onclick="trackUserIntent('shop_locations')" style="background: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🏪 Shop Locations</button>
+                    <button class="intent-btn" onclick="trackUserIntent('spawn_points')" style="background: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">📍 Spawn Points</button>
+                    <button class="intent-btn" onclick="trackUserIntent('horse_stables')" style="background: #6f42c1; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🐴 Horse Stables</button>
+                    <button class="intent-btn" onclick="trackUserIntent('general_navigation')" style="background: #fd7e14; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🗺️ General Navigation</button>
+                </div>
+                <div id="intent-feedback" style="display: none; background: rgba(40,167,69,0.1); padding: 12px; border-radius: 4px; margin-top: 1rem;">
+                    <p style="margin: 0; color: #155724;">✅ Thanks! We'll use this to improve the map.</p>
+                </div>
+            </div>
+
             <div style="text-align: center; margin: 2rem 0;">
-                <img src="../../map.png" alt="Bridger Western Complete World Map showing all locations, NPCs, and points of interest in Ridge B Valley" loading="lazy" width="1393" height="997" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+                <img src="../../map.png" alt="Bridger Western Complete World Map showing all locations, NPCs, and points of interest in Ridge B Valley" loading="lazy" width="1393" height="997" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" onload="trackMapView()">
+                
+                <!-- Interactive Map Legend -->
+                <div style="margin-top: 1.5rem; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <h4 style="text-align: center; margin-bottom: 1rem;">🔍 Map Legend</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; font-size: 0.9rem;">
+                        <div>🏪 <strong>Gun Store</strong> - Main Town Center</div>
+                        <div>🧙 <strong>Mud Witch</strong> - Swamp Area</div>
+                        <div>🐴 <strong>Horse Stables</strong> - Multiple Locations</div>
+                        <div>⚒️ <strong>Blacksmith</strong> - Main Town</div>
+                        <div>📍 <strong>Spawn Points</strong> - Various NPCs</div>
+                        <div>🏕️ <strong>Outlaw Camp</strong> - Desert Area</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -97,7 +192,7 @@
     <!-- Key Locations -->
     <section id="locations" class="section">
         <div class="container">
-            <h2 class="section-title">📍 Key Locations</h2>
+            <h2 class="section-title" onload="trackLocationsView()">📍 Key Locations</h2>
 
             <div class="sketch-card">
                 <h3>🏘️ Main Town</h3>
@@ -108,18 +203,42 @@
                     <li>• <strong>Red Corner Fight Club:</strong> Fist fight with other players (losing costs 300 Moola)</li>
                     <li>• <strong>Tailor:</strong> Reroll Shirt/Pants (15 Moola), Accessories (30 Moola)</li>
                     <li>• <strong>Barbershop:</strong> Reroll hairstyle (25 Moola), hair color (15 Moola)</li>
-                    <li>• <strong>Flint | Blacksmith:</strong> Can Questline, fix rusted <a href="/weapons/mares-leg/">Mares Leg</a> (1500 Moola)</li>
+                    <li>• <strong>Flint | Blacksmith:</strong> Can Questline, fix rusted <a href="/weapons/mares-leg/" onclick="trackLinkClick('Mares Leg Guide', '/weapons/mares-leg/')">Mares Leg</a> (1500 Moola)</li>
                 </ul>
             </div>
 
             <div class="sketch-card" style="margin-top: 1.5rem;">
                 <h3>🌿 Special Locations</h3>
                 <ul style="list-style: none; padding-left: 0; line-height: 1.8;">
-                    <li>• <strong><a href="/cards/how-to-get-cards/">Mud Witch</a>'s Hut (Swamp):</strong> Read fortune for Cards (150 Moola), trade Dogbane Herb (2500 Moola / age -20 years / wipe Stand)</li>
+                    <li>• <strong><a href="/cards/how-to-get-cards/" onclick="trackLinkClick('How to Get Cards', '/cards/how-to-get-cards/')">Mud Witch</a>'s Hut (Swamp):</strong> Read fortune for Cards (150 Moola), trade Dogbane Herb (2500 Moola / age -20 years / wipe Stand)</li>
                     <li>• <strong>Outlaw Camp Dealer:</strong> Extra guns, throwables, etc.</li>
                     <li>• <strong>Horse Stables:</strong> Replace horse, press M to see stats (Speed, Stamina, Jump, Damage, Scale, Turn). Mythical and Legendary horses exist</li>
                     <li>• <strong>Spawn Point NPCs:</strong> Change spawn point for 150 Moola (various locations)</li>
                 </ul>
+            </div>
+
+            <!-- Related Content Suggestions -->
+            <div class="sketch-card" style="margin-top: 2rem; background: rgba(23,162,184,0.1); border-left: 4px solid #17a2b8;">
+                <h3>🔗 Related Guides</h3>
+                <p style="margin-bottom: 1rem;">Since you're exploring the map, you might also need:</p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+                    <a href="../horses/" onclick="trackLinkClick('Horse Guide', '../horses/')" style="display: block; padding: 12px; background: rgba(255,255,255,0.1); border-radius: 4px; text-decoration: none; color: inherit; border: 1px solid rgba(255,255,255,0.2);">
+                        <strong>🐴 Horse Guide</strong><br>
+                        <small>Stats, breeding, locations</small>
+                    </a>
+                    <a href="/weapons/" onclick="trackLinkClick('Weapons Database', '/weapons/')" style="display: block; padding: 12px; background: rgba(255,255,255,0.1); border-radius: 4px; text-decoration: none; color: inherit; border: 1px solid rgba(255,255,255,0.2);">
+                        <strong>🔫 Weapons Database</strong><br>
+                        <small>All guns and stats</small>
+                    </a>
+                    <a href="/items/" onclick="trackLinkClick('Items Database', '/items/')" style="display: block; padding: 12px; background: rgba(255,255,255,0.1); border-radius: 4px; text-decoration: none; color: inherit; border: 1px solid rgba(255,255,255,0.2);">
+                        <strong>📦 Items Database</strong><br>
+                        <small>All items and uses</small>
+                    </a>
+                    <a href="/stands/" onclick="trackLinkClick('Stands Database', '/stands/')" style="display: block; padding: 12px; background: rgba(255,255,255,0.1); border-radius: 4px; text-decoration: none; color: inherit; border: 1px solid rgba(255,255,255,0.2);">
+                        <strong>⭐ Stands Database</strong><br>
+                        <small>All Stands and abilities</small>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -177,6 +296,64 @@
     <!-- Advertising -->
     <script src="../../js/ads-config.js" defer></script>
     <script src="../../js/ads-manager.js" defer></script>
+    
+    <!-- User Intent Tracking -->
+    <script>
+      function trackUserIntent(intent) {
+        // Track the user's stated intent
+        gtag('event', 'user_intent_declared', {
+          'event_category': 'user_research',
+          'event_label': intent,
+          'custom_parameter_1': 'map_page'
+        });
+
+        // Show feedback
+        document.getElementById('intent-feedback').style.display = 'block';
+        
+        // Disable all intent buttons after selection
+        const buttons = document.querySelectorAll('.intent-btn');
+        buttons.forEach(btn => {
+          btn.disabled = true;
+          btn.style.opacity = '0.6';
+        });
+
+        // Scroll to relevant content based on intent
+        setTimeout(() => {
+          switch(intent) {
+            case 'npc_locations':
+            case 'shop_locations':
+              document.getElementById('locations').scrollIntoView({behavior: 'smooth'});
+              break;
+            case 'spawn_points':
+            case 'horse_stables':
+              document.getElementById('locations').scrollIntoView({behavior: 'smooth'});
+              break;
+            case 'general_navigation':
+              document.getElementById('map').scrollIntoView({behavior: 'smooth'});
+              break;
+          }
+        }, 1000);
+      }
+
+      // Intersection Observer to track when sections come into view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            if (entry.target.id === 'locations') {
+              trackLocationsView();
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+
+      // Observe sections when page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        const locationsSection = document.getElementById('locations');
+        if (locationsSection) {
+          observer.observe(locationsSection);
+        }
+      });
+    </script>
     
     <!-- Load components -->
     <script src="../../js/components.js" defer></script>
