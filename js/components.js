@@ -206,3 +206,167 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Export for manual usage
 window.ComponentLoader = ComponentLoader;
+
+/**
+ * Global User Intent Collection System
+ * 针对停留时间短（< 30秒）的用户，在鼠标离开视口时弹出意图收集弹窗
+ * 整个会话只弹一次（sessionStorage 记录）
+ */
+class UserIntentCollector {
+    constructor() {
+        this.SESSION_KEY = 'bw_popup_shown';
+        this.timeOnPage = Date.now();
+
+        // 本次会话已弹过，直接跳过
+        if (sessionStorage.getItem(this.SESSION_KEY)) return;
+
+        this.init();
+    }
+
+    init() {
+        // 桌面端：鼠标离开视口顶部时触发
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY <= 0 && this.shouldShowPopup()) {
+                this.showExitIntentPopup('mouse_leave');
+            }
+        });
+    }
+
+    shouldShowPopup() {
+        // 已弹过（sessionStorage 双重保险）
+        if (sessionStorage.getItem(this.SESSION_KEY)) return false;
+        // 停留时间 < 30 秒才弹（短停留用户）
+        const timeSpent = (Date.now() - this.timeOnPage) / 1000;
+        return timeSpent < 30;
+    }
+
+    showExitIntentPopup(trigger = 'exit_intent') {
+        // 标记本次会话已弹过
+        sessionStorage.setItem(this.SESSION_KEY, '1');
+
+        const timeSpent = Math.round((Date.now() - this.timeOnPage) / 1000);
+
+        // Create popup HTML
+        const popup = document.createElement('div');
+        popup.className = 'exit-intent-popup';
+        popup.innerHTML = `
+            <div class="exit-popup-overlay"></div>
+            <div class="exit-popup-content">
+                <button class="exit-popup-close" onclick="this.closest('.exit-intent-popup').remove(); document.body.style.overflow='';">✕</button>
+                
+                <div class="exit-popup-header">
+                    <h3>🤔 Wait! Did you find what you were looking for?</h3>
+                    <p>Help us improve by telling us what you needed:</p>
+                </div>
+
+                <div class="exit-popup-options">
+                    <button onclick="userIntentCollector.submitIntent('found_what_needed', this)" class="intent-option success">
+                        ✅ Yes, I found what I needed
+                    </button>
+                    <button onclick="userIntentCollector.submitIntent('content_missing', this)" class="intent-option missing">
+                        📝 The content I need isn't here
+                    </button>
+                </div>
+
+                <div class="exit-popup-help" id="help-section" style="display: none;">
+                    <h4>What are you looking for?</h4>
+                    <textarea id="user-need-text" placeholder="e.g., 'How to get The World Stand', 'Best card builds for beginners'..." maxlength="500"></textarea>
+                    <button onclick="userIntentCollector.submitCustomNeed()" class="btn">Submit</button>
+                </div>
+
+                <div class="exit-popup-footer">
+                    <p>Your feedback helps us create better content 🙏</p>
+                </div>
+            </div>
+        `;
+
+        document.body.appendChild(popup);
+        document.body.style.overflow = 'hidden';
+
+        // 记录弹窗展示事件（带停留时间）
+        if (typeof gtag === 'function') {
+            gtag('event', 'exit_intent_popup_shown', {
+                'event_category': 'user_retention',
+                'event_label': trigger,
+                'value': timeSpent,
+                'time_on_page': timeSpent,
+                'page_url': window.location.pathname
+            });
+        }
+
+        // 30 秒后自动关闭
+        setTimeout(() => {
+            if (document.querySelector('.exit-intent-popup')) {
+                popup.remove();
+                document.body.style.overflow = '';
+            }
+        }, 30000);
+    }
+
+    submitIntent(intent, button) {
+        // Track the intent
+        if (typeof gtag === 'function') {
+            gtag('event', 'exit_intent_response', {
+                'event_category': 'user_feedback',
+                'event_label': intent,
+                'value': 1,
+                'page_url': window.location.pathname
+            });
+        }
+
+        if (intent === 'content_missing') {
+            // 展示文本输入框
+            document.getElementById('help-section').style.display = 'block';
+            button.style.background = '#17a2b8';
+            button.style.color = 'white';
+        } else {
+            // Close popup after brief delay
+            setTimeout(() => {
+                document.querySelector('.exit-intent-popup').remove();
+                document.body.style.overflow = '';
+            }, 1500);
+        }
+
+        // Disable all buttons
+        document.querySelectorAll('.intent-option').forEach(btn => {
+            if (btn !== button) {
+                btn.disabled = true;
+                btn.style.opacity = '0.5';
+            }
+        });
+    }
+
+    submitCustomNeed() {
+        const text = document.getElementById('user-need-text').value.trim();
+        if (text.length < 10) {
+            alert('Please provide more details (at least 10 characters)');
+            return;
+        }
+
+        // Track custom need
+        if (typeof gtag === 'function') {
+            gtag('event', 'exit_intent_custom_need', {
+                'event_category': 'user_feedback',
+                'event_label': 'custom_need_submitted',
+                'value': 1,
+                'custom_need_text': text,
+                'page_url': window.location.pathname
+            });
+        }
+
+        // Show success and close
+        document.getElementById('help-section').innerHTML = '<p style="color: #28a745; text-align: center;">✅ Thank you! We\'ll use this to improve our content.</p>';
+        
+        setTimeout(() => {
+            document.querySelector('.exit-intent-popup').remove();
+            document.body.style.overflow = '';
+        }, 2000);
+    }
+
+}
+
+// Initialize user intent collector on all pages
+let userIntentCollector;
+document.addEventListener('DOMContentLoaded', function() {
+    userIntentCollector = new UserIntentCollector();
+});

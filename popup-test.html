@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>弹窗预览测试</title>
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background: #e8dfd5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .test-btn {
+            background: #2b1c11;
+            color: #e8dfd5;
+            border: none;
+            padding: 14px 32px;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        .test-btn:hover { background: #4a3020; }
+        p { color: #8a7360; font-size: 0.9rem; }
+
+        /* ── 弹窗样式（与 style.css 一致）── */
+        .exit-intent-popup {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .exit-popup-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(3px);
+        }
+        .exit-popup-content {
+            position: relative;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: popupSlideIn 0.3s ease-out;
+        }
+        @keyframes popupSlideIn {
+            from { opacity: 0; transform: translateY(-30px) scale(0.95); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .exit-popup-close {
+            position: absolute;
+            top: 15px; right: 15px;
+            background: none; border: none;
+            font-size: 1.5rem; cursor: pointer;
+            color: #999; width: 30px; height: 30px;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 50%; transition: all 0.2s;
+        }
+        .exit-popup-close:hover { background: #f8f9fa; color: #333; }
+        .exit-popup-header { text-align: center; margin-bottom: 25px; }
+        .exit-popup-header h3 { margin: 0 0 10px; color: #333; font-size: 1.3rem; font-family: inherit; }
+        .exit-popup-header p  { margin: 0; color: #666; font-size: 0.95rem; }
+        .exit-popup-options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        .intent-option {
+            padding: 12px 16px;
+            border: 2px solid #e9ecef;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.9rem;
+            text-align: left;
+            font-family: inherit;
+        }
+        .intent-option:hover          { border-color: #17a2b8; background: #f8f9fa; transform: translateY(-1px); }
+        .intent-option.success:hover  { border-color: #28a745; background: rgba(40,167,69,0.1); }
+        .intent-option.help:hover     { border-color: #17a2b8; background: rgba(23,162,184,0.1); }
+        .intent-option.missing:hover  { border-color: #ffc107; background: rgba(255,193,7,0.1); }
+        .intent-option.neutral:hover  { border-color: #6c757d; background: rgba(108,117,125,0.1); }
+        .exit-popup-help {
+            background: #f8f9fa; padding: 20px;
+            border-radius: 8px; margin: 15px 0;
+        }
+        .exit-popup-help h4 { margin: 0 0 15px; color: #333; font-size: 1.1rem; font-family: inherit; }
+        .exit-popup-help textarea {
+            width: 100%; min-height: 80px;
+            padding: 12px; border: 2px solid #dee2e6;
+            border-radius: 6px; font-family: inherit;
+            font-size: 0.9rem; resize: vertical;
+            margin-bottom: 15px; box-sizing: border-box;
+        }
+        .exit-popup-help textarea:focus { outline: none; border-color: #17a2b8; }
+        .exit-popup-help .submit-btn {
+            background: #17a2b8; color: white; border: none;
+            padding: 10px 20px; border-radius: 6px;
+            cursor: pointer; font-family: inherit;
+            font-size: 0.9rem; transition: background 0.2s;
+        }
+        .exit-popup-help .submit-btn:hover { background: #138496; }
+        .exit-popup-footer {
+            text-align: center; margin-top: 20px;
+            padding-top: 15px; border-top: 1px solid #e9ecef;
+        }
+        .exit-popup-footer p { margin: 0; color: #999; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <p>点击按钮预览挽留弹窗效果</p>
+    <button class="test-btn" onclick="showPopup()">👁 预览弹窗</button>
+
+    <script>
+        function showPopup() {
+            // 移除已有弹窗
+            const existing = document.querySelector('.exit-intent-popup');
+            if (existing) existing.remove();
+
+            const popup = document.createElement('div');
+            popup.className = 'exit-intent-popup';
+            popup.innerHTML = `
+                <div class="exit-popup-overlay" onclick="closePopup()"></div>
+                <div class="exit-popup-content">
+                    <button class="exit-popup-close" onclick="closePopup()">✕</button>
+
+                    <div class="exit-popup-header">
+                        <h3>🤔 Wait! Did you find what you were looking for?</h3>
+                        <p>Help us improve by telling us what you needed:</p>
+                    </div>
+
+                    <div class="exit-popup-options">
+                        <button onclick="selectIntent('found_what_needed', this)" class="intent-option success">
+                            ✅ Yes, I found what I needed
+                        </button>
+                        <button onclick="selectIntent('content_missing', this)" class="intent-option missing">
+                            � The content I need isn't here
+                        </button>
+                    </div>
+
+                    <div class="exit-popup-help" id="help-section" style="display:none;">
+                        <h4>What are you looking for?</h4>
+                        <textarea id="user-need-text" placeholder="e.g., 'How to get The World Stand', 'Best card builds for beginners'..." maxlength="500"></textarea>
+                        <button class="submit-btn" onclick="submitNeed()">Submit</button>
+                    </div>
+
+                    <div class="exit-popup-footer">
+                        <p>Your feedback helps us create better content 🙏</p>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(popup);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePopup() {
+            const popup = document.querySelector('.exit-intent-popup');
+            if (popup) popup.remove();
+            document.body.style.overflow = '';
+        }
+
+        function selectIntent(intent, btn) {
+            document.querySelectorAll('.intent-option').forEach(b => {
+                if (b !== btn) { b.disabled = true; b.style.opacity = '0.4'; }
+            });
+            btn.style.background = '#17a2b8';
+            btn.style.color = 'white';
+            btn.style.borderColor = '#17a2b8';
+
+            if (intent === 'content_missing') {
+                document.getElementById('help-section').style.display = 'block';
+            } else {
+                setTimeout(closePopup, 1200);
+            }
+        }
+
+        function submitNeed() {
+            const text = document.getElementById('user-need-text').value.trim();
+            if (text.length < 10) {
+                alert('请至少输入 10 个字符');
+                return;
+            }
+            document.getElementById('help-section').innerHTML =
+                '<p style="color:#28a745;text-align:center;">✅ Thank you! We\'ll use this to improve our content.</p>';
+            setTimeout(closePopup, 2000);
+        }
+    </script>
+</body>
+</html>
