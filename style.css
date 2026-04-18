@@ -3359,3 +3359,70 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
         display: none;
     }
 }
+
+/* =========================================
+   两级 TOC（stand-abilities 页面专用）
+   ========================================= */
+
+/* H2 分类链接 */
+.sidebar-toc a.toc-h2 {
+    font-size: 0.82rem;
+    font-weight: bold;
+    color: var(--text-ink);
+    padding: 6px 8px 4px;
+    display: block;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+}
+
+.sidebar-toc a.toc-h2:hover {
+    color: var(--accent-fade);
+    background: rgba(43,28,17,0.04);
+}
+
+.sidebar-toc a.toc-h2.toc-active {
+    border-left-color: var(--accent-fade);
+    color: var(--text-ink);
+}
+
+/* H3 stand 名称链接 — 缩进 + 更小字号 */
+.sidebar-toc a.toc-h3 {
+    font-size: 0.78rem;
+    color: rgba(43,28,17,0.6);
+    padding: 3px 8px 3px 18px;
+    display: block;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    transition: color 0.15s, border-color 0.15s;
+    line-height: 1.4;
+}
+
+.sidebar-toc a.toc-h3:hover {
+    color: var(--text-ink);
+    background: rgba(43,28,17,0.04);
+}
+
+.sidebar-toc a.toc-h3.toc-active {
+    color: var(--text-ink);
+    border-left-color: var(--accent-fade);
+    font-weight: bold;
+}
+
+/* sub 容器间距 */
+.sidebar-toc .toc-sub {
+    margin-bottom: 4px;
+}
+
+/* mobile dropdown 里的两级样式 */
+.sidebar-mobile-dropdown a.toc-h2 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 8px 14px;
+}
+
+.sidebar-mobile-dropdown a.toc-h3 {
+    font-size: 0.8rem;
+    padding: 6px 14px 6px 26px;
+    color: rgba(43,28,17,0.65);
+}
