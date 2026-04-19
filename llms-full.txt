@@ -921,6 +921,13 @@ URL: https://bridgerwestern.cc/locations/spawn-locations/
 
 Content: All spawn locations for Inlaw and Outlaw factions. Inlaw spawns: Ridge B. County (3 buildings: Hotel, LP. Haris Medical Help, Random Red Building) and Digsite (adjacent caravan). Outlaw spawns: Campsite (outside swamp), Outlaw Hideout (woods fortress), Outlaw Hills (1 of 2 campfires), Red Corner (tunnel), Sandtown (random building). Change spawn by interacting with location NPC for 150 Moola. Dying at own spawn has 30% chance to auto-change spawn to prevent spawn killing. Outlaws cannot use Inlaw spawns and vice versa.
 
+---
+
+### NPCs Guide
+URL: https://bridgerwestern.cc/locations/npcs/
+
+Content: All NPCs in Bridger Western. Flint the Blacksmith is located in front of Ridge B. County at the bridge near the train stop. He gives the Can Questline and repairs rusted Mares Leg weapons for 1,500 Moola. Gyro NPC data to be added.
+
 **Horse Stats:**
 - Press M to view your horse's stats
 - Speed: How fast your horse can run
