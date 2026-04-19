@@ -215,10 +215,15 @@ window.ComponentLoader = ComponentLoader;
 class UserIntentCollector {
     constructor() {
         this.SESSION_KEY = 'bw_popup_shown';
-        this.timeOnPage = Date.now();
+        this.SESSION_START_KEY = 'bw_session_start';
 
         // 本次会话已弹过，直接跳过
         if (sessionStorage.getItem(this.SESSION_KEY)) return;
+
+        // 记录会话开始时间（第一次进入网站时设置，之后不覆盖）
+        if (!sessionStorage.getItem(this.SESSION_START_KEY)) {
+            sessionStorage.setItem(this.SESSION_START_KEY, Date.now().toString());
+        }
 
         this.init();
     }
@@ -235,16 +240,18 @@ class UserIntentCollector {
     shouldShowPopup() {
         // 已弹过（sessionStorage 双重保险）
         if (sessionStorage.getItem(this.SESSION_KEY)) return false;
-        // 停留时间 < 30 秒才弹（短停留用户）
-        const timeSpent = (Date.now() - this.timeOnPage) / 1000;
-        return timeSpent < 30;
+        // 全站累计停留时间 < 30 秒才弹
+        const sessionStart = parseInt(sessionStorage.getItem(this.SESSION_START_KEY) || Date.now());
+        const totalTimeSpent = (Date.now() - sessionStart) / 1000;
+        return totalTimeSpent < 30;
     }
 
     showExitIntentPopup(trigger = 'exit_intent') {
         // 标记本次会话已弹过
         sessionStorage.setItem(this.SESSION_KEY, '1');
 
-        const timeSpent = Math.round((Date.now() - this.timeOnPage) / 1000);
+        const sessionStart = parseInt(sessionStorage.getItem(this.SESSION_START_KEY) || Date.now());
+        const timeSpent = Math.round((Date.now() - sessionStart) / 1000);
 
         // Create popup HTML
         const popup = document.createElement('div');
