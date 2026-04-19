@@ -68,6 +68,7 @@
 - [Locations Guide](https://bridgerwestern.cc/locations/): Complete NPCs and shops guide - Gun Store, Mud Witch, Horse Stables, Banker, Blacksmith
 - [Bridger Western Map](https://bridgerwestern.cc/locations/map/): Interactive world map showing all locations, NPCs, shops, and points of interest
 - [Horse Guide](https://bridgerwestern.cc/locations/horses/): Complete horse guide with stats (Speed, Stamina, Jump, Damage, Scale, Turn), rarities (Common to Mythical), Horse Stables locations
+- [Spawn Locations](https://bridgerwestern.cc/locations/spawn-locations/): All Inlaw and Outlaw spawn points, how to change spawn (150 Moola), anti-spawn-kill mechanic (30% auto-change)
 - [Locations FAQ](https://bridgerwestern.cc/locations/faq/): Common questions about NPCs, shops, Mud Witch services, Horse Stables, customization costs
 
 ## Key Game Mechanics
