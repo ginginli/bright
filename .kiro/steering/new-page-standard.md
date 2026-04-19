@@ -124,9 +124,9 @@ Use these exact boilerplate elements. No exceptions.
     <main id="main-content">
 
     <!-- Mobile TOC (required) -->
-    <div class="container" style="padding-top: 16px;">
-        <div class="sidebar-mobile-toc">
-            <button class="sidebar-mobile-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+    <div class="sidebar-mobile-bar" style="margin: 0 20px 16px;">
+        <div style="flex:1; max-width:200px;">
+            <button class="sidebar-mobile-btn" onclick="var d=this.nextElementSibling;d.classList.toggle('open');this.querySelector('span').textContent=d.classList.contains('open')?'▲':'▾'">
                 On This Page <span>▾</span>
             </button>
             <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
