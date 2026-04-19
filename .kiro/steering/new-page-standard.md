@@ -104,11 +104,11 @@ Use these exact boilerplate elements. No exceptions.
     <div id="nav-container"></div>
 
     <!-- Breadcrumb -->
-    <section class="breadcrumb">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
         <div class="container">
-            <a href="/">Home</a> → <a href="/[section]/">[Section]</a> → <span>[Page]</span>
+            <a href="/">Home</a> <span aria-hidden="true">→</span> <a href="/[section]/">[Section]</a> <span aria-hidden="true">→</span> <span>[Page]</span>
         </div>
-    </section>
+    </nav>
 
     <!-- Hero (required on every page) -->
     <section class="hero">
@@ -121,8 +121,39 @@ Use these exact boilerplate elements. No exceptions.
         </div>
     </section>
 
-    <main class="container">
-        <!-- page content using CSS classes: section-title, sketch-card, grid-2, grid-3, grid-4, faq-item, article-tag, read-more, etc. -->
+    <main id="main-content">
+
+    <!-- Mobile TOC (required) -->
+    <div class="container" style="padding-top: 16px;">
+        <div class="sidebar-mobile-toc">
+            <button class="sidebar-mobile-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                On This Page <span>▾</span>
+            </button>
+            <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
+        </div>
+    </div>
+
+    <!-- TOC sidebar layout (required) -->
+    <div class="page-toc-layout">
+        <aside class="page-toc-sidebar">
+            <div class="sidebar-section sidebar-toc">
+                <div class="sidebar-section-title">On This Page</div>
+                <div id="page-toc"></div>
+            </div>
+        </aside>
+        <div class="page-toc-main">
+
+            <!-- Each section needs: id on H2, section-title class, container div -->
+            <section id="[section-id]">
+            <div class="container">
+                <h2 class="section-title" id="[anchor-id]">[Section Title]</h2>
+                <!-- content using CSS classes: sketch-card, grid-2, grid-3, grid-4, faq-item, article-tag, read-more, etc. -->
+            </div>
+            </section>
+
+        </div><!-- end page-toc-main -->
+    </div><!-- end page-toc-layout -->
+
     </main>
 
     <!-- SEO Long-tail Keywords Section (required) -->
@@ -147,9 +178,12 @@ Use these exact boilerplate elements. No exceptions.
     </footer>
 
     <!-- Scripts — path depends on directory depth -->
-    <script src="[depth]/js/search.js"></script>
-    <script src="[depth]/js/ads-config.js"></script>
-    <script src="[depth]/js/ads-manager.js"></script>
+    <script src="[depth]/js/search.js" defer></script>
+    <!-- Advertising (required on every page) -->
+    <script src="[depth]/js/ads-config.js" defer></script>
+    <script src="[depth]/js/ads-manager.js" defer></script>
+    <!-- Components (nav + footer + exit-intent popup) -->
+    <script src="[depth]/js/components.js" defer></script>
 </body>
 ```
 
@@ -373,9 +407,13 @@ After the page is created and internal links are in place, perform a full SEO au
 - [ ] **One H1 only**, H-tag hierarchy is H1→H2→H3 (no skipped levels)
 - [ ] All `<img>` have descriptive `alt` text + `loading="lazy"` + `width`/`height`
 - [ ] Hero section with `class="hero"` present
+- [ ] `page-toc-layout` + `page-toc-sidebar` + `#page-toc` + `#page-toc-mobile` structure present
+- [ ] Every H2 has `class="section-title"` and a unique `id` attribute
+- [ ] Every `<section>` inside `page-toc-main` has a `<div class="container">` wrapper
 - [ ] SEO long-tail keywords section present (3 paragraphs, 300+ words)
 - [ ] No invented content (all facts sourced)
 - [ ] Correct JS path depth; all scripts use `defer` or `async`
+- [ ] `ads-config.js` and `ads-manager.js` loaded before `components.js`
 - [ ] `sitemap.xml` updated
 - [ ] `llms.txt` updated
 - [ ] `llms-full.txt` updated

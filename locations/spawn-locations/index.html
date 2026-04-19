@@ -117,10 +117,40 @@
     </section>
 
     <main id="main-content">
-    <div class="container">
+
+    <!-- Mobile TOC -->
+    <div class="container" style="padding-top: 16px;">
+        <div class="sidebar-mobile-toc">
+            <button class="sidebar-mobile-toggle" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                On This Page <span>▾</span>
+            </button>
+            <div class="sidebar-mobile-dropdown" id="page-toc-mobile"></div>
+        </div>
+    </div>
+
+    <div class="page-toc-layout">
+        <aside class="page-toc-sidebar">
+            <div class="sidebar-section sidebar-toc">
+                <div class="sidebar-section-title">On This Page</div>
+                <div id="page-toc"></div>
+            </div>
+        </aside>
+        <div class="page-toc-main">
+
+        <!-- 总览图 -->
+        <section style="padding: 40px 0 0;">
+        <div class="container">
+            <h2 class="section-title" id="spawn-map">Spawn Locations Overview</h2>
+            <div style="text-align: center;">
+                <img src="../spawn/spawn location.png" alt="Bridger Western all spawn locations overview map" loading="lazy" style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+                <p style="font-size: 0.85rem; color: var(--accent-fade); margin-top: 10px;">All spawn points marked on the map — accurate to the exact location dot</p>
+            </div>
+        </div>
+        </section>
 
         <!-- Spawn System Overview -->
         <section style="padding: 40px 0 20px;">
+        <div class="container">
             <h2 class="section-title" id="spawn-system">How Spawn Points Work</h2>
             <div class="grid-2">
                 <div class="sketch-card">
@@ -187,43 +217,48 @@
                     </table>
                 </div>
             </div>
+        </div>
         </section>
 
         <!-- Inlaw Spawns -->
         <section style="padding: 40px 0 20px;" id="inlaw-spawns">
+        <div class="container">
             <h2 class="section-title">⚖️ Inlaw Spawn Locations</h2>
             <p style="text-align: center; color: var(--accent-fade); margin-bottom: 32px;">Available to Inlaw (law-abiding) faction players only</p>
 
-            <div class="grid-2">
-                <div class="sketch-card">
-                    <h3>🏘️ Ridge B. County</h3>
-                    <img src="../spawn/Ridge B. County - Spawns you in 1 of 3 buildings.webp" alt="Ridge B. County spawn location in Bridger Western" loading="lazy" style="width: 100%; border-radius: 6px; margin-bottom: 12px;">
-                    <p>The main town spawn. When you respawn here, you appear in <strong>one of three buildings</strong> at random:</p>
-                    <ul style="list-style: none; padding-left: 0; margin-top: 12px;">
-                        <li style="padding: 6px 0; border-bottom: 1px dashed rgba(43,28,17,0.2);">🏨 <strong>Hotel</strong> — Main town hotel building</li>
-                        <li style="padding: 6px 0; border-bottom: 1px dashed rgba(43,28,17,0.2);">
-                            🏥 <strong>LP. Haris Medical Help</strong><br>
-                            <img src="../spawn/LP. Haris Medical Help.webp" alt="LP. Haris Medical Help spawn building" loading="lazy" style="width: 100%; border-radius: 4px; margin-top: 8px;">
-                        </li>
-                        <li style="padding: 6px 0;">
-                            🏚️ <strong>Random Red Building</strong><br>
-                            <img src="../spawn/Random Red Building.webp" alt="Random Red Building spawn location" loading="lazy" style="width: 100%; border-radius: 4px; margin-top: 8px;">
-                        </li>
-                    </ul>
-                    <p style="margin-top: 12px; font-size: 0.85rem; color: var(--accent-fade);">This is the most central Inlaw spawn, close to shops and NPCs.</p>
+            <div class="sketch-card" style="margin-bottom: 32px;">
+                <h3>🏘️ Ridge B. County</h3>
+                <p>The main town spawn. When you respawn here, you appear in <strong>one of three buildings</strong> at random:</p>
+                <img src="../spawn/Ridge B. County - Spawns you in 1 of 3 buildings.webp" alt="Ridge B. County spawn location overview in Bridger Western" loading="lazy" style="width: 100%; border-radius: 6px; margin: 12px 0;">
+                <div class="grid-3" style="margin-top: 16px;">
+                    <div>
+                        <p style="font-weight: bold; margin-bottom: 6px;">🏨 Hotel</p>
+                        <p style="font-size: 0.85rem; color: var(--accent-fade);">Main town hotel building</p>
+                    </div>
+                    <div>
+                        <p style="font-weight: bold; margin-bottom: 6px;">🏥 LP. Haris Medical Help</p>
+                        <img src="../spawn/LP. Haris Medical Help.webp" alt="LP. Haris Medical Help spawn building in Bridger Western" loading="lazy" style="width: 100%; border-radius: 4px; margin-top: 4px;">
+                    </div>
+                    <div>
+                        <p style="font-weight: bold; margin-bottom: 6px;">🏚️ Random Red Building</p>
+                        <img src="../spawn/Random Red Building.webp" alt="Random Red Building spawn location in Bridger Western" loading="lazy" style="width: 100%; border-radius: 4px; margin-top: 4px;">
+                    </div>
                 </div>
-
-                <div class="sketch-card">
-                    <h3>⛏️ Digsite</h3>
-                    <img src="../spawn/Digsite - Spawns you at adjacent digsite caravan.webp" alt="Digsite spawn location in Bridger Western" loading="lazy" style="width: 100%; border-radius: 6px; margin-bottom: 12px;">
-                    <p>Spawns you at the <strong>caravan adjacent to the digsite</strong>. This is a more isolated spawn away from the main town, useful for players who want to avoid the busy town center.</p>
-                    <p style="margin-top: 12px; font-size: 0.85rem; color: var(--accent-fade);">Good option if you want to avoid Outlaw ambushes near the main town.</p>
-                </div>
+                <p style="margin-top: 16px; font-size: 0.85rem; color: var(--accent-fade);">Most central Inlaw spawn — close to shops, Gun Store, Banker, and other NPCs.</p>
             </div>
+
+            <div class="sketch-card">
+                <h3>⛏️ Digsite</h3>
+                <img src="../spawn/Digsite - Spawns you at adjacent digsite caravan.webp" alt="Digsite spawn location in Bridger Western" loading="lazy" style="width: 100%; border-radius: 6px; margin-bottom: 12px;">
+                <p>Spawns you at the <strong>caravan adjacent to the digsite</strong>. A more isolated spawn away from the main town.</p>
+                <p style="margin-top: 8px; font-size: 0.85rem; color: var(--accent-fade);">Good option if you want to avoid Outlaw ambushes near the main town.</p>
+            </div>
+        </div>
         </section>
 
         <!-- Outlaw Spawns -->
         <section style="padding: 40px 0 20px;" id="outlaw-spawns">
+        <div class="container">
             <h2 class="section-title">🔫 Outlaw Spawn Locations</h2>
             <p style="text-align: center; color: var(--accent-fade); margin-bottom: 32px;">Available to Outlaw faction players only — 5 spawn options</p>
 
@@ -263,10 +298,12 @@
                     <p style="margin-top: 8px; font-size: 0.85rem; color: var(--accent-fade);">Desert area spawn — good for Outlaws operating in the eastern region.</p>
                 </div>
             </div>
+        </div>
         </section>
 
         <!-- Tips -->
         <section style="padding: 40px 0 20px;" id="spawn-tips">
+        <div class="container">
             <h2 class="section-title">💡 Spawn Strategy Tips</h2>
             <div class="grid-2">
                 <div class="sketch-card">
@@ -288,10 +325,12 @@
                     </ul>
                 </div>
             </div>
+        </div>
         </section>
 
         <!-- Related Pages -->
         <section style="padding: 40px 0 20px;" id="related">
+        <div class="container">
             <h2 class="section-title">Related Guides</h2>
             <div class="grid-3">
                 <a href="/locations/map/" class="sketch-card article-card" style="display: block; text-decoration: none; color: inherit;">
@@ -313,9 +352,13 @@
                     <span class="read-more">Read Guide →</span>
                 </a>
             </div>
+        </div>
         </section>
 
     </div>
+        </div><!-- end page-toc-main -->
+    </div><!-- end page-toc-layout -->
+
     </main>
 
     <!-- SEO Long-tail Section -->

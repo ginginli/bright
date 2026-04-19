@@ -163,13 +163,37 @@
                 <h3>🎯 What are you looking for?</h3>
                 <p style="margin-bottom: 1rem;">Help us improve this map by telling us what you need:</p>
                 
-                <!-- Quick Intent Buttons -->
-                <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 1.5rem;">
-                    <button class="intent-btn" onclick="trackUserIntent('npc_locations')" style="background: #17a2b8; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🧙 NPC Locations</button>
-                    <button class="intent-btn" onclick="trackUserIntent('shop_locations')" style="background: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🏪 Shop Locations</button>
-                    <button class="intent-btn" onclick="trackUserIntent('spawn_points')" style="background: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">📍 Spawn Points</button>
-                    <button class="intent-btn" onclick="trackUserIntent('horse_stables')" style="background: #6f42c1; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🐴 Horse Stables</button>
-                    <button class="intent-btn" onclick="trackUserIntent('general_navigation')" style="background: #fd7e14; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem;">🗺️ General Navigation</button>
+                <!-- Quick Intent Buttons — 竖排，右边显示跳转链接 -->
+                <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 1rem;">
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button class="intent-btn" onclick="trackUserIntent('npc_locations')" style="background: #17a2b8; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🧙 NPC Locations</button>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button class="intent-btn" onclick="trackUserIntent('shop_locations')" style="background: #28a745; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🏪 Shop Locations</button>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button class="intent-btn" onclick="trackUserIntent('spawn_points')" style="background: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">📍 Spawn Points</button>
+                        <a href="/locations/spawn-locations/" style="font-size: 0.85rem; color: #dc3545; text-decoration: underline; white-space: nowrap;">View Spawn Locations Guide →</a>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button class="intent-btn" onclick="trackUserIntent('horse_stables')" style="background: #6f42c1; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🐴 Horse Stables</button>
+                        <a href="/locations/horses/" style="font-size: 0.85rem; color: #6f42c1; text-decoration: underline; white-space: nowrap;">View Horse Guide →</a>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button class="intent-btn" onclick="trackUserIntent('general_navigation')" style="background: #fd7e14; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🗺️ General Navigation</button>
+                    </div>
+
+                </div>
+
+                <!-- Spawn Points hint (shown after clicking) -->
+                <div id="spawn-hint" style="display: none; background: rgba(220,53,69,0.08); border: 1px solid rgba(220,53,69,0.3); border-radius: 6px; padding: 10px 14px; margin-bottom: 1rem; font-size: 0.9rem;">
+                    📍 We have a dedicated guide for all spawn locations →
+                    <a href="/locations/spawn-locations/" style="color: #dc3545; font-weight: bold; text-decoration: underline;">View All Spawn Locations</a>
                 </div>
 
                 <!-- Custom Text Input -->
@@ -367,7 +391,8 @@
               document.getElementById('locations').scrollIntoView({behavior: 'smooth'});
               break;
             case 'spawn_points':
-              window.location.href = '/locations/spawn-locations/';
+              document.getElementById('spawn-hint').style.display = 'block';
+              document.getElementById('spawn-hint').scrollIntoView({behavior: 'smooth', block: 'nearest'});
               break;
             case 'horse_stables':
               document.getElementById('locations').scrollIntoView({behavior: 'smooth'});
