@@ -955,6 +955,37 @@ a.logo {
     color: var(--text-ink);
 }
 
+/* 可点击卡片：右上角箭头 + hover 边框变色 */
+a.sketch-card,
+a.sketch-card.article-card {
+    position: relative;
+    cursor: pointer;
+}
+
+a.sketch-card::after,
+a.sketch-card.article-card::after {
+    content: '→';
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 1rem;
+    color: var(--accent-fade);
+    opacity: 0.6;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+a.sketch-card:hover::after,
+a.sketch-card.article-card:hover::after {
+    opacity: 1;
+    transform: translateX(3px);
+}
+
+a.sketch-card:hover,
+a.sketch-card.article-card:hover {
+    border-color: var(--accent-fade);
+    box-shadow: 6px 6px 0 rgba(43,28,17,0.18);
+}
+
 .article-tag {
     display: inline-block;
     font-size: 0.72rem;
