@@ -25,7 +25,7 @@ const AdConfig = {
             priority: 'high'
         },
         header: {
-            enabled: false,
+            enabled: true,
             containerId: 'ad-header',
             priority: 'high'
         },
