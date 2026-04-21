@@ -11670,6 +11670,59 @@
       ],
       "description": "Guns, utilities, and throwables disabled inside. Stands still work. Spectators can throw items in from outside.",
       "icon": "⚔️"
+    },
+    {
+      "title": "Dogbane Herb",
+      "url": "/items/dogbane-herb/",
+      "category": "Items",
+      "keywords": [
+        "dogbane herb",
+        "dogbane",
+        "herb",
+        "mud witch trade",
+        "stand removal",
+        "age regression",
+        "2500 moola",
+        "chest drop",
+        "4% drop rate"
+      ],
+      "description": "Rare 4% chest drop. Trade at Mud Witch for 2500 Moola, -20 years age regression, or Stand removal.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Silver Dagger",
+      "url": "/items/silver-dagger/",
+      "category": "Items",
+      "keywords": [
+        "silver dagger",
+        "silver dagger damage",
+        "vampire weapon",
+        "silver fire",
+        "melee weapon",
+        "8 damage",
+        "grab attack"
+      ],
+      "description": "8 base damage (16 vs vampires). M2 grab+shank combo for 28 damage. Leaves silver fire on vampires.",
+      "icon": "🗡️"
+    },
+    {
+      "title": "Guides FAQ",
+      "url": "/guides/faq/",
+      "category": "Guides",
+      "keywords": [
+        "beginner tips",
+        "outlaw or inlaw",
+        "where to spawn",
+        "how to sprint",
+        "starting moola",
+        "wipe strategy",
+        "horse water",
+        "controls help",
+        "new player guide",
+        "bridger western beginner"
+      ],
+      "description": "Common beginner questions: Outlaw vs Inlaw, spawn location, controls, Moola farming, and early-game tips.",
+      "icon": "❓"
     }
   ]
 }
