@@ -5,7 +5,7 @@
 
 (function () {
   // ── Config ──────────────────────────────────────────────
-  const WORKER_URL = 'https://bridger-western-chat.YOUR_SUBDOMAIN.workers.dev';
+  const WORKER_URL = 'https://bridger-western-chat.bridgerwestern.workers.dev';
   // Replace above with your actual Worker URL after deployment
 
   // ── Inject CSS ──────────────────────────────────────────

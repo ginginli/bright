@@ -377,3 +377,11 @@ let userIntentCollector;
 document.addEventListener('DOMContentLoaded', function() {
     userIntentCollector = new UserIntentCollector();
 });
+
+// Load AI chat widget
+(function() {
+    var script = document.createElement('script');
+    script.src = '/js/chat.js';
+    script.defer = true;
+    document.head.appendChild(script);
+})();
