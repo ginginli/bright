@@ -3022,8 +3022,8 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 /* 高亮导航切换按钮 */
 .highlight-toggle-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 168px;
+    right: 24px;
     background: #2b1c11;
     color: #e8dfd5;
     border: none;
@@ -3157,7 +3157,7 @@ a, button, .btn, .nav-link, .category-card, .stand-card,
 /* 安全区域适配 */
 @supports (padding: max(0px)) {
     .highlight-toggle-btn {
-        bottom: max(20px, env(safe-area-inset-bottom) + 20px);
+        bottom: max(168px, env(safe-area-inset-bottom) + 168px);
     }
     
     @media (max-width: 768px) {

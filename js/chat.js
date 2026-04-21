@@ -13,7 +13,7 @@
   style.textContent = `
     #bw-chat-btn {
       position: fixed;
-      bottom: 24px;
+      bottom: 96px;
       right: 24px;
       width: 56px;
       height: 56px;
@@ -34,7 +34,7 @@
 
     #bw-chat-window {
       position: fixed;
-      bottom: 90px;
+      bottom: 164px;
       right: 24px;
       width: 360px;
       max-width: calc(100vw - 32px);
