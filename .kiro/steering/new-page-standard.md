@@ -236,12 +236,30 @@ URL: https://bridgerwestern.cc/[path]/
 [2-3 sentence summary of page content]
 ```
 
-### IndexNow (GitHub Actions)
-Add the new page URL to `.github/workflows/indexnow.yml` in the appropriate `urlList` array:
+### IndexNow — immediate submission (REQUIRED)
+
+**Step A — Submit the new URL right now** by running this curl command (replace `[path]` with the actual path):
+
+```bash
+curl -s -w "\nHTTP_CODE:%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "host": "bridgerwestern.cc",
+    "key": "a1fcb8ea0d9d467cb3a148652769f105",
+    "keyLocation": "https://bridgerwestern.cc/a1fcb8ea0d9d467cb3a148652769f105.txt",
+    "urlList": [
+      "https://bridgerwestern.cc/[path]/"
+    ]
+  }'
+```
+
+Expected response: `HTTP_CODE:200`. If you get 422, the URL is not yet live — wait for deployment and retry.
+
+**Step B — Also add the URL to `.github/workflows/indexnow.yml`** in the appropriate `urlList` array so it gets re-submitted on every future push:
+
 ```yaml
 "https://bridgerwestern.cc/[path]/"
 ```
-This ensures Bing, Yandex and other IndexNow partners are notified immediately on next push.
 
 ---
 
@@ -418,6 +436,7 @@ After the page is created and internal links are in place, perform a full SEO au
 - [ ] `llms.txt` updated
 - [ ] `llms-full.txt` updated
 - [ ] `search-index.json` updated with H1–H6 headings
+- [ ] IndexNow API called immediately (curl, HTTP 200 confirmed)
 - [ ] `.github/workflows/indexnow.yml` updated with new page URL
 - [ ] `components/nav.html` updated (REQUIRED — add to correct dropdown)
 - [ ] Inbound links added from at least 3 related existing pages
