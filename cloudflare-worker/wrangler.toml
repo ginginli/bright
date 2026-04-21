@@ -1,0 +1,7 @@
+name = "bridger-western-chat"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+
+[vars]
+# Do NOT put your API key here
+# Set it via: wrangler secret put GEMINI_API_KEY
