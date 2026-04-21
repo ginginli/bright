@@ -15,22 +15,25 @@
       position: fixed;
       bottom: 96px;
       right: 24px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
+      height: 44px;
+      padding: 0 16px;
+      border-radius: 22px;
       background: #8B4513;
       color: white;
       border: none;
       cursor: pointer;
-      font-size: 24px;
+      font-size: 14px;
+      font-weight: bold;
+      font-family: 'Lora', Georgia, serif;
       box-shadow: 0 4px 16px rgba(0,0,0,0.4);
       z-index: 9998;
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
       transition: transform 0.2s, background 0.2s;
     }
-    #bw-chat-btn:hover { background: #a0522d; transform: scale(1.08); }
+    #bw-chat-btn:hover { background: #a0522d; transform: scale(1.05); }
 
     #bw-chat-window {
       position: fixed;
@@ -169,7 +172,7 @@
   const btn = document.createElement('button');
   btn.id = 'bw-chat-btn';
   btn.setAttribute('aria-label', 'Open wiki assistant');
-  btn.textContent = '🤠';
+  btn.innerHTML = '✨ AI Assistant';
 
   const win = document.createElement('div');
   win.id = 'bw-chat-window';
@@ -224,7 +227,7 @@
   function openChat() {
     isOpen = true;
     win.classList.remove('hidden');
-    btn.textContent = '✕';
+    btn.innerHTML = '✕';
     inputEl.focus();
     if (!greeted) {
       greeted = true;
@@ -235,7 +238,7 @@
   function closeChat() {
     isOpen = false;
     win.classList.add('hidden');
-    btn.textContent = '🤠';
+    btn.innerHTML = '✨ AI Assistant';
   }
 
   btn.addEventListener('click', () => isOpen ? closeChat() : openChat());
