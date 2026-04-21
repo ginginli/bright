@@ -920,6 +920,51 @@ URL: https://bridgerwestern.cc/locations/horses/
 
 Content: Complete guide to horses in Bridger Western including stats, rarities, and Horse Stables locations
 
+**Getting Started:**
+- You spawn with a Mule. Press H to summon it.
+- Horse Stables let you replace your current horse with a new one.
+
+**How to View Horse Stats:**
+- Press M while mounted to see stats on the bottom left of the screen.
+- Stats range from 0.85 to 1.25.
+
+**Horse Stats:**
+- Speed: How fast your horse can run
+- Stamina: How long your horse can sprint
+- Jump: How high your horse can jump
+- Damage: Combat damage dealt by horse
+- Scale: Size of your horse
+- Turn: How quickly your horse can turn
+
+**Horse Rarities (Lowest to Highest):**
+1. Common — Base stats, low price
+2. Rare — Improved stats
+3. Epic — Good stats
+4. 「LEGENDARY」 — Receives 1 significant stat boost exceeding the 1.25 limit
+5. 【 MYTHICAL 】 — Receives 2 significant stat boosts exceeding the 1.25 limit
+
+**Important:** Legendary and Mythical horses do NOT have predetermined good stats. The boost applies to existing stats. A medium-cost Legendary is only as good as its base stats.
+
+**Pricing & Selection:**
+- Price ranges from 150 to around 1,500 Moola
+- The NPC tells you a price, horse name, and vaguely describes the horse
+- Costs 20 Moola to reroll the selection
+- 800 Moola and up is generally the ideal price range for good horses
+- Price is determined by adding up all of the horse's stats (higher total = higher price)
+
+**How to Identify Legendary/Mythical:**
+- Look for brackets and FULL CAPS in the name: 「LEGENDARY」 or 【 MYTHICAL 】
+- A confirmation prompt appears so you don't accidentally skip them
+
+**Horse Stables Locations:**
+- Main Town Stables
+- Outlaw Camp Stables
+- Various other locations across the map
+
+**Why Horses Matter for Tusk:**
+- Tusk users cannot walk (crawl only) and cannot use weapons
+- A legendary or mythical horse is essential for Tusk mobility
+
 ---
 
 ### Spawn Locations
@@ -1029,7 +1074,23 @@ Content: Complete game controls reference with all keybinds, movement mechanics,
 
 ## Stand Skins Gallery
 URL: https://bridgerwestern.cc/stands/skins/
-Gallery of all Stand shiny skin variants in Bridger Western. Any obtainment method that rolls for your Stand has a 5% chance to grant a Shiny skin. Covers The World (Greatest High, OVA), Star Platinum (HFTF, Intro, Judge, OVA, Strength), Star Platinum The World (Final Beatdown, Stone Ocean), D4C (Cracked, M4C), TWAU (Manga, Neo, STW), Hierophant Green (HFTF, Purple, Red, Yellow), Hermit Purple (Hermit Blue, Hermit Gold, Holy's Stand), Mandom (King Mandom, Mintdom, Purple Mandom, Reverse Mandom), and Magicians Red (Purple).
+
+**How Shiny Skins Work:**
+- Any obtainment method that rolls for your Stand has a 5% chance to grant a Shiny skin variant
+- Includes Arrow Shard fishing (0.1%) and Corpse Part KOTH events
+- Shiny skins are purely cosmetic — no gameplay effect
+
+**Available Skins by Stand:**
+
+The World: Greatest High, OVA
+Star Platinum: HFTF, Intro, Judge, OVA, Strength
+Star Platinum | The World: Final Beatdown, Stone Ocean (+ Whitesnake All Star)
+D4C: Cracked, M4C
+TWAU: Manga, Neo, STW
+Hierophant Green: HFTF, Purple, Red, Yellow
+Hermit Purple: Hermit Blue, Hermit Gold, Holy's Stand
+Mandom: King Mandom, Mintdom, Purple Mandom, Reverse Mandom
+Magicians Red: Purple
 
 ## Rokakaka Fruit
 URL: https://bridgerwestern.cc/items/rokakaka-fruit/
@@ -1122,3 +1183,33 @@ DEFAULT Non-Humanoid Utility stand. No stamina cost. Absolute Defense (G, reflec
 ## Mandom Stand Guide
 URL: https://bridgerwestern.cc/stands/mandom/
 RARE time-manipulating Non-Humanoid Utility stand. No stamina cost. Time Rewind (G) returns you and everyone around you 6 seconds back in time including states and health.
+
+---
+
+## Guides FAQ
+URL: https://bridgerwestern.cc/guides/faq/
+
+**Getting Started:**
+- Should I choose Outlaw or Inlaw? → Choose Outlaw. More freedom, community-recommended. Currently minimal mechanical difference.
+- Where should I spawn as a beginner? → Always spawn at Red Corner. Closest to the fishing area for early Moola farming.
+- What should I do first? → Start fishing immediately. Safest way to earn Moola without PvP risk.
+- Starting Moola wipe strategy: Starting Moola is random 50–500. If you get less than 200–300, press Wipe in character menu and create a new character.
+- How much Moola for a good horse? → Only buy horses that cost 1,000+ Moola. Cheaper horses have poor stats.
+
+**Controls:**
+- Sprint: Double-tap W. Auto-vaults over obstacles. On horse: hold Shift.
+- Dodge/Roll: Press Q
+- Aim Down Sights: Press Z
+- Horse across water: Hold Shift to sprint, hold Space when entering water
+- Stand abilities: E, R, T, Y, F, G, H (varies by Stand)
+
+**Progression:**
+- Fastest Moola: Fishing (Golden Bass = 15,000 Moola)
+- Aging system: Character ages over time. Dogbane Herb (4% chest drop) → Mud Witch for -20 years
+- How to get a Stand: Arrow Shard fishing (0.1%) or Corpse Part KOTH. No Stand Arrows in Bridger Western.
+
+**Common Beginner Mistakes:**
+- Spawned with little Moola → Use wipe strategy, re-roll until 200+
+- Bought cheap horse → Save for 1,000+ Moola horse
+- Dying to players → Avoid PvP early, use Cowboy Hat (1 headshot protection) and Poncho (reduced damage)
+- Chose Inlaw → Minimal difference currently, can wipe and restart as Outlaw
