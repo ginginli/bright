@@ -11628,6 +11628,48 @@
       ],
       "description": "RARE time-manipulating Non-Humanoid Utility stand. Time Rewind returns everyone 6 seconds back.",
       "icon": "🌟"
+    },
+    {
+      "title": "Red Corner Fight Club",
+      "url": "/locations/red-corner-fight-club/",
+      "category": "Locations",
+      "keywords": [
+        "red corner fight club",
+        "fight club",
+        "pvp arena",
+        "fist fight",
+        "bridger western fight club",
+        "300 moola",
+        "mat system"
+      ],
+      "description": "PvP fist fighting arena in Main Town. Step on a mat to register, fight until 0 HP. Losing costs 300 Moola. Weapons disabled inside.",
+      "icon": "🥊"
+    },
+    {
+      "title": "How to Enter the Fight Club",
+      "url": "/locations/red-corner-fight-club/#how-to-enter",
+      "category": "Locations",
+      "keywords": [
+        "how to enter fight club",
+        "fight club mat",
+        "green mat red mat",
+        "register fight"
+      ],
+      "description": "Interact with the NPC, step on a glowing mat (green = vacant, red = occupied). Both players teleported to underground arena.",
+      "icon": "🥊"
+    },
+    {
+      "title": "Fight Club Rules",
+      "url": "/locations/red-corner-fight-club/#rules",
+      "category": "Locations",
+      "keywords": [
+        "fight club rules",
+        "weapons disabled arena",
+        "fist fight rules",
+        "spectator loophole"
+      ],
+      "description": "Guns, utilities, and throwables disabled inside. Stands still work. Spectators can throw items in from outside.",
+      "icon": "⚔️"
     }
   ]
 }

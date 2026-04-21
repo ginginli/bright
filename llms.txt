@@ -71,6 +71,7 @@
 - [Spawn Locations](https://bridgerwestern.cc/locations/spawn-locations/): All Inlaw and Outlaw spawn points, how to change spawn (150 Moola), anti-spawn-kill mechanic (30% auto-change)
 - [NPCs Guide](https://bridgerwestern.cc/locations/npcs/): All NPCs in Ridge B Valley — Flint the Blacksmith (Can Questline, Mares Leg repair 1500 Moola)
 - [Locations FAQ](https://bridgerwestern.cc/locations/faq/): Common questions about NPCs, shops, Mud Witch services, Horse Stables, customization costs
+- [Red Corner Fight Club](https://bridgerwestern.cc/locations/red-corner-fight-club/): PvP fist fighting arena in Main Town. Mat system (green=vacant, red=occupied), 300 Moola loss penalty, weapons disabled inside arena
 
 ## Key Game Mechanics
 

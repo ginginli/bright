@@ -909,6 +909,12 @@ URL: https://bridgerwestern.cc/locations/faq/
 
 ---
 
+### Red Corner Fight Club
+URL: https://bridgerwestern.cc/locations/red-corner-fight-club/
+PvP fist fighting arena located in Main Town at the Red Corner. Interact with the NPC to register, then step on a glowing mat (green = vacant, red = occupied). Once both mats are taken, both players are teleported to the underground arena. Fight until one player reaches 0 HP. Guns, utilities, and throwables are disabled inside. Losing costs 300 Moola. Spectators outside can throw items into the arena.
+
+---
+
 ### Horse Guide
 URL: https://bridgerwestern.cc/locations/horses/
 

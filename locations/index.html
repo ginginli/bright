@@ -149,22 +149,16 @@
                     </div>
                 </div>
 
-                <div class="sketch-card" style="border-left: 4px solid #e74c3c;">
+                <a href="/locations/red-corner-fight-club/" class="sketch-card article-card" style="display: block; text-decoration: none; color: inherit; border-left: 4px solid #e74c3c;">
                     <h3>🥊 Red Corner Fight Club</h3>
                     <p><strong>Location:</strong> Main Town</p>
-                    <p><strong>Services:</strong> PvP fist fighting arena</p>
-                    
-                    <h4 style="margin-top: 15px;">Details:</h4>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li>• Fist fight with other players</li>
-                        <li>• <strong>Cost:</strong> 300 Moola if you lose</li>
-                        <li>• No weapons allowed</li>
+                    <ul style="list-style: none; padding-left: 0; margin-top: 10px;">
+                        <li>• PvP fist fighting arena</li>
+                        <li>• Step on a mat to register — green = vacant, red = taken</li>
+                        <li>• <strong>Lose = 300 Moola penalty</strong></li>
                     </ul>
-                    
-                    <div class="info-box warning">
-                        <strong>Risk:</strong> Losing costs 300 Moola. Only fight if you're confident or have Moola to spare.
-                    </div>
-                </div>
+                    <span class="read-more" style="display: inline-block; margin-top: 10px;">View Fight Club Guide →</span>
+                </a>
             </div>
         </div>
     </section>
@@ -377,5 +371,106 @@
     
     <!-- Load components -->
     <script src="../js/components.js" defer></script>
+
+    <!-- Two-level TOC: H2 sections + H3 location names -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        setTimeout(function() {
+            var tocEl = document.getElementById('page-toc');
+            var tocMobile = document.getElementById('page-toc-mobile');
+            if (!tocEl) return;
+
+            tocEl.innerHTML = '';
+            if (tocMobile) tocMobile.innerHTML = '';
+
+            var contentArea = document.querySelector('.page-toc-main');
+            if (!contentArea) return;
+
+            // Collect H2s (sections) and H3s (location names) in DOM order
+            var nodes = contentArea.querySelectorAll('h2.section-title, .sketch-card h3, .article-card h3');
+
+            var currentGroup = null;
+            var currentGroupMobile = null;
+
+            nodes.forEach(function(node) {
+                if (!node.id) {
+                    var parentSection = node.closest('section');
+                    if (parentSection && parentSection.id) {
+                        node.id = parentSection.id + '-heading';
+                    } else {
+                        node.id = 'toc-' + Math.random().toString(36).slice(2, 7);
+                    }
+                }
+
+                var text = node.textContent.trim().replace(/^[^\w\u4e00-\u9fa5]+/, '').trim();
+
+                if (node.tagName === 'H2') {
+                    var a = document.createElement('a');
+                    a.href = '#' + (node.closest('section') ? node.closest('section').id : node.id);
+                    a.textContent = text;
+                    a.className = 'toc-h2';
+
+                    var sub = document.createElement('div');
+                    sub.className = 'toc-sub';
+
+                    var wrapper = document.createElement('div');
+                    wrapper.appendChild(a);
+                    wrapper.appendChild(sub);
+                    tocEl.appendChild(wrapper);
+                    currentGroup = sub;
+
+                    if (tocMobile) {
+                        var am = a.cloneNode(true);
+                        var subm = document.createElement('div');
+                        subm.className = 'toc-sub';
+                        var wm = document.createElement('div');
+                        wm.appendChild(am);
+                        wm.appendChild(subm);
+                        tocMobile.appendChild(wm);
+                        currentGroupMobile = subm;
+                    }
+                } else if (node.tagName === 'H3') {
+                    var parentSec = node.closest('section');
+                    var anchorId = parentSec ? parentSec.id : node.id;
+
+                    // Use the card's href if it's a link card
+                    var cardLink = node.closest('a.sketch-card, a.article-card');
+                    var a3 = document.createElement('a');
+                    if (cardLink && cardLink.href) {
+                        a3.href = cardLink.href;
+                    } else {
+                        a3.href = '#' + anchorId;
+                    }
+                    a3.textContent = text;
+                    a3.className = 'toc-h3';
+
+                    if (currentGroup) {
+                        currentGroup.appendChild(a3);
+                    } else {
+                        tocEl.appendChild(a3);
+                    }
+
+                    if (tocMobile && currentGroupMobile) {
+                        tocMobile.appendChild(a3.cloneNode(true));
+                    }
+                }
+            });
+
+            // Scroll highlight via IntersectionObserver
+            var allSections = contentArea.querySelectorAll('section[id]');
+            if ('IntersectionObserver' in window) {
+                var obs = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(e) {
+                        [tocEl, tocMobile].filter(Boolean).forEach(function(container) {
+                            var link = container.querySelector('a[href="#' + e.target.id + '"]');
+                            if (link) link.classList.toggle('toc-active', e.isIntersecting);
+                        });
+                    });
+                }, { rootMargin: '-5% 0px -75% 0px' });
+                allSections.forEach(function(s) { obs.observe(s); });
+            }
+        }, 200);
+    });
+    </script>
 </body>
 </html>
