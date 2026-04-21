@@ -168,7 +168,7 @@
 
                     <div style="display: flex; align-items: center; gap: 10px;">
                         <button class="intent-btn" onclick="trackUserIntent('npc_locations')" style="background: #17a2b8; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🧙 NPC Locations</button>
-                        <a href="/locations/npcs/" style="font-size: 0.85rem; color: #17a2b8; text-decoration: underline; white-space: nowrap;">View Gyro&amp;Flint | Blacksmith Guide →</a>
+                        <a href="/locations/npcs/" onclick="trackLinkClick('Intent CTA: NPC Locations', '/locations/npcs/')" style="font-size: 0.85rem; color: #17a2b8; text-decoration: underline; white-space: nowrap;">View Gyro&amp;Flint | Blacksmith Guide →</a>
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 10px;">
@@ -177,12 +177,17 @@
 
                     <div style="display: flex; align-items: center; gap: 10px;">
                         <button class="intent-btn" onclick="trackUserIntent('spawn_points')" style="background: #dc3545; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">📍 Spawn Points</button>
-                        <a href="/locations/spawn-locations/" style="font-size: 0.85rem; color: #dc3545; text-decoration: underline; white-space: nowrap;">View Spawn Locations Guide →</a>
+                        <a href="/locations/spawn-locations/" onclick="trackLinkClick('Intent CTA: Spawn Points', '/locations/spawn-locations/')" style="font-size: 0.85rem; color: #dc3545; text-decoration: underline; white-space: nowrap;">View Spawn Locations Guide →</a>
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 10px;">
                         <button class="intent-btn" onclick="trackUserIntent('horse_stables')" style="background: #6f42c1; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🐴 Horse Stables</button>
-                        <a href="/locations/horses/" style="font-size: 0.85rem; color: #6f42c1; text-decoration: underline; white-space: nowrap;">View Horse Guide →</a>
+                        <a href="/locations/horses/" onclick="trackLinkClick('Intent CTA: Horse Stables', '/locations/horses/')" style="font-size: 0.85rem; color: #6f42c1; text-decoration: underline; white-space: nowrap;">View Horse Guide →</a>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <button class="intent-btn" onclick="trackUserIntent('fight_club')" style="background: #e74c3c; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 0.9rem; min-width: 180px; text-align: left;">🥊 Red Corner Fight Club</button>
+                        <a href="/locations/red-corner-fight-club/" onclick="trackLinkClick('Intent CTA: Red Corner Fight Club', '/locations/red-corner-fight-club/')" style="font-size: 0.85rem; color: #e74c3c; text-decoration: underline; white-space: nowrap;">View Fight Club Guide →</a>
                     </div>
 
                     <div style="display: flex; align-items: center; gap: 10px;">
@@ -377,6 +382,7 @@
           'shop_locations': 4, 
           'spawn_points': 3,
           'horse_stables': 2,
+          'fight_club': 2,
           'general_navigation': 1
         };
 
@@ -410,6 +416,9 @@
               document.getElementById('spawn-hint').scrollIntoView({behavior: 'smooth', block: 'nearest'});
               break;
             case 'horse_stables':
+              document.getElementById('locations').scrollIntoView({behavior: 'smooth'});
+              break;
+            case 'fight_club':
               document.getElementById('locations').scrollIntoView({behavior: 'smooth'});
               break;
             case 'general_navigation':
