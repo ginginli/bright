@@ -16,6 +16,18 @@ const AdConfig = {
         script: 'https://pl29165194.profitablecpmratenetwork.com/15/83/db/1583dbcab238dce3dbe6eb01c06e3f48.js',
         enabled: true
     },
+
+    // Popunder (triggers on first user click)
+    popunder: {
+        script: 'https://pl29232697.profitablecpmratenetwork.com/9b/90/d0/9b90d0b7ffe26bdd40e5e7c42a9b536d.js',
+        enabled: true
+    },
+
+    // Google AdSense
+    adsense: {
+        script: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119',
+        enabled: true
+    },
     
     // Ad placements - positions where ads should appear
     placements: {

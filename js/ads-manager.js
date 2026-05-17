@@ -55,6 +55,15 @@ class AdManager {
      * Load the main ad script
      */
     loadAdScript() {
+        // Load Google AdSense
+        if (this.config.adsense?.enabled && this.config.adsense?.script) {
+            const adsenseScript = document.createElement('script');
+            adsenseScript.async = true;
+            adsenseScript.crossOrigin = 'anonymous';
+            adsenseScript.src = this.config.adsense.script;
+            document.head.appendChild(adsenseScript);
+        }
+
         if (!this.config.mainAd?.script) return;
         
         const script = document.createElement('script');
@@ -69,6 +78,29 @@ class AdManager {
             sbScript.async = true;
             sbScript.src = this.config.socialBar.script;
             document.head.appendChild(sbScript);
+        }
+
+        // Load Popunder if enabled (triggers on first user click)
+        // Also tracks trigger count via GA4 for monitoring user impact
+        if (this.config.popunder?.enabled && this.config.popunder?.script) {
+            const loadPopunder = () => {
+                // Track in GA4
+                if (typeof gtag === 'function') {
+                    gtag('event', 'popunder_triggered', {
+                        event_category: 'ads',
+                        event_label: window.location.pathname,
+                        page_path: window.location.pathname
+                    });
+                }
+                // Load the actual popunder script
+                const puScript = document.createElement('script');
+                puScript.async = true;
+                puScript.src = this.config.popunder.script;
+                document.head.appendChild(puScript);
+                // Only trigger once per page load
+                document.removeEventListener('click', loadPopunder);
+            };
+            document.addEventListener('click', loadPopunder);
         }
     }
     
