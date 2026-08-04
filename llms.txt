@@ -55,6 +55,7 @@
 - [Card Builds](https://bridgerwestern.cc/cards/card-builds/): Optimized 3-card combinations for bow, gun, melee, and hybrid builds
 - [How to Get Cards](https://bridgerwestern.cc/cards/how-to-get-cards/): Mud Witch location in Swamp, 150 Moola per roll, 3-card limit, reroll strategy
 - [Cards FAQ](https://bridgerwestern.cc/cards/faq/): Common questions about Tarot Cards, card builds, Mud Witch, reroll strategies
+- [High Noon Card](https://bridgerwestern.cc/cards/high-noon/): High Risk Tarot Card — −10 Max HP, plays audio cue and grants autoaim for 5 seconds when in-game time reaches noon. Best used in High Noon Sniper build with Evil Eye and EXECUTIONER.
 - [Items Database](https://bridgerwestern.cc/items/): Complete Items & Utilities guide with consumables, combat items, and equipment
 - [Silver Dagger Guide](https://bridgerwestern.cc/items/silver-dagger/): Anti-vampire melee weapon, 8 base damage (16 vs vampires), silver fire effect, grab attack
 - [Rokakaka Fruit Guide](https://bridgerwestern.cc/items/rokakaka-fruit/): Split with another Tier 3 player to equalize ages, swap cards, and trade stands (1% shiny chance)

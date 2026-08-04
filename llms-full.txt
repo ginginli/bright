@@ -1213,3 +1213,8 @@ URL: https://bridgerwestern.cc/guides/faq/
 - Bought cheap horse → Save for 1,000+ Moola horse
 - Dying to players → Avoid PvP early, use Cowboy Hat (1 headshot protection) and Poncho (reduced damage)
 - Chose Inlaw → Minimal difference currently, can wipe and restart as Outlaw
+
+
+## High Noon Card
+URL: https://bridgerwestern.cc/cards/high-noon/
+High Noon is a High Risk Tarot Card in Bridger Western. Cost: −10 Max HP permanently. Effect: When in-game time reaches noon, plays an audio cue and grants autoaim for 5 seconds. Best used in the High Noon Sniper build (High Noon + Evil Eye + EXECUTIONER) for guaranteed headshots at noon. Situational card — only effective for players who track in-game time and run dedicated sniper builds.
