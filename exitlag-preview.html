@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExitLag Banner Preview</title>
+    <style>
+        body { margin: 0; font-family: Georgia, serif; background: #f5efe6; }
+
+        /* ── 方案一：顶部通知栏 ── */
+        .exitlag-bar {
+            background: #1a0f0a;
+            color: #e8dfd5;
+            text-align: center;
+            padding: 8px 48px 8px 16px;
+            font-size: 0.88rem;
+            position: relative;
+            border-bottom: 1px solid #3d2a1a;
+        }
+        .exitlag-bar a {
+            color: #ffd700;
+            font-weight: bold;
+            text-decoration: none;
+            margin-left: 10px;
+            border: 1px solid #ffd700;
+            padding: 2px 10px;
+            border-radius: 3px;
+            font-size: 0.82rem;
+            transition: background 0.2s;
+        }
+        .exitlag-bar a:hover { background: #ffd700; color: #1a0f0a; }
+        .exitlag-bar-close {
+            position: absolute;
+            right: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #999;
+            font-size: 1rem;
+            cursor: pointer;
+            line-height: 1;
+            padding: 4px;
+        }
+        .exitlag-bar-close:hover { color: #e8dfd5; }
+
+        /* 模拟导航栏 */
+        .fake-nav {
+            background: #2b1c11;
+            color: #e8dfd5;
+            padding: 14px 24px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .fake-nav strong { font-size: 1.1rem; }
+
+        /* 模拟页面内容 */
+        .fake-content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+        .fake-content h1 { color: #2b1c11; }
+        .fake-content p { color: #555; line-height: 1.7; }
+
+        /* 分割线和标签 */
+        .preview-label {
+            background: #dc3545;
+            color: white;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-family: sans-serif;
+        }
+        hr { border: 1px dashed #ccc; margin: 40px 0; }
+
+        /* ── 方案二：内容区卡片 ── */
+        .exitlag-card {
+            background: rgba(26,15,10,0.06);
+            border: 1px solid rgba(255,215,0,0.4);
+            border-left: 4px solid #ffd700;
+            border-radius: 6px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin: 24px 0;
+            flex-wrap: wrap;
+        }
+        .exitlag-card-text { font-size: 0.92rem; color: #2b1c11; }
+        .exitlag-card-text strong { display: block; margin-bottom: 4px; font-size: 1rem; }
+        .exitlag-card a {
+            background: #ffd700;
+            color: #1a0f0a;
+            text-decoration: none;
+            padding: 8px 18px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.88rem;
+            white-space: nowrap;
+        }
+        .exitlag-card a:hover { background: #e6c200; }
+    </style>
+</head>
+<body>
+
+<div class="preview-label">▼ 方案一：顶部通知栏（全站，在导航上方）</div>
+
+<!-- 方案一 -->
+<div class="exitlag-bar" id="exitlag-bar">
+    ⚡ Reduce lag in Bridger Western — Play smoother with ExitLag
+    <a href="https://www.exitlag.com/refer/10337704" target="_blank" rel="nofollow sponsored">Try Free →</a>
+    <button class="exitlag-bar-close" onclick="document.getElementById('exitlag-bar').style.display='none'">✕</button>
+</div>
+
+<!-- 模拟导航 -->
+<div class="fake-nav">
+    <strong>🤠 Bridger Wiki</strong>
+    <span>Guides</span>
+    <span>Stands</span>
+    <span>Weapons</span>
+    <span>Cards</span>
+</div>
+
+<!-- 模拟页面内容 -->
+<div class="fake-content">
+    <h1>Bridger Western Wiki</h1>
+    <p>这里是页面正文内容...（用户会先看到上方的 ExitLag 横幅）</p>
+
+    <hr>
+
+    <div class="preview-label">▼ 方案二：内容区卡片（相关页面内嵌）</div>
+
+    <h2 style="color:#2b1c11;">Discord Coordination Guide</h2>
+    <p>Coordinate with your clan during KOTH events to maximize your chances...</p>
+
+    <!-- 方案二 卡片 -->
+    <div class="exitlag-card">
+        <div class="exitlag-card-text">
+            <strong>⚡ High ping gets you killed in KOTH events</strong>
+            Reduce lag and improve your reaction time in Bridger Western with ExitLag.
+        </div>
+        <a href="https://www.exitlag.com/refer/10337704" target="_blank" rel="nofollow sponsored">Try ExitLag Free →</a>
+    </div>
+
+    <p>More guide content continues here...</p>
+</div>
+
+</body>
+</html>

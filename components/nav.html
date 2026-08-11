@@ -1,5 +1,13 @@
 <!-- Header / Navigation Component -->
 <a href="#main-content" style="position:absolute;left:-9999px;top:4px;z-index:9999;padding:8px 16px;background:#2b1c11;color:#e8dfd5;text-decoration:none;font-family:var(--font-heading);font-size:0.9rem;border-radius:0 0 4px 4px;" onfocus="this.style.left='4px'" onblur="this.style.left='-9999px'">Skip to main content</a>
+
+<!-- ExitLag Promo Bar -->
+<div id="exitlag-bar" style="background:#1a0f0a;color:#e8dfd5;text-align:center;padding:14px 52px;font-size:0.92rem;position:relative;border-bottom:1px solid #3d2a1a;line-height:1.4;">
+    ⚡ Reduce lag in Bridger Western — Play smoother with ExitLag
+    <a href="https://www.exitlag.com/refer/10337704" target="_blank" rel="nofollow sponsored" style="color:#ffd700;font-weight:bold;text-decoration:none;margin-left:12px;border:1px solid #ffd700;padding:4px 14px;border-radius:3px;font-size:0.85rem;">Try Free →</a>
+    <button onclick="document.getElementById('exitlag-bar').style.display='none';sessionStorage.setItem('exitlag_closed','1');" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);background:none;border:none;color:#999;font-size:1.1rem;cursor:pointer;padding:4px 8px;line-height:1;" aria-label="Close">✕</button>
+</div>
+<script>if(sessionStorage.getItem('exitlag_closed')){document.getElementById('exitlag-bar').style.display='none';}</script>
 <header>
     <div class="container">
         <a href="/" class="logo">🤠 Bridger Wiki</a>
