@@ -5,22 +5,23 @@
  */
 
 const AdConfig = {
-    // Main advertising code (Native Banner)
+    // Main advertising code (Native Banner) — Adsterra DISABLED
     mainAd: {
-        script: 'https://pl29131932.profitablecpmratenetwork.com/85cc155fa0b0e59e62294968d56227a5/invoke.js',
-        containerId: 'container-85cc155fa0b0e59e62294968d56227a5'
+        script: '',
+        containerId: 'container-85cc155fa0b0e59e62294968d56227a5',
+        enabled: false
     },
 
-    // Social Bar (auto-positioned by Adsterra, no container needed)
+    // Social Bar — Adsterra DISABLED
     socialBar: {
-        script: 'https://pl29165194.profitablecpmratenetwork.com/15/83/db/1583dbcab238dce3dbe6eb01c06e3f48.js',
-        enabled: true
+        script: '',
+        enabled: false
     },
 
-    // Popunder (triggers on first user click)
+    // Popunder — Adsterra DISABLED
     popunder: {
-        script: 'https://pl29232697.profitablecpmratenetwork.com/9b/90/d0/9b90d0b7ffe26bdd40e5e7c42a9b536d.js',
-        enabled: true
+        script: '',
+        enabled: false
     },
 
     // Google AdSense
@@ -29,7 +30,7 @@ const AdConfig = {
         enabled: true
     },
     
-    // Ad placements - positions where ads should appear
+    // Ad placements
     placements: {
         main: {
             enabled: false,
@@ -37,12 +38,12 @@ const AdConfig = {
             priority: 'high'
         },
         header: {
-            enabled: true,
+            enabled: false,
             containerId: 'ad-header',
             priority: 'high'
         },
         middle: {
-            enabled: true,
+            enabled: false,
             containerId: 'ad-middle',
             priority: 'medium'
         },
@@ -52,7 +53,7 @@ const AdConfig = {
             priority: 'medium'
         },
         footer: {
-            enabled: true,
+            enabled: false,
             containerId: 'ad-footer',
             priority: 'low'
         }
@@ -60,11 +61,8 @@ const AdConfig = {
     
     // Ad display settings
     settings: {
-        // Delay ad loading for better performance
         loadDelay: 1000,
-        // Respect "Do Not Track" headers
         respectDNT: true,
-        // Show ads only after content is loaded
         loadAfterContent: true
     }
 };
