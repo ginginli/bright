@@ -24,10 +24,10 @@ const AdConfig = {
         enabled: false
     },
 
-    // Google AdSense
+    // Google AdSense — temporarily disabled to diagnose traffic drop
     adsense: {
         script: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7293351660638119',
-        enabled: true
+        enabled: false
     },
     
     // Ad placements
