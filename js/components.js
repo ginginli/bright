@@ -7,8 +7,7 @@ class ComponentLoader {
     constructor() {
         this.components = {
             'nav': '/components/nav.html',
-            'footer': '/components/footer.html',
-            'ad-header': '/components/ad-header.html'
+            'footer': '/components/footer.html'
         };
     }
 
@@ -107,11 +106,6 @@ class ComponentLoader {
         // Load footer if container exists
         if (document.getElementById('footer-container')) {
             await this.loadComponent('footer', 'footer-container');
-        }
-
-        // Load ad if container exists
-        if (document.getElementById('ad-container')) {
-            await this.loadComponent('ad-header', 'ad-container');
         }
     }
 
