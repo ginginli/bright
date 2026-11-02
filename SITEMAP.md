@@ -58,7 +58,6 @@
 |------|------|--------|
 | `weapons/index.html` | 武器总览索引页 | |
 | `weapons/gun-tier-list.html` | 枪械强度排行 | ★ |
-| `weapons/best-guns.html` | 最佳枪械推荐 | ★ |
 | `weapons/all-guns.html` | 全枪械数据表 | |
 | `weapons/pvp-combos.html` | PvP 枪械组合 | |
 
@@ -141,8 +140,7 @@
 7. `stands/corpse-part.html`
 8. `cursed-techniques/jane-juliet.html`
 9. `weapons/gun-tier-list.html`
-10. `weapons/best-guns.html`
-11. `cards/index.html`
-12. `progression/money-farming.html`
-13. `progression/horse-guide.html`
-14. `locations/npc-locations.html`
+10. `cards/index.html`
+11. `progression/money-farming.html`
+12. `progression/horse-guide.html`
+13. `locations/npc-locations.html`

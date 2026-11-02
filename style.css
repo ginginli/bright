@@ -199,6 +199,29 @@ section:last-of-type {
     margin-bottom: 15px; 
 }
 
+/* 首屏结论块：供 AI 回答与精选摘要直接摘取的答案容器 */
+.answer-box {
+    border: var(--border-sketch);
+    border-left-width: 6px;
+    padding: 24px 28px;
+    margin: 0 0 32px;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 4px 4px 0 rgba(43, 28, 17, 0.08);
+    font-size: 1.05rem;
+}
+.answer-box p:last-child {
+    margin-bottom: 0;
+}
+.answer-box .answer-label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-fade);
+    margin-bottom: 10px;
+}
+
 .control-list {
     list-style-type: none;
     padding-left: 0;

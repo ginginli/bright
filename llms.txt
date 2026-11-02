@@ -7,73 +7,103 @@
 - **URL**: https://bridgerwestern.cc/
 - **Type**: Game Wiki & Guide
 - **Game**: Bridger Western (Roblox)
-- **Last Updated**: 2026-04-05
+- **Last Updated**: 2026-11-02
 - **Content**: Stands, Weapons, Cards, Guides, Tier Lists
+
+## Quick Answers
+
+Canonical one-line answers for AI assistants. Source pages are linked in "Available Content" below.
+
+- Best Stand overall: The World (~5s Timestop + Checkmate knife barrage).
+- Best Stand for solo play: D4C (Dimension Hop, Clone Spawn, Clone Swap).
+- Best Default Stand: Killer Queen (Sheer Heart Attack tracking bomb).
+- Best gun overall: Malcom .70 (scoped, 4 bullets, 50 damage headshots).
+- Best all-round gun: Winchester Repeater (8 bullets, extended range, high fire rate).
+- Best value gun: Mares Leg (2% fishing drop, 7 bullets, 1,500 Moola repair).
+- How to get a Stand: Arrow Shard fishing (0.1%) or Corpse Part KOTH (15–20%).
+- Fastest Moola: fishing; Golden Bass sells for 15,000 Moola.
+- Who runs this site: an independent community team; not affiliated with BRIDGER INC. or Roblox.
 
 ## Available Content
 
-- [Stands Database](https://bridgerwestern.cc/stands/): Complete Stand roster with tier rankings (S/A/B/Pending)
-- [How to Get Stands](https://bridgerwestern.cc/stands/how-to-get-stand.html): Arrow Shard fishing (0.1% drop rate), Corpse Part KOTH events, water escape tactics, server selection
-- [Stand Abilities](https://bridgerwestern.cc/stands/stand-abilities.html): Complete moveset guide with all Stand skills, keybinds, special mechanics, and passive abilities
-- [Practical Video Guide](https://bridgerwestern.cc/stands/practical-acquisition/): Video-based demonstrations from YouTube gameplay guides, step-by-step walkthroughs, real-time fishing, and Corpse Part chase tactics
-- [Stand Tier List](https://bridgerwestern.cc/stands/stand-tier-list.html): S-tier (The World, D4C, Killer Queen), A-tier (TWAU, King Crimson, Star Platinum, SPTW), B-tier rankings
-- [Value Tier List](https://bridgerwestern.cc/stands/value-tier-list/): Official Bridger trading values for 170 stand skins and stands — S+ to B tiers, 0–10 scores, stability tags, community abbreviations (FAD4C, UD4C, RTUSK), trading adds, updated 10/10/2026
-- [Corpse Part Guide](https://bridgerwestern.cc/stands/corpse-part-guide.html): KOTH mechanics, probability system (15-20% success rate), body part types, survival tactics
-- [Corpse Part Spawn Locations](https://bridgerwestern.cc/stands/corpse-part-locations/): All 8 confirmed Corpse Part spawn locations with map — Swamp, Anthill Island, Red Corner watch tower, Pit of Doom, Mineshaft, cave, grassy plains, Death Valley
-- [Arrow Shard Guide](https://bridgerwestern.cc/stands/arrow-shard/): Complete Arrow Shard guide — 0.1% fishing drop, guarantees any Stand, not lost on death, cannot be stored or traded
-- [Discord Coordination](https://bridgerwestern.cc/stands/discord-coordination.html): Clan strategies, server flooding methods, team coordination
-- [Stands FAQ](https://bridgerwestern.cc/stands/faq.html): Common questions, troubleshooting, beginner mistakes, Tusk Acts abilities, Hey Ya buffs, PvP counters
-- [The World Stand Guide](https://bridgerwestern.cc/stands/the-world/): RARE time-manipulating Humanoid stand. Long Timestop (~5 seconds), Checkmate passive (knife barrages), Shinei autolock punch.
-- [D4C Stand Guide](https://bridgerwestern.cc/stands/d4c/): DEFAULT Humanoid stand. Dimension Hop passive (requires poncho). Clone Spawn, Clone Swap. Special obtainment: 100 kills, 10 killstreak, Deserts area.
-- [Killer Queen Stand Guide](https://bridgerwestern.cc/stands/killer-queen/): DEFAULT Humanoid stand. Bomb mechanics: Plant Bomb/Detonate, Sheer Heart Attack tracking bomb, Stray Cat air bubble bombs.
-- [Star Platinum Stand Guide](https://bridgerwestern.cc/stands/star-platinum/): RARE time-manipulating Humanoid stand. Skull Breaker execution, Beatdown grab, Time Stop Movement. Can evolve to Star Platinum The World (1% chance).
-- [Star Platinum | The World Stand Guide](https://bridgerwestern.cc/stands/star-platinum-the-world/): DEFAULT Humanoid stand, evolved form of Star Platinum. Rush uppercut, Triple Bearing Shots, 2-second Time Stop, Grab Beatdown.
-- [King Crimson Stand Guide](https://bridgerwestern.cc/stands/king-crimson/): RARE time-manipulating Humanoid stand. Epitaph auto-dodge (G hold), Time Erasure iframes + speed boost (~5s), Donut high-damage punch.
-- [Gold Experience Stand Guide](https://bridgerwestern.cc/stands/gold-experience/): DEFAULT Humanoid stand with Life Giver passive (yellow bar). 7 Page Muda barrage, Life Giver Punch/Tree/Eagle/Scorpions, Self/Other Heal (~30 HP).
-- [Gold Experience Requiem Stand Guide](https://bridgerwestern.cc/stands/gold-experience-requiem/): UNOBTAINABLE/SPEC stand. True Life Giver passive (green bar, 2.5x bigger). Return To Zero nullifies all attacks (60s cooldown). 7 Page Muda 90 dmg.
-- [Crazy Diamond Stand Guide](https://bridgerwestern.cc/stands/crazy-diamond/): DEFAULT Humanoid stand. Restore Mode reverses damage to healing. Tracking Barrage, Facial Reconstruction (10% face change), Blood Slash, Reconstruction Barrage.
-- [Tusk Acts 1-3 Stand Guide](https://bridgerwestern.cc/stands/tusk-acts/): DEFAULT Humanoid stand. Cripple passive (cannot walk or use guns). Obtainable via Saint's Left Arm fusion (2%). Nail Bullets, Nail Glide, Golden Rotation Bullet (62 dmg).
-- [Hierophant Green Stand Guide](https://bridgerwestern.cc/stands/hierophant-green/): DEFAULT Humanoid stand. Tentacle Wire tripwire, Emerald Splash (hold R), 20 Meter Emerald Splash auto-trap, Stand Pilot aerial mode.
-- [Silver Chariot Stand Guide](https://bridgerwestern.cc/stands/silver-chariot/): DEFAULT Humanoid stand. Rapier Uptilt, Lunge (20 dmg), Ricochet Shot (low HP variant), Whirlwind Slash, Armor Removal (speed + dmg boost).
-- [Magicians Red Stand Guide](https://bridgerwestern.cc/stands/magicians-red/): DEFAULT Humanoid stand. Flaming Roundhouse Kick (180 degree burn), Red Bind (cursor flame waves), Crossfire Hurricane Special (splits into 5 projectiles), Stand Pilot.
-- [Purple Haze Stand Guide](https://bridgerwestern.cc/stands/purple-haze/): DEFAULT Humanoid stand with Poison Bulbs passive (own poison can hurt you). Bulb Smash, Poison Bulb Shoot, Poison Bulb Trap (~20s), Stand Pilot.
-- [Stone Free Stand Guide](https://bridgerwestern.cc/stands/stone-free/): DEFAULT Humanoid stand with Thread Weaving passive (M1 surface places thread). Heavy Punch (25 dmg), String Pull, String Patchworks (self-heal), Rock Swing (up to 20 dmg).
-- [Whitesnake Stand Guide](https://bridgerwestern.cc/stands/whitesnake/): RARE time-manipulating Humanoid stand. Disc Grab (disables stand), Disc Throw (inverts controls on direct hit), Acid Spit (sleep effect), Pilot mode.
-- [TWAU Stand Guide](https://bridgerwestern.cc/stands/twau/): RARE time-manipulating Humanoid stand. Checkmate passive (knife barrages). Short Timestop (panic), Long Timestop (~4s, shoot 1 bullet with increased dmg), Autotracking Chop.
-- [Hermit Purple Stand Guide](https://bridgerwestern.cc/stands/hermit-purple/): DEFAULT Non-Humanoid Utility stand. No stamina cost. Grapple (10 dmg, mobility), Chop (10 dmg, dropkick after E on player).
-- [Tubular Bells Stand Guide](https://bridgerwestern.cc/stands/tubular-bells/): DEFAULT Non-Humanoid Utility stand. No stamina cost. Balloon Command, Medium Dog Balloons (15 dmg), Light Snail Balloons (5 dmg, through walls), Heavy Swan Balloon (40 dmg), TUBULAR BELLS!!! (all at once).
-- [Hey Ya Stand Guide](https://bridgerwestern.cc/stands/hey-ya/): DEFAULT Non-Humanoid Utility stand. No stamina cost. Encouragement passive provides random buffs: dodge, damage, healing, speed, accuracy.
-- [20th Century Boy Stand Guide](https://bridgerwestern.cc/stands/20th-century-boy/): DEFAULT Non-Humanoid Utility stand. No stamina cost. Absolute Defense (G, reflects all attacks), Dynamite Strap (V, 12 dmg/dynamite, requires 6 dynamite).
-- [Mandom Stand Guide](https://bridgerwestern.cc/stands/mandom/): RARE time-manipulating Non-Humanoid Utility stand. No stamina cost. Time Rewind (G) returns you and everyone around you 6 seconds back in time including states and health.
-- [Stand Skins Gallery](https://bridgerwestern.cc/stands/skins/): All Stand shiny skin variants — The World, Star Platinum, D4C, TWAU, Mandom, Hierophant Green, Hermit Purple, Magicians Red. 5% chance on any obtainment roll
-- [Weapons Database](https://bridgerwestern.cc/weapons/): Complete weapon guide with primary and secondary weapons, tier 3 dual wield system
-- [Primary Weapons](https://bridgerwestern.cc/weapons/primary-weapons.html): 9 primary weapons including Taurus .357, Winchester Repeater, Malcom .70, Bow with arrow switching
-- [Secondary Weapons](https://bridgerwestern.cc/weapons/secondary-weapons.html): 6 secondary weapons including Tommy Gun, DB Shotgun, Sabre, Colt Ocelot (requires Tier 3)
-- [Weapon Mechanics](https://bridgerwestern.cc/weapons/weapon-mechanics/): Tier 3 dual wield system, Stand penalty, revolver reload mechanics
-- [Mares Leg Guide](https://bridgerwestern.cc/weapons/mares-leg/): Complete guide - 2% fishing drop, 1500 Moola repair, 7 bullets, faster Winchester, Tier 3 required
-- [Cards Database](https://bridgerwestern.cc/cards/): Complete Tarot Cards guide with all 25 cards, effects, and acquisition methods
-- [All Cards](https://bridgerwestern.cc/cards/all-cards/): Complete list of all 25 Tarot Cards organized by category (Ranged, Melee, Mobility, High Risk, Special Abilities)
-- [Card Builds](https://bridgerwestern.cc/cards/card-builds/): Optimized 3-card combinations for bow, gun, melee, and hybrid builds
-- [How to Get Cards](https://bridgerwestern.cc/cards/how-to-get-cards/): Mud Witch location in Swamp, 150 Moola per roll, 3-card limit, reroll strategy
-- [Cards FAQ](https://bridgerwestern.cc/cards/faq/): Common questions about Tarot Cards, card builds, Mud Witch, reroll strategies
-- [High Noon Card](https://bridgerwestern.cc/cards/high-noon/): High Risk Tarot Card — −10 Max HP, plays audio cue and grants autoaim for 5 seconds when in-game time reaches noon. Best used in High Noon Sniper build with Evil Eye and EXECUTIONER.
-- [Items Database](https://bridgerwestern.cc/items/): Complete Items & Utilities guide with consumables, combat items, and equipment
-- [Silver Dagger Guide](https://bridgerwestern.cc/items/silver-dagger/): Anti-vampire melee weapon, 8 base damage (16 vs vampires), silver fire effect, grab attack
-- [Rokakaka Fruit Guide](https://bridgerwestern.cc/items/rokakaka-fruit/): Split with another Tier 3 player to equalize ages, swap cards, and trade stands (1% shiny chance)
-- [Dogbane Herb Guide](https://bridgerwestern.cc/items/dogbane-herb/): Rare 4% chest drop, trade to Mud Witch for 2500 Moola, age regression -20 years, or Stand removal
-- [Items FAQ](https://bridgerwestern.cc/items/faq/): Common questions about items, rare drops, combat utilities, vampire hunting tools
-- [Guides Collection](https://bridgerwestern.cc/guides/): Complete collection of game guides covering beginner tutorials, controls, and advanced strategies
-- [Complete Beginner Guide](https://bridgerwestern.cc/guides/beginner-guide/): Comprehensive beginner tutorial covering character creation, starting money, horse selection, and first-hour progression
-- [Controls & Keybinds Guide](https://bridgerwestern.cc/guides/controls/): Complete game controls reference with all keybinds and movement mechanics
-- [Fishing Guide](https://bridgerwestern.cc/fishing/): Complete fishing guide with drop rates, Arrow Shard farming (0.1%), Golden Bass (15k Moola), Moola farming
-- [Fishing FAQ](https://bridgerwestern.cc/fishing/faq/): Common fishing questions about Arrow Shards, Golden Bass, drop rates, fishing mechanics
-- [Locations Guide](https://bridgerwestern.cc/locations/): Complete NPCs and shops guide - Gun Store, Mud Witch, Horse Stables, Banker, Blacksmith
-- [Bridger Western Map](https://bridgerwestern.cc/locations/map/): Interactive world map showing all locations, NPCs, shops, and points of interest
-- [Horse Guide](https://bridgerwestern.cc/locations/horses/): Complete horse guide with stats (Speed, Stamina, Jump, Damage, Scale, Turn), rarities (Common to Mythical), Horse Stables locations
-- [Spawn Locations](https://bridgerwestern.cc/locations/spawn-locations/): All Inlaw and Outlaw spawn points, how to change spawn (150 Moola), anti-spawn-kill mechanic (30% auto-change)
-- [NPCs Guide](https://bridgerwestern.cc/locations/npcs/): All NPCs in Ridge B Valley — Flint the Blacksmith (Can Questline, Mares Leg repair 1500 Moola)
-- [Locations FAQ](https://bridgerwestern.cc/locations/faq/): Common questions about NPCs, shops, Mud Witch services, Horse Stables, customization costs
-- [Red Corner Fight Club](https://bridgerwestern.cc/locations/red-corner-fight-club/): PvP fist fighting arena in Main Town. Mat system (green=vacant, red=occupied), 300 Moola loss penalty, weapons disabled inside arena
+- [All 25 Cards - Bridger Western Complete Database 2026](https://bridgerwestern.cc/cards/all-cards/): Complete database of all 25 Tarot Cards: Archer's Child, Desperado, Free Runner, EXECUTIONER. Effects, rarities, and acquisition guide 2026.
+- [Card Builds - Best 3-Card Combinations for BW 2026](https://bridgerwestern.cc/cards/card-builds/): Best card builds: bow (Archer's Child + EXECUTIONER), gun (Desperado + Quick Draw), melee (Boy With Fists). Optimized 3-card setups for all playstyles 2026.
+- [Cards FAQ - Bridger Western Common Questions 2026](https://bridgerwestern.cc/cards/faq/): Cards FAQ: Mud Witch location, card rerolls, 3-card limit, best builds, and troubleshooting. Get answers to all Tarot Card questions 2026.
+- [High Noon Card - Bridger Western Tarot Card Guide 2026](https://bridgerwestern.cc/cards/high-noon/): High Noon card in Bridger Western: -10 Max HP. When the time reaches noon, plays an audio cue and grants autoaim for 5 seconds. High Risk Tarot Card.
+- [How to Get Cards - Bridger Western Mud Witch Guide 2026](https://bridgerwestern.cc/cards/how-to-get-cards/): Complete card acquisition guide: Mud Witch location in Swamp, 150 Moola per roll, 3-card limit, and reroll strategy. Get the best cards 2026.
+- [Bridger Western Cards - All 25 Tarot Cards Guide 2026](https://bridgerwestern.cc/cards/): Complete cards guide: all 25 Tarot Cards, effects, builds, and Mud Witch location (150 Moola rolls). Best cards for bow, gun, and melee builds 2026.
+- [Fishing FAQ - Bridger Western Common Questions 2026](https://bridgerwestern.cc/fishing/faq/): Fishing FAQ: Arrow Shard drop rates (0.1%), Golden Bass value, best fishing spots, and troubleshooting. Get answers to all fishing questions 2026.
+- [Fishing Guide - Arrow Shards, Golden Bass & Drops 2026](https://bridgerwestern.cc/fishing/): Complete fishing guide: Arrow Shard (0.1%), Golden Bass (15k Moola), Mares Leg (2%), drop rates, and Moola farming strategies. Updated 2026.
+- [Bridger Western Beginner Guide - Start Here 2026](https://bridgerwestern.cc/guides/beginner-guide/): Complete Bridger Western beginner guide: character creation, Outlaw vs Inlaw, Red Corner spawn, Moola farming, horse upgrade, and how to get your first card. Updated 2026.
+- [Bridger Western Controls & Keybinds Guide 2026](https://bridgerwestern.cc/guides/controls/): Complete Bridger Western controls guide: movement (WASD, sprint, roll), combat (shoot, aim, reload, melee), horse controls (H, N, Shift, Space), and Ocular Pro S. Updated 2026.
+- [Bridger Western Guides FAQ - Beginner Questions 2026](https://bridgerwestern.cc/guides/faq/): Guides FAQ: beginner tips, controls, alignment choice, Moola farming, spawn strategy, and common new player mistakes. All your getting-started questions answered.
+- [Bridger Western Guides - Complete Beginner to Pro Guides 2026](https://bridgerwestern.cc/guides/): Complete Bridger Western guides for beginners and pros. Learn how to get Stands, farm Moola, survive KOTH events, build optimal card setups, and master game mechanics.
+- [Dogbane Herb Bridger Western - Complete Guide 2026](https://bridgerwestern.cc/items/dogbane-herb/): Dogbane Herb Bridger Western: 4% chest drop, trade to Mud Witch for 2500 Moola, age regression -20 years, or Stand removal. Complete guide.
+- [Items FAQ - Bridger Western Common Questions 2026](https://bridgerwestern.cc/items/faq/): Items FAQ: Dogbane herb uses, silver ammo, tonic effects, dynamite, and troubleshooting. Get answers to all items and utilities questions 2026.
+- [Items & Utilities - Bridger Western Complete Guide 2026](https://bridgerwestern.cc/items/): Complete items guide: ammo, tonics, Dogbane herb, dynamite, molotov, lasso, and all utilities. Prices, effects, and acquisition methods 2026.
+- [Rokakaka Fruit - Bridger Western Stand Trade & Age Guide 2026](https://bridgerwestern.cc/items/rokakaka-fruit/): Rokakaka Fruit guide: trade stands, equalize ages, swap cards with another player. Requires both players to be Tier 3 with a stand. Updated 2026.
+- [Silver Dagger Guide - Bridger Western Anti-Vampire Weapon 2026](https://bridgerwestern.cc/items/silver-dagger/): Complete Silver Dagger guide: 8 base damage, silver fire vs vampires, grab attack (28 dmg), stamina cost, and card synergies. Anti-vampire melee weapon.
+- [Locations FAQ - Bridger Western Common Questions 2026](https://bridgerwestern.cc/locations/faq/): Locations FAQ: NPC locations, shop services, Mud Witch, Horse Stables, Banker, and troubleshooting. Get answers to all location questions 2026.
+- [Horse Guide - Stats, Rarities & Stables in BW 2026](https://bridgerwestern.cc/locations/horses/): Complete horse guide: stats (Speed, Stamina, Jump), rarities (Common to Mythical), Horse Stables locations, and A True Cowboy card. Updated 2026.
+- [Locations Guide - NPCs, Shops & Services in BW 2026](https://bridgerwestern.cc/locations/): Complete locations guide: Gun Store, Mud Witch, Horse Stables, Banker, Blacksmith, and all NPCs. Services, prices, and map locations 2026.
+- [World Map - Bridger Western Complete Location Guide](https://bridgerwestern.cc/locations/map/): Complete world map: all locations, NPCs, shops, and points of interest in Ridge B Valley. Interactive guide to Bridger Western map 2026.
+- [NPCs Guide - Bridger Western All Characters 2026](https://bridgerwestern.cc/locations/npcs/): All NPCs in Bridger Western: Flint the Blacksmith, Gyro, and more. Locations, services, and quests for every NPC in Ridge B Valley. Updated 2026.
+- [Red Corner Fight Club - Bridger Western PvP Arena Guide 2026](https://bridgerwestern.cc/locations/red-corner-fight-club/): Red Corner Fight Club guide: how to enter, fight rules, mat system, arena mechanics, and the 300 Moola loss penalty. Complete PvP fist fighting guide 2026.
+- [Spawn Locations Guide - Bridger Western 2026](https://bridgerwestern.cc/locations/spawn-locations/): All Bridger Western spawn locations for Inlaw and Outlaw factions. Ridge B. County, Digsite, Campsite, Outlaw Hideout, Outlaw Hills, Red Corner, Sandtown. Updated 2026.
+- [Карта мира Bridger Western - Полный гайд по локациям 2026](https://bridgerwestern.cc/ru/locations/map/): Полная карта мира Bridger Western: все локации, NPC, магазины и точки интереса в Ridge B Valley. Интерактивный гайд 2026.
+- [Page Not Found - Bridger Western Wiki & Trello](https://bridgerwestern.cc/404/): This page is currently under development. The Bridger Western Wiki & Trello is actively being updated with new content. Check back soon for more guides and information.
+- [About Bridger Western Wiki - Sources, Verification &amp; Update Policy](https://bridgerwestern.cc/about/): Who runs bridgerwestern.cc, where the Bridger Western data comes from, how we separate confirmed drops from community reports, and how often pages are updated.
+- [Bridger Western Wiki Sites Compared (2026) - Which One to Use](https://bridgerwestern.cc/bridger-western-wiki/): A factual comparison of Bridger Western wiki and guide sites: bridgerwestern.cc, bridgerwestern.wiki and Pro Game Guides. What each one covers, where they differ, and which to use for maps, drop rates or tier lists.
+- [Footer](https://bridgerwestern.cc/components/footer/): Bridger Western wiki page about Footer
+- [Nav](https://bridgerwestern.cc/components/nav/): Bridger Western wiki page about Nav
+- [ExitLag Banner Preview](https://bridgerwestern.cc/exitlag-preview/): Bridger Western wiki page about Exitlag Preview
+- [Bridger Western Wiki - Stands, Guns & Complete Guide 2026](https://bridgerwestern.cc/index/): Complete Bridger Western wiki for Roblox. Master Stands (The World, D4C), guns, Corpse Parts, Arrow Shard fishing (0.1%), and survival strategies. Updated 2026.
+- [弹窗预览测试](https://bridgerwestern.cc/popup-test/): Bridger Western wiki page about Popup Test
+- [Bridger Western Вики - Стенды, Оружие и Полный Гайд 2026](https://bridgerwestern.cc/ru/): Полная вики Bridger Western для Roblox. Стенды (The World, D4C), оружие, Corpse Parts, рыбалка Arrow Shard (0.1%) и стратегии выживания. Обновлено 2026.
+- [Page Title - Bridger Western Wiki & Trello](https://bridgerwestern.cc/templates/page-template/): Page description...
+- [Yandex_96e3ecf3668e813b](https://bridgerwestern.cc/yandex_96e3ecf3668e813b/): Bridger Western wiki page about Yandex_96e3ecf3668e813b
+- [Bridger Western Stand Abilities - Полный гайд по способностям 2026](https://bridgerwestern.cc/ru/stands/stand-abilities/): Полный гайд по способностям Stand в Bridger Western. Keybinds, movesets, пассивные способности и механики для всех Stand. Обновлено 2026.
+- [20th Century Boy - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/20th-century-boy/): 20th Century Boy stand guide for Bridger Western: DEFAULT Non-Humanoid Utility stand. Absolute Defense reflects all attacks. Dynamite Strap explosive.
+- [Arrow Shard Bridger Western - Complete Guide 2026](https://bridgerwestern.cc/stands/arrow-shard/): Arrow Shard Bridger Western: 0.1% fishing drop, guarantees any Stand, not lost on death, cannot be stored or traded. Complete guide with fishing tips.
+- [Corpse Part KOTH Guide - Bridger Western Survival Tips](https://bridgerwestern.cc/stands/corpse-part-guide/): Master Corpse Part KOTH: probability systems, water escape tactics, body part types, and survival strategies. Complete guide for Stand acquisition 2026.
+- [Corpse Part Spawn Locations - Bridger Western 2026](https://bridgerwestern.cc/stands/corpse-part-locations/): All 8 Corpse Part spawn locations in Bridger Western: Swamp, Anthill Island, Red Corner watch tower, Pit of Doom, Mineshaft, cave, grassy plains, Death Valley.
+- [Crazy Diamond - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/crazy-diamond/): Crazy Diamond stand guide for Bridger Western: DEFAULT Humanoid stand with Restore Mode. Tracking Barrage, Facial Reconstruction, Blood Slash.
+- [D4C - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/d4c/): D4C stand guide for Bridger Western: DEFAULT Humanoid stand. Dimension Hop passive (requires poncho). Clone Swap, special obtainment requirements.
+- [Discord Clan Strategies - Bridger Western Coordination](https://bridgerwestern.cc/stands/discord-coordination/): Master Discord clan coordination: server flooding, team strategies, KOTH timing, and Stand acquisition success rates (80%+ with clans). Complete 2026 guide.
+- [Bridger Western Stands FAQ - Common Questions 2026](https://bridgerwestern.cc/stands/faq/): Stands FAQ: Arrow Shard fishing, Corpse Part events, Stand removal, evolution mechanics, and troubleshooting. Get answers to all Stand questions 2026.
+- [Gold Experience Requiem - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/gold-experience-requiem/): Gold Experience Requiem stand guide for Bridger Western: UNOBTAINABLE/SPEC stand. Return To Zero nullifies all attacks. True Life Giver passive.
+- [Gold Experience - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/gold-experience/): Gold Experience stand guide for Bridger Western: DEFAULT Humanoid stand with Life Giver passive. 7 Page Muda, healing, life-giving abilities.
+- [Hermit Purple - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/hermit-purple/): Hermit Purple stand guide for Bridger Western: DEFAULT Non-Humanoid Utility stand. Grapple mobility, no stamina cost.
+- [Hey Ya - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/hey-ya/): Hey Ya stand guide for Bridger Western: DEFAULT Non-Humanoid Utility stand. Encouragement passive provides random buffs (dodge, damage, healing, speed, accuracy).
+- [Hierophant Green - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/hierophant-green/): Hierophant Green stand guide for Bridger Western: DEFAULT Humanoid stand. Emerald Splash, tentacle wires, Stand Pilot aerial mode.
+- [How to Get Stands in Bridger Western - Complete Guide](https://bridgerwestern.cc/stands/how-to-get-stand/): Master Stand acquisition: Arrow Shard fishing (0.1% drop), Corpse Part KOTH events, water escape tactics, and Discord coordination. Complete 2026 guide.
+- [Bridger Western Stands - Complete Database & Guide 2026](https://bridgerwestern.cc/stands/): Complete Stands database: The World, D4C, Killer Queen. Arrow Shard fishing (0.1%), Corpse Part KOTH, tier rankings, and acquisition guides. Updated 2026.
+- [Killer Queen - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/killer-queen/): Killer Queen stand guide for Bridger Western: DEFAULT Humanoid stand with bomb mechanics. Sheer Heart Attack tracking, Stray Cat air bubble bombs.
+- [King Crimson - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/king-crimson/): King Crimson stand guide for Bridger Western: RARE time-manipulating Humanoid stand. Epitaph auto-dodge, Time Erasure iframes.
+- [Magicians Red - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/magicians-red/): Magicians Red stand guide for Bridger Western: DEFAULT Humanoid stand. Crossfire Hurricane Special, Red Bind burn, Stand Pilot aerial.
+- [Mandom - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/mandom/): Mandom stand guide for Bridger Western: RARE time-manipulating Non-Humanoid Utility stand. Time Rewind returns everyone 6 seconds back including health states.
+- [Bridger Western Stand Acquisition: Practical Video Guide - Step-by-Step Demonstrations](https://bridgerwestern.cc/stands/practical-acquisition/): Practical Stand acquisition demonstrations from actual gameplay videos. Step-by-step fishing, Corpse Part chases, horse water techniques, and real-time strategy execution. Based on YouTube guide content.
+- [Purple Haze - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/purple-haze/): Purple Haze stand guide for Bridger Western: DEFAULT Humanoid stand with Poison Bulbs passive. Stand Pilot, area denial poison traps.
+- [Silver Chariot - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/silver-chariot/): Silver Chariot stand guide for Bridger Western: DEFAULT Humanoid stand. Armor Removal speed boost, Ricochet Shot low HP variant.
+- [Bridger Western Stand Skins - All Shiny Variants 2026](https://bridgerwestern.cc/stands/skins/): All Bridger Western Stand skins and shiny variants. The World, Star Platinum, D4C, TWAU, Mandom, Hierophant Green, Hermit Purple, Magicians Red skins. 5% chance on any obtainment.
+- [Bridger Western Stand Keybinds - Complete Abilities Guide](https://bridgerwestern.cc/stands/stand-abilities/): Complete Stand keybinds guide: The World timestop, D4C clones, Killer Queen bombs, and all movesets. Keybinds, combos, and special mechanics. Updated 2026.
+- [Bridger Western Stand Tier List 2026 - Best Stands Ranked](https://bridgerwestern.cc/stands/stand-tier-list/): Bridger Western Stand tier list 2026: the best Stands ranked, plus Default and Rare classifications. Rare stands are time-manipulating (The World, King Crimson, TWAU, Star Platinum, Mandom, Whitesnake). 5% shiny chance. Updated 2026.
+- [Star Platinum The World - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/star-platinum-the-world/): Star Platinum The World stand guide for Bridger Western: DEFAULT Humanoid stand, evolved form of Star Platinum. Obtained via 1% chance with timestop movement.
+- [Star Platinum - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/star-platinum/): Star Platinum stand guide for Bridger Western: RARE time-manipulating Humanoid stand. Can evolve to Star Platinum The World (1% chance).
+- [Stone Free - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/stone-free/): Stone Free stand guide for Bridger Western: DEFAULT Humanoid stand with Thread Weaving passive. Rock Swing, String Pull, self-healing.
+- [The World - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/the-world/): The World stand guide for Bridger Western: RARE time-manipulating stand with long timestop (~5 seconds). Skills, abilities, obtainment, and skins.
+- [Tubular Bells - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/tubular-bells/): Tubular Bells stand guide for Bridger Western: DEFAULT Non-Humanoid Utility stand. Balloon attacks — Dog/Snail/Swan variants, no stamina cost.
+- [Tusk Acts 1-3 - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/tusk-acts/): Tusk Acts 1-3 stand guide for Bridger Western: DEFAULT Humanoid stand. Cripple passive (cannot walk or use guns). Obtainable via Saint's Left Arm fusion (2%).
+- [TWAU - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/twau/): TWAU stand guide for Bridger Western: RARE time-manipulating Humanoid stand. Short and long timestop, Checkmate knife passive.
+- [Bridger Western Value Tier List 2026 - Skin Values](https://bridgerwestern.cc/stands/value-tier-list/): Bridger Western value tier list 2026: official trading values for 170 stand skins and stands, S+ to B, with abbreviations, stability tags and trading adds.
+- [Whitesnake - Bridger Western Stand Guide 2026](https://bridgerwestern.cc/stands/whitesnake/): Whitesnake stand guide for Bridger Western: RARE time-manipulating Humanoid stand. Disc Grab disables stands, Acid Spit sleep effect.
+- [Weapons FAQ - Bridger Western Common Questions 2026](https://bridgerwestern.cc/weapons/faq/): Weapons FAQ: tier 3 dual wield, Stand penalty, best guns, reload mechanics, and troubleshooting. Get answers to all weapon questions 2026.
+- [Bridger Western Weapons - Complete Gun Database 2026](https://bridgerwestern.cc/weapons/): Complete weapons database: primary and secondary guns, tier 3 dual wield, Stand penalty mechanics. All stats, prices, and acquisition methods 2026.
+- [Mares Leg Guide - Bridger Western Fishing & Repair 2026](https://bridgerwestern.cc/weapons/mares-leg/): Complete Mares Leg guide: 2% fishing drop (Epic), repair at Blacksmith (1500 Moola), stats (7 bullets, fast fire rate). Tier 3 secondary weapon 2026.
+- [Primary Weapons Guide - Bridger Western Complete List](https://bridgerwestern.cc/weapons/primary-weapons/): Complete primary weapons: Taurus .357, Winchester Repeater, Malcom .70 sniper, and all 9 guns. Stats, prices, and best weapons for PvP and PvE 2026.
+- [Secondary Weapons - Bridger Western Complete Guide 2026](https://bridgerwestern.cc/weapons/secondary-weapons/): Complete secondary weapons: Mares Leg, Tommy Gun, DB Shotgun, Sabre. Tier 3 requirement, stats, and best secondary weapons for combat 2026.
+- [Weapon Mechanics - Bridger Western Complete System Guide](https://bridgerwestern.cc/weapons/weapon-mechanics/): Master weapon mechanics: tier 3 dual wield, Stand penalty, revolver reloads, and combat systems. Complete guide to Bridger Western weapons 2026.
+
 
 ## Key Game Mechanics
 

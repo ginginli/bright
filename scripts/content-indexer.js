@@ -228,86 +228,117 @@ class ContentIndexer {
     
     /**
      * Update llms.txt (simplified summary)
+     * Incremental: preserves everything except the "## Available Content" list.
+     * The header, Quick Answers, Key Game Mechanics etc. are hand-curated and must
+     * not be overwritten by the generated page list.
      */
     updateLlmsTxt(pagesData) {
         console.log('📝 Updating llms.txt...');
-        
-        let content = `# Bridger Western Wiki\n\n`;
-        content += `> Complete wiki and survival guide for Bridger Western, a Roblox survival game set in Ridge B Valley. Covers Stands, Weapons, Cards, acquisition methods, tier rankings, clan coordination, and survival mechanics for the ${new Date().getFullYear()} Alpha version.\n\n`;
-        content += `## Site Information\n\n`;
-        content += `- **URL**: ${this.siteUrl}/\n`;
-        content += `- **Type**: Game Wiki & Guide\n`;
-        content += `- **Game**: Bridger Western (Roblox)\n`;
-        content += `- **Last Updated**: ${this.currentDate}\n`;
-        content += `- **Content**: Stands, Weapons, Cards, Guides, Tier Lists\n\n`;
-        content += `## Available Content\n\n`;
-        
-        // Group pages by category
+
+        const targetPath = path.join(this.basePath, 'llms.txt');
+        const existing = fs.existsSync(targetPath)
+            ? fs.readFileSync(targetPath, 'utf8')
+            : '';
+
+        // Generate the page-list body.
         const categories = {};
         pagesData.forEach(page => {
-            if (!categories[page.category]) {
-                categories[page.category] = [];
-            }
+            if (!categories[page.category]) categories[page.category] = [];
             categories[page.category].push(page);
         });
-        
-        // Add content for each category
+        let list = '';
         Object.keys(categories).sort().forEach(category => {
             categories[category].forEach(page => {
-                content += `- [${page.title}](${page.url}): ${page.description}\n`;
+                list += `- [${page.title}](${page.url}): ${page.description}\n`;
             });
         });
-        
-        content += `\n## Key Game Mechanics\n\n`;
-        content += `- **Stand Acquisition**: Arrow Shard fishing (0.05%) or Corpse Part KOTH events (15-20% with holding)\n`;
-        content += `- **Card Acquisition**: Mud Witch in Swamp, 150 Moola per roll, choose 1 from 3 random cards, 3-card maximum per character\n`;
-        content += `- **Items & Utilities**: Ammo Box (& Silver Ammo for vampires), Tonic (healing), Dogbane Herb (4% chest drop, trade for 2500 moola/age regression/stand removal), Dynamite, Molotov, Silver Dagger, Wooden Stake (anti-vampire), Lasso, Poncho (damage reduction), Cowboy Hat (headshot protection), Lantern, Coin (ricochet), Smoke Bomb, Arrow Pack, Knives, Steel Wireset\n`;
-        content += `- **Best Cards**: Archer's Child (bow builds), Desperado (gun builds), Free Runner (universal mobility), EXECUTIONER (headshot kills), Quick Draw (weapon swap)\n`;
-        
-        fs.writeFileSync(path.join(this.basePath, 'llms.txt'), content);
+
+        let content;
+        const startMark = '## Available Content';
+        const endMark = '\n## Key Game Mechanics';
+
+        if (existing.includes(startMark) && existing.includes(endMark)) {
+            // Splice: keep everything before the list and the trailing sections intact.
+            const before = existing.slice(0, existing.indexOf(startMark) + startMark.length);
+            const after = existing.slice(existing.indexOf(endMark));
+            content = `${before}\n\n${list}\n${after}`;
+        } else {
+            // First run: fall back to full generation.
+            content = `# Bridger Western Wiki\n\n`;
+            content += `> Complete wiki and survival guide for Bridger Western, a Roblox survival game set in Ridge B Valley. Covers Stands, Weapons, Cards, acquisition methods, tier rankings, clan coordination, and survival mechanics for the ${new Date().getFullYear()} Alpha version.\n\n`;
+            content += `## Site Information\n\n`;
+            content += `- **URL**: ${this.siteUrl}/\n`;
+            content += `- **Type**: Game Wiki & Guide\n`;
+            content += `- **Game**: Bridger Western (Roblox)\n`;
+            content += `- **Last Updated**: ${this.currentDate}\n`;
+            content += `- **Content**: Stands, Weapons, Cards, Guides, Tier Lists\n\n`;
+            content += `${startMark}\n\n${list}\n`;
+            content += `\n## Key Game Mechanics\n\n`;
+            content += `- **Stand Acquisition**: Arrow Shard fishing (0.1%) or Corpse Part KOTH events (15-20% with holding)\n`;
+            content += `- **Card Acquisition**: Mud Witch in Swamp, 150 Moola per roll, choose 1 from 3 random cards, 3-card maximum per character\n`;
+        }
+
+        fs.writeFileSync(targetPath, content);
         console.log(`✅ llms.txt updated with ${pagesData.length} pages`);
     }
     
     /**
      * Update llms-full.txt (detailed index)
+     * Incremental: preserves the hand-written header (incl. Quick Answers) and
+     * any hand-written h2 sections after the auto-generated category blocks.
+     * Only the "### <Category> Section" page listings are regenerated.
      */
     updateLlmsFullTxt(pagesData) {
         console.log('📝 Updating llms-full.txt...');
-        
-        let content = `# Bridger Western Wiki - Full Content Index\n\n`;
-        content += `> Complete wiki for Bridger Western, a Roblox survival game set in Ridge B Valley. ${new Date().getFullYear()} Alpha version. All content is verified from user-provided gameplay data and community analysis.\n\n`;
-        content += `## Site Structure\n\n`;
-        
-        // Group pages by category
+
+        const targetPath = path.join(this.basePath, 'llms-full.txt');
+        const existing = fs.existsSync(targetPath)
+            ? fs.readFileSync(targetPath, 'utf8')
+            : '';
+
+        // Build the auto-generated body (one section per category).
         const categories = {};
         pagesData.forEach(page => {
-            if (!categories[page.category]) {
-                categories[page.category] = [];
-            }
+            if (!categories[page.category]) categories[page.category] = [];
             categories[page.category].push(page);
         });
-        
-        // Add detailed content for each category
+        let body = '';
         Object.keys(categories).sort().forEach(category => {
-            content += `### ${category} Section\n\n`;
-            
+            body += `### ${category} Section\n\n`;
             categories[category].forEach((page, index) => {
-                content += `**${page.title}**\n`;
-                content += `URL: ${page.url}\n`;
-                content += `Last Updated: ${page.lastModified}\n\n`;
-                
-                // Add content summary
-                content += `${page.content}\n\n`;
-                
-                if (index < categories[category].length - 1) {
-                    content += `---\n\n`;
-                }
+                body += `**${page.title}**\n`;
+                body += `URL: ${page.url}\n`;
+                body += `Last Updated: ${page.lastModified}\n\n`;
+                body += `${page.content}\n\n`;
+                if (index < categories[category].length - 1) body += `---\n\n`;
             });
-            
-            content += `\n`;
+            body += `\n`;
         });
-        
-        fs.writeFileSync(path.join(this.basePath, 'llms-full.txt'), content);
+
+        const siteStructureMark = '## Site Structure';
+        let content;
+
+        if (existing.includes(siteStructureMark)) {
+            // Keep the hand-written header (title, intro, Quick Answers).
+            const before = existing.slice(0, existing.indexOf(siteStructureMark) + siteStructureMark.length);
+
+            // Keep any hand-written h2 sections that follow the auto-generated blocks.
+            // Auto-generated blocks use "### Category Section" headings; hand-written
+            // ones use "## Heading", so the first "## " line after Site Structure
+            // marks where the curated tail begins.
+            const afterSiteStructure = existing.slice(existing.indexOf(siteStructureMark) + siteStructureMark.length);
+            const tailStart = afterSiteStructure.search(/\n## /);
+            const after = tailStart !== -1 ? afterSiteStructure.slice(tailStart + 1) : '';
+
+            content = `${before}\n\n${body}${after}`;
+        } else {
+            // First run: full generation.
+            content = `# Bridger Western Wiki - Full Content Index\n\n`;
+            content += `> Complete wiki for Bridger Western, a Roblox survival game set in Ridge B Valley. ${new Date().getFullYear()} Alpha version. All content is verified from user-provided gameplay data and community analysis.\n\n`;
+            content += `${siteStructureMark}\n\n${body}`;
+        }
+
+        fs.writeFileSync(targetPath, content);
         console.log(`✅ llms-full.txt updated with detailed content`);
     }
     
