@@ -30,6 +30,11 @@ class AdManager {
             return false;
         }
         
+        // AdSense loads a standalone script (Auto Ads), no placement container needed
+        if (this.config.adsense?.enabled && this.config.adsense?.script) {
+            return true;
+        }
+
         // Check if any placement is enabled
         const placements = this.config.placements || {};
         const hasEnabledPlacement = Object.values(placements).some(p => p.enabled);
