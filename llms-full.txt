@@ -79,6 +79,32 @@ URL: https://bridgerwestern.cc/stands/stand-tier-list.html
 
 ---
 
+### Value Tier List (Trading Values)
+URL: https://bridgerwestern.cc/stands/value-tier-list/
+
+**Source:** Official Bridger trading value tier list (Update 2.5), last updated 10/10/2026. The wiki page mirrors 170 entries and credits the list editors (@nh__2, @gunko_shuri).
+
+**How values are set:** Stock, demand, hype and future outlook combined — not current stock alone. Position on the list defines value; demand is not the primary definer.
+
+**Tier structure:** S+ (top of the top, large value gap at the top), S, S- (higher demand; jump to S requires big adds), A+, A, A-, B+, B (below B is mostly preference), Remaining Base Stands, Trading Adds, Unobtainable/Special, WIP.
+
+**Top entries (S+):**
+- (ULTIMATE) D4C — UD4C, 10/10, STABLE
+- (FULLY AGED) D4C — FAD4C, 9.5/10, STABLE
+- RUNIC TUSK — RTUSK, 9.3/10, STABLE
+- D4C — 9.2/10, STABLE
+- TUSK ACT 1-4 — 9.1/10, STABLE
+
+**Stability tags:** STABLE, HYPED, UNDERPAID, DROPPING, UNSTABLE, HEAVILY UNSTABLE; some entries combine two.
+
+**Trading adds:** STAND DISC (9/10), ROKAKAKA SEED (8/10), 50K MOOLA (N/A), DOGBANE HERB (7.5/10).
+
+**Unobtainable / Special:** TONIC STARTER (TS), SMOKE HAZE, THE WORLD: OVER HEAVEN (TWOH), WHATSAPP D4C (W4C/WAD4C).
+
+**WIP:** WRECKING BALL BREAKER (WBB), X/10.
+
+---
+
 ### Stand Abilities & Skills
 URL: https://bridgerwestern.cc/stands/stand-abilities.html
 

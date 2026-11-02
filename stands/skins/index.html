@@ -84,12 +84,33 @@
             margin-top: 20px;
         }
         .skin-card {
+            position: relative;
             background: rgba(255,255,255,0.6);
             border: 2px solid rgba(43,28,17,0.15);
             border-radius: 8px;
             overflow: hidden;
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .skin-value {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            z-index: 2;
+            background: rgba(26,15,10,0.88);
+            color: #ffe08a;
+            border: 1px solid rgba(255,215,0,0.5);
+            border-radius: 4px;
+            padding: 2px 7px;
+            font-family: var(--font-body);
+            font-size: 0.66rem;
+            font-weight: bold;
+            letter-spacing: 0.4px;
+            pointer-events: none;
+        }
+        .skin-value strong {
+            color: #fff;
+            margin-right: 3px;
         }
         .skin-card:hover {
             transform: translateY(-3px);
@@ -193,15 +214,22 @@
             <p>Any obtainment method that rolls for your Stand — <a href="/stands/arrow-shard/">Arrow Shard fishing</a> (0.1%) or <a href="/stands/corpse-part-guide/">Corpse Part KOTH events</a> — has a <strong>5% chance to grant a Shiny skin</strong> variant. Shiny skins are purely cosmetic and do not affect Stand performance.</p>
         </div>
 
+        <div class="sketch-card" style="background: rgba(43,28,17,0.06); border-left: 4px solid #2b1c11; margin-bottom: 32px;">
+            <h2 style="margin-top:0;">💰 Skin Trading Values</h2>
+            <p>Cards with a value badge show that skin's tier and score from the official Bridger trading value list, last updated <strong>10/10/2026</strong>. See the full <a href="/stands/value-tier-list/">Bridger Western Value Tier List</a> for all 170 entries, abbreviations, stability tags and trading adds. Skins without a badge do not yet have a matching entry on that list.</p>
+        </div>
+
         <!-- The World -->
         <section id="the-world-skins">
             <h2 class="section-title">🌍 The World</h2>
             <div class="skin-grid">
                 <div class="skin-card" onclick="openLightbox('/skin/The World skins/The World- Greatest High.webp', 'The World – Greatest High')">
+                    <span class="skin-value"><strong>S-</strong>7.3/10</span>
                     <img src="/skin/The World skins/The World- Greatest High.webp" alt="The World Greatest High skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Greatest High</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/The World skins/The World- OVA.webp', 'The World – OVA')">
+                    <span class="skin-value"><strong>S</strong>8/10</span>
                     <img src="/skin/The World skins/The World- OVA.webp" alt="The World OVA skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">OVA</h3>
                 </div>
@@ -213,6 +241,7 @@
             <h2 class="section-title">⭐ Star Platinum</h2>
             <div class="skin-grid">
                 <div class="skin-card" onclick="openLightbox('/skin/Star Platinum Skins/Star Platinum- HFTF.png', 'Star Platinum – HFTF')">
+                    <span class="skin-value"><strong>S-</strong>7.3/10</span>
                     <img src="/skin/Star Platinum Skins/Star Platinum- HFTF.png" alt="Star Platinum HFTF skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">HFTF</h3>
                 </div>
@@ -244,6 +273,7 @@
                     <h3 class="skin-card-name">Final Beatdown</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/Star Platinum | The World skins/Star Platinum- Stone Ocean.webp', 'Star Platinum | The World – Stone Ocean')">
+                    <span class="skin-value"><strong>A+</strong>6.4/10</span>
                     <img src="/skin/Star Platinum | The World skins/Star Platinum- Stone Ocean.webp" alt="Star Platinum The World Stone Ocean skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Stone Ocean</h3>
                 </div>
@@ -274,14 +304,17 @@
             <h2 class="section-title">🌍 TWAU</h2>
             <div class="skin-grid">
                 <div class="skin-card" onclick="openLightbox('/skin/TWAU SKINS/TWAU- Manga.webp', 'TWAU – Manga')">
+                    <span class="skin-value"><strong>A</strong>5.6/10</span>
                     <img src="/skin/TWAU SKINS/TWAU- Manga.webp" alt="TWAU Manga skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Manga</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/TWAU SKINS/TWAU- Neo .webp', 'TWAU – Neo')">
+                    <span class="skin-value"><strong>A+</strong>6.8/10</span>
                     <img src="/skin/TWAU SKINS/TWAU- Neo .webp" alt="TWAU Neo skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Neo</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/TWAU SKINS/TWAU- STW.webp', 'TWAU – STW')">
+                    <span class="skin-value"><strong>S</strong>7.9/10</span>
                     <img src="/skin/TWAU SKINS/TWAU- STW.webp" alt="TWAU STW skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">STW</h3>
                 </div>
@@ -305,6 +338,7 @@
                     <h3 class="skin-card-name">Red</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/Hierophant Green Skins/Hierophant Green- Yellow.png', 'Hierophant Green – Yellow')">
+                    <span class="skin-value"><strong>B</strong>2.2/10</span>
                     <img src="/skin/Hierophant Green Skins/Hierophant Green- Yellow.png" alt="Hierophant Green Yellow skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Yellow</h3>
                 </div>
@@ -316,14 +350,17 @@
             <h2 class="section-title">🟣 Hermit Purple</h2>
             <div class="skin-grid">
                 <div class="skin-card" onclick="openLightbox('/skin/Hermit Purple skins/Hermit Blue.webp', 'Hermit Purple – Hermit Blue')">
+                    <span class="skin-value"><strong>B</strong>2/10</span>
                     <img src="/skin/Hermit Purple skins/Hermit Blue.webp" alt="Hermit Purple Blue skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Hermit Blue</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/Hermit Purple skins/Hermit Gold.webp', 'Hermit Purple – Hermit Gold')">
+                    <span class="skin-value"><strong>B</strong>2/10</span>
                     <img src="/skin/Hermit Purple skins/Hermit Gold.webp" alt="Hermit Purple Gold skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Hermit Gold</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/Hermit Purple skins/Holy\'s Stand.webp', 'Hermit Purple – Holy\'s Stand')">
+                    <span class="skin-value"><strong>A+</strong>7/10</span>
                     <img src="/skin/Hermit Purple skins/Holys Stand.webp" alt="Hermit Purple Holy's Stand skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Holy's Stand</h3>
                 </div>
@@ -343,6 +380,7 @@
                     <h3 class="skin-card-name">Mintdom</h3>
                 </div>
                 <div class="skin-card" onclick="openLightbox('/skin/Mandom/Purple Mandom.webp', 'Mandom – Purple Mandom')">
+                    <span class="skin-value"><strong>A-</strong>5.8/10</span>
                     <img src="/skin/Mandom/Purple Mandom.webp" alt="Mandom Purple Mandom skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Purple Mandom</h3>
                 </div>
@@ -358,6 +396,7 @@
             <h2 class="section-title">🔥 Magicians Red</h2>
             <div class="skin-grid">
                 <div class="skin-card" onclick="openLightbox('/skin/Magicians Red skins/Magicians- Purple.png', 'Magicians Red – Purple')">
+                    <span class="skin-value"><strong>B+</strong>5.6/10</span>
                     <img src="/skin/Magicians Red skins/Magicians- Purple.png" alt="Magicians Red Purple skin – Bridger Western" loading="lazy">
                     <h3 class="skin-card-name">Purple</h3>
                 </div>
