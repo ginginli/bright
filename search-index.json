@@ -10949,6 +10949,91 @@
       "icon": "🔍"
     },
     {
+      "title": "⛏️ Pickaxe Guide",
+      "url": "/items/pickaxe/",
+      "category": "Items",
+      "keywords": [
+        "pickaxe",
+        "mining",
+        "guide",
+        "ores",
+        "resources",
+        "qte",
+        "meteor",
+        "zicardite",
+        "smelting",
+        "flint blacksmith"
+      ],
+      "description": "⛏️ Pickaxe Guide - Mine 13 resource types: Rock to Zicardite to Meteor Shards. QTE mining mechanic, rarity tiers, and smelting chain.",
+      "icon": "⛏️"
+    },
+    {
+      "title": "💎 Mineable Resources",
+      "url": "/items/pickaxe/#mineable-resources",
+      "category": "Items",
+      "keywords": [
+        "mineable",
+        "resources",
+        "ores",
+        "zicardite",
+        "palladium",
+        "cobalt",
+        "meteor shards",
+        "gold",
+        "silver"
+      ],
+      "description": "💎 Mineable Resources - Full table of 13 ores and minerals with rarity tiers",
+      "icon": "💎"
+    },
+    {
+      "title": "🎮 QTE Mining Mechanic",
+      "url": "/items/pickaxe/#qte-mining-mechanic",
+      "category": "Items",
+      "keywords": [
+        "qte",
+        "mining",
+        "mechanic",
+        "quick time event",
+        "keys",
+        "sequence",
+        "difficulty"
+      ],
+      "description": "🎮 QTE Mining Mechanic - How the pickaxe quick time event system works",
+      "icon": "🎮"
+    },
+    {
+      "title": "☄️ Meteor Shower Mining",
+      "url": "/items/pickaxe/#meteor-mining",
+      "category": "Items",
+      "keywords": [
+        "meteor",
+        "shower",
+        "shards",
+        "event",
+        "random",
+        "map",
+        "hard qte"
+      ],
+      "description": "☄️ Meteor Shower Mining - Random meteor spawns during events, harder QTE, yields Meteor Shards",
+      "icon": "☄️"
+    },
+    {
+      "title": "🔥 Smelting Chain",
+      "url": "/items/pickaxe/#smelting-guide",
+      "category": "Items",
+      "keywords": [
+        "smelting",
+        "flint",
+        "blacksmith",
+        "ingots",
+        "ore",
+        "recipes",
+        "coal"
+      ],
+      "description": "🔥 Smelting Chain - Flint Blacksmith ore to ingot conversion guide",
+      "icon": "🔥"
+    },
+    {
       "title": "🗡️ Silver Dagger Guide",
       "url": "/items/silver-dagger/#title-1",
       "category": "Items",

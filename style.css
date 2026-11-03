@@ -1769,6 +1769,17 @@ a.sketch-card.article-card:hover {
     vertical-align: middle;
 }
 
+/* 状态色 —— 对比表通用语义标记：绿=提供/黄=部分/红=无 */
+.data-table td.status-yes {
+    background: rgba(40, 167, 69, 0.12);
+}
+.data-table td.status-partial {
+    background: rgba(255, 193, 7, 0.14);
+}
+.data-table td.status-no {
+    background: rgba(220, 53, 69, 0.08);
+}
+
 /* 列标题：最明显，深色背景 + 白色文字 */
 .data-table th {
     background: rgba(43, 28, 17, 0.75);
