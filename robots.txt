@@ -10,6 +10,11 @@ Disallow: /.vscode/
 Sitemap: https://bridgerwestern.cc/sitemap.xml
 
 # AI Crawlers - Explicitly allow all content
+# OAI-SearchBot: ChatGPT 搜索结果索引（最关键）
+User-agent: OAI-SearchBot
+Allow: /
+
+# GPTBot: OpenAI 模型训练抓取
 User-agent: GPTBot
 Allow: /
 
